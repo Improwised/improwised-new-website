@@ -55,7 +55,9 @@ const services = defineCollection({
 		blocks: z.array(z.object({
 			title: z.string(),
 			slug: z.string().optional(),
-			description: z.string()
+			description: z.string(),
+			seoTitle: z.string().optional(),
+			seoDescription: z.string().optional()
 		})).optional(),
 		blockImage: image()
 	}),

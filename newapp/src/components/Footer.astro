@@ -3,7 +3,7 @@ import { BASE_URL } from "../consts";
 import { Image } from "astro:assets";
 import Logo from "$lib/images/logo.svg";
 import { Badge } from "$lib/components/ui/badge";
-import { Linkedin, Facebook } from "lucide-svelte/icons";
+import { Linkedin, Facebook, Instagram } from "lucide-svelte/icons";
 import { getCollection, getEntry } from "astro:content";
 const services = Object.values(await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 const currentYear = new Date().getFullYear();
@@ -164,6 +164,15 @@ const currentYear = new Date().getFullYear();
           d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
         ></path></svg
       >
+    </a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 text-white hover:text-[#A3A3A3]"
+      href="https://www.instagram.com/improwised_technologies"
+    >
+      <span class="sr-only">Go to Improwised's Instagram</span>
+      <Instagram width="24" height="24" astro-icon="social/instagram" />
     </a>
   </div>
   </div>

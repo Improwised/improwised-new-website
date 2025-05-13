@@ -53,11 +53,23 @@ const services = defineCollection({
 		text: z.string(),
 		primaryText: z.string(),
 		blocks: z.array(z.object({
+			achievements: z.array(z.string()).optional(),
 			title: z.string(),
 			slug: z.string().optional(),
 			description: z.string(),
 			seoTitle: z.string().optional(),
-			seoDescription: z.string().optional()
+			seoDescription: z.string().optional(),
+			featureTitle: z.string().optional(),
+			featureSubTitle: z.string().optional(),
+			featureImage: image().optional(),
+			industries: z.array(z.object({
+				title: z.string(),
+				description: z.string()
+			})).optional(),
+			features: z.array(z.object({
+				title: z.string(),
+				description: z.string()
+			})).optional(),
 		})).optional(),
 		blockImage: image()
 	}),

@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+
+import Accordion from "$lib/components/common/Accordion.svelte";
+import { Image } from "astro:assets";
+import { BASE_URL } from "$lib/consts";
+import SectionTitle from "$lib/components/common/SectionTitle.svelte";
+import { Badge } from "$lib/components/ui/badge";
+import { Puzzle } from "lucide-svelte";
+
+const { blockSlug } = Astro.props;
+
+const [service] = await getCollection("services", ({data}) => (
+    data.slug == "platform-engineering"
+))
+
+const block = service.data.blocks?.filter(block => block.slug === blockSlug);
+---
+
+<div class="container">
+    {block && 
+    <div class="flex mx-auto max-w-2xl flex-col items-center justify-center">
+        <Badge variant="outline" class="py-1">
+            <Puzzle class="mr-1" size={18} />
+            <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Features</span>
+        </Badge>
+        <SectionTitle primaryColorText={block[0].featureTitle} text={block[0].featureSubTitle} class="text-center"/>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-16">
+        <div class="md:min-w-[50%] max-h-max flex justify-center items-center">
+            <Image alt="building block" src={block[0].featureImage} height={600} data-aos="fade-right"/>
+        </div>
+        <div class="text-center flex mx-auto max-w-2xl flex-col items-center justify-center">
+            <Accordion client:load blocks={block[0].features} baseUrl={BASE_URL} />
+        </div>
+    </div>}
+</div>

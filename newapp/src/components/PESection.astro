@@ -5,7 +5,7 @@ import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import Accordion from "$lib/components/common/Accordion.svelte";
 import { Badge } from "$lib/components/ui/badge";
 import { Image } from "astro:assets";
-import { CircleUserRound } from "lucide-svelte";
+import { Settings } from "lucide-svelte";
 import { BASE_URL } from "$lib/consts";
 
 const { block } = Astro.props;
@@ -20,7 +20,7 @@ const services = await getCollection("services", ({data}) => {
     {services.map(({data}) => (
         <div>
             <Badge variant="outline" class="py-1">
-            <CircleUserRound class="mr-1" size={18} />
+            <Settings class="mr-1" size={18} />
             <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Service</span>
           </Badge>
             <SectionTitle class="max-md:text-left w-5/6 md:w-4/5" text={data.text} primaryColorText={data.primaryText} />

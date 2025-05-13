@@ -1,15 +1,15 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 import Layout from "$lib/layouts/Layout.astro";
-import { render } from "astro:content";
 import { Badge } from "$lib/components/ui/badge";
 import { BASE_URL } from "$lib/consts";
-import SectionTitle from "$lib/components/common/SectionTitle.svelte";
-import { CircleUserRound } from "lucide-svelte/icons";
+import { ArrowBigRightDash, Logs, Globe, BadgeCheck } from "lucide-svelte/icons";
 import * as Card from "$lib/components/ui/card";
 import { Image } from "astro:assets";
 import avtarImage from "$lib/images/blogs/impro.png";
 import { formatDate } from "$lib/utils";
+import BlockAccordion from "$lib/components/BlockAccordion.astro";
+import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
@@ -40,10 +40,17 @@ export async function getStaticPaths() {
 }
 
 const { service, block } = Astro.props;
+const currentUrl = Astro.url.pathname.split("/");
+const slug = currentUrl.at(currentUrl.length - 2)
+const filteredBlock = service.data.blocks?.filter(block => block.slug === slug);
+
 
 const blogs = await getCollection("blogs");
 const filteredBlogs = blogs.filter((b) => b.data.blockCategory == block.slug);
 
+
+let gradientX = 45.5;
+let gradientY = -200;
 ---
 
 <Layout title={block.seoTitle} description={block.seoDescription}>
@@ -62,13 +69,81 @@ const filteredBlogs = blogs.filter((b) => b.data.blockCategory == block.slug);
       <p class="mt-6 text-para max-w-4/5 text-third-color">
         {block.description}
       </p>
-
-
     </section>
+   
+    <section class="section2 overflow-x-hidden py-10 md:py-40 section-bg">
+      <BlockAccordion blockSlug={slug} />
+    </section>
+
+    <section class="section py-10 md:py-40 section-bg">
+      <div class="flex mx-auto max-w-2xl flex-col items-center justify-center">
+        <Badge variant="outline" class="py-1">
+            <BadgeCheck class="mr-1" size={18} />
+            <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Achievements</span>
+        </Badge>
+        <SectionTitle primaryColorText="Achieve" text="What You Can" class="text-center" />
+      </div>
+      <div class="container flex flex-col gap-4 md:pt-10 max-w-5xl">
+        {
+          filteredBlock && filteredBlock[0].achievements?.map((achiement) => (
+            <div class="flex gap-4 border-b-1 border-dashed pb-6">
+              <ArrowBigRightDash color="#009DC9"/>
+              <p class="small-text md:text-para font-inter text-fourth-color">{achiement}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section4 py-10 md:py-40 section-bg">
+      <div class="container">
+        <div
+          class="flex mx-auto max-w-2xl flex-col items-center justify-center"
+        >
+        <Badge variant="outline" class="py-1">
+          <Globe class="mr-1" size={18} />
+          <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Industry</span>
+        </Badge>
+          <SectionTitle
+          text="We Serve"
+          primaryColorText="Industries"
+          class="text-center md:w-[96%]"
+          isPrimaryTextInitial={true}
+          />
+        </div>
+        <div class="md:pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {
+            filteredBlock && filteredBlock[0].industries?.map((industry) => (
+            <Card.Root
+              class="overflow-hidden border-1 bg-card-bg border-career-card rounded-[20px] shadow-nav text-center"
+              onmousemove="updateGradient(event)"
+              style={`--gradient-x: ${gradientX}px; --gradient-y: ${gradientY}px;`}
+              >
+              <div
+                class="card-custom-inner p-8"
+                style={`--gradient-x: ${gradientX}px; --gradient-y: ${gradientY}px;`}
+                onmousemove="updateGradient(event)"
+              >
+                <Card.Content class="p-0 text-left flex flex-col text-[#141414] tracking-tight">
+                  <Card.Title class="text-fifth-color text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope">
+                    {industry.title}
+                  </Card.Title>
+                  <p class="pt-5 small-text md:text-para font-inter text-fourth-color">
+                    {industry.description}
+                  </p>
+                </Card.Content>
+              </div>
+              </Card.Root>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
     <section class="section py-10 md:py-40 section-bg">
       <div class="container">
         <Badge variant="outline" class="py-1 mb-8">
-          <CircleUserRound class="mr-1" size={18} />
+          <Logs class="mr-1" size={18} />
           <span
             class="text-xs font-bold md:text-sm tracking-wider font-manrope"
             >Recommanded Blogs</span
@@ -126,3 +201,16 @@ const filteredBlogs = blogs.filter((b) => b.data.blockCategory == block.slug);
     </section>
   </main>
 </Layout>
+
+<script is:inline>
+  function updateGradient(event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    gradientX = event.clientX - rect.left;
+    gradientY = event.clientY - rect.top;
+
+    // Update the style dynamically
+    const target = event.currentTarget;
+    target.style.setProperty("--gradient-x", `${gradientX}px`);
+    target.style.setProperty("--gradient-y", `${gradientY}px`);
+  }
+</script>

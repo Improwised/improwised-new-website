@@ -701,20 +701,21 @@ layer(base);
 }
 
 .section-bg {
-  /* border-top: 1px solid oklch(0.28 0.041 260.031); darkk */
-  /* border-top: 1px solid rgb(226, 232, 240) ; */
-  /* background-image: linear-gradient(to bottom, rgba(64, 72, 153, 0.4) 0%, rgba(42, 48, 102, 1) 100%); */
   border-top: 1px solid rgb(226, 232, 240) ;
   background-image: linear-gradient(to bottom, rgb(248, 250, 252) 0%, rgba(255, 255, 255, 1) 100%);
 
   @variant dark { 
-    /* background-image: linear-gradient(to bottom, rgba(15, 23, 43, 0.4), rgb(2, 6, 24)); */ /*original nuxt design*/
     background-image: linear-gradient(to bottom, rgba(15, 23, 43, 0.4) 0%, rgba(3, 7, 18, 0.5) 50%, rgba(3, 7, 18, 1) 100%);
     border-top: 1px solid rgb(29, 41, 61); /*oklch(0.93 0.013 255.508)*/
   }
-  /* @variant dark { */
-    /* border-top: 1px solid rgb(29, 41, 61); oklch(0.93 0.013 255.508) */
-  /* } */
+}
 
-  /* background-image:var(--tw-gradient-via-stops, to bottom in oklab, color-mix(in oklab, oklch(0.208 0.042 265.755) 40%,transparent) 0, oklch(.129 .042 264.695) 100%) ; */
+.dropdown-bg {
+  background-color: rgba(247, 247, 247, 1);
+  border: 1px solid rgb(226, 232, 240) ;
+
+  @variant dark {
+    background-color:rgba(15, 23, 43, 0.98);
+    border: 1px solid rgb(29, 41, 61);
+  }
 }

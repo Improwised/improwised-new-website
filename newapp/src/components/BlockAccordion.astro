@@ -26,11 +26,11 @@ const block = service.data.blocks?.filter(block => block.slug === blockSlug);
         </Badge>
         <SectionTitle primaryColorText={block[0].featureTitle} text={block[0].featureSubTitle} class="text-center"/>
     </div>
-    <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-16">
+    <div class="flex flex-col md:flex-row gap-10 md:gap-16">
         <div class="md:min-w-[50%] max-h-max flex justify-center items-center">
             <Image alt="building block" src={block[0].featureImage} height={600} data-aos="fade-right"/>
         </div>
-        <div class="text-center flex mx-auto max-w-2xl flex-col items-center justify-center">
+        <div class="text-center w-full my-auto">
             <Accordion client:load blocks={block[0].features} baseUrl={BASE_URL} />
         </div>
     </div>}

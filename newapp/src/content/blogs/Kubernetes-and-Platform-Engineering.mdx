@@ -23,7 +23,7 @@ import blogImageInner from '$lib/images/blogs/Kubernetes-and-Platform-Engineerin
 
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags
-
+import BlogLink from "$lib/components/BlogLink.astro";
 
 <div class="blog-details relative">
   {/* Hero Section */}
@@ -40,7 +40,7 @@ export const linkTags = frontmatter.linkTags
     {/* Content */}
     <div>
       <h3 id="Kubernetes Ecosystem for Platform Engineering" class="scroll-mt-[8rem] lg:scroll-mt-28">Kubernetes Ecosystem for Platform Engineering</h3>
-      <p >Kubernetes is often referred to as the "platform for building platforms" due to its extensive ecosystem of tools and technologies. The Cloud Native Computing Foundation (CNCF) provides a suite of vendor-agnostic tools that integrate with Kubernetes, enabling the creation of scalable applications across various cloud environments. This ecosystem includes tools for Continuous Integration/Continuous Deployment (CI/CD), observability, operations, AI/ML, security, and storage, all of which work in harmony with Kubernetes to support platform engineering efforts.</p>
+      <p >Kubernetes is often referred to as the <BlogLink title={`"platform for building platforms"`} slug="services/platform-engineering" /> due to its extensive ecosystem of tools and technologies. The Cloud Native Computing Foundation (CNCF) provides a suite of vendor-agnostic tools that integrate with Kubernetes, enabling the creation of scalable applications across various cloud environments. This ecosystem includes tools for Continuous Integration/Continuous Deployment (CI/CD), observability, operations, AI/ML, security, and storage, all of which work in harmony with Kubernetes to support platform engineering efforts.</p>
       <h4 >Key Components of Kubernetes Ecosystem</h4>
       <ul>
       <li  aria-level="1">
@@ -57,7 +57,7 @@ export const linkTags = frontmatter.linkTags
       </li>
       </ul>
       <h3 id="Role of Kubernetes in Cloud-Native Platform Development" class="scroll-mt-[8rem] lg:scroll-mt-28">Role of Kubernetes in Cloud-Native Platform Development</h3>
-      <p >Kubernetes is pivotal in cloud-native platform development due to its declarative configuration model. This model allows platform engineers to define infrastructure configurations using YAML files, which can be easily updated and deployed. Kubernetes also supports autoscaling and replication, ensuring that platforms can scale according to demand and maintain high availability.</p>
+      <p >Kubernetes is pivotal in <BlogLink title="cloud-native platform development" slug="blog/Scaling-Tech-Infrastructure-with-Platform-Engineering" /> due to its declarative configuration model. This model allows platform engineers to define infrastructure configurations using YAML files, which can be easily updated and deployed. Kubernetes also supports autoscaling and replication, ensuring that platforms can scale according to demand and maintain high availability.</p>
       <h4 >Scalability and Reliability</h4>
       <p >Scalability: Kubernetes deployments are declarative, making it easy to update configurations and scale resources as needed. Autoscaling and replication capabilities ensure that platforms can handle increased loads without manual intervention.</p>
       <p >Reliability: Kubernetes provides replication controllers, schedulers, and load-balancing techniques to ensure that applications remain available even during spikes in demand. Health probes and startup probes enable regular health checks, creating a self-healing system that quickly addresses downtimes.</p>
@@ -77,7 +77,7 @@ export const linkTags = frontmatter.linkTags
       <h3 id="DevSecOps and Platform Engineering" class="scroll-mt-[8rem] lg:scroll-mt-28">DevSecOps and Platform Engineering</h3>
       <p >Platform engineering is closely tied to DevSecOps practices, as it provides developers with a standardized set of tools and a secure environment for application development. Kubernetes plays a crucial role in this integration by enabling self-service capabilities and automating security practices. Tools like Dynatrace offer automated workflows for deployment validation and anomaly remediation, further improving DevSecOps practices within platform engineering.</p>
       <h3 id="Challenges in Implementing Platform Engineering" class="scroll-mt-[8rem] lg:scroll-mt-28">Challenges in Implementing Platform Engineering</h3>
-      <p >Despite the advantages of combining Kubernetes with platform engineering, several challenges exist:</p>
+      <p >Despite the advantages of combining <BlogLink title="Kubernetes with platform engineering" slug="blog/kubernetes-why-its-foundation-not-destination" />, several challenges exist:</p>
       <p >Complexity: The integration of multiple tools and technologies within the Kubernetes ecosystem can introduce complexity, requiring careful management and monitoring.</p>
       <p >Resource Utilization: Ensuring efficient resource utilization across diverse environments can be challenging without proper visibility and management tools.</p>
       <p >Security: Maintaining security across a containerized environment involves managing various security components and ensuring compliance with organizational policies.</p>

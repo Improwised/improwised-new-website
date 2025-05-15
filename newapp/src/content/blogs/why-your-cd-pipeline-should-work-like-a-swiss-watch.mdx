@@ -20,6 +20,7 @@ import { Image } from 'astro:assets';
 import blogImageInner from '$lib/images/blogs/cd.png';
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags;
+import BlogLink from "$lib/components/BlogLink.astro";
 
 <div class="blog-details relative">
   {/* Hero Section */}
@@ -38,7 +39,7 @@ export const linkTags = frontmatter.linkTags;
      <p>A CD pipeline consists of several stages, each with specific functions that contribute to the overall deployment process. The key components include:</p>
       <ol>
       <li>
-      <p>Source Control Management (SCM)SCM systems, such as Git, serve as the foundation for version control. They track changes to code and facilitate collaboration among developers. Integrating SCM with the pipeline ensures that every code change triggers the subsequent stages.</p>
+      <p><BlogLink title="Source Control Management" slug="blog/end-to-end-encryption-for-state-files-in-open-tofu" /> (SCM) systems, such as Git, serve as the foundation for version control. They track changes to code and facilitate collaboration among developers. Integrating SCM with the pipeline ensures that every code change triggers the subsequent stages.</p>
       </li>
       </ol>
       <ol start="2">
@@ -53,7 +54,7 @@ export const linkTags = frontmatter.linkTags;
       </ol>
       <ol start="4">
       <li>
-      <p>Artifact RepositoryAn artifact repository, such as Nexus or Artifactory, stores built artifacts. This component ensures that the correct versions of artifacts are available for deployment, facilitating traceability and rollback capabilities.</p>
+      <p>Artifact RepositoryAn artifact repository, such as Nexus or Artifactory, <BlogLink title="stores built artifacts" slug="blog/ci-isn-t-just-for-dev-ops" />. This component ensures that the correct versions of artifacts are available for deployment, facilitating traceability and rollback capabilities.</p>
       </li>
       </ol>
       <ol start="5">
@@ -65,7 +66,7 @@ export const linkTags = frontmatter.linkTags;
       </ol>
       <ol start="6">
       <li><p>
-      Monitoring and LoggingMonitoring and logging systems, such as Prometheus or ELK Stack, provide insights into application performance and health. Integrating these systems into the pipeline allows for real-time feedback and facilitates rapid response to issues.
+      Monitoring and logging systems, such as Prometheus or ELK Stack, provide insights into application performance and health. Integrating these systems into the pipeline allows for real-time feedback and facilitates rapid response to issues.
       </p>
       </li>
       </ol>
@@ -95,7 +96,7 @@ export const linkTags = frontmatter.linkTags;
       <p>Step 6: Automate Deployment</p>
       <p>Utilize deployment automation tools to manage the deployment process. Define deployment scripts that specify the target environment and deployment strategy. Automate the rollback process to handle failures gracefully.</p>
       <p>Step 7: Integrate Monitoring and Logging</p>
-      <p>Incorporate monitoring and logging systems to track application performance and errors. Set up alerts for critical issues to enable rapid response. This integration provides valuable feedback for continuous improvement.</p>
+      <p>Incorporate <BlogLink title="monitoring and logging systems" slug="blog/tooling-and-infrastructure-in-measuring-dora-metrics" /> to track application performance and errors. Set up alerts for critical issues to enable rapid response. This integration provides valuable feedback for continuous improvement.</p>
 
 
       <h3 id="Ensuring Reliability and Precision" class="scroll-mt-[8rem] lg:scroll-mt-28">Ensuring Reliability and Precision</h3>
@@ -103,7 +104,7 @@ export const linkTags = frontmatter.linkTags;
       <h3 >Continuous Integration</h3>
       <p >Implement continuous integration (CI) practices to ensure that code changes are integrated into the main branch frequently. This approach reduces integration issues and promotes a stable codebase.</p>
       <h3 >Infrastructure as Code (IaC)</h3>
-      <p >Utilize IaC tools, such as Terraform or CloudFormation, to manage infrastructure. This practice allows for consistent environment provisioning and reduces configuration drift.</p>
+      <p >Utilize IaC tools, such as <BlogLink title="Terraform or CloudFormation, to manage infrastructure" slug="blog/open-tofu-best-practices" />. This practice allows for consistent environment provisioning and reduces configuration drift.</p>
       <h3 >Security Integration</h3>
       <p >Incorporate security practices into the pipeline, often referred to as DevSecOps. Automate security testing and vulnerability scanning to identify potential risks early in the development process.</p>
       <h3 >Documentation</h3>

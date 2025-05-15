@@ -21,6 +21,7 @@ import { Image } from 'astro:assets';
 import blogImageInner from '$lib/images/blogs/Scaling-Tech-Infrastructure-with-Platform-Engineering-body.webp';
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags
+import BlogLink from "$lib/components/BlogLink.astro";
 
 <div class="blog-details">
   {/* Hero Section */}
@@ -40,7 +41,7 @@ export const linkTags = frontmatter.linkTags
       <p>Platform engineering involves several key components that are essential for its success:</p>
       <ol>
       <li  aria-level="1">
-      <p>Infrastructure as Code (IaC): This approach manages infrastructure configurations using code, allowing for automation, version control, and repeatability. IaC tools like Terraform and AWS CloudFormation are commonly used to ensure consistency and reduce errors in infrastructure deployments.</p>
+      <p>Infrastructure as Code (IaC): This approach <BlogLink title="manages infrastructure configurations" slug="blog/Scaling-Tech-Infrastructure-with-Platform-Engineering" /> using code, allowing for automation, version control, and repeatability. IaC tools like Terraform and AWS CloudFormation are commonly used to ensure consistency and reduce errors in infrastructure deployments.</p>
       </li>
       <li  aria-level="1">
       <p>Modular and Scalable Architecture: Platform engineering emphasizes the development of modular architectures that can scale efficiently. This involves designing systems as collections of loosely coupled services or microservices, which enhance scalability, resilience, and maintainability.</p>
@@ -49,7 +50,7 @@ export const linkTags = frontmatter.linkTags
       <p>API-First Approach: Adopting an API-first strategy allows developers to build new services on top of existing platforms without disrupting the underlying infrastructure. This approach facilitates integration and innovation by providing standardized interfaces for different components.</p>
       </li>
       <li  aria-level="1">
-      <p>Continuous Integration and Continuous Deployment (CI/CD): Implementing CI/CD pipelines is critical for automating the build, test, and deployment processes. This ensures that changes are quickly and reliably pushed to production, supporting rapid iteration and feedback loops.</p>
+      <p><BlogLink title="Continuous Integration" slug="services/platform-engineering/continuous-integration" /> and <BlogLink title="Continuous Deployment" slug="services/platform-engineering/continuous-deployment" /> (CI/CD): Implementing CI/CD pipelines is critical for automating the build, test, and deployment processes. This ensures that changes are quickly and reliably pushed to production, supporting rapid iteration and feedback loops.</p>
       </li>
       </ol>
       <h2 id="Implementing Platform Engineering for Scalability" class="scroll-mt-[8rem] lg:scroll-mt-28">Implementing Platform Engineering for Scalability</h2>
@@ -79,7 +80,7 @@ export const linkTags = frontmatter.linkTags
       <h2 id="Applying Platform Engineering to Networking" class="scroll-mt-[8rem] lg:scroll-mt-28">Applying Platform Engineering to Networking</h2>
       <p>Think of platform engineering for networking as creating a blueprint for consistent network services. We standardize tools and processes, then use APIs to automate connections. This means your network is reliable and predictable across all platforms, and troubleshooting becomes much simpler.</p>
       <h2 id="Conclusion and Consequences" class="scroll-mt-[8rem] lg:scroll-mt-28">Conclusion and Consequences</h2>
-      <p>Implementing platform engineering is crucial for startups transitioning to enterprises, as it enables them to scale their tech infrastructure effectively. However, there are consequences to consider:</p>
+      <p>Implementing <BlogLink title="platform engineering is crucial for startups" slug="blog/platform-engineering-maturity-model" /> transitioning to enterprises, as it enables them to scale their tech infrastructure effectively. However, there are consequences to consider:</p>
       <p>A failure to adopt platform engineering principles can severely hinder an organization's ability to scale efficiently. This can lead to a cascade of negative consequences, including increased costs, reduced agility, and decreased competitiveness. Companies that lag in adopting these principles may find themselves struggling to meet growing demands, potentially experiencing system failures and a subsequent loss of market share. Furthermore, insufficient collaboration between platform engineers and other teams can create misaligned infrastructure and application development strategies, resulting in inefficient resource allocation and reduced system performance. Finally, the growing demand for scalable infrastructure, if not managed sustainably, can contribute to higher energy consumption and increased carbon emissions. Therefore, organizations must prioritize sustainable practices to mitigate these potentially harmful environmental consequences.</p>
       <p>In summary, platform engineering is a critical strategy for scaling tech infrastructure from startup to enterprise. By focusing on modular architectures, automation, collaboration, and emerging trends like serverless computing and sustainable practices, organizations can ensure efficient growth and maintain a competitive edge in the market. However, neglecting these principles can have significant consequences, including reduced competitiveness and environmental impact.</p>
     </div>

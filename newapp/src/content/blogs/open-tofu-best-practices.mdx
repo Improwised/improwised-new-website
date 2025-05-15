@@ -22,6 +22,7 @@ import { Image } from 'astro:assets';
 import blogImageInner from '$lib/images/blogs/Performance-Optimization-in-OpenTofu-body.webp';
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags;
+import BlogLink from "$lib/components/BlogLink.astro";
 
 <div class="blog-details relative">
   {/* Hero Section */}
@@ -42,7 +43,7 @@ export const linkTags = frontmatter.linkTags;
       <h4 >Dependency Order and Resource Destruction</h4>
       <p>When resources are deleted, OpenTofu relies on the state file to determine the correct order of destruction. This is particularly important because the configuration alone may not provide sufficient information to determine this order. To optimize this process, regularly run tofu refresh or tofu plan to ensure the state file accurately reflects the actual resource state and dependencies. This can be achieved by regularly synchronizing the state file with the actual resource state.</p>
       <h4 >Performance Impact of State Synchronization</h4>
-      <p>For small infrastructures, OpenTofu can query providers and sync the latest attributes for all resources during each plan and apply operation. However, for larger infrastructures, this approach can be too slow due to API rate limiting and round-trip times. To optimize performance in such cases, use flags like -refresh=false and utilize the -target or -exclude flags to limit the scope of resources being queried. This approach helps in reducing the overhead associated with frequent state synchronizations.</p>
+      <p><BlogLink title="For small infrastructures" slug="blog/end-to-end-encryption-for-state-files-in-open-tofu" />, OpenTofu can query providers and sync the latest attributes for all resources during each plan and apply operation. However, for larger infrastructures, this approach can be too slow due to API rate limiting and round-trip times. To optimize performance in such cases, use flags like -refresh=false and utilize the -target or -exclude flags to limit the scope of resources being queried. This approach helps in reducing the overhead associated with frequent state synchronizations.</p>
 
       <h3 id="Caching Attribute Values" class="scroll-mt-[8rem] lg:scroll-mt-28">Caching Attribute Values</h3>
       <p>OpenTofu stores a cache of attribute values for all resources in the state file, which is a performance improvement feature. This cache helps in reducing the number of queries made to the providers during the planning phase.</p>
@@ -51,7 +52,7 @@ export const linkTags = frontmatter.linkTags;
       <p>For larger infrastructures, the cache can significantly improve performance by avoiding the need to query every resource. However, it is important to manage the cache effectively. Ensure that the cache is updated periodically to reflect changes in the resource attributes. Using the cached values can speed up the planning phase, but outdated cache values can lead to incorrect plans. Therefore, balance the frequency of cache updates with the need for up-to-date information.</p>
 
       <h3 id="Modular Configuration and Workspaces" class="scroll-mt-[8rem] lg:scroll-mt-28">Modular Configuration and Workspaces</h3>
-      <p>Managing configurations across multiple environments (e.g., dev, integration, production) can be complex. OpenTofu provides features like workspaces and backend configuration to simplify this process.</p>
+      <p>Managing configurations across <BlogLink title="multiple environments" slug="blog/Hidden-Costs-of-Not-Having-Development-Platform" /> (e.g., dev, integration, production) can be complex. OpenTofu provides features like workspaces and backend configuration to simplify this process.</p>
       
       <h4 >Using Workspaces</h4>
       <p>OpenTofu's workspace feature allows for creating separate workspaces for different environments. This approach ensures that each environment has its own instance of the configuration, reducing code duplication and making environment-specific configurations easier to manage. Use workspace interpolation to inject environment-specific variables, which helps in maintaining a single, flexible configuration.</p>
@@ -63,7 +64,7 @@ export const linkTags = frontmatter.linkTags;
       <h4 >Identifying Bottlenecks</h4>
       <p>Performance issues in OpenTofu can arise from various sources, such as disk I/O, network utilization, or CPU-bound tasks. Use factual evidence to identify the primary bottlenecks. For example, if disk I/O is the main bottleneck, consider optimizing disk access patterns or upgrading to faster storage solutions like SSDs.</p>
       <h4 >Benchmarking Against Terraform</h4>
-      <p>OpenTofu has been compared to Terraform in terms of performance and scalability. Benchmark tests indicate that OpenTofu shows promise in matching Terraform's performance, especially in terms of scalability and efficiency. These benchmarks can serve as a baseline for evaluating and optimizing OpenTofu's performance in your specific use case.</p>      
+      <p>OpenTofu has been compared to <BlogLink title="Terraform in terms of performance" slug="blog/embracing-open-tf-our-commitment-to-open-source-and-terraform" /> and scalability. Benchmark tests indicate that OpenTofu shows promise in matching Terraform's performance, especially in terms of scalability and efficiency. These benchmarks can serve as a baseline for evaluating and optimizing OpenTofu's performance in your specific use case.</p>      
       <h4>Identifying Bottlenecks</h4>
       <p>Analyze disk I/O, network usage, and CPU-bound tasks to optimize performance.</p>
 

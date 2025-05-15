@@ -20,7 +20,7 @@ import { Image } from 'astro:assets';
 import blogImageInner1 from '$lib/images/blogs/Zero-Downtime-Architecture-body.webp';
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags;
-
+import BlogLink from "$lib/components/BlogLink.astro"
 
 <div class="blog-details relative">
  {/* Hero Section */}
@@ -54,15 +54,15 @@ export const linkTags = frontmatter.linkTags;
       </ul>
 
       <h3 id="Architectural Pillars of Zero Downtime" class="scroll-mt-[8rem] lg:scroll-mt-28">Architectural Pillars of Zero Downtime</h3>
-      <p>Here’s how Platform Engineering helps build systems that just don’t go down:</p>
+      <p>Here’s how <BlogLink title="Platform Engineering helps build" slug="blog/platform-engineering-maturity-model" /> systems that just don’t go down:</p>
 
       <h4>1. Immutable Infrastructure and Declarative IaC</h4>
-      <p>By using tools like Terraform, Pulumi, or Crossplane, infrastructure is defined as code and provisioned in a predictable, repeatable way. Combined with GitOps tools like Flux or ArgoCD, changes are made declaratively and rollbacks are quick and safe.</p>
+      <p>By using tools like <BlogLink title="Terraform" slug="blog/embracing-open-tf-our-commitment-to-open-source-and-terraform" />, Pulumi, or Crossplane, infrastructure is defined as code and provisioned in a predictable, repeatable way. Combined with GitOps tools like Flux or ArgoCD, changes are made declaratively and rollbacks are quick and safe.</p>
 
       <h4>2. Blue-Green and Canary Deployments</h4>
       <p>Platform teams bake in deployment strategies into CI/CD pipelines:</p>
       <ul>
-        <li>Blue-Green Deployments: Route traffic between two identical environments to ensure zero-impact updates.</li>
+        <li><BlogLink title="Blue-Green Deployments" slug="blog/comparing-open-application-model" />: Route traffic between two identical environments to ensure zero-impact updates.</li>
         <li>Canary Deployments: Gradually shift traffic to a new version, with automatic rollback if metrics degrade.</li>
       </ul>
 
@@ -82,7 +82,7 @@ export const linkTags = frontmatter.linkTags;
       <p>A mid-size SaaS company adopted Platform Engineering practices to achieve 99.99% uptime across regions. Their platform team:</p>
       <ul>
         <li>Introduced GitOps for all infrastructure and deployment updates</li>
-        <li>Replaced manual CI/CD pipelines with ArgoCD and progressive delivery</li>
+        <li>Replaced <BlogLink title="manual CI/CD pipelines" slug="blog/ci-cd-in-air-gapped-environments" /> with ArgoCD and progressive delivery</li>
         <li>Implemented a service mesh for secure communication and smart routing</li>
         <li>Added real-time observability to catch anomalies before they escalated</li>
       </ul>

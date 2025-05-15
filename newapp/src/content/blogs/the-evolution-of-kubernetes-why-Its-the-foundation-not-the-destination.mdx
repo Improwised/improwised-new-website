@@ -22,6 +22,7 @@ import { Image } from 'astro:assets';
 import blogImageInner from '$lib/images/blogs/blogImageInner.png';
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags
+import BlogLink from "$lib/components/BlogLink.astro";
 
 <div class="blog-details">
   <div class="flex flex-col items-center justify-center">
@@ -34,9 +35,9 @@ export const linkTags = frontmatter.linkTags
     <div>
       <h3 id="Kubernetes as the Backbone: A Historical Perspective" class="scroll-mt-[8rem] lg:scroll-mt-28">1. Kubernetes as the Backbone: A Historical Perspective</h3>
   <p>Kubernetes, born from Google&rsquo;s Borg system, emerged as an open-source solution for container orchestration in 2014. Its rapid adoption was fueled by the rise of microservices architectures and the need for scalable, resilient infrastructure across diverse environments. Kubernetes simplified tasks like container deployment, scaling, and networking, enabling organizations to manage applications consistently across on-prem, hybrid, and public clouds.</p>
-  <p>However, while Kubernetes became synonymous with cloud-native applications, it also introduced new layers of complexity. Developers now had to navigate YAML configurations, Helm charts, and intricate networking setups. Platform engineers stepped in to bridge this gap by abstracting Kubernetes's complexity through Internal Developer Platforms (IDPs).</p>
+  <p>However, while Kubernetes became synonymous with cloud-native applications, it also introduced new layers of complexity. Developers now had to navigate YAML configurations, Helm charts, and intricate networking setups. Platform engineers stepped in to bridge this gap by abstracting Kubernetes's complexity through <BlogLink title="Internal Developer Platforms (IDPs)" slug="blog/Scaling-Tech-Infrastructure-with-Platform-Engineering" />.</p>
   <h3 id="Kubernetes as a Foundation: The Role of Infrastructure Abstraction" class="scroll-mt-[8rem] lg:scroll-mt-28">2. Kubernetes as a Foundation: The Role of Infrastructure Abstraction</h3>
-  <p>In platform engineering, Kubernetes is best viewed as an infrastructure abstraction layer rather than a complete solution. It provides the necessary primitives to build higher-level capabilities like self-service provisioning, infrastructure orchestration, and environment management. Kubernetes acts as the control plane for platform operations, offering:</p>
+  <p>In platform engineering, Kubernetes is best viewed as an infrastructure abstraction layer rather than a complete solution. It provides the necessary primitives to build higher-level capabilities like self-service provisioning, <BlogLink title="infrastructure orchestration" slug="blog/Scaling-Tech-Infrastructure-with-Platform-Engineering" />, and environment management. Kubernetes acts as the control plane for platform operations, offering:</p>
   <ul>
     <li>
       <p>Infrastructure Integration: Managing compute, storage, and networking resources across clouds.</p>
@@ -58,7 +59,7 @@ export const linkTags = frontmatter.linkTags
   <h4 >c) Operational Overhead</h4>
   <p>Maintaining Kubernetes clusters requires specialized knowledge in monitoring, security, and cost management. Without a platform layer, teams often spend excessive time on infrastructure operations instead of delivering features.</p>
   <h3 id="Moving Beyond Kubernetes: The Platform Engineering Perspective" class="scroll-mt-[8rem] lg:scroll-mt-28">4. Moving Beyond Kubernetes: The Platform Engineering Perspective</h3>
-  <p>The goal of modern platform engineering is to build a product-like experience on top of Kubernetes. This approach transforms infrastructure into a self-service, developer-friendly environment that abstracts away operational complexities. Key strategies include:</p>
+  <p>The goal of <BlogLink title="modern platform engineering" slug="blog/Kubernetes-and-Platform-Engineering" /> is to build a product-like experience on top of Kubernetes. This approach transforms infrastructure into a self-service, developer-friendly environment that abstracts away operational complexities. Key strategies include:</p>
   <ul>
     <li>
       <p>Internal Developer Platforms (IDPs): Tools like Backstage provide intuitive interfaces for developers to manage services, track deployments, and access documentation.</p>
@@ -86,7 +87,7 @@ export const linkTags = frontmatter.linkTags
   </ul>
   <p>In this context, platform engineers will focus more on developer experience, security, and process optimization than on Kubernetes internals.</p>
   <h3 id="Conclusion: Kubernetes as the Starting Point for Platform Innovation" class="scroll-mt-[8rem] lg:scroll-mt-28">Conclusion: Kubernetes as the Starting Point for Platform Innovation</h3>
-  <p>Kubernetes provides a powerful foundation for building modern platforms, but the real value lies in the layers built above it. Platform engineering transforms this infrastructure foundation into a streamlined, self-service experience that empowers developers, accelerates innovation, and reduces operational complexity. So, Kubernetes is the launchpad&mdash;not the landing zone&mdash;for the next era of cloud-native applications.</p>
+  <p>Kubernetes provides a powerful <BlogLink title="foundation for building modern platforms" slug="blog/platform-engineering-maturity-model" />, but the real value lies in the layers built above it. Platform engineering transforms this infrastructure foundation into a streamlined, self-service experience that empowers developers, accelerates innovation, and reduces operational complexity. So, Kubernetes is the launchpad&mdash;not the landing zone&mdash;for the next era of cloud-native applications.</p>
   <p>So, while Kubernetes remains essential, the true destination is a developer-centric platform that makes cloud-native development simpler, faster, and more sustainable. The journey has just begun, and platform engineering is leading the way.</p>
   <p>Ready to build a platform beyond Kubernetes? Discover how our platform engineering services can help you build scalable, secure, and developer-friendly environments.</p>
     </div>

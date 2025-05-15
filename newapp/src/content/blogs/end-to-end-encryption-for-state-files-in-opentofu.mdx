@@ -23,6 +23,7 @@ import blogImageInner from '$lib/images/blogs/End-to-End Encryption-body.png';
 
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags
+import BlogLink from "$lib/components/BlogLink.astro";
 
 <div class="blog-details relative">
   <div class="flex flex-col items-center justify-center">
@@ -36,7 +37,7 @@ export const linkTags = frontmatter.linkTags
     <div>
       <h3 id="The Need for State File Encryption" class="scroll-mt-[8rem] lg:scroll-mt-28">The Need for State File Encryption</h3>
       <p>Historically, these state files were stored in plaintext, making them vulnerable to unauthorized access. If an attacker gained access to the state file, they could exploit the sensitive data to compromise the entire infrastructure.</p>
-      <p>To mitigate this risk, users had to rely on third-party solutions, such as encrypting S3 buckets using AWS KMS or other key management systems. However, even with bucket-level encryption, the state files themselves remained in plaintext, exposing them to potential breaches if the storage was compromised.</p>
+      <p>To mitigate this risk, users had to rely on third-party solutions, such as <BlogLink title="encrypting S3 buckets" slug="blog/top-cloud-trends-to-watch-in-2025" /> using AWS KMS or other key management systems. However, even with bucket-level encryption, the state files themselves remained in plaintext, exposing them to potential breaches if the storage was compromised.</p>
       
       <h3 id="End-to-End State Encryption in OpenTofu 1.7.0" class="scroll-mt-[8rem] lg:scroll-mt-28">End-to-End State Encryption in OpenTofu 1.7.0</h3>
       <p>OpenTofu 1.7.0 introduces native end-to-end state encryption, ensuring that state files are encrypted both at rest and in transit. Here are the key components of this feature:</p>
@@ -80,7 +81,7 @@ export const linkTags = frontmatter.linkTags
       
       ```js export TF_ENCRYPTION=$(cat &lt```      
       <h3 id="Fallback Configurations and Key Rotation" class="scroll-mt-[8rem] lg:scroll-mt-28">Fallback Configurations and Key Rotation</h3>
-      <p>To ensure continuity and security, OpenTofu allows users to define fallback configurations. This feature facilitates automatic rollover to a different key or configuration if the primary key or configuration becomes unavailable. Key rotation is also supported, enabling users to decrypt data with an older key and then re-encrypt it with a newer key, which is essential for maintaining security best practices.</p>
+      <p>To ensure continuity and security, OpenTofu allows users to define <BlogLink title="fallback configurations" slug="blog/open-tofu-best-practices" />. This feature facilitates automatic rollover to a different key or configuration if the primary key or configuration becomes unavailable. Key rotation is also supported, enabling users to decrypt data with an older key and then re-encrypt it with a newer key, which is essential for maintaining security best practices.</p>
       
       <h3 id="Security Implications" class="scroll-mt-[8rem] lg:scroll-mt-28">Security Implications</h3>
       <p>The introduction of end-to-end state encryption in OpenTofu significantly enhances the security of Terraform state files. Here are some key security implications:</p>

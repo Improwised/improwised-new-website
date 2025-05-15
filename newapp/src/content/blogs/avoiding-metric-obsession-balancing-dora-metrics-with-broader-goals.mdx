@@ -23,6 +23,7 @@ import blogImageInner2 from '$lib/images/blogs/Avoiding-Metric-Obsession-body-2.
 
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags;
+import BlogLink from "$lib/components/BlogLink.astro";
 
 <div class="blog-details relative">
   {/* Hero Section */}
@@ -63,7 +64,7 @@ export const linkTags = frontmatter.linkTags;
       <h3>Align Metrics with Organizational Goals</h3>
       <p>Metrics should serve as tools to achieve overarching objectives rather than end goals. Aligning DORA metrics with key business outcomes&mdash;such as customer satisfaction, revenue growth, and innovation&mdash;ensures that performance improvements contribute meaningfully to organizational success.</p>
       <h3>Contextualize Metrics</h3>
-      <p>Evaluate DORA metrics within the context of the organization&rsquo;s unique challenges, industry, and goals. For example, a high deployment frequency may be less critical in domains where stability and compliance outweigh the need for rapid releases.</p>
+      <p><BlogLink title="Evaluate DORA metrics" slug="blog/tooling-and-infrastructure-in-measuring-dora-metrics" /> within the context of the organization&rsquo;s unique challenges, industry, and goals. For example, a high deployment frequency may be less critical in domains where stability and compliance outweigh the need for rapid releases.</p>
       <h3>Combine Quantitative and Qualitative Insights</h3>
       <p>Quantitative metrics should be complemented by qualitative assessments of team performance, culture, and processes. Regular retrospectives, stakeholder feedback, and customer satisfaction surveys provide valuable perspectives that metrics alone cannot capture.</p>
       <h3>Avoid Metric Isolation</h3>
@@ -74,7 +75,7 @@ export const linkTags = frontmatter.linkTags;
       <h3>Stifled Innovation</h3>
       <p>Excessive focus on metrics can discourage experimentation and risk-taking. Teams may avoid ambitious initiatives that carry higher chances of failure, limiting the organization&rsquo;s ability to innovate and adapt to changing markets.</p>
       <h3>Short-Term Gains at the Expense of Long-Term Health</h3>
-      <p>Optimizing for immediate metric improvements often overlooks long-term system health. For example, shortcuts taken to improve deployment frequency or lead time can result in technical debt that hampers scalability and resilience.</p>
+      <p>Optimizing for immediate metric improvements often overlooks long-term system health. For example, shortcuts taken to <BlogLink title="improve deployment frequency" slug="blog/ci-cd-in-air-gapped-environments" /> or lead time can result in technical debt that hampers scalability and resilience.</p>
       <h3>Erosion of Trust and Morale</h3>
       <p>When metrics become the sole focus, team members may feel undervalued, reducing engagement and morale. This can lead to higher turnover rates and diminished organizational effectiveness.</p>
       <h3>Loss of Strategic Focus</h3>

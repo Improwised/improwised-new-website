@@ -20,10 +20,11 @@ import blogImageInner1 from '$lib/images/blogs/Self-Healing-CI-pipelines-body.we
 
 import Sidebar from "$lib/components/Sidebar.astro";
 export const linkTags = frontmatter.linkTags;
+import BlogLink from "$lib/components/BlogLink.astro"
 
 <div class="blog-details relative">
   <div class="flex flex-col items-center justify-center">
-    <p>Continuous Integration (CI) pipelines automate software build and test processes, ensuring that code changes are validated before deployment. However, build failures can disrupt development workflows, increasing delays and requiring manual intervention. Self-healing CI pipelines detect, diagnose, and remediate failures without human oversight, maintaining efficiency and reducing downtime.</p>
+    <p><BlogLink title="Continuous Integration (CI) pipelines" slug="services/platform-engineering/continuous-integration" /> automate software build and test processes, ensuring that code changes are validated before deployment. However, build failures can disrupt development workflows, increasing delays and requiring manual intervention. Self-healing CI pipelines detect, diagnose, and remediate failures without human oversight, maintaining efficiency and reducing downtime.</p>
     <Image src={blogImageInner1} alt="Blog Image" class="w-auto py-20" />
   </div>
 
@@ -50,7 +51,7 @@ export const linkTags = frontmatter.linkTags;
       <h2 id="ML-Driven Remediation Strategies" class="scroll-mt-[8rem] lg:scroll-mt-28">Automated Remediation Strategies</h2>
       <p>Once an issue is diagnosed, remediation strategies are applied automatically based on predefined recovery actions.</p>
       <h3 >Retry Mechanisms</h3>
-      <p >Transient failures&mdash;such as network instability, flaky tests, or temporary infrastructure outages&mdash;can be resolved with automated retry mechanisms. Retry policies define backoff strategies, including exponential backoff and jitter to prevent cascading failures.</p>
+      <p >Transient failures&mdash;such as network instability, flaky tests, or <BlogLink title="temporary infrastructure outages" slug="blog/zero-downtime-architecture" />&mdash;can be resolved with automated retry mechanisms. Retry policies define backoff strategies, including exponential backoff and jitter to prevent cascading failures.</p>
       <h3 >Code Reversion</h3>
       <p >When a newly introduced change breaks the build, automated rollback mechanisms revert the commit. Git-based workflows use git bisect to isolate problematic commits, and CI tools like Jenkins and GitHub Actions trigger automated rollbacks.</p>
       <h3 >Container and Environment Recovery</h3>
@@ -60,7 +61,7 @@ export const linkTags = frontmatter.linkTags;
       <p  role="presentation">Container restarts: Restarting misconfigured or failed containers.</p>
       </li>
       <li  aria-level="1">
-      <p  role="presentation">Reprovisioning ephemeral environments: Infrastructure-as-Code (IaC) tools like Terraform and Kubernetes Operators redeploy failing environments.</p>
+      <p  role="presentation">Reprovisioning ephemeral environments: Infrastructure-as-Code (IaC) tools like Terraform and <BlogLink title="Kubernetes Operators redeploy" slug="blog/kubernetes-why-its-foundation-not-destination" /> failing environments.</p>
       </li>
       </ul>
       <h3 >Dependency Conflict Resolution</h3>
@@ -88,7 +89,7 @@ export const linkTags = frontmatter.linkTags;
      <h3 >Machine Learning-Driven Failure Classification</h3>
       <p >Supervised learning models classify build failures based on historical labeled datasets. Models trained with techniques such as decision trees, random forests, and neural networks predict failure types.</p>
       <h3 >Predictive Analysis for Proactive Recovery</h3>
-      <p >Predictive models analyze CI pipeline trends to anticipate failures before they occur. Anomalous patterns in build duration, resource consumption, or test execution are flagged.</p>
+      <p >Predictive models analyze <BlogLink title="CI pipeline trends" slug="blog/ci-isn-t-just-for-dev-ops" /> to anticipate failures before they occur. Anomalous patterns in build duration, resource consumption, or test execution are flagged.</p>
       <h3 >Auto-Scaling Infrastructure</h3>
       <p >Dynamic resource allocation ensures that CI/CD environments scale in response to workload demands. Kubernetes Horizontal Pod Autoscaler (HPA) adjusts pod replicas based on CPU or memory usage, preventing build failures due to resource exhaustion.</p>
       <h3 >Integrating Observability</h3>

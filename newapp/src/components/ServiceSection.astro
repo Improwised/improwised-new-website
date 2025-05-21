@@ -5,10 +5,8 @@ import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import CustomCard from "./CustomCard.astro";
 ---
 
-<section
-    class="section overflow-hidden relative py-10 md:py-40 section-bg"
->
-    <!-- <svg
+<section class="section overflow-hidden relative py-10 md:py-40 section-bg">
+  <!-- <svg
         viewBox="0 0 1440 181"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -50,34 +48,36 @@ import CustomCard from "./CustomCard.astro";
             ></defs
         ></svg
     > -->
-    <div class="container">
-        <div
-            class="md:mb-12 text-center flex mx-auto max-w-2xl flex-col items-center justify-center"
+  <div class="container">
+    <div
+      class="md:mb-12 text-center flex mx-auto max-w-2xl flex-col items-center justify-center"
+    >
+      <Badge variant="outline" class="py-1">
+        <CircleUserRound class="mr-1" size={18} />
+        <span class="text-xs font-bold md:text-sm tracking-wider font-manrope"
+          >Services</span
         >
-            <Badge variant="outline" class="py-1">
-                <CircleUserRound class="mr-1" size={18} />
-                <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Services</span>
-            </Badge>
-            <SectionTitle text="Our" primaryColorText="Services" />
-        </div>
-        <CustomCard collectionName="services" />
+      </Badge>
+      <SectionTitle text="Our" primaryColorText="Services" />
     </div>
+    <CustomCard collectionName="services" />
+  </div>
 </section>
 
 <script is:inline>
-    // Function to update gradient position
-    function updateGradient(event) {
-        const rect = event.currentTarget.getBoundingClientRect();
-        gradientX = event.clientX - rect.left;
-        gradientY = event.clientY - rect.top;
+  // Function to update gradient position
+  function updateGradient(event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    gradientX = event.clientX - rect.left;
+    gradientY = event.clientY - rect.top;
 
-        // Update the style dynamically
-        const target = event.currentTarget;
-        target.style.setProperty("--gradient-x", `${gradientX}px`);
-        target.style.setProperty("--gradient-y", `${gradientY}px`);
-    }
+    // Update the style dynamically
+    const target = event.currentTarget;
+    target.style.setProperty("--gradient-x", `${gradientX}px`);
+    target.style.setProperty("--gradient-y", `${gradientY}px`);
+  }
 </script>
 
 <style>
-    @reference "tailwindcss";
+  @reference "tailwindcss";
 </style>

@@ -1,6 +1,5 @@
 ---
 import Layout from "$lib/layouts/Layout.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "$lib/consts";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import SectionTitle from "$lib/components/common/SectionTitle.svelte";
@@ -23,7 +22,20 @@ import EventSlider from "$lib/components/EventSlider.astro";
 const marqueeClass = "animate-marquee"; // or "animate-marquee"
 const marqueeClassReverse = "animate-marquee-reverse"; // or "animate-marquee"
 
-const peopleImages = [person1, person2];
+const founders = [
+	{
+		name: "Rakshit Menpara",
+		designation: "CTO, Improwised Technologies",
+		image: person1,
+		details: "With 14 years of expertise in cloud-native applications and infrastructure, Rakshit specializes in Platform Engineering, helping enterprises and SaaS companies build scalable, automated, and developer-friendly solutions. He is passionate about optimizing deployments, enabling effective monitoring, and enhancing developer productivity."
+	},
+	{
+		name: "Shailesh Davara",
+		designation: "CEO, Improwised Technologies",
+		image: person2,
+		details: "Focused on solving real business challenges with technology, Shailesh leads with a vision to simplify and streamline complex workflows. Under his leadership, Improvised has built cloud-agnostic solutions that ensure high availability, scalability, and performance while maintaining a 100% job success score and 88% client retention."
+	}
+];
 
 const teamsData = await getCollection("teams", ({ data }) => {
 	return data;
@@ -156,27 +168,32 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 							style={`--gradient-x: ${gradientX}px; --gradient-y: ${gradientY}px;`}
 							onmousemove="updateGradient(event)"
 						>
-							<Card.Header
-								class="flex flex-row items-center space-x-4 pb-6"
-							>
-								<div class="flex max-md:gap-1.5 ml-3 group">
-									{
-										peopleImages.map((src, index) => (
-											<Image
-												src={src}
-												alt={`Person ${index + 1}`}
-												class="profile-img"
-											/>
-										))
-									}
-								</div>
-								<Card.Title
-									class="font-bold text-first-color font-manrope text-[16px] leading-[22px] md:text-[24px] md:leading-[30px] md:tracking-[0.02em]"
+							<Card.Title
+									class="py-4 text-center mx-auto max-sm:w-65 md:py-8 font-bold text-first-color font-manrope text-[20px] leading-[22px] md:text-[24px] md:leading-[30px] md:tracking-[0.02em]"
 								>
-									Rakshit and Shailesh<br />founding the
+									Rakshit and Shailesh founding the
 									company
 								</Card.Title>
-							</Card.Header>
+							<div class="flex flex-col md:flex-row">
+								{
+									founders.map((founder, index) => (
+										<div class="py-6 px-8">
+											<div class={`flex items-center gap-4 md:justify-center`}>
+												<Image
+													src={founder.image}
+													alt={`Person ${index + 1}`}
+													class="profile-img"
+												/>
+												<div>
+													<p class="founder-name text-third-color">{founder.name}</p>
+													<p class="founder-designation">{founder.designation}</p>
+												</div>
+											</div>
+											<p class="pt-4 md:pt-6 small-text lg:text-para">{founder.details}</p>
+										</div>
+									))
+								}
+							</div>
 						</div>
 					</Card.Root>
 				</div>
@@ -525,7 +542,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 	@reference "tailwindcss";
 	
 	.profile-img {
-		@apply md:w-16 md:h-16 w-8 h-8 rounded-full -ml-3 transition-all duration-300 ring-2 ring-white;
+		@apply md:w-16 md:h-16 w-12 h-12 rounded-full transition-all duration-300 ring-2 ring-white;
 	}
 
 	.profile-img:hover {

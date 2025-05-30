@@ -53,7 +53,7 @@ layer(base);
 }
 
 @utility founder-designation {
-  @apply text-[16px] leading-[20px] lg:text-[18px] lg:leading-[28px] tracking-[0.02em] font-normal;
+  @apply text-[15px] leading-[20px] lg:text-[18px] lg:leading-[28px] tracking-[0.02em] font-normal;
 }
 
 @utility founder-details {

@@ -2,9 +2,9 @@
 import { Image } from "astro:assets";
 import { Button } from "$lib/components/ui/button";
 import { BASE_URL } from "$lib/consts";
-import person1 from "$lib/images/people/Circle1.png";
-import person2 from "$lib/images/people/Circle2.png";
-import person3 from "$lib/images/people/Circle3.png";
+import thumbnail1 from "$lib/images/people/1.png";
+import thumbnail2 from "$lib/images/people/2.png";
+import thumbnail3 from "$lib/images/people/3.png";
 import Particle from "$lib/components/common/Particle.svelte";
 import { getCollection } from "astro:content";
 import lightBgImage from "$lib/images/homepage/light-bg-gradient.svg";
@@ -15,7 +15,7 @@ import heroDarkDotImage from "$lib/images/homepage/dark-herodot.svg";
 // import Particles from "$lib/scripts/particles";
 const clientsCollection = await getCollection("clients");
 const clients = clientsCollection.flatMap((client) => client.data.clients);
-const peopleImages = [person3, person2, person1];
+const thumbnail = [thumbnail1, thumbnail2, thumbnail3];
 ---
 
 <section
@@ -63,7 +63,7 @@ const peopleImages = [person3, person2, person1];
       Trusted by <span class="font-bold mx-1">200+</span> professionals
       <span class="flex ml-4 group">
         {
-          peopleImages.map((src, index) => (
+          thumbnail.map((src, index) => (
             <Image
               loading="lazy"
               src={src}

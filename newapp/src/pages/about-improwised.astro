@@ -177,7 +177,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 							<div class="flex flex-col md:flex-row">
 								{
 									founders.map((founder, index) => (
-										<div class="py-6 px-8">
+										<div class="py-6 px-8 flex flex-col items-start">
 											<div class={`flex items-center gap-4 md:justify-center`}>
 												<Image
 													src={founder.image}
@@ -186,7 +186,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 												/>
 												<div>
 													<p class="founder-name text-third-color">{founder.name}</p>
-													<p class="founder-designation">{founder.designation}</p>
+													<p class="founder-designation max-md:mt-[1.5px] ">{founder.designation}</p>
 												</div>
 											</div>
 											<p class="pt-4 md:pt-6 small-text lg:text-para">{founder.details}</p>

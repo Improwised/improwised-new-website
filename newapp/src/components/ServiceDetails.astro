@@ -1,0 +1,66 @@
+---
+import { BASE_URL } from "$lib/consts";
+import SectionTitle from "$lib/components/common/SectionTitle.svelte";
+import { Badge } from "$lib/components/ui/badge";
+import { Button } from "$lib/components/ui/button";
+import { Image } from "astro:assets";
+import PESection from "$lib/components/PESection.astro"
+import { CircleUserRound } from "lucide-svelte";
+import ServiceCard from "$lib/components/ServiceCard.astro"
+import ServiceApproach from "$lib/components/ServiceApproach.astro";
+import CaseStudiesSection from "$lib/components/CaseStudiesSection.astro";
+import CTASection from "$lib/components/CTASection.astro";
+import solution2 from "$lib/images/services/solutions-2.svg"
+import mobileSolution from "$lib/images/services/mobileSolutions.svg"
+
+const { title, description, block, cardSectionPrimaryTitle, cardSectionTitle, serviceCardCollection, serviceApproachPrimaryTitle, serviceApproachTitle, serviceApproach, isSectionTitlePrimary = "true" } = Astro.props;
+---
+
+<section>
+    <section class="section1 flex flex-col gap-10 pt-30 pb-20 md:pt-60 md:pb-[240px] bg-platform">
+        <div class="container flex flex-col justify-center items-center">
+            <div class="relative text-center mb-10 max-w-2xl mx-auto aos-init aos-animate">
+                <h1 class="main-heading-small md:main-heading text-main-heading-color">{title}</h1>
+                <p class="mt-4 small-text font-roboto md:text-para text-third-color">{description}</p>
+            </div>
+            <Button aria-label="Explore Solutions" href={`${BASE_URL}/contact/`} class="button-bg">Get In Touch</Button>
+        </div>
+        <div class="w-full flex justify-center mt-6 md:mt-3">
+          <Image class="hidden md:block" alt="building block" src={solution2}/>
+          <Image width={300} class="block md:hidden" alt="building block" src={mobileSolution}/>
+        </div>
+    </section>
+
+    <section class="section2 overflow-x-hidden py-10 md:py-40 section-bg">
+        <PESection block={block} />
+    </section>
+
+    <section class="section3 relative section-bg">
+        <div class="container py-10 md:py-40">
+          <div class="flex mx-auto max-w-2xl flex-col items-center justify-center">
+            <Badge variant="outline" class="py-1">
+              <CircleUserRound class="mr-1" size={18} />
+              <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Services</span>
+            </Badge>
+            <SectionTitle primaryColorText={cardSectionPrimaryTitle} text={cardSectionTitle} class="text-center md:w-4/5" isPrimaryTextInitial={isSectionTitlePrimary}/>
+          </div>
+          <ServiceCard collectionName={serviceCardCollection} />
+        </div>
+    </section>
+
+    <section class="section4 py-10 md:py-40 overflow-x-hidden section-bg">
+        <div class="container">
+          <div class="flex mx-auto max-w-2xl flex-col items-start md:items-center justify-center">
+            <Badge variant="outline" class="py-1">
+            <CircleUserRound class="mr-1" size={18} />
+            <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">How We Do It</span>
+          </Badge>
+            <SectionTitle text={serviceApproachTitle} primaryColorText={serviceApproachPrimaryTitle} class="md:whitespace-pre-wrap max-md:text-left md:text-center md:w-5/6"/>
+          </div>
+          <ServiceApproach collectionName={serviceApproach} />
+        </div>
+    </section>
+
+    <CaseStudiesSection/>
+    <CTASection />
+</section>

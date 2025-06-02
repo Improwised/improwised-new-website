@@ -13,14 +13,17 @@ import { CircleUserRound, CloudUpload } from "lucide-svelte";
 import hrLine from "$lib/images/hrline.svg";
 ---
 
-<section class="relative py-10 md:py-40 overflow-x-hidden section-bg">
+<section class="relative py-10 md:py-40 overflow-x-hidden bg-white">
   <div class="container relative z-10">
     <div class="grid grid-cols-1 md:gap-16 md:mb-16 relative">
       <div class="relative flex flex-col md:flex-row items-center md:gap-16">
         <div>
           <Badge variant="outline" class="py-1">
             <CircleUserRound class="mr-1" size={18} />
-            <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Service</span>
+            <span
+              class="text-xs font-bold md:text-sm tracking-wider font-manrope"
+              >Service</span
+            >
           </Badge>
           <SectionTitle
             class="max-md:text-left"
@@ -31,19 +34,29 @@ import hrLine from "$lib/images/hrline.svg";
             class="mt-2 md:mt-6 max-w-2xl small-text md:text-para font-inter text-fourth-color"
             data-aos="fade-up"
           >
-          Accelerate innovation with Platform Engineering as a Service-automating workflows, standardizing infrastructure, and enabling seamless cloud-native scalability.
+            Accelerate innovation with Platform Engineering as a
+            Service-automating workflows, standardizing infrastructure, and
+            enabling seamless cloud-native scalability.
           </p>
-          <Button href=`${BASE_URL}/services/platform-engineering/` aria-label="Learn more about our services on the service page"  class="button-bg mt-4 md:my-12 md:text-[16px] font-manrope">Learn More</Button
+          <Button
+            href=`${BASE_URL}/services/platform-engineering/`
+            aria-label="Learn more about our services on the service page"
+            class="button-bg mt-4 md:my-12 md:text-[16px] font-manrope"
+            >Learn More</Button
           >
 
           <div class="hidden md:block">
             <Image src={hrLine} alt="horizontal-line" />
             <div class="flex items-center gap-4 md:mt-8">
-              <span  class="bg-primary2 flex items-center pointer-events-none p-4 rounded-lg text-white">
+              <span
+                class="bg-primary2 flex items-center pointer-events-none p-4 rounded-lg text-white"
+              >
                 <CloudUpload class="h-6 w-6" />
               </span>
               <p class="small-text md:text-para text-third-color">
-                Companies cut costs by 30% and boost performance with <strong>platform engineering</strong>—real results, proven impact.
+                Companies cut costs by 30% and boost performance with <strong
+                  >platform engineering</strong
+                >—real results, proven impact.
               </p>
             </div>
           </div>
@@ -65,11 +78,16 @@ import hrLine from "$lib/images/hrline.svg";
       <div class="md:hidden">
         <Image src={hrLine} alt="horizontal-line" />
         <div class="flex items-center gap-4 mt-5">
-          <Button href="#" class="bg-primary2 flex items-center py-6 pointer-events-none">
+          <Button
+            href="#"
+            class="bg-primary2 flex items-center py-6 pointer-events-none"
+          >
             <CloudUpload class="h-6 w-6" />
           </Button>
           <p class="text-para">
-            Companies cut costs by 30% and boost performance with <strong>platform engineering-real</strong> results, proven impact.
+            Companies cut costs by 30% and boost performance with <strong
+              >platform engineering-real</strong
+            > results, proven impact.
           </p>
         </div>
       </div>

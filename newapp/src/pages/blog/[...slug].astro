@@ -12,7 +12,8 @@ import detailsBg from "$lib/images/blogs/detailsBg.svg";
 import * as Card from "$lib/components/ui/card";
 import { Image } from "astro:assets";
 import avtarImage from "$lib/images/blogs/impro.png";
-import { formatDate } from "$lib/utils"
+import { formatDate, slugify } from "$lib/utils"
+import BlogSidebar from "$lib/components/BlogSidebar.svelte";
 
 export async function getStaticPaths() {
     const blogs = await getCollection("blogs");
@@ -90,27 +91,14 @@ const [{data:{seoTitle, seoDescription}}] = blogs.filter((blog) => blog.data.slu
                 </div>
             </div>
         </section>
-        <!-- <section class="pb-20">
-            <div class="relative">
-                <Card.Root
-                    class="shadow-xs border-0 w-full max-w-4xl mx-auto -mt-24"
-                >
-                    <div class="">
-                        <Card.Content>
-                            <Image
-                                alt="feature"
-                                class="w-full"
-                                src={blog.data.image}
-                            />
-                        </Card.Content>
-                        <Card.Footer />
-                    </div>
-                </Card.Root>
-            </div>
-        </section> -->
         <section class="pt-20 pb-10 section-bg">
             <div class="container">
-                <Content />
+                <div class="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-6">
+                    <BlogSidebar client:load items={blog.data.linkTags.map(tag => ({ text: tag, anchor: slugify(tag) }))} />
+                    <article class="blog-content">
+                        <Content />
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -189,5 +177,24 @@ const [{data:{seoTitle, seoDescription}}] = blogs.filter((blog) => blog.data.slu
         background-size: cover, contain;
         background-position: center, center;
         background-repeat: no-repeat, no-repeat;
+    }
+    .blog-content img {
+        width: 100%;
+        max-width: 800px;
+        padding: 5rem 0;
+        margin: 0 auto;
+        display: block;
+    }
+    .blog-content a {
+        color: #3b82f6;
+        text-decoration: underline;
+    }
+    .blog-content h2 {
+        scroll-margin-top: 8rem;
+    }
+    @media (min-width: 1024px) {
+        .blog-content h2 {
+            scroll-margin-top: 7rem;
+        }
     }
 </style>

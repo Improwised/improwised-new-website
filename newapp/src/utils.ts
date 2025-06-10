@@ -77,3 +77,10 @@ export const formatDate = (dateString: string | number | Date) => {
     return date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 }
 
+export function slugify(text: string) {
+    return text
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9-]/g, '');
+}
+

@@ -1,0 +1,22 @@
+.blog-content img {
+    width: 100%;
+    max-width: 800px;
+    padding: 5rem 0;
+    margin: 0 auto;
+    display: block;
+}
+
+.blog-content a {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+.blog-content h2 {
+    scroll-margin-top: 8rem;
+}
+
+@media (min-width: 1024px) {
+    .blog-content h2 {
+        scroll-margin-top: 7rem;
+    }
+}

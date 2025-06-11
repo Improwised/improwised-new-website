@@ -21,8 +21,11 @@ blocks:
 text: "Building Blocks Of Scalable"
 primaryText: "Cloud Infrastructure"
 blockImage: "$lib/images/services/accordion_cis.svg"
+cardSectionPrimaryTitle: "Cloud-Native Solutions For"
+cardSectionTitle: "Scalable Growth"
+isSectionTitlePrimary: true
+serviceCardCollection: "corefeaturesCloudInfrastructureManagement"
+serviceApproachPrimaryTitle: "Cloud Infrastructure Management"
+serviceApproachTitle: "Key Business Benefits of"
+serviceApproach: "approaches2"
 ---
-
-import ServiceDetails from "$lib/components/ServiceDetails.astro"
-
-<ServiceDetails title={frontmatter.title} description={frontmatter.description} block='cloud-infrastructure-services' cardSectionPrimaryTitle='Cloud-Native Solutions For' cardSectionTitle='Scalable Growth' serviceCardCollection='corefeaturesCloudInfrastructureManagement' serviceApproachPrimaryTitle='Cloud Infrastructure Management' serviceApproachTitle='Key Business Benefits of' serviceApproach='approaches2' />

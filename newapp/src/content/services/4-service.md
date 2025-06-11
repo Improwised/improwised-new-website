@@ -17,8 +17,11 @@ blocks:
 text: "Transform Your Business With"
 primaryText: "Expert Technology Consulting"
 blockImage: "$lib/images/services/accordion_ts.svg"
+cardSectionPrimaryTitle: "Sustainable Growth"
+cardSectionTitle: "Your Technology Partner For "
+isSectionTitlePrimary: false
+serviceCardCollection: "corefeaturesTechnologyConsulting"
+serviceApproachPrimaryTitle: "Technology Consulting"
+serviceApproachTitle: "Key Business Benefits of"
+serviceApproach: "approaches4"
 ---
-
-import ServiceDetails from "$lib/components/ServiceDetails.astro"
-
-<ServiceDetails title={frontmatter.title} description={frontmatter.description} block='technology-consulting' cardSectionPrimaryTitle='Sustainable Growth' cardSectionTitle='Your Technology Partner For ' isSectionTitlePrimary={false} serviceCardCollection='corefeaturesTechnologyConsulting' serviceApproachPrimaryTitle='Technology Consulting' serviceApproachTitle='Key Business Benefits of' serviceApproach='approaches4' />

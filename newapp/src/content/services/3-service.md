@@ -19,9 +19,13 @@ blocks:
 text: "Future-Proof Your Software,"
 primaryText: "Stay Ahead Of Change"
 blockImage: "$lib/images/services/accordion_pm.svg"
+cardSectionPrimaryTitle: "Modernization Approach"
+cardSectionTitle: "Our"
+isSectionTitlePrimary: false
+serviceCardCollection: "corefeaturesProductModernization"
+serviceApproachPrimaryTitle: "Product Modernization"
+serviceApproachTitle: "Key Business Benefits of"
+serviceApproach: "approaches3"
 ---
 
-import ServiceDetails from "$lib/components/ServiceDetails.astro"
-
-<ServiceDetails title={frontmatter.title} description={frontmatter.description} block='product-modernization' cardSectionPrimaryTitle='Modernization Approach' cardSectionTitle='Our' isSectionTitlePrimary={false} serviceCardCollection='corefeaturesProductModernization' serviceApproachPrimaryTitle='Product Modernization' serviceApproachTitle='Key Business Benefits of' serviceApproach='approaches3' />
 

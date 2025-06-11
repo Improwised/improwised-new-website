@@ -285,8 +285,11 @@ blocks:
 text: "Building Blocks Of A"
 primaryText: "Scalable Platform"
 blockImage: "$lib/images/services/accordion_pe.svg"
+cardSectionPrimaryTitle: "Core Features"
+cardSectionTitle: "Of Our Platform Engineering"
+isSectionTitlePrimary: true
+serviceCardCollection: "corefeatures"
+serviceApproachPrimaryTitle: "Platform Engineering"
+serviceApproachTitle: "Key Business Benefits Of"
+serviceApproach: "approaches"
 ---
-
-import ServiceDetails from "$lib/components/ServiceDetails.astro"
-
-<ServiceDetails title={frontmatter.title} description={frontmatter.description} block='platform-engineering' cardSectionPrimaryTitle='Core Features' cardSectionTitle='Of Our Platform Engineering' serviceCardCollection='corefeatures' serviceApproachPrimaryTitle='Platform Engineering' serviceApproachTitle='Key Business Benefits Of' serviceApproach='approaches' />

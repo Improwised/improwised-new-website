@@ -70,7 +70,14 @@ const services = defineCollection({
 				description: z.string()
 			})).optional(),
 		})).optional(),
-		blockImage: image()
+		blockImage: image(),
+		cardSectionPrimaryTitle: z.string(),
+		cardSectionTitle: z.string(),
+		isSectionTitlePrimary: z.boolean().optional(),
+		serviceCardCollection: z.string(),
+		serviceApproachPrimaryTitle: z.string(),
+		serviceApproachTitle: z.string(),
+		serviceApproach: z.string()
 	}),
 });
 

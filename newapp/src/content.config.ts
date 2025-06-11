@@ -46,8 +46,7 @@ const services = defineCollection({
 	schema: ({ image }) => z.object({
 		title: z.string(),
 		slug: z.string(),
-		lightImage: image(),
-		darkImage: image(),
+		lightImage: image().optional(),
 		description: z.string(),
 		order: z.number(), // Add order field
 		text: z.string(),

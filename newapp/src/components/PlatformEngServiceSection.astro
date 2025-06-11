@@ -3,12 +3,8 @@ import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import { Image } from "astro:assets";
 import { Badge } from "$lib/components/ui/badge";
 import { Button } from "$lib/components/ui/button";
-
 import { BASE_URL } from "$lib/consts";
-import platformEngImage from "$lib/images/services/plarformEng.svg";
-import platformEngImage2 from "$lib/images/services/platformImage-2.svg";
-import platformEngImage3 from "$lib/images/services/PlatformEngineering-3.svg";
-import servicesBg from "$lib/images/services/home-pe-bg.svg";
+import servicesBg from "$lib/images/services/home-service-bg.svg";
 import { CircleUserRound, CloudUpload } from "lucide-svelte";
 import hrLine from "$lib/images/hrline.svg";
 ---
@@ -54,7 +50,7 @@ import hrLine from "$lib/images/hrline.svg";
         >
           <Image
             src={servicesBg}
-            width={800}
+            width={750}
             alt="Platform Engineering"
             data-aos="fade-left"
             class="rounded-medium"

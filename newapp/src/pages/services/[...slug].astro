@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "$lib/layouts/Layout.astro";
-import { render } from "astro:content";
+import ServiceDetails from "$lib/components/ServiceDetails.astro"
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
@@ -12,18 +12,16 @@ export async function getStaticPaths() {
 }
 type Props = CollectionEntry<"services">;
 
-const service = Astro.props;
-const { Content } = await render(service);
-const d = await render(service)
+const { data } = Astro.props;
 
 // Meta title and description
 const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == service.data.slug)
-
+const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == data.slug)
 ---
 
 <Layout title={title} description={description}>
   <main class="main-content z-10">
-    <Content />
+
+    <ServiceDetails title={data.title} description={data.description} block={data.slug} cardSectionPrimaryTitle={data.cardSectionPrimaryTitle} cardSectionTitle={data.cardSectionTitle} isSectionTitlePrimary={data.isSectionTitlePrimary} serviceCardCollection={data.serviceCardCollection} serviceApproachPrimaryTitle={data.serviceApproachPrimaryTitle} serviceApproachTitle={data.serviceApproachTitle} serviceApproach={data.serviceApproach} />
   </main>
 </Layout>

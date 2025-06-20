@@ -5,7 +5,7 @@
 
 ## Development Prospective
 
-> 🔹**Node js 22.0.0**
+> 🔹**Node js 22.13.1**
 > 🔹[Astro](https://astro.build/)
 > 🔹[Astro Svelte](https://docs.astro.build/en/guides/integrations-guide/svelte/)
 > 🔹[Shadcn Svelte](https://www.shadcn-svelte.com/docs/installation/astro)

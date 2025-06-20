@@ -33,12 +33,17 @@ const formatDate = (date: Date) => {
 };
 
 // Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "careers")
-
+const careers = await getCollection("careers");
+const [
+  {
+    data: { seoTitle, seoDescription },
+  },
+] = careers.filter(
+  (career) => career.data.slug === Astro.url.pathname.split("/").at(-2),
+);
 ---
 
-<Layout title={title} description={description}>
+<Layout title={seoTitle} description={seoDescription}>
   <main class="main-content z-10">
     <div>
       <section class="section1 bg-career py-10 md:py-40 pt-[30%] lg:pt-52">

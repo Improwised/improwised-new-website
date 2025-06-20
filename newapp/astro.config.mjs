@@ -12,13 +12,13 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.improwised.com',
-
+    
   redirects: {
-    "/sitemap.xml": "/sitemap-index.xml"
+    "/sitemap.xml" : "/sitemap-index.xml"
   },
 
   // Subdirectory path
-  base: '/improwised-new-website/newapp',
+  // base: '/improwised-new-website/newapp',
 
   // Default output directory
   outDir: 'dist',
@@ -26,7 +26,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [svelte(), mdx(), sitemap()],
-
+  
   // server: {
   //   host: true,
   //   port: 4321

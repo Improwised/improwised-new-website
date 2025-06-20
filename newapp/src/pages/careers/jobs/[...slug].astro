@@ -10,16 +10,7 @@ import person2 from "$lib/images/people/2.svg";
 import person3 from "$lib/images/people/3.svg";
 const peopleImages = [person1, person2, person3];
 import { Image } from "astro:assets";
-import {
-  Star,
-  Facebook,
-  Linkedin,
-  MapPinned,
-  Mail,
-  AlarmClock,
-  User,
-  Calendar,
-} from "lucide-svelte";
+import { Star, Facebook, Linkedin, MapPinned, Mail, AlarmClock, User, Calendar } from "lucide-svelte";
 import line from "$lib/images/line.svg";
 
 export async function getStaticPaths() {
@@ -42,17 +33,12 @@ const formatDate = (date: Date) => {
 };
 
 // Meta title and description
-const careers = await getCollection("careers");
-const [
-  {
-    data: { seoTitle, seoDescription },
-  },
-] = careers.filter(
-  (career) => career.data.slug === Astro.url.pathname.split("/").at(-2),
-);
+const seoContents = await getCollection('seocontent');
+const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "careers")
+
 ---
 
-<Layout title={seoTitle} description={seoDescription}>
+<Layout title={title} description={description}>
   <main class="main-content z-10">
     <div>
       <section class="section1 bg-career py-10 md:py-40 pt-[30%] lg:pt-52">
@@ -68,12 +54,10 @@ const [
               <div class="flex items-center gap-3">
                 <div class="flex items-center gap-3">
                   {
-                    career.data.tags.map((tag) => (
+                    (career.data.tags).map((tag) => (
                       <div class="flex items-center gap-3">
-                        <p class="small-text md:text-para text-third-color">
-                          {tag}
-                        </p>
-                        <div class="rounded-full h-[6px] w-[6px] bg-[#292929] dark:bg-white" />
+                        <p class="small-text md:text-para text-third-color">{tag}</p>
+                        <div class="rounded-full h-[6px] w-[6px] bg-[#292929] dark:bg-white"></div>
                       </div>
                     ))
                   }
@@ -169,223 +153,105 @@ const [
         <div class="container flex flex-col md:flex-row gap-6">
           <div class="flex flex-col gap-10 md:w-[70%]">
             <!-- overview -->
-            <div
-              class="p-6 md:p-8 border-1 bg-card-bg border-card-border rounded-[16px]"
-            >
-              <p
-                class="font-semibold text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color"
-              >
-                Overview
-              </p>
-              <p
-                class="small-text text-fourth-color md:text-para pt-4 md:pt-6 lg:w-4/5"
-              >
-                {career.data.overview}
-              </p>
+            <div class="p-6 md:p-8 border-1 bg-card-bg border-card-border rounded-[16px]">
+              <p class="font-semibold text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color">Overview</p>
+              <p class="small-text text-fourth-color md:text-para pt-4 md:pt-6 lg:w-4/5">{career.data.overview}</p>
             </div>
 
             <!-- objectives -->
             <div>
-              <div
-                class="p-6 md:p-8 border-1 bg-card-bg border-card-border rounded-[16px]"
-              >
-                <p
-                  class="font-semibold text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color"
-                >
-                  Objective
-                </p>
+              <div class="p-6 md:p-8 border-1 bg-card-bg border-card-border rounded-[16px]">
+                <p class="font-semibold text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color">Objective</p>
 
                 <div class="flex flex-col gap-4 pt-4 md:pt-6">
-                  {
-                    career.data.objectives.map((objective) => (
-                      <div class="flex gap-6 items-start justify-start">
-                        <div class="rounded-full h-[6px] p-[3px] bg-[#292929] dark:bg-white mt-2.5" />
-                        <p class="small-text md:text-para text-fourth-color">
-                          {objective}
-                        </p>
-                      </div>
-                    ))
-                  }
+                  {career.data.objectives.map((objective) => (
+                    <div class="flex gap-6 items-start justify-start">
+                      <div class="rounded-full h-[6px] p-[3px] bg-[#292929] dark:bg-white mt-2.5"></div>
+                      <p class="small-text md:text-para text-fourth-color">{objective}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
 
             <!-- responsibility -->
             <div>
-              <div
-                class="p-6 md:p-8 border-1 bg-card-bg border-card-border rounded-[16px]"
-              >
-                <p
-                  class="font-semibold text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color"
-                >
-                  Responsibility
-                </p>
+              <div class="p-6 md:p-8 border-1 bg-card-bg border-card-border rounded-[16px]">
+                <p class="font-semibold text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color">Responsibility</p>
 
                 <div class="flex flex-col gap-4 pt-4 md:pt-6">
-                  {
-                    career.data.responsibilities.map((responsibility) => (
-                      <div class="flex gap-6 items-start justify-start">
-                        <div class="rounded-full h-[6px] p-[3px] bg-[#292929] dark:bg-white mt-2.5" />
-                        <p class="small-text md:text-para text-fourth-color">
-                          {responsibility}
-                        </p>
-                      </div>
-                    ))
-                  }
+                  {career.data.responsibilities.map((responsibility) => (
+                    <div class="flex gap-6 items-start justify-start">
+                      <div class="rounded-full h-[6px] p-[3px] bg-[#292929] dark:bg-white mt-2.5"></div>
+                      <p class="small-text md:text-para text-fourth-color">{responsibility}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
 
             <!-- quallification -->
             <div>
-              <div
-                class="p-6 md:p-8 border-1 bg-card-bg border-card-border rounded-[16px]"
-              >
-                <p
-                  class="font-semibold text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color"
-                >
-                  Skill & Qualification
-                </p>
+              <div class="p-6 md:p-8 border-1 bg-card-bg border-card-border rounded-[16px]">
+                <p class="font-semibold text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color">Skill & Qualification</p>
 
                 <div class="flex flex-col gap-4 pt-4 md:pt-6">
-                  {
-                    career.data.qualifications.map((quallification) => (
-                      <div class="flex gap-6 items-start justify-start">
-                        <div class="rounded-full h-[6px] p-[3px] bg-[#292929] dark:bg-white mt-2.5" />
-                        <p class="small-text md:text-para text-fourth-color">
-                          {quallification}
-                        </p>
-                      </div>
-                    ))
-                  }
+                  {career.data.qualifications.map((quallification) => (
+                    <div class="flex gap-6 items-start justify-start">
+                      <div class="rounded-full h-[6px] p-[3px] bg-[#292929] dark:bg-white mt-2.5"></div>
+                      <p class="small-text md:text-para text-fourth-color">{quallification}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
 
           <!-- apply for job -->
-          <div
-            class="p-8 border-1 rounded-[16px] bg-card-bg border-card-border h-max flex flex-col gap-4 md:gap-5"
-          >
+          <div class="p-8 border-1 rounded-[16px] bg-card-bg border-card-border h-max flex flex-col gap-4 md:gap-5">
             <div class="flex flex-col gap-4">
               <div class="flex gap-4">
-                <MapPinned
-                  class="text-primary"
-                  trokeWidth={0.5}
-                  width="26"
-                  height="26"
-                />
-                <p
-                  class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope"
-                >
-                  {career.data.place}
-                </p>
+                <MapPinned class="text-primary" trokeWidth={0.5} width="26" height="26" />
+                <p class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope">{career.data.place}</p>
               </div>
-              <p
-                class="font-inter text-[16px] leading-[24px] font-normal text-[#737373] md:w-4/5"
-              >
-                Please send us your detailed CV to apply for this job
-              </p>
+              <p class="font-inter text-[16px] leading-[24px] font-normal text-[#737373] md:w-4/5">Please send us your detailed CV to apply for this job</p>
             </div>
             <div class="flex flex-col gap-6">
-              <a
-                class="flex gap-5 hover:cursor-pointer"
-                href={"mailto:careers@improwised.com?subject=Dropped Resume to get job"}
-              >
-                <div
-                  class="w-12 h-12 md:w-14 md:h-14 bg-[#f7f7f7] dark:bg-[#f7f7f712] rounded-full flex items-center justify-center p-3"
-                >
-                  <Mail
-                    class="text-primary"
-                    trokeWidth={0.5}
-                    width="24"
-                    height="24"
-                  />
-                </div>
-                <div>
-                  <p
-                    class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope"
-                  >
-                    careers@improwised.com
-                  </p>
-                  <p
-                    class="font-inter text-[16px] leading-[24px] font-normal text-[#737373]"
-                  >
-                    Contact Email
-                  </p>
-                </div>
+              <a class="flex gap-5 hover:cursor-pointer" href={"mailto:careers@improwised.com?subject=Dropped Resume to get job"}>
+                  <div class="w-12 h-12 md:w-14 md:h-14 bg-[#f7f7f7] dark:bg-[#f7f7f712] rounded-full flex items-center justify-center p-3">
+                      <Mail class="text-primary" trokeWidth={0.5} width="24" height="24" />
+                  </div>
+                  <div>
+                      <p class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope">careers@improwised.com</p>
+                      <p class="font-inter text-[16px] leading-[24px] font-normal text-[#737373]">Contact Email</p>
+                  </div>
               </a>
               <div class="flex gap-5">
-                <div
-                  class="w-12 h-12 md:w-14 md:h-14 bg-[#f7f7f7] dark:bg-[#f7f7f712] rounded-full flex items-center justify-center p-3"
-                >
-                  <AlarmClock
-                    class="text-primary"
-                    trokeWidth={0.5}
-                    width="24"
-                    height="24"
-                  />
-                </div>
-                <div>
-                  <p
-                    class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope"
-                  >
-                    {career.data.jobType}
-                  </p>
-                  <p
-                    class="font-inter text-[16px] leading-[24px] font-normal text-[#737373]"
-                  >
-                    Job Type
-                  </p>
-                </div>
+                  <div class="w-12 h-12 md:w-14 md:h-14 bg-[#f7f7f7] dark:bg-[#f7f7f712] rounded-full flex items-center justify-center p-3">
+                      <AlarmClock class="text-primary" trokeWidth={0.5} width="24" height="24" />
+                  </div>
+                  <div>
+                      <p class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope">{career.data.jobType}</p>
+                      <p class="font-inter text-[16px] leading-[24px] font-normal text-[#737373]">Job Type</p>
+                  </div>
               </div>
               <div class="flex gap-5">
-                <div
-                  class="w-12 h-12 md:w-14 md:h-14 bg-[#f7f7f7] dark:bg-[#f7f7f712] rounded-full flex items-center justify-center p-3"
-                >
-                  <User
-                    class="text-primary"
-                    trokeWidth={0.5}
-                    width="24"
-                    height="24"
-                  />
-                </div>
-                <div>
-                  <p
-                    class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope"
-                  >
-                    {career.data.jobCategory}
-                  </p>
-                  <p
-                    class="font-inter text-[16px] leading-[24px] font-normal text-[#737373]"
-                  >
-                    Level
-                  </p>
-                </div>
+                  <div class="w-12 h-12 md:w-14 md:h-14 bg-[#f7f7f7] dark:bg-[#f7f7f712] rounded-full flex items-center justify-center p-3">
+                      <User class="text-primary" trokeWidth={0.5} width="24" height="24" />
+                  </div>
+                  <div>
+                      <p class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope">{career.data.jobCategory}</p>
+                      <p class="font-inter text-[16px] leading-[24px] font-normal text-[#737373]">Level</p>
+                  </div>
               </div>
               <div class="flex items-start gap-5">
-                <div
-                  class="w-12 h-12 md:w-14 md:h-14 bg-[#f7f7f7] dark:bg-[#f7f7f712] rounded-full flex items-center justify-center p-3"
-                >
-                  <Calendar
-                    class="text-primary"
-                    trokeWidth={0.5}
-                    width="24"
-                    height="24"
-                  />
-                </div>
-                <div>
-                  <p
-                    class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope"
-                  >
-                    {formatDate(career.data.postedDate)}
-                  </p>
-                  <p
-                    class="font-inter text-[16px] leading-[24px] font-normal text-[#737373]"
-                  >
-                    Date
-                  </p>
-                </div>
+                  <div class="w-12 h-12 md:w-14 md:h-14 bg-[#f7f7f7] dark:bg-[#f7f7f712] rounded-full flex items-center justify-center p-3">
+                      <Calendar class="text-primary" trokeWidth={0.5} width="24" height="24" />
+                  </div>
+                  <div>
+                      <p class="font-semibold text-[16px] leading-[24px] tracking-[0.02em] font-manrope">{formatDate(career.data.postedDate)}</p>
+                      <p class="font-inter text-[16px] leading-[24px] font-normal text-[#737373]">Date</p>
+                  </div>
               </div>
             </div>
             <div class="flex flex-col justify-between gap-10 items-stretch">

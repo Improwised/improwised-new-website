@@ -290,6 +290,8 @@ const careers = defineCollection({
 	schema: () => z.object({
 		title: z.string(),
 		slug: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
 		tags: z.array(z.string()),
 		overview: z.string(),
 		objectives: z.array(z.string()),

@@ -112,6 +112,27 @@ layer(base);
   }
 }
 
+@utility legal-details {
+  & h2 {
+    @apply font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight scroll-mt-[8rem] lg:scroll-mt-28;
+  }
+  & p {
+    @apply text-[16px] leading-[30px] tracking-tight  mt-2;
+  }
+  & hr {
+    @apply my-8 border-b-1 border-[#D6D6D6];
+  }
+  & ul {
+    @apply list-disc pl-4;
+  }
+  & .gdprTable {
+    @apply max-w-full overflow-x-scroll mt-1;
+  }
+  & table td {
+    @apply border border-gray-300 p-5
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

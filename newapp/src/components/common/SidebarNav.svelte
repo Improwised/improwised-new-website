@@ -97,7 +97,7 @@
 
   <!-- Sidebar Navigation -->
   <nav
-    class={`lg:block blog-scrollbar-hide sticky top-28 max-h-[calc(100vh-7rem)] ${isMenuOpen ? "block" : "hidden"} overflow-y-auto h-fit`}
+    class={`lg:block blog-scrollbar-hide sticky top-28 max-h-[calc(100vh-35rem)] lg:max-h-[calc(100vh-7rem)] overflow-y-scroll ${isMenuOpen ? "block" : "hidden"} overflow-y-auto h-fit`}
   >
     <div class="flex flex-col gap-4">
       {#each sections as section}

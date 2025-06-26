@@ -163,6 +163,17 @@ const privacyPolicy = defineCollection({
 	}),
 });
 
+const termsOfUse = defineCollection({
+	loader: glob({ base: './src/content/pages/terms-of-use', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		title: z.string(),
+		description: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
+	}),
+});
+
 const homepage = defineCollection({
 	loader: glob({ base: './src/content/pages/homepage', pattern: '**/*.{md,mdx}' }),
 	schema: () => z.object({
@@ -397,4 +408,4 @@ const reviews = defineCollection({
 	}),
 });
 
-export const collections = { reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, corefeaturesProductModernization, corefeaturesTechnologyConsulting, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs };
+export const collections = { reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, corefeaturesProductModernization, corefeaturesTechnologyConsulting, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse };

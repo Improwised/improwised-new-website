@@ -1,0 +1,102 @@
+---
+import { getCollection, getEntry, render } from "astro:content";
+import Layout from "$lib/layouts/Layout.astro";
+import Sidebar from "$lib/components/Sidebar.astro";
+
+type LegalCollections = "privacyPolicy" | "termsOfUse";
+type LegalSlug = "privacy-policy" | "terms-of-use";
+
+const { collectionName, slug, text, primaryText } = Astro.props;
+
+const [{data:{description, seoTitle, seoDescription}}] = (await getCollection(collectionName as LegalCollections))
+
+const entry = (await getEntry(collectionName as LegalCollections, slug as LegalSlug))
+if (!entry) {
+  throw new Error("Could not find legal information");
+}
+const { Content } = await render(entry);
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <div class="main-content">
+    <section
+      id="section1"
+      class="section1 text-center py-16 bg-blogs-outer px-6 relative pt-30 pb-20 md:pt-80 md:pb-[240px]"
+    >
+      <div class="container">
+        <h1
+          class="font-manrope mt-4 mb-6 max-md:text-center main-heading-small md:main-heading text-main-heading-color"
+        >
+          {text}<span class="text-sub-heading-color">{primaryText}</span>
+        </h1>
+        <p class="mt-4 text-para max-w-2xl mx-auto text-third-color">
+          {description}
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-20 section-bg">
+      <div class="container grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6">
+        <Sidebar insideMdx="inside" />
+        <main
+          id="main"
+          class="border-[#D6D6D6] overflow-x-hidden pl-0.5 legal-details"
+        >
+          <Content />
+        </main>
+      </div>
+    </section>
+  </div>
+</Layout>
+<style>
+    .bg-image {
+        background-size: cover, contain;
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .nav-item {
+        position: relative;
+        padding-left: 15px;
+        transition: all 0.3s ease-in-out;
+        border-left: 2px solid transparent; /* Blue border */
+    }
+
+    .nav-item.active {
+        border-left: 2px solid #141414; /* Blue border */
+        padding-left: 20px;
+    }
+</style>
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".scroll-link");
+        const mainContainer = document.getElementById("main");
+
+        links.forEach((link) => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                // Remove active class from all links
+                links.forEach((l) =>
+                    l.parentElement.classList.remove("active"),
+                );
+
+                // Add active class to the clicked link's parent <li>
+                this.parentElement.classList.add("active");
+
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const offset = 200; // Adjust based on header height
+                    const elementPosition =
+                        targetElement.getBoundingClientRect().top +
+                        window.scrollY;
+                    window.scrollTo({
+                        top: elementPosition - offset,
+                        behavior: "smooth",
+                    });
+                }
+            });
+        });
+    });
+</script>

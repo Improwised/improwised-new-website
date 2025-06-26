@@ -1,10 +1,10 @@
 <script lang="ts">
   import ChevronRight from "lucide-svelte/icons/chevron-right";
   import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
-  import { innerWidth } from 'svelte/reactivity/window';
 
   export let services: string | any[] = [];
   export let baseUrl: string = "";
+  export let currentUrl: string[] = [];
   let width: number = 0;
   let align: "center" | "start" | "end" | undefined;
   $: align = width < 500 ? 'center' : 'start';
@@ -13,8 +13,8 @@
 <svelte:window bind:innerWidth={width} />
 
 <DropdownMenu.Root preventScroll={false}>
-  <DropdownMenu.Trigger class="group flex items-center space-x-1 hover:cursor-pointer">
-    <span class="small-text text-first-color group-hover:text-blue-hover">Service</span>
+  <DropdownMenu.Trigger class={`group flex items-center space-x-1 hover:cursor-pointer ${currentUrl.includes("services") ? "text-blue-hover" : "text-first-color"}`}>
+    <span class="small-text group-hover:text-blue-hover">Service</span>
     <ChevronRight class="w-4 h-4 group-hover:text-blue-hover" />
   </DropdownMenu.Trigger>
   <DropdownMenu.Content align="start" class="rounded-[6px] dropdown-bg border-0 p-[15px]">

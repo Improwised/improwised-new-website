@@ -54,7 +54,7 @@ import { Menu, X } from "lucide-svelte";
       <li class="content-center px-1">
         <a
           href={`${BASE_URL}`}
-          class="hover:text-blue-hover py-2 transition lg:px-3 small-text text-first-color"
+          class={`hover:text-blue-hover py-2 transition lg:px-3 small-text ${currentUrl.at(1) == "" ? "text-blue-hover" : "text-first-color" }`}
           >Home</a
         >
       </li>
@@ -62,20 +62,20 @@ import { Menu, X } from "lucide-svelte";
         <a
           href={`${BASE_URL}/about-improwised/`}
           aria-label="Learn more about our company on the About Us page"
-          class="hover:text-blue-hover py-2 transition lg:px-3 small-text text-first-color"
+          class={`hover:text-blue-hover py-2 transition lg:px-3 small-text ${currentUrl.includes("about-improwised") ? "text-blue-hover" : "text-first-color"}`}
           >About Us</a
         >
       </li>
       <li class="content-center px-1">
         <span class="hover:text-blue-hover py-2 mb-5 transition lg:px-3">
-          <Dropdown client:load services={services} baseUrl={BASE_URL} />
+          <Dropdown client:load services={services} baseUrl={BASE_URL} currentUrl={currentUrl} />
         </span>
       </li>
       <li class="content-center px-1">
         <a
           href={`${BASE_URL}/case-studies/`}
           aria-label="Learn more about our Case Studies"
-          class="hover:text-blue-hover py-2 transition lg:px-3 small-text text-first-color"
+          class={`hover:text-blue-hover py-2 transition lg:px-3 small-text ${currentUrl.includes("case-studies") ? "text-blue-hover" : "text-first-color"}`}
           >Case Studies</a
         >
       </li>
@@ -83,7 +83,7 @@ import { Menu, X } from "lucide-svelte";
         <a
           href={`${BASE_URL}/careers/`}
           aria-label="Our Career Page"
-          class="hover:text-blue-hover py-2 transition lg:px-3 small-text text-first-color"
+          class={`hover:text-blue-hover py-2 transition lg:px-3 small-text ${currentUrl.includes("careers") ? "text-blue-hover" : "text-first-color"}`}
           >Careers</a
         >
       </li>
@@ -91,7 +91,7 @@ import { Menu, X } from "lucide-svelte";
         <a
           href={`${BASE_URL}/blog/`}
           aria-label="Our Blog Page"
-          class="hover:text-blue-hover py-2 transition lg:px-3 small-text text-first-color"
+          class={`hover:text-blue-hover py-2 transition lg:px-3 small-text ${currentUrl.includes("blog") ? "text-blue-hover" : "text-first-color"}`}
           >Blog</a
         >
       </li>
@@ -134,37 +134,37 @@ import { Menu, X } from "lucide-svelte";
         </div>
       </div>
       <ul class="flex flex-col lg:gap-3">
-        <li class="hover:text-blue-hover py-2 transition lg:px-3 text-first-color">
+        <li class={`hover:text-blue-hover py-2 transition lg:px-3 ${currentUrl.at(1) == "" ? "text-blue-hover" : "text-first-color" }`}>
           <a
             href={`${BASE_URL}`}
               >Home</a
           >
         </li>
-        <li class="hover:text-blue-hover py-2 transition lg:px-3 text-first-color">
+        <li class={`hover:text-blue-hover py-2 transition lg:px-3 ${currentUrl.includes("about-improwised") ? "text-blue-hover" : "text-first-color"}`}>
           <a
             href={`${BASE_URL}/about-improwised`}
             aria-label="Learn more about our company on the About Us page"
             >About Us</a
           >
         </li>
-        <li class="py-2 transition lg:px-3 text-first-color">
+        <li class={`py-2 transition lg:px-3 ${currentUrl.includes("services") ? "text-blue-hover" : "text-first-color"}`}>
           <Dropdown client:load services={services} baseUrl={BASE_URL} />
         </li>
-        <li class="hover:text-blue-hover py-2 transition lg:px-3 text-first-color">
+        <li class={`hover:text-blue-hover py-2 transition lg:px-3 ${currentUrl.includes("case-studies") ? "text-blue-hover" : "text-first-color"}`}>
           <a
             href={`${BASE_URL}/case-studies`}
             aria-label="Learn more about our Case Studies"
             >Case Studies</a
           >
         </li>
-        <li class="hover:text-blue-hover py-2 transition lg:px-3 text-first-color">
+        <li class={`hover:text-blue-hover py-2 transition lg:px-3 ${currentUrl.includes("careers") ? "text-blue-hover" : "text-first-color"}`}>
           <a
             href={`${BASE_URL}/careers`}
             aria-label="Our Career Page"
             >Careers</a
           >
         </li>
-        <li class="hover:text-blue-hover py-2 transition lg:px-3 text-first-color">
+        <li class={`hover:text-blue-hover py-2 transition lg:px-3 ${currentUrl.includes("blog") ? "text-blue-hover" : "text-first-color"}`}>
           <a
             href={`${BASE_URL}/blog`}
             aria-label="Our Blog Page"

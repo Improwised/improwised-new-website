@@ -1,17 +1,14 @@
 ---
 import Layout from "$lib/layouts/Layout.astro";
-import SectionTitle from "$lib/components/common/SectionTitle.svelte";
-import backImage from "$lib/images/blogs/back.svg";
-import bg2Image from "$lib/images/blogs/bg2.svg";
 import { getCollection } from "astro:content";
 import Sidebar from "$lib/components/Sidebar.astro";
+import GithubSlugger from "github-slugger";
 
-// Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "terms-of-use")
+const slugger = new GithubSlugger();
+const [{data:{description, seoTitle, seoDescription}}] = await getCollection("privacyPolicy");
 ---
 
-<Layout title={title} description={description}>
+<Layout title={seoTitle} description={seoDescription}>
     <div class="main-content">
         <section id="section1"
             class="section1 text-center py-16 px-6 bg-blogs-outer relative pt-30 pb-20 md:pt-80 md:pb-[240px]"
@@ -25,7 +22,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                 </h1>
                 <!-- Subtext -->
                 <p class="mt-4 text-para max-w-2xl mx-auto text-third-color">
-                    Welcome to improwised.com. These Terms and Conditions ("Terms") govern your use of our website and services.
+                    {description}
                 </p>
             </div>
         </section>
@@ -40,7 +37,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     class="border-[#D6D6D6]"
                 >
                     <section
-                        id="Introduction"
+                        id={slugger.slug("Introduction")}
                         class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28"
                     >
                         <h2
@@ -58,7 +55,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     </section>
 
                     <section
-                        id="Use of the Website"
+                        id={slugger.slug("Use of the Website")}
                         class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28"
                     >
                         <h2
@@ -82,7 +79,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     </section>
 
                     <section
-                        id="Services"
+                        id={slugger.slug("Services")}
                         class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28"
                     >
                         <h2
@@ -101,7 +98,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     </section>
 
                     <section
-                        id="Intellectual Property"
+                        id={slugger.slug("Intellectual Property")}
                         class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28"
                     >
                         <h2
@@ -117,7 +114,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     </section>
 
                     <section
-                        id="Data Privacy"
+                        id={slugger.slug("Data Privacy")}
                         class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28"
                     >
                         <h2
@@ -131,7 +128,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                           </ul>
                     </section>
                     <section
-                        id="Disclaimers and Limitation of Liability"
+                        id={slugger.slug("Disclaimers and Limitation of Liability")}
                         class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28"
                     >
                         <h2
@@ -145,7 +142,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                           </ul>
                     </section>
 
-                    <section id="other-important-information" class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("other-important-information")} class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]"
                         >Indemnification
@@ -157,7 +154,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                         </p>
                     </section>
                     <section
-                        id="Governing Law and Dispute Resolution"
+                        id={slugger.slug("Governing Law and Dispute Resolution")}
                         class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28"
                     >
                         <h2
@@ -171,7 +168,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                           </ul>
 
                     </section>
-                    <section id="Changes to These Terms" class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Changes to These Terms")} class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]"
                         >Changes to These Terms
@@ -184,7 +181,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     </section>
 
                     <section
-                    id="Contact Us"
+                    id={slugger.slug("Contact Us")}
                     class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28"
                 >
                     <h2

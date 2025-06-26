@@ -66,17 +66,29 @@ layer(base);
   }
 
   & h2 {
-    @apply font-manrope text-[22px] font-bold leading-[28px] tracking-tight pb-5;
+    @apply font-manrope text-[22px] font-bold leading-[28px] tracking-tight pb-5 scroll-mt-[8rem] lg:scroll-mt-28;
   }
 
   & h3 {
-    @apply font-manrope text-[20px] font-bold leading-[26px] tracking-tight pb-5;
+    @apply font-manrope text-[20px] font-bold leading-[26px] tracking-tight pb-5 scroll-mt-[8rem] lg:scroll-mt-28;
   }
   & h4 {
-    @apply font-manrope text-[18px] font-bold leading-[24px] tracking-tight pb-5;
+    @apply font-manrope text-[18px] font-bold leading-[24px] tracking-tight pb-5 scroll-mt-[8rem] lg:scroll-mt-28;
   }
   & p {
     @apply text-para pb-5;
+  }
+  & a {
+    @apply underline
+  }
+  & .sidebar a {
+    @apply no-underline;
+  }
+  & table {
+    @apply max-w-60 overflow-x-scroll
+  }
+  & table tbody tr td {
+    @apply border border-gray-300 p-5
   }
 }
 

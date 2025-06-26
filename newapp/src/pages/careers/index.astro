@@ -38,9 +38,7 @@ const reviews = await getCollection("reviews", ({data: {reviews}}) => {
   return reviews
 })
 
-// Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "careers")
+const [{ data : {seoTitle, seoDescription}}] = await getCollection('career');
 
 const contactfaqs = await getCollection('contactfaqs');
 const faqs = contactfaqs.flatMap(contactFaqs => contactFaqs.data.contactfaqs);
@@ -50,7 +48,7 @@ let gradientX = 45.5;
 let gradientY = -200;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={seoTitle} description={seoDescription}>
   <main class="main-content">
     <section class="section1 bg-career py-10 md:py-40 pt-[30%] lg:pt-52">
       <div

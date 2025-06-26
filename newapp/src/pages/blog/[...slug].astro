@@ -1,18 +1,16 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 import Layout from "$lib/layouts/Layout.astro";
 import { BASE_URL } from "$lib/consts";
 import { Badge } from "$lib/components/ui/badge";
-import { render } from "astro:content";
 import CTASection from "$lib/components/CTASection.astro";
 import { CircleUserRound } from "lucide-svelte";
-import ShareDropdown from "$lib/components/common/ShareDropdown.svelte";
 import SectionTitle from "$lib/components/common/SectionTitle.svelte";
-import detailsBg from "$lib/images/blogs/detailsBg.svg";
 import * as Card from "$lib/components/ui/card";
 import { Image } from "astro:assets";
 import avtarImage from "$lib/images/blogs/impro.png";
 import { formatDate } from "$lib/utils"
+import Sidebar from "$lib/components/Sidebar.astro";
 
 export async function getStaticPaths() {
     const blogs = await getCollection("blogs");
@@ -44,6 +42,8 @@ const recommendedBlogs = sortedBlogs.slice(0, 3);
 // Meta title and description
 const blogs = await getCollection('blogs');
 const [{data:{seoTitle, seoDescription}}] = blogs.filter((blog) => blog.data.slug === Astro.url.pathname.split('/').at(-2))
+
+const url: string[] = Astro.url.pathname.split('/')
 ---
 
 <Layout title={seoTitle} description={seoDescription}>
@@ -90,27 +90,13 @@ const [{data:{seoTitle, seoDescription}}] = blogs.filter((blog) => blog.data.slu
                 </div>
             </div>
         </section>
-        <!-- <section class="pb-20">
-            <div class="relative">
-                <Card.Root
-                    class="shadow-xs border-0 w-full max-w-4xl mx-auto -mt-24"
-                >
-                    <div class="">
-                        <Card.Content>
-                            <Image
-                                alt="feature"
-                                class="w-full"
-                                src={blog.data.image}
-                            />
-                        </Card.Content>
-                        <Card.Footer />
-                    </div>
-                </Card.Root>
-            </div>
-        </section> -->
+       
         <section class="pt-20 pb-10 section-bg">
-            <div class="container">
-                <Content />
+            <div class="blog-details relative container grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6">
+                { url.includes("blog") && url.at(-2) !== "blog" && <Sidebar insideMdx="inside" class="h-full" />}
+                <div>
+                    <Content />
+                </div>
             </div>
         </section>
 

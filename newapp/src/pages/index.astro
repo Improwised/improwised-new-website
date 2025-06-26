@@ -11,12 +11,10 @@ import CaseStudiesSection from "$lib/components/CaseStudiesSection.astro";
 import TechResultSection from "$lib/components/TechResultSection.astro";
 import TechSection from "$lib/components/TechSection.astro";
 
-// Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "homepage")
 
+const [{ data : {seoTitle, seoDescription}}] = await getCollection('homepage');
 ---
-<Layout title={title} description={description}>
+<Layout title={seoTitle} description={seoDescription}>
 	<main class="main-content">
 		<HeroSection />
 		<PlatformEngServiceSection />

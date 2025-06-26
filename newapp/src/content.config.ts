@@ -41,11 +41,13 @@ const industries = defineCollection({
 
 const services = defineCollection({
 
-	loader: glob({ base: './src/content/services', pattern: '**/*.{md,mdx}' }),
+	loader: glob({ base: './src/content/pages/services', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
 	schema: ({ image }) => z.object({
 		title: z.string(),
 		slug: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
 		lightImage: image().optional(),
 		description: z.string(),
 		order: z.number(), // Add order field
@@ -124,8 +126,7 @@ const contactfaqs = defineCollection({
 });
 
 const blogs = defineCollection({
-
-	loader: glob({ base: './src/content/blogs', pattern: '**/*.{md,mdx}' }),
+	loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
 	schema: ({ image }) => z.object({
 		title: z.string(),
@@ -139,6 +140,45 @@ const blogs = defineCollection({
 		publishDate: z.coerce.date(),
 		linkTags: z.array(z.string()).optional(),
 		blockCategory: z.string().optional(),
+	}),
+});
+
+const blog = defineCollection({
+	loader: glob({ base: './src/content/pages/blog', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		title: z.string(),
+		description: z.string(),
+	}),
+});
+
+const privacyPolicy = defineCollection({
+	loader: glob({ base: './src/content/pages/privacy-policy', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		title: z.string(),
+		description: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
+	}),
+});
+
+const homepage = defineCollection({
+	loader: glob({ base: './src/content/pages/homepage', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
+	}),
+});
+
+const aboutImprowised = defineCollection({
+	loader: glob({ base: './src/content/pages/about-improwised', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		description: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
 	}),
 });
 
@@ -156,6 +196,33 @@ const casestudies = defineCollection({
 		tags: z.array(z.string()),
 	}),
 });
+
+const casestudy = defineCollection({
+	loader: glob({ base: './src/content/pages/casestudies', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
+	}),
+}); 
+
+const career = defineCollection({
+	loader: glob({ base: './src/content/pages/careers', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
+	}),
+}); 
+
+const contactUs = defineCollection({
+	loader: glob({ base: './src/content/pages/contact-us', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
+	}),
+}); 
 
 const teams = defineCollection({
 	loader: glob({ base: './src/content/teams', pattern: '**/*.{md,mdx}' }),
@@ -330,16 +397,4 @@ const reviews = defineCollection({
 	}),
 });
 
-const seocontent = defineCollection({
-	loader: glob({ base: './src/content/seocontent', pattern: '**/*.{md,mdx}' }),
-	// Type-check frontmatter using a schema
-	schema: () => z.array(
-		z.object({
-			slug: z.string(),
-			title: z.string(),
-			description: z.string(),
-		})
-	),
-});
-
-export const collections = { reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams,blogs, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, corefeaturesProductModernization, corefeaturesTechnologyConsulting, aboutusPoints, seocontent, contactfaqs };
+export const collections = { reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, corefeaturesProductModernization, corefeaturesTechnologyConsulting, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs };

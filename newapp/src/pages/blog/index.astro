@@ -6,7 +6,7 @@ import backImage from "$lib/images/blogs/back.svg";
 import bg2Image from "$lib/images/blogs/bg2.svg";
 import BlogsCarousel from "$lib/components/common/BlogsCarousel.svelte";
 import SectionTitle from "$lib/components/common/SectionTitle.svelte";
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 import { Badge } from "$lib/components/ui/badge";
 import { Button } from "$lib/components/ui/button";
 
@@ -26,9 +26,7 @@ import avtarImage from "$lib/images/blogs/impro.png";
 import { CircleUserRound } from "lucide-svelte/icons";
 import { formatDate } from "$lib/utils"
 
-// Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "blog")
+const [{ data : {title, description}}] = await getCollection('blog');
 ---
 
 <Layout title={title} description={description}>

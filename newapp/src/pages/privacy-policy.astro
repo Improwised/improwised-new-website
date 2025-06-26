@@ -1,17 +1,14 @@
 ---
-import { getCollection } from "astro:content";
-import SectionTitle from "$lib/components/common/SectionTitle.svelte";
+import { getCollection} from "astro:content";
 import Layout from "$lib/layouts/Layout.astro";
-import backImage from "$lib/images/blogs/back.svg";
-import bg2Image from "$lib/images/blogs/bg2.svg";
 import Sidebar from "$lib/components/Sidebar.astro";
+import GithubSlugger from "github-slugger";
 
-// Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "privacy-policy")
+const slugger = new GithubSlugger();
+const [{data:{description, seoTitle, seoDescription}}] = await getCollection("privacyPolicy");
 ---
 
-<Layout title={title} description={description}>
+<Layout title={seoTitle} description={seoDescription}>
     <div class="main-content">
         <section id="section1" class="section1 text-center py-16 bg-blogs-outer px-6 relative pt-30 pb-20 md:pt-80 md:pb-[240px]">
             <!-- Main Heading -->
@@ -23,7 +20,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                 </h1>
                 <!-- Subtext -->
                 <p class="mt-4 text-para max-w-2xl mx-auto text-third-color">
-                    Understand your rights, responsibilities, and usage policies for our services.
+                    { description }
                 </p>
             </div>
         </section>
@@ -36,7 +33,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
             
                 <main id="main"
                     class="border-[#D6D6D6] overflow-x-hidden">
-                    <section id="Introduction" class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Introduction")} class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Introduction
@@ -66,7 +63,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                         </p>
                     </section>
 
-                    <section id="Definitions" class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Definitions")} class="mb-8 border-b-2 pb-8 border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Definitions
@@ -104,7 +101,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 
                     </section>
 
-                    <section id="Information Collection & Use" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Information Collection & Use")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Information Collection & Use
@@ -115,7 +112,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                         </p>
                     </section>
 
-                    <section id="Types of Data collected" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Types of Data collected")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Types of Data collected
@@ -199,7 +196,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     </section>
 
 
-                    <section id="Use of Data" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Use of Data")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Use of Data
@@ -231,7 +228,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 
                     </section>
 
-                    <section id="Retention of Data" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Retention of Data")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Retention of Data
@@ -257,7 +254,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     </section>
 
 
-                    <section id="Transfer of Data" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Transfer of Data")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Transfer of Data
@@ -286,7 +283,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 
                     </section>
 
-                    <section id="Disclosure of Data" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Disclosure of Data")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Disclosure of Data
@@ -321,7 +318,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 
                     </section>
 
-                    <section id="Security of Data" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Security of Data")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Security of Data
@@ -336,7 +333,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                     </section>
 
 
-                    <section id="Our Data Protection Rights Under General Data Protection Regulation (GDPR)" class="mb-8 border-b-2 pb-8 w-full border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                    <section id={slugger.slug("Our Data Protection Rights Under General Data Protection Regulation (GDPR)")} class="mb-8 border-b-2 pb-8 w-full border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                         <h2
                             class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                             Our Data Protection Rights Under General Data Protection Regulation (GDPR)
@@ -579,7 +576,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 
                         </section>
 
-                        <section id="Your Data Protection Rights under the California Consumer Privacy Act (CCPA)" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("Your Data Protection Rights under the California Consumer Privacy Act (CCPA)")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 Your Data Protection Rights under the California Consumer Privacy Act (CCPA)
@@ -660,7 +657,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 
                         </section>
 
-                        <section id="Service Providers" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("Service Providers")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 Service Providers
@@ -676,7 +673,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                             </p>
                         </section>
 
-                        <section id="Analytics" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("Analytics")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 Analytics
@@ -686,7 +683,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                             </p>
                         </section>
 
-                        <section id="CI/CD tools" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("CI/CD tools")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 CI/CD tools
@@ -697,7 +694,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                             </p>
                         </section>
 
-                        <section id="Behavioral Remarketing" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("Behavioral Remarketing")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 Behavioral Remarketing
@@ -709,7 +706,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                             </p>
                         </section>
 
-                        <section id="Links to Other Sites" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("Links to Other Sites")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 Links to Other Sites
@@ -725,7 +722,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 
                             </p>
                         </section>
-                        <section id="Children’s Privacy" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("Children’s Privacy")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 Children’s Privacy
@@ -744,7 +741,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                             </p>
                         </section>
 
-                        <section id="Changes to This Privacy Policy" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("Changes to This Privacy Policy")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 Changes to This Privacy Policy
@@ -765,7 +762,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
                             </p>
                         </section>
 
-                        <section id="Contact Us" class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
+                        <section id={slugger.slug("Contact Us")} class="mb-8 border-b-2 pb-8  border-[#D6D6D6] scroll-mt-[8rem] lg:scroll-mt-28">
                             <h2
                                 class="font-manrope text-[22px] max-md:text-[20px] leading-[28px] tracking-tight color-[#141414]">
                                 Contact Us

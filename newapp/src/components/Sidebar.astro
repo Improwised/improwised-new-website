@@ -1,53 +1,76 @@
 ---
-import SidebarNav from '$lib/components/common/SidebarNav.svelte';
-import { getCollection } from 'astro:content';
+import SidebarNav from "$lib/components/common/SidebarNav.svelte";
+import { getCollection } from "astro:content";
+import GithubSlugger from "github-slugger";
 
+const slugger = new GithubSlugger();
 const { insideMdx } = Astro.props;
-let tags: string[] = [];
 
-const url: string[] = Astro.url.pathname.split('/')
-
-if (url.includes("blog") && url.at(-2) !== "blog") {
-    const [{data: {linkTags}}] = await getCollection('blogs', (blog) => blog.id == url.at(-2))
-    tags = linkTags as string[];
-    
-} else if(Astro.url.pathname.split('/').includes("privacy-policy")) {
-    tags = [
-        "Introduction",
-        "Definitions",
-        "Information Collection & Use",
-        "Types of Data collected",
-        "Use of Data",
-        "Retention of Data",
-        "Transfer of Data",
-        "Disclosure of Data",
-        "Security of Data",
-        "Our Data Protection Rights Under General Data Protection Regulation (GDPR)",
-        "Your Data Protection Rights under the California Consumer Privacy Act (CCPA)",
-        "Service Providers",
-        "Analytics",
-        "CI/CD tools",
-        "Behavioral Remarketing",
-        "Links to Other Sites",
-        "Children’s Privacy",
-        "Changes to This Privacy Policy",
-        "Contact Us"
-    ]
-} else {
-    tags = [
-        "Introduction",
-        "Use of the Website",
-        "Services",
-        "Intellectual Property",
-        "Data Privacy",
-        "Disclaimers and Limitation of Liability",
-        "Indemnification",
-        "Governing Law and Dispute Resolution",
-        "Changes to These Terms",
-        "Contact Us"
-    ]
+interface Tag {
+  title: string;
+  id: string;
 }
 
+let tags: Tag[] = [];
+
+const url: string[] = Astro.url.pathname.split("/");
+
+const privacy_policy_tags = [
+  "Introduction",
+  "Definitions",
+  "Information Collection & Use",
+  "Types of Data collected",
+  "Use of Data",
+  "Retention of Data",
+  "Transfer of Data",
+  "Disclosure of Data",
+  "Security of Data",
+  "Our Data Protection Rights Under General Data Protection Regulation (GDPR)",
+  "Your Data Protection Rights under the California Consumer Privacy Act (CCPA)",
+  "Service Providers",
+  "Analytics",
+  "CI/CD tools",
+  "Behavioral Remarketing",
+  "Links to Other Sites",
+  "Children’s Privacy",
+  "Changes to This Privacy Policy",
+  "Contact Us",
+];
+
+const terms_of_use_tags = [
+  "Introduction",
+  "Use of the Website",
+  "Services",
+  "Intellectual Property",
+  "Data Privacy",
+  "Disclaimers and Limitation of Liability",
+  "Indemnification",
+  "Governing Law and Dispute Resolution",
+  "Changes to These Terms",
+  "Contact Us",
+];
+
+if (url.includes("blog") && url.at(-2) !== "blog") {
+  const [
+    {
+      data: { linkTags },
+    },
+  ] = await getCollection("blogs", (blog) => blog.id == url.at(-2));
+  tags = (linkTags as string[]).map((tag) => ({
+    title: tag,
+    id: slugger.slug(tag),
+  }));
+} else if (Astro.url.pathname.split("/").includes("privacy-policy")) {
+  tags = privacy_policy_tags.map((tag) => ({
+    title: tag,
+    id: slugger.slug(tag),
+  }));
+} else {
+  tags = terms_of_use_tags.map((tag) => ({
+    title: tag,
+    id: slugger.slug(tag),
+  }));
+}
 ---
 
-<SidebarNav sections={tags} client:only insideMdx={insideMdx}/>
+<SidebarNav sections={tags} client:only insideMdx={insideMdx} />

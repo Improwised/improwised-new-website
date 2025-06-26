@@ -13,13 +13,9 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"services">;
 
 const { data } = Astro.props;
-
-// Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == data.slug)
 ---
 
-<Layout title={title} description={description}>
+<Layout title={data.seoTitle} description={data.seoDescription}>
   <main class="main-content z-10">
 
     <ServiceDetails title={data.title} description={data.description} block={data.slug} cardSectionPrimaryTitle={data.cardSectionPrimaryTitle} cardSectionTitle={data.cardSectionTitle} isSectionTitlePrimary={data.isSectionTitlePrimary} serviceCardCollection={data.serviceCardCollection} serviceApproachPrimaryTitle={data.serviceApproachPrimaryTitle} serviceApproachTitle={data.serviceApproachTitle} serviceApproach={data.serviceApproach} />

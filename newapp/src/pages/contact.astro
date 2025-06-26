@@ -13,12 +13,10 @@ import { CONTACT_US_URL } from "$lib/consts"
 import backImage from "$lib/images/blogs/back.svg";
 import bg2Image from "$lib/images/blogs/bg2.svg";
 
-// Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "contact")
+const [{ data : {seoTitle, seoDescription}}] = await getCollection('contactUs');
 ---
 
-<Layout title={title} description={description}>
+<Layout title={seoTitle} description={seoDescription}>
   <main class="main-content">
 
     <section class="section1 text-center light-bg-image py-16 px-6 relative pt-30 pb-20 md:pt-80 md:pb-[240px]">

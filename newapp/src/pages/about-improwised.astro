@@ -59,12 +59,10 @@ const faqs = aboutusPointsCollection.flatMap(aboutusPoints => aboutusPoints.data
 let gradientX = 45.5;
 let gradientY = -200;
 
-// Meta title and description
-const seoContents = await getCollection('seocontent');
-const [{title, description}] = (seoContents[0].data).filter((content) => content.slug == "about-improwised")
+const [{ data : {description, seoTitle, seoDescription}}] = await getCollection('aboutImprowised');
 ---
 
-<Layout title={title} description={description}>
+<Layout title={seoTitle} description={seoDescription}>
 	<main class="main-content">
 		<section
 			class="section1 flex flex-col items-center justify-center text-center px-6 bg-image relative pt-30 pb-20 md:pt-80 md:pb-[240px]"
@@ -81,8 +79,7 @@ const [{title, description}] = (seoContents[0].data).filter((content) => content
 
 			<!-- Subtext -->
 			<p class="mt-4 text-para max-w-2xl mx-auto text-third-color">
-				At Improwised Technologies, we build cutting-edge solutions driven by a team that thrives on innovation. Our culture fosters collaboration, creativity, and a commitment to delivering excellence.
-
+				{description}
 			</p>
 			<div
 				class="absolute top-[-25.5%] right-[25.5%] h-full flex items-center justify-center move-animation max-md:hidden"

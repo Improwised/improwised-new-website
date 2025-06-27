@@ -42,11 +42,11 @@
 </script>
 
 {#if theme.darkTheme}
-    <Button variant="" id="sun" class="hover:cursor-pointer p-0 toggle-theme" on:click={turnLightMode}>
+    <Button variant="" id="sun" aria-label="light-mode-btn" class="hover:cursor-pointer p-0 toggle-theme" on:click={turnLightMode}>
         <Sun class="h-6 w-6" />
     </Button>
 {:else}
-    <Button variant="" id="moon" class="hover:cursor-pointer p-0 toggle-theme" on:click={turnDarkMode}>
+    <Button variant="" id="moon" aria-label="dark-mode-btn" class="hover:cursor-pointer p-0 toggle-theme" on:click={turnDarkMode}>
         <Moon class="h-6 w-6" />
     </Button>
 {/if}

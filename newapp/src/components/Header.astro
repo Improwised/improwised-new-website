@@ -24,12 +24,12 @@ import { Menu, X } from "lucide-svelte";
     class="relative container z-50 flex flex-col items-center justify-between lg:flex-row px-4 py-3"
   >
     <div id="impro-logo" class="z-50 flex w-full items-center justify-between lg:w-auto">
-      <a href={BASE_URL} class="flex items-center transition">
+      <a href={BASE_URL} class="flex items-center transition" aria-label="Improwised Technologies homepage - cloud infrastructure and platform engineering services">
         <Image
           src={Logo}
           class="w-[150px] lg:w-[200px]"
           alt={SITE_TITLE}
-          loading="lazy"
+          loading="eager"
           decoding="async"
         />
       </a>
@@ -53,6 +53,7 @@ import { Menu, X } from "lucide-svelte";
     <ul class="flex flex-col lg:flex-row lg:gap-3">
       <li class="content-center px-1">
         <a
+          aria-label="Improwised Technologies homepage - cloud infrastructure and platform engineering services"
           href={`${BASE_URL}`}
           class={`hover:text-blue-hover py-2 transition lg:px-3 small-text ${currentUrl.at(1) == "" ? "text-blue-hover" : "text-first-color" }`}
           >Home</a
@@ -98,7 +99,7 @@ import { Menu, X } from "lucide-svelte";
     </ul>
 
       <div class="mt-3 flex items-center gap-4 lg:hidden">
-        <Button href={`${BASE_URL}/contact/`} class="bg-black">
+        <Button href={`${BASE_URL}/contact/`} class="bg-black" aria-label="Go to Contact Us page">
           Contact Us
         </Button>
       </div>
@@ -106,7 +107,7 @@ import { Menu, X } from "lucide-svelte";
     <div>
       <div class="hidden items-center gap-4 lg:flex">
         <ToggleTheme client:only />
-        <Button href={`${BASE_URL}/contact/`} class="button-bg">
+        <Button href={`${BASE_URL}/contact/`} class="button-bg" aria-label="Go to Contact Us page">
           Contact Us
         </Button>
       </div>
@@ -122,7 +123,7 @@ import { Menu, X } from "lucide-svelte";
             src={Logo}
             class="w-[150px] lg:w-[200px]"
             alt={SITE_TITLE}
-            loading="lazy"
+            loading="eager"
             decoding="async"
           /></a
         >
@@ -137,6 +138,7 @@ import { Menu, X } from "lucide-svelte";
         <li class={`hover:text-blue-hover py-2 transition lg:px-3 ${currentUrl.at(1) == "" ? "text-blue-hover" : "text-first-color" }`}>
           <a
             href={`${BASE_URL}`}
+            aria-label="Improwised Technologies homepage - cloud infrastructure and platform engineering services"
               >Home</a
           >
         </li>
@@ -173,7 +175,7 @@ import { Menu, X } from "lucide-svelte";
         </li>
       </ul>
       <div class="mt-3 flex items-center gap-4 lg:hidden">
-        <Button href=`${BASE_URL}/contact` class="button-bg">
+        <Button href=`${BASE_URL}/contact` class="button-bg" aria-label="Go to Contact Us page">
           Contact Us
         </Button>
       </div>

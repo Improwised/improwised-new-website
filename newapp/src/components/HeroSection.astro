@@ -23,7 +23,7 @@ const thumbnail = [thumbnail1, thumbnail2, thumbnail3];
 >
   <div>
     <Image
-      loading="lazy"
+      loading="eager"
       alt="light-bg-image"
       decoding="async"
       src={lightBgImage}
@@ -31,7 +31,7 @@ const thumbnail = [thumbnail1, thumbnail2, thumbnail3];
     />
 
     <Image
-      loading="lazy"
+      loading="eager"
       decoding="async"
       alt="hero-dot-image"
       class="block dark:hidden absolute -z-1 top-0 bottom-0 left-0 right-0 h-full w-full object-cover"
@@ -39,7 +39,7 @@ const thumbnail = [thumbnail1, thumbnail2, thumbnail3];
     />
 
     <Image
-      loading="lazy"
+      loading="eager"
       decoding="async"
       alt="dark-bg-image"
       class="hidden dark:block absolute  top-0 bottom-0 left-0 right-0 h-full w-full object-cover"
@@ -47,7 +47,7 @@ const thumbnail = [thumbnail1, thumbnail2, thumbnail3];
     />
 
     <Image
-      loading="lazy"
+      loading="eager"
       decoding="async"
       alt="dark-dot-image"
       class="hidden dark:block absolute top-0 bottom-0 left-0 right-0 h-full w-full object-cover"
@@ -65,7 +65,7 @@ const thumbnail = [thumbnail1, thumbnail2, thumbnail3];
         {
           thumbnail.map((src, index) => (
             <Image
-              loading="lazy"
+              loading="eager"
               src={src}
               alt={`Person ${index + 1}`}
               class="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-1 md:border-2 border-white -ml-3 transition-all duration-300 ring-1 md:ring-2 ring-white hover:scale-125 hover:z-10 hover:ring-sky-200 dark:hover:ring-sky-200"
@@ -121,9 +121,10 @@ const thumbnail = [thumbnail1, thumbnail2, thumbnail3];
                 <Image
                   src={client.image}
                   alt={client.title}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
-                  class="mx-auto"
+                  height={40}
+                  class="w-auto"
                 />
               </div>
             </>

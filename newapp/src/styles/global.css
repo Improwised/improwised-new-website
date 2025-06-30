@@ -84,7 +84,7 @@
     @apply no-underline;
   }
   & table {
-    @apply max-w-60 overflow-x-scroll
+    @apply block overflow-x-scroll
   }
   & table tbody tr td {
     @apply border border-gray-300 p-5
@@ -124,8 +124,8 @@
   & ul {
     @apply list-disc pl-4;
   }
-  & .gdprTable {
-    @apply max-w-full overflow-x-scroll mt-1;
+  & table {
+    @apply block overflow-x-scroll mt-1;
   }
   & table td {
     @apply border border-gray-300 p-5

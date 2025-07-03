@@ -75,7 +75,7 @@
     @apply font-manrope text-[18px] font-bold leading-[24px] tracking-tight pb-5 scroll-mt-[8rem] lg:scroll-mt-28;
   }
   & p {
-    @apply text-para pb-5;
+    @apply text-para pb-3;
   }
   & a {
     @apply underline
@@ -89,6 +89,9 @@
   & table tbody tr td {
     @apply border border-gray-300 p-5
   }
+  li p {
+    @apply p-0;
+  } 
 }
 
 @utility service-details {

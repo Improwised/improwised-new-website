@@ -59,23 +59,27 @@
   @apply text-[16px] leading-[20px] md:text-[16px] md:leading-[24px] tracking-[0.02em] font-normal;
 }
 
-@utility blog-details {
-  & h1 {
-    @apply my-5 text-4xl lg:text-4xl;
+@utility blog-detail {
+  h2 {
+    @apply font-manrope text-[32px] leading-[40px] md:text-[36px] md:leading-[44px] font-[1000] mt-4 mb-2.5 scroll-mt-[8rem] lg:scroll-mt-28;
   }
-
-  & h2 {
-    @apply font-manrope text-[22px] font-bold leading-[28px] tracking-tight pb-5 scroll-mt-[8rem] lg:scroll-mt-28;
-  }
-
   & h3 {
-    @apply font-manrope text-[20px] font-bold leading-[26px] tracking-tight pb-5 scroll-mt-[8rem] lg:scroll-mt-28;
+    @apply font-manrope text-[26px] leading-[32px] font-extrabold mt-4 mb-1 scroll-mt-[8rem] lg:scroll-mt-28;
   }
-  & h4 {
-    @apply font-manrope text-[18px] font-bold leading-[24px] tracking-tight pb-5 scroll-mt-[8rem] lg:scroll-mt-28;
+  & img {
+    @apply my-5;
   }
   & p {
-    @apply text-para pb-3;
+    @apply text-[18px] leading-[28px] font-normal py-1;
+  }
+  & ul {
+    @apply list-disc flex flex-col gap-1.5 mb-0 pl-[17px];
+  } 
+  & ul p {
+    @apply py-0;
+  }
+  & strong {
+    @apply font-semibold;
   }
   & a {
     @apply underline
@@ -89,9 +93,6 @@
   & table tbody tr td {
     @apply border border-gray-300 p-5
   }
-  li p {
-    @apply p-0;
-  } 
 }
 
 @utility service-details {

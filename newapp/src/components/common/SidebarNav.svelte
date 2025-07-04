@@ -99,11 +99,14 @@
   <nav
     class={`lg:block blog-scrollbar-hide sticky top-28 max-h-[calc(100vh-35rem)] lg:max-h-[calc(100vh-7rem)] overflow-y-scroll ${isMenuOpen ? "block" : "hidden"} overflow-y-auto h-fit`}
   >
+    <div>
+      <p class="font-bold font-manrope text-2xl mb-3">Table of Contents</p>
+    </div>
     <div class="flex flex-col gap-4">
       {#each sections as section}
         <a
           href={`#${encodeURIComponent(section.id)}`}
-          class={`block font-semibold font-manrope pl-3 text-[14px] hover:text-blue-hover ${activeSection.id == section.id ? "text-blue-hover border-l-2 border-white" : "text-first-color"} md:text-[16px] md:leading-[24px] tracking-[0.02em`}
+          class={`block font-semibold font-manrope text-[14px] hover:text-blue-hover ${activeSection.id == section.id ? "text-blue-hover border-l-2 border-white" : "text-first-color"} ${isNaN(parseInt((section.id).split('-').at(0) as string)) ? '' : 'ml-2'} md:text-[16px] md:leading-[24px] tracking-[0.02em`}
         >
           {section.title}
         </a>

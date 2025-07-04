@@ -13,6 +13,16 @@ linkTags:
   - "What is Platform Engineering?"
   - "Why It Matters in 2025"
   - "What Makes a Great Platform Engineering Partner?"
+  - "1. Improwised Technologies"
+  - "2. InfraCloud Technologies"
+  - "3. Netris"
+  - "4. Solita"
+  - "5. Improving"
+  - "6. Arctiq"
+  - "7. Easecloud"
+  - "8. MKdev"
+  - "9. Stackgenie"
+  - "10. Xenonstack"
   - "Final Thoughts"
 ---
 
@@ -245,7 +255,7 @@ Each company on this list brings something unique—whether it's open-source lea
 
 **If you're just getting started?**  
 
-👉 Start with a free consultation from [Improwised Technologies](/contact/).  
+Start with a free consultation from [Improwised Technologies](/contact/).  
 
 We help you build a developer platform tailored to your team, your stack, and your goals.
 

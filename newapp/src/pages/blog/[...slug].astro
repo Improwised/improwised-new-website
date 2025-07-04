@@ -52,21 +52,18 @@ const url: string[] = Astro.url.pathname.split('/')
             class="section1 text-left py-40 px-6 bg-blog-details relative pt-[30%] md:pb-40 lg:pt-[12%]"
         >
             <!-- Main Heading -->
-            <div class="container">
+            <div class="container max-md:px-0 flex flex-col gap-3">
                 <p
                     class="font-manrope text-[#737373] uppercase font-extra-bold text-left text-[16px] leading-[24px] tracking-widest"
                 >
                     {formatDate(blog.data.publishDate)}
                 </p>
                 
-                <SectionTitle
-                    class="max-md:text-left main-heading-small md:main-heading"
-                    text={blog.data.title}
-                />
+                <h1 class="font-manrope text-main-heading-color max-md:text-left main-heading-small md:main-heading">{blog.data.title}</h1>
 
-                <div class="flex justify-between items-center gap-4">
+                <div class="flex justify-between items-center gap-4 mt-4">
                     <!-- Author Info -->
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-8">
                         <Image
                             alt="feature"
                             class="rounded-full"
@@ -92,7 +89,7 @@ const url: string[] = Astro.url.pathname.split('/')
         </section>
        
         <section class="pt-20 pb-10 section-bg">
-            <div class="blog-details relative container grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6">
+            <div class="blog-detail relative container grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6">
                 { url.includes("blog") && url.at(-2) !== "blog" && <Sidebar insideMdx="inside" class="h-full" />}
                 <div>
                     <Content />

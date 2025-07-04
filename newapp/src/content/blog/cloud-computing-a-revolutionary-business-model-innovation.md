@@ -6,7 +6,7 @@ seoTitle: 'Cloud Computing - A Revolutionary Business Model Innovation'
 seoDescription: 'See how cloud computing fuels business model innovation, boosts scalability, and drives growth. Compare AWS, Azure, GCP & explore hybrid-cloud strategies.'
 tags: [Optimization]
 publishDate: 2024-12-13
-author: 'Angita'
+author: 'Shailesh Davara'
 image: '$lib/images/blogs/Cloud-compiting-head.png'
 linkTags:
   - "The Cloud Revolution: A New Business Paradigm"

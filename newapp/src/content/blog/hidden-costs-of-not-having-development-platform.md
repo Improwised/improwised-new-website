@@ -6,7 +6,7 @@ seoTitle: "Hidden Costs of Skipping Dev Platforms | Avoid Engineering Debt | Imp
 seoDescription: "Uncover the hidden costs of lacking a standardized development platform—lost productivity, security risks & rising expenses. Learn why platform standardization matters."
 tags: [Platform Development, Security, Integration]
 publishDate: 2025-03-19
-author: "Angita"
+author: "Priyank Dhami"
 image: "$lib/images/blogs/Hidden-Costs-of-Not-Having-Development-Platform-head.webp"
 linkTags: 
    - Inconsistent Environments and Integration Challenges

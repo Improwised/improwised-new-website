@@ -66,6 +66,9 @@
   & h3 {
     @apply font-manrope text-[26px] leading-[32px] font-extrabold mt-4 mb-1 scroll-mt-[8rem] lg:scroll-mt-28;
   }
+  & h5 {
+    @apply font-manrope text-xl font-bold;
+  }
   & img {
     @apply my-5;
   }
@@ -92,6 +95,11 @@
   }
   & table tbody tr td {
     @apply border border-gray-300 p-5
+  }
+  & .author-details {
+  & p     { @apply pb-0 p-0; }
+  & img   { @apply my-0; }
+  & h3    { @apply my-0; }
   }
 }
 

@@ -6,7 +6,7 @@ seoTitle: "Kubernetes & Platform Engineering | Powering Cloud-Native Success | I
 seoDescription: "Learn how Kubernetes and platform engineering combine to streamline deployment, scale infrastructure, and power cloud-native apps with speed and reliability."
 tags: [Platform Engineering,Kubernetes]
 publishDate: 2025-03-21
-author: "Angita"
+author: "Rakshit Menpara"
 image: "$lib/images/blogs/Kubernetes-and-Platform-Engineering-head.webp"
 linkTags:
   - Kubernetes Ecosystem for Platform Engineering

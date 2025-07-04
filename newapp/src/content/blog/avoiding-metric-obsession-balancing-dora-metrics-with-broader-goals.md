@@ -6,7 +6,7 @@ seoTitle: 'Balancing DORA Metrics & Engineering Goals | Performance Insights | I
 seoDescription: 'DevOps Research and Assessment (DORA) metrics have become a cornerstone in evaluating software delivery performance.'
 tags: [DORA Metrics]
 publishDate: 2025-01-24
-author: 'Improwised'
+author: 'Improwised Editorial Team'
 image: '$lib/images/blogs/Avoiding-Metric-Obsession-head.webp'
 linkTags:
   - "The Role of DORA Metrics in Software Delivery"

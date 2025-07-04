@@ -6,7 +6,7 @@ seoTitle: 'End-to-End Encryption for State Files in OpenTofu'
 seoDescription: 'OpenTofu 1.7.0 adds end-to-end encryption for Terraform state files, securing sensitive data and preventing unauthorized access. Learn how this boosts your infrastructure security.'
 tags: [OpenTF]
 publishDate: 2025-02-06
-author: 'Angita'
+author: 'Rakshit Menpara'
 image: '$lib/images/blogs/End-to-End-Encryption-head.png'
 linkTags:
   - The Need for State File Encryption

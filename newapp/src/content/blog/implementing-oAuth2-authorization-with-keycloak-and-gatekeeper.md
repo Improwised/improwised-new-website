@@ -6,7 +6,7 @@ seoTitle: "OAuth2 Authorization with Keycloak & Gatekeeper | Secure Access Guide
 seoDescription: "Learn how to implement OAuth2 authorization using Keycloak and Gatekeeper for secure IAM. Step-by-step guide to robust authentication and access control."
 tags: [Gatekeeper, Authorization, Keycloak]
 publishDate: 2025-02-18
-author: "Angita"
+author: "Rakshit Menpara"
 image: "$lib/images/blogs/Implementing-OAuth2-head.webp"
 linkTags:
   - Keycloak Overview

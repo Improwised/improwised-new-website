@@ -6,7 +6,7 @@ seoTitle: 'Client Centric - Approach For The Dynamic Product'
 seoDescription: 'We take pride in the fact that the strength of our client relationships directly correlates with the positive experiences our clients have.'
 tags: [Culture, Client Experience, Customer Focus]
 publishDate: 2023-10-11
-author: 'Improwised'
+author: 'Improwised Editorial Team'
 image: '$lib/images/blogs/Client-Centric-Approach-head.webp'
 linkTags:
   - "Client Centric Culture"

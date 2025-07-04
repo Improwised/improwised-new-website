@@ -6,7 +6,7 @@ seoTitle: "Zero Downtime Architecture | Future-Proof Systems with Platform Engin
 seoDescription: "Ensure high availability with zero downtime architecture to protect revenue and brand trust for fintech, SaaS, and global e-commerce platforms. Learn how now."
 tags: [Zero Downtime, Platform Engineering]
 publishDate: 2025-04-21
-author: 'Angita'
+author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Zero-Downtime-Architecture-Head.webp'
 linkTags:
   - "The Problem: Downtime is Costly"

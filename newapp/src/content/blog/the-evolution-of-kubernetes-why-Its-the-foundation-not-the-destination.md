@@ -6,7 +6,7 @@ seoTitle: "Kubernetes Strategy Insights | Foundation, Not the Final Destination 
 seoDescription: "Kubernetes has become the de facto standard for container orchestration in modern cloud-native ecosystems."
 tags: [Optimization,Kubernetes,Devops]
 publishDate: 2025-02-21
-author: 'Angita'
+author: 'Rakshit Menpara'
 image: '$lib/images/blogs/The-Evolution-of-Kubernetes-head.webp'
 linkTags: 
   - "1. Kubernetes as the Backbone: A Historical Perspective"

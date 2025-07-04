@@ -6,7 +6,7 @@ seoTitle: 'Top Cloud Trends for 2025 | What Platform Engineers Must Know | Impro
 seoDescription: 'Several major developments will take center stage as 2025 approaches, greatly influencing platform engineering teams. '
 tags: [cloud trends]
 publishDate: 2025-01-02
-author: 'Angita'
+author: 'Priyank Dhami'
 image: '$lib/images/blogs/Top-Cloud-Trends-head.png'
 linkTags:
   - "1. Multicloud Architectures’ Ascension"

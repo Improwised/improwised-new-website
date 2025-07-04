@@ -11,6 +11,7 @@ import { Image } from "astro:assets";
 import avtarImage from "$lib/images/blogs/impro.png";
 import { formatDate } from "$lib/utils"
 import Sidebar from "$lib/components/Sidebar.astro";
+import { Linkedin } from "lucide-svelte/icons";
 
 export async function getStaticPaths() {
     const blogs = await getCollection("blogs");
@@ -44,6 +45,8 @@ const blogs = await getCollection('blogs');
 const [{data:{seoTitle, seoDescription}}] = blogs.filter((blog) => blog.data.slug === Astro.url.pathname.split('/').at(-2))
 
 const url: string[] = Astro.url.pathname.split('/')
+
+const [{data: author}] = await getCollection('authors', (author) => author.data.title === blog.data.author);
 ---
 
 <Layout title={seoTitle} description={seoDescription}>
@@ -93,6 +96,37 @@ const url: string[] = Astro.url.pathname.split('/')
                 { url.includes("blog") && url.at(-2) !== "blog" && <Sidebar insideMdx="inside" class="h-full" />}
                 <div>
                     <Content />
+                    <!-- author details -->
+                    <div class="author-details mt-12 border p-6 rounded-xl flex flex-col gap-4">
+                        <div class="flex gap-8">
+                            <div>
+                                <Image
+                                    alt="feature"
+                                    class="rounded-full border aspect-square object-cover object-top"
+                                    width={56}
+                                    height={56}
+                                    src={author.image}
+                                />
+                            </div>
+                            <div class="">
+                                <p>Written by</p>
+                                <h5 class="">{ author.title }</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <p>{ author.description }</p>
+                        </div>
+                        <div class="border rounded-xl mr-auto p-2.5">
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Improwised Technologies Pvt. Ltd."
+                                href={author.linkedin}
+                                >
+                                <Linkedin width="24" height="24" astro-icon="social/linkedin" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

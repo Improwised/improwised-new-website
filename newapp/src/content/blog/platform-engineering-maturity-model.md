@@ -6,7 +6,7 @@ seoTitle: 'Assess Your Organization with the Platform Engineering Maturity Model
 seoDescription: "Explore the Platform Engineering Maturity Model to assess your organization's capabilities, identify gaps, and improve software delivery and infrastructure management."
 tags: [Culture]
 publishDate: 2025-03-04
-author: 'Angita'
+author: 'Priyank Dhami'
 image: '$lib/images/blogs/PlatformHead.webp'
 linkTags: 
   - "Level 1: Ad-Hoc and Manual Execution"

@@ -6,7 +6,7 @@ seoTitle: 'Best Platform Engineering Companies for Startups 2025'
 seoDescription: 'Looking to scale smart? Discover the top 10 platform engineering companies startups trust in 2025 for automation, DevOps, and infrastructure success'
 tags: [Platform Engineering]
 publishDate: 2025-07-03
-author: 'Priyank'
+author: 'Priyank Dhami'
 image: '$lib/images/blogs/top-10-platform-engineering-blog-image-head.png'
 linkTags:
   - "Top 10 Platform Engineering Companies in 2025"

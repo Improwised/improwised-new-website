@@ -6,7 +6,7 @@ seoTitle: 'Build a Swiss Watch-Like CD Pipeline | Reliable & Precise Deployments
 seoDescription: 'A flawless CI/CD pipeline should run like a Swiss watch—precise, automated, and reliable. Learn how to build efficient pipelines that deliver with confidence.'
 tags: [OpenTF]
 publishDate: 2025-02-13
-author: 'Angita'
+author: 'Rakshit Menpara'
 image: '$lib/images/blogs/whycd.png'
 linkTags:
   - Understanding the Components of a CD Pipeline

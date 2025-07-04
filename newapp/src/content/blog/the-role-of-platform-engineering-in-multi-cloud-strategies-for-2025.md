@@ -6,7 +6,7 @@ seoTitle: "Multi-Cloud Strategies for 2025 | Platform Engineering Insights | Imp
 seoDescription: "As enterprises increasingly adopt multi-cloud strategies to optimize their IT infrastructure, the role of platform engineering becomes crucial."
 tags: [Optimization, Cost Optimization]
 publishDate: 2024-12-27
-author: 'Angita'
+author: 'Priyank Dhami'
 image: '$lib/images/blogs/the-role-of-platform-engineering.webp'
 linkTags:
   - Understanding Multi-Cloud Strategies

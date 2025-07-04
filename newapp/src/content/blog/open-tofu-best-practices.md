@@ -6,7 +6,7 @@ seoTitle: 'Performance Optimization in OpenTofu: Best Practices'
 seoDescription: 'Discover best practices to optimize OpenTofu, the open-source IaC tool, for scalable and efficient infrastructure management across cloud and on-premises environments.'
 tags: [OpenTF]
 publishDate: 2025-01-29
-author: 'Angita'
+author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Performance-Optimization-in-OpenTofuhead.png'
 linkTags:
   - State Management and Resource Tracking

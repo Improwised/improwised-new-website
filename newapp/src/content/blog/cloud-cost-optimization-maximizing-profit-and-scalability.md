@@ -6,7 +6,7 @@ seoTitle: 'Cloud Cost Optimization: Maximizing Profit and Scalability'
 seoDescription: 'Cloud computing has transformed the way businesses operate, offering unparalleled scalability, flexibility, and accessibility.'
 tags: [Cost Optimization]
 publishDate: 2024-12-24
-author: 'Angita'
+author: 'Shailesh Davara'
 image: '$lib/images/blogs/Cloud-cost-head.webp'
 linkTags:
   - "What is Cloud Cost Optimization?"

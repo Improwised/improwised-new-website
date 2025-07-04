@@ -6,7 +6,7 @@ seoTitle: "Embracing OpenTF | Commitment to Open Source & Terraform Innovation |
 seoDescription: "Improwised supports the OpenTF manifesto to uphold open-source Terraform. Learn why we stand for transparency, community, and infrastructure freedom."
 tags: [OpenSource, OpenTF, Terraform]
 publishDate: 2023-08-18
-author: "Priyank"
+author: "Priyank Dhami"
 image: "$lib/images/blogs/Embracinf-open-tf-head.png"
 linkTags:
   - "Why Terraform Matters to Us"

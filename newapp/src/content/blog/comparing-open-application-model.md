@@ -6,7 +6,7 @@ seoTitle: 'Open Application Model (OAM) vs Deployment Models | Detailed Comparis
 seoDescription: 'Explore how the Open Application Model (OAM) compares to other deployment strategies. Learn key differences, pros, and use cases in modern app delivery.'
 tags: [Open Application Model]
 publishDate: 2025-02-25
-author: 'Angita'
+author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Comparing-Open-Application-head.webp'
 linkTags: 
   - "Open Application Model (OAM)"

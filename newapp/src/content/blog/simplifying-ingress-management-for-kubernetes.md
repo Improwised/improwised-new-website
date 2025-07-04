@@ -6,7 +6,7 @@ seoTitle: "Simplify Kubernetes Ingress with Traefik & Let’s Encrypt | Step-by-
 seoDescription: "Step-by-step guide to setting up Traefik as an ingress controller on Kubernetes, with automatic TLS certificates using Let's Encrypt."
 tags: [Kubernetes, Traefik, Let's Encrypt, Ingress, TLS]
 publishDate: 2024-03-31
-author: "Angita"
+author: "Rakshit Menpara"
 image: "$lib/images/blogs/Simplifying-Ingress-Management.webp"
 linkTags:
   - Prerequisites

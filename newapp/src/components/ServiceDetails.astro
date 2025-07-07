@@ -13,7 +13,7 @@ import CTASection from "$lib/components/CTASection.astro";
 import solution2 from "$lib/images/services/solutions-2.svg"
 import mobileSolution from "$lib/images/services/mobileSolutions.svg"
 
-const { title, description, block, cardSectionPrimaryTitle, cardSectionTitle, serviceCardCollection, serviceApproachPrimaryTitle, serviceApproachTitle, serviceApproach, isSectionTitlePrimary = "true" } = Astro.props;
+const { title, description, block, cardSectionPrimaryTitle, cardSectionTitle, serviceCardCollection, serviceApproachPrimaryTitle, serviceApproachTitle, serviceApproach, isSectionTitlePrimary = "true", heroUnitImage } = Astro.props;
 ---
 
 <section>
@@ -26,7 +26,7 @@ const { title, description, block, cardSectionPrimaryTitle, cardSectionTitle, se
             <Button aria-label="Explore Solutions" href={`${BASE_URL}/contact/`} class="button-bg">Get In Touch</Button>
         </div>
         <div class="w-full flex justify-center mt-6 md:mt-3">
-          <Image class="hidden md:block" alt="building block" src={solution2}/>
+          <Image class="hidden md:block" alt="building block" src={heroUnitImage} />
           <Image width={300} class="block md:hidden" alt="building block" src={mobileSolution}/>
         </div>
     </section>

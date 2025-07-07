@@ -18,7 +18,7 @@ blocks:
     - title: "Enterprise Integration & Data Governance"
       description: "Ensure secure, auditable operations with role-based access and encryption. Maintain compliance with GDPR, HIPAA, SOC 2, and enable data lineage and metadata control."
 
-text: "Building Blocks of Smarter Operations"
+text: "Building Blocks of"
 primaryText: "Smarter Operations"
 blockImage: "$lib/images/services/building-blocks-of-smarter-operations.svg"
 

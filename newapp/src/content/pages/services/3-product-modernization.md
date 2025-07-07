@@ -3,7 +3,7 @@ title: 'Product Modernization'
 slug: 'product-modernization'
 seoTitle: "Modernize Legacy Apps | Cloud Migration Services Experts |  Improwised Tech"
 seoDescription: "Boost performance and reduce costs with our product modernization services—cloud migration, automated refactoring, and system optimization for secure, scalable solutions."
-lightImage: '$lib/images/services/product_modernization.svg'
+lightImage: '$lib/images/services/solutions-2.svg'
 description: 'Cloud migration, application modernization, and technology upgrades. We transform legacy systems into scalable, secure, and modern solutions.'
 order: 3
 blocks: 

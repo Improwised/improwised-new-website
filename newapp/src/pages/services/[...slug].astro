@@ -17,7 +17,6 @@ const { data } = Astro.props;
 
 <Layout title={data.seoTitle} description={data.seoDescription}>
   <main class="main-content z-10">
-
-    <ServiceDetails title={data.title} description={data.description} block={data.slug} cardSectionPrimaryTitle={data.cardSectionPrimaryTitle} cardSectionTitle={data.cardSectionTitle} isSectionTitlePrimary={data.isSectionTitlePrimary} serviceCardCollection={data.serviceCardCollection} serviceApproachPrimaryTitle={data.serviceApproachPrimaryTitle} serviceApproachTitle={data.serviceApproachTitle} serviceApproach={data.serviceApproach} />
+    <ServiceDetails title={data.title} description={data.description} block={data.slug} cardSectionPrimaryTitle={data.cardSectionPrimaryTitle} cardSectionTitle={data.cardSectionTitle} isSectionTitlePrimary={data.isSectionTitlePrimary} serviceCardCollection={data.serviceCardCollection} serviceApproachPrimaryTitle={data.serviceApproachPrimaryTitle} serviceApproachTitle={data.serviceApproachTitle} serviceApproach={data.serviceApproach} heroUnitImage={data.lightImage} />
   </main>
 </Layout>

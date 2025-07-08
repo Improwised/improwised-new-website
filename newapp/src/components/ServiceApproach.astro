@@ -4,17 +4,12 @@ import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
 
-type ValidCollections = "approaches" | "approaches2" | "approaches3" | "approaches4";
+type ValidCollections = "approaches" | "approaches2" | "approaches3" | "approaches4" | "approaches5" | "approaches6";
 
 const { collectionName } = Astro.props;
 const serviceApproach = (await getCollection(
   collectionName as ValidCollections
 )) as CollectionEntry<ValidCollections>[];
-
-
-// const serviceApproach = await getCollection("approaches", ({ data }) => {
-//   return data;
-// });
 
 ---
 

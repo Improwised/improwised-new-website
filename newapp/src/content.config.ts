@@ -303,6 +303,17 @@ const corefeaturesBusinessIntelligenceAndAutomation = defineCollection({
 	}),
 });
 
+const corefeaturesCustomSoftwareDevelopmentServices = defineCollection({
+	loader: glob({ base: './src/content/corefeatures-custom-software-development-services', pattern: '**/*.{md,mdx}' }),
+	// Type-check frontmatter using a schema
+	schema: ({ image }) => z.object({
+		title: z.string(),
+		slug: z.string(),
+		lightImage: image(),
+		description: z.string()
+	}),
+});
+
 const approaches = defineCollection({
 	loader: glob({ base: './src/content/approaches', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
@@ -361,6 +372,20 @@ const approaches4 = defineCollection({
 
 const approaches5 = defineCollection({
 	loader: glob({ base: './src/content/approaches5', pattern: '**/*.{md,mdx}' }),
+	// Type-check frontmatter using a schema
+	schema: ({ image }) => z.object({
+		approaches: z.array(
+		  z.object({
+			title: z.string(),
+			description: z.string(),
+			image: image()
+		  })
+		),
+	}),
+});
+
+const approaches6 = defineCollection({
+	loader: glob({ base: './src/content/approaches6', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
 	schema: ({ image }) => z.object({
 		approaches: z.array(
@@ -443,4 +468,4 @@ const authors = defineCollection({
 	}),
 });
 
-export const collections = { authors, reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, approaches5, corefeaturesProductModernization, corefeaturesTechnologyConsulting, corefeaturesBusinessIntelligenceAndAutomation, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse };
+export const collections = { authors, reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, approaches5, approaches6, corefeaturesProductModernization, corefeaturesTechnologyConsulting, corefeaturesBusinessIntelligenceAndAutomation, corefeaturesCustomSoftwareDevelopmentServices, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse };

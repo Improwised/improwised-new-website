@@ -1,0 +1,70 @@
+---
+import IndustryExpertise from "$lib/components/common/IndustryExpertise.svelte";
+import SectionTitle from "$lib/components/common/SectionTitle.svelte";
+import { Badge } from "$lib/components/ui/badge";
+import { CircleUserRound } from "lucide-svelte";
+
+const steps = [
+  {
+    title: "FinTech",
+    description:
+      "Secure, compliant, and scalable applications for digital banking, lending platforms, KYC, and investment tools",
+  },
+  {
+    title: "HealthTech",
+    description:
+      "HIPAA-compliant platforms, telemedicine apps, and EMR/EHR integrations for digital healthcare providers",
+  },
+  {
+    title: "EdTech",
+    description:
+      "Interactive learning platforms, LMS integration, and student analytics systems",
+  },
+  {
+    title: "Logistics & Supply Chain",
+    description:
+      "Custom fleet management, route optimization, and real-time tracking platforms",
+  },
+  {
+    title: "SaaS",
+    description:
+      "Scalable multi-tenant applications with self-service portals, analytics dashboards, and payment integrations",
+  },
+];
+---
+
+<section class="section5 py-10 md:py-40 overflow-x-hidden section-bg">
+  <div class="container">
+    <div
+      class="flex mx-auto max-w-2xl flex-col items-start md:items-center justify-center"
+    >
+      <Badge variant="outline" class="py-1">
+        <CircleUserRound class="mr-1" size={18} />
+        <span class="text-xs font-bold md:text-sm tracking-wider font-manrope"
+          >Expertise</span
+        >
+      </Badge>
+      <SectionTitle
+        text="Our Industry"
+        primaryColorText="Expertise"
+        class="md:whitespace-pre-wrap max-md:text-left md:text-center md:w-5/6"
+      />
+      <p class="md:text-center small-text lg:text-para font-inter text-fourth-color">Our team blends technical depth with domain fluency, ensuring that the solutions we build reflect real-world business contexts</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 md:gap-y-14 lg:grid-cols-3 mt-8 md:pt-12">
+      {
+        steps.map((step) => (
+          <div class="p-6 group bg-card-bg shadow-sm rounded-[20px]">
+            <h3 class="group-hover:text-sub-heading-color transition-colors duration-300 text-[18px] leading-[22px] text-xl font-bold tracking-[0.02em] font-manrope text-main-heading-color">
+              {step.title}
+            </h3>
+            <p class="pt-4 small-text lg:text-para font-inter text-fourth-color">
+              {step.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

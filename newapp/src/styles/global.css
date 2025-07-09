@@ -228,6 +228,7 @@
     --career-card: var(--primary-white);
     --navbar-bg: rgba(245,245,245, 0.1);
     --badge-border: rgba(73, 72, 72, 1); /* #494848 */
+    --section-border: rgba(226, 232, 240, 1);
   }
 
   .dark {
@@ -286,6 +287,7 @@
     /* --navbar-bg: rgba(55, 49, 49, 0.35); */ /* previous value */
     --navbar-bg: var(--primary-blue);
     --badge-border: rgba(33, 51, 82, 1); /* #213352 */
+    --section-border: rgba(29, 41, 61, 1);
   }
 }
 
@@ -756,12 +758,12 @@
 }
 
 .section-bg {
-  border-top: 1px solid rgb(226, 232, 240) ;
+  border-top: 1px solid var(--section-border) ;
   background-image: linear-gradient(to bottom, rgb(248, 250, 252) 0%, rgba(255, 255, 255, 1) 100%);
 
   @variant dark { 
     background-image: linear-gradient(to bottom, rgba(15, 23, 43, 0.4) 0%, rgba(3, 7, 18, 0.5) 50%, rgba(3, 7, 18, 1) 100%);
-    border-top: 1px solid rgb(29, 41, 61); /*oklch(0.93 0.013 255.508)*/
+    border-top: 1px solid var(--section-border); /*oklch(0.93 0.013 255.508)*/
   }
 }
 

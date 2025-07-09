@@ -41,6 +41,7 @@ const config = {
 				careerCard: "var(--career-card)",
 				navbarBg: "var(--navbar-bg)",
 				badgeBorder: "var(--badge-border)",
+				commonBorder: "var(--section-border)",
 				primary: {
 					DEFAULT: "hsl(var(--primary) / <alpha-value>)",
 					foreground: "hsl(var(--primary-foreground) / <alpha-value>)"

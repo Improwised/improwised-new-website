@@ -1,10 +1,10 @@
 ---
-title: 'Custom Software Development Services for Scalable Digital Solutions '
-slug: 'custom-software-development-services'
+title: 'Custom Software Development Services'
+slug: 'custom-software-development'
 seoTitle: "Custom Software Development Services | Improwised"
 seoDescription: "From concept to deployment, we build custom software that fuels business growth. Partner with Improwised for modern, scalable, and agile solutions"
-lightImage: '$lib/images/services/custom-software-development-image.svg'
-description: 'Design, develop, and deploy custom software that adapts to your evolving business needs - scalable, secure, and built for performance across platforms.'
+lightImage: '$lib/images/services/custom-software-development-service-hero.svg'
+description: 'Whether you are building an MVP or rethinking your core product. Our team turns your requirements into clean, functional, and future-proof applications - all with scalability and performance in mind'
 order: 6
 blocks: 
     - title: "Product-Centric Architecture"
@@ -26,7 +26,7 @@ blocks:
 
 text: "Building Blocks Of Scalable,"
 primaryText: "High-Impact Software"
-blockImage: "$lib/images/services/accordion_cis.svg"
+blockImage: "$lib/images/services/custom-software-block.svg"
 cardSectionPrimaryTitle: "Off-the-Shelf Software?"
 cardSectionTitle: "Why Choose Custom Over"
 isSectionTitlePrimary: false

@@ -67,13 +67,15 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
                 <div class="flex justify-between items-center gap-4 mt-4">
                     <!-- Author Info -->
                     <div class="flex items-center gap-8">
-                        <Image
-                            alt="feature"
-                            class="rounded-full"
-                            width={56}
-                            height={56}
-                            src={avtarImage}
-                        />
+                        <div>
+                            <Image
+                                alt="feature"
+                                class="rounded-full border aspect-square object-cover object-top"
+                                width={56}
+                                height={56}
+                                src={author.image}
+                            />
+                        </div>
                         <p
                             class="font-semibold text-fifth-color small-text md:text-[18px] tracking-tight"
                         >
@@ -175,7 +177,7 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
                                 <Card.Footer>
                                     <div class="flex gap-x-2 items-center">
                                         <Image
-                                            alt="feature"
+                                            alt="author-profile"
                                             class="rounded-full"
                                             width={56}
                                             height={56}

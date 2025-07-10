@@ -15,7 +15,7 @@ const blogsList = await getCollection("blogs");
 const blogs = blogsList.sort(
   (a, b) =>
     new Date(b.data.publishDate).getTime() -
-    new Date(a.data.publishDate).getTime(),
+    new Date(a.data.publishDate).getTime()
 );
 
 const latestBlog = blogs[0];
@@ -24,9 +24,15 @@ import { Image } from "astro:assets";
 import * as Card from "$lib/components/ui/card";
 import avtarImage from "$lib/images/blogs/impro.png";
 import { CircleUserRound } from "lucide-svelte/icons";
-import { formatDate } from "$lib/utils"
+import { formatDate } from "$lib/utils";
 
-const [{ data : {title, description}}] = await getCollection('blog');
+const [
+  {
+    data: { title, description },
+  },
+] = await getCollection("blog");
+
+const authors = await getCollection("authors");
 ---
 
 <Layout title={title} description={description}>
@@ -40,20 +46,21 @@ const [{ data : {title, description}}] = await getCollection('blog');
           <h1
             class="font-manrope mt-4 mb-6 max-md:text-center main-heading-small md:main-heading text-main-heading-color"
           >
-          Improwised <span class="text-sub-heading-color">Blog</span>
+            Improwised <span class="text-sub-heading-color">Blog</span>
           </h1>
 
-        <!-- Subtext -->
+          <!-- Subtext -->
           <p
             class="text-center md:w-3/5 small-text font-roboto md:text-para text-third-color"
           >
-            Explore Improwised blogs for the latest insights, trends, essential best practices shaping Platform Engineering.
+            Explore Improwised blogs for the latest insights, trends, essential
+            best practices shaping Platform Engineering.
           </p>
         </div>
-       
+
         <div class="relative overflow-x-clip">
           <div class="flex justify-center">
-            <BlogsCarousel client:load blogs={blogs} baseUrl={BASE_URL}/>
+            <BlogsCarousel client:load blogs={blogs} baseUrl={BASE_URL} />
           </div>
         </div>
       </div>
@@ -63,14 +70,18 @@ const [{ data : {title, description}}] = await getCollection('blog');
       <div class="container">
         <Badge variant="outline" class="py-1 mb-8">
           <CircleUserRound class="mr-1" size={18} />
-          <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Latest Featured</span>
+          <span class="text-xs font-bold md:text-sm tracking-wider font-manrope"
+            >Latest Featured</span
+          >
         </Badge>
 
         <div
           class="group grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-card-bg border-1 border-card-border shadow-nav rounded-xl overflow-hidden"
         >
           <!-- Left: Blog Image -->
-          <div class="relative overflow-hidden w-full h-full flex items-center justify-center bg-[#f0f0f0] dark:bg-[#3a3b3f69]">
+          <div
+            class="relative overflow-hidden w-full h-full flex items-center justify-center bg-[#f0f0f0] dark:bg-[#3a3b3f69]"
+          >
             <Image
               alt="feature"
               class="transition-all duration-200 group-hover:scale-105"
@@ -89,7 +100,7 @@ const [{ data : {title, description}}] = await getCollection('blog');
             </p>
 
             <h2
-              class="mb-4 font-manrope font-bold text-[24px] leading-[28px] md:text-[28px] text-fifth-color  md:leading-[32px]"
+              class="mb-4 font-manrope font-bold text-[24px] leading-[28px] md:text-[28px] text-fifth-color md:leading-[32px]"
             >
               <a href={BASE_URL + "/blog/" + latestBlog.data.slug + "/"}>
                 {latestBlog.data.title}
@@ -101,29 +112,34 @@ const [{ data : {title, description}}] = await getCollection('blog');
             </p>
 
             <!-- Author Info -->
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div
+              class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+            >
               <!-- Author Info -->
-              <div class="flex items-center gap-2">
-                <Image
-                  alt="feature"
-                  class="rounded-full"
-                  width={56}
-                  height={56}
-                  src={avtarImage}
-                />
-                <p
-                  class="font-semibold text-fifth-color small-text md:text-[18px] tracking-tight"
-                >
-                  By {latestBlog.data.author}
-                  <br />
-                  <span
-                    class="font-normal text-fourth-color text-[14px] md:text-[16px] md:leading-[18px] tracking-tight"
-                  >
-                    Improwised Technologies Pvt. Ltd.
-                  </span>
-                </p>
-              </div>
-
+              {
+                authors
+                  .filter(
+                    (author) => author.data.title == latestBlog.data.author
+                  )
+                  .map((author) => (
+                    <div class="flex items-center gap-2">
+                      <Image
+                        alt="feature"
+                        class="rounded-full"
+                        width={56}
+                        height={56}
+                        src={author.data.image}
+                      />
+                      <p class="font-semibold text-fifth-color small-text md:text-[18px] tracking-tight">
+                        By {author.data.title}
+                        <br />
+                        <span class="font-normal text-fourth-color text-[14px] md:text-[16px] md:leading-[18px] tracking-tight">
+                          Improwised Technologies Pvt. Ltd.
+                        </span>
+                      </p>
+                    </div>
+                  ))
+              }
               <Button
                 href={BASE_URL + "/blog/" + latestBlog.data.slug + "/"}
                 class="button-bg"
@@ -140,7 +156,9 @@ const [{ data : {title, description}}] = await getCollection('blog');
       <div class="container">
         <Badge variant="outline" class="py-1 mb-8">
           <CircleUserRound class="mr-1" size={18} />
-          <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Featured Blogs</span>
+          <span class="text-xs font-bold md:text-sm tracking-wider font-manrope"
+            >Featured Blogs</span
+          >
         </Badge>
         <div
           class="grid grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2 gap-8"
@@ -149,13 +167,13 @@ const [{ data : {title, description}}] = await getCollection('blog');
             blogs.map((blog) => (
               <Card.Root class="group shadow-nav flex flex-col justify-between bg-card-bg border-1 border-card-border transition-transform duration-500 overflow-hidden">
                 <Card.Header class="p-0 overflow-hidden text-center rounded-t-[12px] bg-[#f0f0f0] dark:bg-[#3a3b3f69]">
-                    <Image
-                      alt="feature"
-                      class="w-full object-contain sm:h-[250px] md:h-[300px] transition-all duration-200 group-hover:scale-105"
-                      decoding="async"
-                      loading="lazy"
-                      src={blog.data.image}
-                    />
+                  <Image
+                    alt="feature"
+                    class="w-full object-contain sm:h-[250px] md:h-[300px] transition-all duration-200 group-hover:scale-105"
+                    decoding="async"
+                    loading="lazy"
+                    src={blog.data.image}
+                  />
                 </Card.Header>
                 <Card.Content class="">
                   <p class="mb-2 font-manrope text-[#A3A3A3] md:text-[16px] text-[14px] leading-[24px] tracking-[16%]">
@@ -167,24 +185,30 @@ const [{ data : {title, description}}] = await getCollection('blog');
                     </a>
                   </Card.Title>
                 </Card.Content>
-                <Card.Footer>
-                  <div class=" flex gap-x-2 items-center">
-                    <Image
-                      alt="feature"
-                      class="rounded-full"
-                      width={56}
-                      height={56}
-                      src={avtarImage}
-                    />
-                    <p class="font-semibold text-fifth-color text-[16px] md:text-[18px] tracking-tight">
-                      By {blog.data.author}
-                      <br />
-                      <span class="font-normal text-fourth-color text-[16px] md:text-[18px] tracking-tight">
-                        Improwised Technologies Pvt. Ltd.
-                      </span>
-                    </p>
-                  </div>
-                </Card.Footer>
+                {authors
+                  .filter((author) => author.data.title == blog.data.author)
+                  .map((author) => (
+                    <Card.Footer>
+                      <div class=" flex gap-x-2 items-center">
+                        <div>
+                          <Image
+                            alt="feature"
+                            class="rounded-full border aspect-square object-cover object-top"
+                            width={56}
+                            height={56}
+                            src={author.data.image}
+                          />
+                        </div>
+                        <p class="font-semibold text-fifth-color text-[16px] md:text-[18px] tracking-tight">
+                          By {author.data.title}
+                          <br />
+                          <span class="font-normal text-fourth-color text-[16px] md:text-[18px] tracking-tight">
+                            Improwised Technologies Pvt. Ltd.
+                          </span>
+                        </p>
+                      </div>
+                    </Card.Footer>
+                  ))}
               </Card.Root>
             ))
           }

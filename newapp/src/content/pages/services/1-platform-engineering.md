@@ -4,7 +4,9 @@ slug: "platform-engineering"
 description: "Accelerate innovation with Platform Engineering as a Service-automating workflows, standardizing infrastructure, and enabling seamless cloud-native scalability."
 seoTitle: "Platform Engineering Services | Scalable Cloud Infrastructure | Improwised Tech"
 seoDescription: "Unlock scalable, cost-efficient cloud solutions with Improwised’s platform engineering services. Automate workflows, standardize infra, and boost performance."
-lightImage: '$lib/images/services/solutions-2.svg'
+lightImage: '$lib/images/services/cloud_infra_services.svg'
+heroImage: '$lib/images/services/solutions-2.svg'
+mobileHeroImage: '$lib/images/services/mobileSolutions.svg'
 order: 1
 blocks: 
     - title: "Code & Infra Management"

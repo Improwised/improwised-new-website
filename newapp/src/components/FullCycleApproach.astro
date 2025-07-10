@@ -4,38 +4,8 @@ import { Badge } from "$lib/components/ui/badge";
 import { CircleUserRound } from "lucide-svelte";
 import { Image } from "astro:assets";
 import testImage from "$lib/images/services/full-cycle-approach-custom-software-development.svg"
-const approach = [
-  {
-    title: "Discovery & Requirements Engineering",
-    description:
-      "We start by aligning with your stakeholders to define requirements, KPIs, user journeys, and technical constraints. This phase ensures clarity and reduces downstream risks."
-  },
-  {
-    title: "Architecture & Technical Design",
-    description:
-      "We create a product-centric architecture that supports long-term maintainability. Our solutions are built cloud-native, modular, and aligned with microservices or monoliths, depending on your business goals."
-  },
-  {
-    title: "Agile Sprint Delivery",
-    description:
-      "Using Scrum and Kanban, we deliver working software in iterative sprints. You receive frequent demos, backlog grooming, and total visibility into the development lifecycle."
-  },
-  {
-    title: "DevOps, CI/CD & Automation",
-    description:
-      "We implement CI/CD pipelines, infrastructure-as-code (Terraform, Ansible), and observability stacks to ensure safe, automated, and traceable deployments."
-  },
-  {
-    title: "Rigorous Testing & Quality Assurance",
-    description:
-      "Each sprint includes unit tests, integration testing, manual testing, and performance/load testing. We ensure quality across functionality, usability, and security."
-  },
-  {
-    title: "Post-Launch Support & Maintenance",
-    description:
-      "Our job doesn't end at deployment. We provide SLAs, monitoring, issue resolution, and performance optimization as part of ongoing support."
-  }
-];
+
+const { fullCycleApproach } = Astro.props;
 
 ---
 
@@ -63,9 +33,9 @@ const approach = [
       </div>
 
       <div>
-        {approach.map((service, index) => (
+        {fullCycleApproach.map((approach: {title: string, description: string}, index: number) => (
           <div class="relative flex items-start">
-            {index < approach.length - 1 && (
+            {index < fullCycleApproach.length - 1 && (
               <div class="absolute left-4 w-px h-full border-1 border-common-border "></div>
             )}
             
@@ -76,12 +46,12 @@ const approach = [
             <div class="ml-6 flex-1">
               <!-- Title -->
               <h3 class="pb-2 text-[18px] leading-[22px] text-xl font-bold tracking-[0.02em] font-manrope text-main-heading-color">
-                {service.title}
+                {approach.title}
               </h3>
               
               <div class="pr-4 pb-8">
                 <p class="small-text lg:text-para font-inter text-fourth-color">
-                  {service.description}
+                  {approach.description}
                 </p>
               </div>
             </div>

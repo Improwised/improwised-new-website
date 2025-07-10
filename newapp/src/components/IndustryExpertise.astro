@@ -1,36 +1,9 @@
 ---
-import IndustryExpertise from "$lib/components/common/IndustryExpertise.svelte";
 import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import { Badge } from "$lib/components/ui/badge";
 import { CircleUserRound } from "lucide-svelte";
 
-const steps = [
-  {
-    title: "FinTech",
-    description:
-      "Secure, compliant, and scalable applications for digital banking, lending platforms, KYC, and investment tools",
-  },
-  {
-    title: "HealthTech",
-    description:
-      "HIPAA-compliant platforms, telemedicine apps, and EMR/EHR integrations for digital healthcare providers",
-  },
-  {
-    title: "EdTech",
-    description:
-      "Interactive learning platforms, LMS integration, and student analytics systems",
-  },
-  {
-    title: "Logistics & Supply Chain",
-    description:
-      "Custom fleet management, route optimization, and real-time tracking platforms",
-  },
-  {
-    title: "SaaS",
-    description:
-      "Scalable multi-tenant applications with self-service portals, analytics dashboards, and payment integrations",
-  },
-];
+const { industryExpertise } = Astro.props;
 ---
 
 <section class="section5 py-10 md:py-40 overflow-x-hidden section-bg">
@@ -54,7 +27,7 @@ const steps = [
 
     <div class="grid md:grid-cols-2 gap-10 md:gap-y-14 lg:grid-cols-3 mt-8 md:pt-12">
       {
-        steps.map((step) => (
+        industryExpertise.map((step: { title: string; description: string; }) => (
           <div class="p-6 group bg-card-bg shadow-sm rounded-[20px]">
             <h3 class="group-hover:text-sub-heading-color transition-colors duration-300 text-[18px] leading-[22px] text-xl font-bold tracking-[0.02em] font-manrope text-main-heading-color">
               {step.title}

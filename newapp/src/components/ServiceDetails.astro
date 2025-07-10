@@ -12,6 +12,7 @@ import CaseStudiesSection from "$lib/components/CaseStudiesSection.astro";
 import CTASection from "$lib/components/CTASection.astro";
 import IndustryExpertise from "$lib/components/IndustryExpertise.astro"
 import FullCycleApproach from "$lib/components/FullCycleApproach.astro";
+import FAQs from "$lib/components/FAQs.astro" 
 
 const {
   title,
@@ -27,7 +28,11 @@ const {
   heroImage,
   mobileHeroImage,
   industryExpertise,
-  fullCycleApproach
+  fullCycleApproach,
+  roadmapImage,
+  roadmapText,
+  roadmapPrimaryText,
+  faqs
 } = Astro.props;
 
 ---
@@ -111,7 +116,9 @@ const {
   
   { industryExpertise && <IndustryExpertise industryExpertise={industryExpertise} />}
   
-  { fullCycleApproach && <FullCycleApproach fullCycleApproach={fullCycleApproach} /> } 
+  { fullCycleApproach && <FullCycleApproach fullCycleApproach={fullCycleApproach} roadmapImage={roadmapImage} roadmapText={roadmapText} roadmapPrimaryText={roadmapPrimaryText} /> } 
+  
+  { faqs && <FAQs faqs={faqs}/> }
   
   <CaseStudiesSection />
   <CTASection />

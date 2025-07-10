@@ -3,9 +3,8 @@ import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import { Badge } from "$lib/components/ui/badge";
 import { CircleUserRound } from "lucide-svelte";
 import { Image } from "astro:assets";
-import testImage from "$lib/images/services/full-cycle-approach-custom-software-development.svg"
 
-const { fullCycleApproach } = Astro.props;
+const { fullCycleApproach, roadmapImage, roadmapText, roadmapPrimaryText } = Astro.props;
 
 ---
 
@@ -21,19 +20,19 @@ const { fullCycleApproach } = Astro.props;
           >
         </Badge>
         <SectionTitle
-          text="Our Full-Cycle"
-          primaryColorText="Custom Software Development Approach"
+          text={roadmapText}
+          primaryColorText={roadmapPrimaryText}
           class="md:whitespace-pre-wrap max-md:text-left md:text-center md:w-5/6"
         />
       </div>
 
-    <div class="flex flex-col md:flex-row items-center gap-4 md:pt-12">
+    <div class="flex flex-col md:flex-row items-center md:justify-center gap-4 md:pt-12">
       <div class="md:min-w-[50%] max-h-max justify-center items-center">
-        <Image alt="building block" src={testImage} height={600} data-aos="fade-right"/>
+        <Image alt="building block" src={roadmapImage} height={600} data-aos="fade-right"/>
       </div>
 
       <div>
-        {fullCycleApproach.map((approach: {title: string, description: string}, index: number) => (
+        {fullCycleApproach.map((approach: {title: string, description: string[]}, index: number) => (
           <div class="relative flex items-start">
             {index < fullCycleApproach.length - 1 && (
               <div class="absolute left-4 w-px h-full border-1 border-common-border "></div>
@@ -49,11 +48,15 @@ const { fullCycleApproach } = Astro.props;
                 {approach.title}
               </h3>
               
-              <div class="pr-4 pb-8">
-                <p class="small-text lg:text-para font-inter text-fourth-color">
-                  {approach.description}
-                </p>
-              </div>
+              <ul class="pr-4 pb-8">
+                {
+                  approach.description.map((description) => (
+                    <li class="small-text my-1 lg:text-para font-inter text-fourth-color">
+                      {description}
+                    </li>
+                  ))
+                }
+              </ul>
             </div>
           </div>
         ))}

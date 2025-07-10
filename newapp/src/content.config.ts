@@ -88,8 +88,15 @@ const services = defineCollection({
 		})).optional(),
 		fullCycleApproach: z.array(z.object({
 			title: z.string(),
-			description: z.string(),
-		})).optional()
+			description: z.array(z.string()),
+		})).optional(),
+		roadmapImage: image().optional(),
+		roadmapText: z.string().optional(),
+		roadmapPrimaryText: z.string().optional(),
+		faqs: z.array(z.object({
+			question: z.string(),
+			answer: z.string(),
+		})).optional(),
 	}),
 });
 

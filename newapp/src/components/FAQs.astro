@@ -1,0 +1,38 @@
+---
+import SectionTitle from "$lib/components/common/SectionTitle.svelte";
+import { Badge } from "$lib/components/ui/badge";
+import { CalendarFold } from "lucide-svelte";
+import Accordion from "$lib/components/common/Accordion.svelte";
+
+const { faqs } = Astro.props;
+---
+
+<section class="py-10 md:py-40 section-bg">
+  <div class="container">
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+      <div class="flex items-center md:items-start flex-col">
+        <Badge variant="outline" class="py-1">
+          <CalendarFold class="mr-1" size={18} />
+          <span class="text-xs font-bold md:text-sm tracking-wider font-manrope"
+            >FAQS</span
+          >
+        </Badge>
+        <SectionTitle
+          class="lg:w-3/5"
+          text="Asked Question"
+          primaryColorText="Frequently"
+          isPrimaryTextInitial={true}
+        />
+        <p class="small-text font-roboto md:text-para text-third-color">
+          Get quick answers to common queries. Explore our FAQs for helpful
+          insights and solutions.
+        </p>
+      </div>
+
+      <div class="lg:w-1/2">
+        <!-- <ContactFAQ client:load /> -->
+        <Accordion client:load {faqs} />
+      </div>
+    </div>
+  </div>
+</section>

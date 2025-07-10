@@ -49,15 +49,39 @@ industryExpertise:
     description: "Scalable multi-tenant applications with self-service portals, analytics dashboards, and payment integrations"
 fullCycleApproach:
   - title: "Discovery & Requirements Engineering"
-    description: "We start by aligning with your stakeholders to define requirements, KPIs, user journeys, and technical constraints. This phase ensures clarity and reduces downstream risks."
+    description: 
+      - "We start by aligning with your stakeholders to define requirements, KPIs, user journeys, and technical constraints. This phase ensures clarity and reduces downstream risks."
   - title: "Architecture & Technical Design"
-    description: "We create a product-centric architecture that supports long-term maintainability. Our solutions are built cloud-native, modular, and aligned with microservices or monoliths, depending on your business goals"
+    description: 
+      - "We create a product-centric architecture that supports long-term maintainability. Our solutions are built cloud-native, modular, and aligned with microservices or monoliths, depending on your business goals."
   - title: "Agile Sprint Delivery"
-    description: "Using Scrum and Kanban, we deliver working software in iterative sprints. You receive frequent demos, backlog grooming, and total visibility into the development lifecycle"
+    description: 
+      - "Using Scrum and Kanban, we deliver working software in iterative sprints. You receive frequent demos, backlog grooming, and total visibility into the development lifecycle."
   - title: "DevOps, CI/CD & Automation"
-    description: "We implement CI/CD pipelines, infrastructure-as-code (Terraform, Ansible), and observability stacks to ensure safe, automated, and traceable deployments"
+    description: 
+      - "We implement CI/CD pipelines, infrastructure-as-code (Terraform, Ansible), and observability stacks to ensure safe, automated, and traceable deployments."
   - title: "Rigorous Testing & Quality Assurance"
-    description: "Each sprint includes unit tests, integration testing, manual testing, and performance/load testing. We ensure quality across functionality, usability, and security"
+    description: 
+      - "Each sprint includes unit tests, integration testing, manual testing, and performance/load testing. We ensure quality across functionality, usability, and security."
   - title: "Post-Launch Support & Maintenance"
-    description: "Our job doesn't end at deployment. We provide SLAs, monitoring, issue resolution, and performance optimization as part of ongoing support"
+    description: 
+      - "Our job doesn't end at deployment. We provide SLAs, monitoring, issue resolution, and performance optimization as part of ongoing support."
+roadmapImage: "$lib/images/services/full-cycle-approach-custom-software-development.svg"
+roadmapText: "Our Full-Cycle"
+roadmapPrimaryText: "Custom Software Development Approach"
+faqs:
+  - question: "What is custom software development?"
+    answer: "Custom software development involves building applications specifically tailored to a business’s unique needs, rather than using off-the-shelf solutions."
+  - question: "How long does it take to build custom software?"
+    answer: "Project timelines vary based on complexity, typically ranging from 8 to 24+ weeks for MVPs and more for full-scale enterprise systems."
+  - question: "How much does custom software development cost?"
+    answer: "Costs depend on scope, technology, and timeline. At Improwised Technologies, we offer flexible models like fixed-price or dedicated teams to suit your budget."
+  - question: "What industries do you specialize in?"
+    answer: "We serve FinTech, HealthTech, EdTech, Logistics, SaaS, and other B2B domains requiring scalable and secure solutions."
+  - question: "Do you provide support and maintenance?"
+    answer: "Yes, we offer post-launch support, including performance optimization, monitoring, and feature enhancements."
+  - question: "How secure is the software you build?"
+    answer: "Security is embedded from day one, with practices like role-based access, encryption, GDPR compliance, and secure coding standards."
+  - question: "Do you offer code audits or software modernization?"
+    answer: "Absolutely. We provide code reviews, legacy modernization, and system refactoring services as part of our offerings."
 ---

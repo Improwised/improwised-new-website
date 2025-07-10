@@ -7,15 +7,18 @@ import { Image } from "astro:assets";
 import { Button } from "$lib/components/ui/button";
 import { BASE_URL } from "$lib/consts";
 
-type ValidCollections = "corefeatures" | "services";
+type ValidCollections = "services" | "corefeatures";
 
 const { collectionName } = Astro.props;
-const collectionDetails = (await getCollection(
+const collections = (await getCollection(
   collectionName as ValidCollections,
   (details: CollectionEntry<ValidCollections>) => {
     return details.data.slug !== "platform-engineering";
   },
 )) as CollectionEntry<ValidCollections>[];
+
+const collectionDetails = collections.filter((collection) => collection.data.order < 5);
+// console.log("collectionDetails--------", collections);
 
 let gradientX = 45.5;
 let gradientY = -200;

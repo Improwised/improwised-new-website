@@ -10,8 +10,6 @@ import ServiceCard from "$lib/components/ServiceCard.astro";
 import ServiceApproach from "$lib/components/ServiceApproach.astro";
 import CaseStudiesSection from "$lib/components/CaseStudiesSection.astro";
 import CTASection from "$lib/components/CTASection.astro";
-import solution2 from "$lib/images/services/solutions-2.svg";
-import mobileSolution from "$lib/images/services/mobileSolutions.svg";
 import IndustryExpertise from "$lib/components/IndustryExpertise.astro"
 import FullCycleApproach from "$lib/components/FullCycleApproach.astro";
 
@@ -26,7 +24,10 @@ const {
   serviceApproachTitle,
   serviceApproach,
   isSectionTitlePrimary = "true",
-  heroUnitImage,
+  heroImage,
+  mobileHeroImage,
+  industryExpertise,
+  fullCycleApproach
 } = Astro.props;
 
 ---
@@ -53,12 +54,12 @@ const {
       >
     </div>
     <div class="w-full flex justify-center mt-6 md:mt-3">
-      <Image class="hidden md:block" alt="building block" src={heroUnitImage} />
+      <Image class="hidden md:block" alt="building block" src={heroImage} />
       <Image
         width={300}
         class="block md:hidden"
         alt="building block"
-        src={mobileSolution}
+        src={mobileHeroImage}
       />
     </div>
   </section>
@@ -108,8 +109,10 @@ const {
     </div>
   </section>
   
-  <IndustryExpertise />
-  <FullCycleApproach />
+  { industryExpertise && <IndustryExpertise industryExpertise={industryExpertise} />}
+  
+  { fullCycleApproach && <FullCycleApproach fullCycleApproach={fullCycleApproach} /> } 
+  
   <CaseStudiesSection />
   <CTASection />
 </section>

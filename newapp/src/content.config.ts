@@ -49,8 +49,10 @@ const services = defineCollection({
 		seoTitle: z.string(),
 		seoDescription: z.string(),
 		lightImage: image().optional(),
+		heroImage: image().optional(),
+		mobileHeroImage: image().optional(),
 		description: z.string(),
-		order: z.number(), // Add order field
+		order: z.number(),
 		text: z.string(),
 		primaryText: z.string(),
 		blocks: z.array(z.object({
@@ -79,7 +81,15 @@ const services = defineCollection({
 		serviceCardCollection: z.string(),
 		serviceApproachPrimaryTitle: z.string(),
 		serviceApproachTitle: z.string(),
-		serviceApproach: z.string()
+		serviceApproach: z.string(),
+		industryExpertise: z.array(z.object({
+			title: z.string(),
+			description: z.string(),
+		})).optional(),
+		fullCycleApproach: z.array(z.object({
+			title: z.string(),
+			description: z.string(),
+		})).optional()
 	}),
 });
 

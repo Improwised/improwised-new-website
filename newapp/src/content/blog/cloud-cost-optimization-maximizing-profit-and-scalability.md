@@ -9,16 +9,15 @@ publishDate: 2024-12-24
 author: 'Shailesh Davara'
 image: '$lib/images/blogs/Cloud-cost-head.webp'
 linkTags:
-  - "What is Cloud Cost Optimization?"
-  - "The Potential of Cloud Cost Reduction"
-  - "Scalability's Contribution to Cost Reduction"
-  - "Real-Time Insights for Optimal Cloud Spending"
-  - "Adopting Cloud-Native for Scalable and Cost-effective Solutions"
-  - "Tools and Automation"
-  - "Example Chart: Cost Savings Over Time"
-  - "Conclusion"
+  - title: "What is Cloud Cost Optimization?"
+  - title: "The Potential of Cloud Cost Reduction"
+  - title: "Scalability's Contribution to Cost Reduction"
+  - title: "Real-Time Insights for Optimal Cloud Spending"
+  - title: "Adopting Cloud-Native for Scalable and Cost-effective Solutions"
+  - title: "Tools and Automation"
+  - title: "Example Chart: Cost Savings Over Time"
+  - title: "Conclusion"
 ---
-import BlogLink from "$lib/components/BlogLink.astro";
 
 Cloud Cost Optimization: Maximizing Profit and Scalability
 

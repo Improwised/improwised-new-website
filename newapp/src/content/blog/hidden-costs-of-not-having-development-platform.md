@@ -9,13 +9,13 @@ publishDate: 2025-03-19
 author: "Priyank Dhami"
 image: "$lib/images/blogs/Hidden-Costs-of-Not-Having-Development-Platform-head.webp"
 linkTags: 
-   - Inconsistent Environments and Integration Challenges
-   - Increased Support and Maintenance Overhead
-   - Security Vulnerabilities and Compliance Risks
-   - Slowed Onboarding and Knowledge Sharing
-   - Inefficient Resource Utilization
-   - Compliance and Audit Challenges
-   - Conclusion
+   - title: Inconsistent Environments and Integration Challenges
+   - title: Increased Support and Maintenance Overhead
+   - title: Security Vulnerabilities and Compliance Risks
+   - title: Slowed Onboarding and Knowledge Sharing
+   - title: Inefficient Resource Utilization
+   - title: Compliance and Audit Challenges
+   - title: Conclusion
 blockCategory: "code-and-infra-management"
 ---
 

@@ -9,11 +9,11 @@ publishDate: 2025-01-24
 author: 'Improwised Editorial Team'
 image: '$lib/images/blogs/Avoiding-Metric-Obsession-head.webp'
 linkTags:
-  - "The Role of DORA Metrics in Software Delivery"
-  - "Pitfalls of Overemphasizing DORA Metrics"
-  - "Strategies for Balanced Metric Utilization"
-  - "Consequences of Metric Obsession"
-  - "Conclusion"
+  - title: "The Role of DORA Metrics in Software Delivery"
+  - title: "Pitfalls of Overemphasizing DORA Metrics"
+  - title: "Strategies for Balanced Metric Utilization"
+  - title: "Consequences of Metric Obsession"
+  - title: "Conclusion"
 blockCategory: "monitoring-and-observability"
 ---
 

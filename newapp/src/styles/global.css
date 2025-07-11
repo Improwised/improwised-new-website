@@ -66,6 +66,9 @@
   & h3 {
     @apply font-manrope text-[26px] leading-[32px] font-extrabold mt-4 mb-1 scroll-mt-[8rem] lg:scroll-mt-28;
   }
+  & h4 {
+    @apply font-manrope text-[20px] leading-[28px] font-extrabold mt-4 mb-1 scroll-mt-[8rem] lg:scroll-mt-28;
+  }
   & h5 {
     @apply font-manrope text-xl font-bold;
   }
@@ -75,10 +78,13 @@
   & p {
     @apply text-[18px] leading-[28px] font-normal py-1;
   }
+  & ol {
+    @apply list-decimal flex flex-col gap-1.5 mb-0 pl-[17px];
+  }
   & ul {
     @apply list-disc flex flex-col gap-1.5 mb-0 pl-[17px];
   } 
-  & ul p {
+  & ul p, ol p {
     @apply py-0;
   }
   & strong {

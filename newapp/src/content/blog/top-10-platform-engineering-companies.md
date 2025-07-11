@@ -9,28 +9,29 @@ publishDate: 2025-07-03
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/top-10-platform-engineering-blog-image-head.png'
 linkTags:
-  - "Top 10 Platform Engineering Companies in 2025"
-  - "What is Platform Engineering?"
-  - "Why It Matters in 2025"
-  - "What Makes a Great Platform Engineering Partner?"
-  - "1. Improwised Technologies"
-  - "2. InfraCloud Technologies"
-  - "3. Netris"
-  - "4. Solita"
-  - "5. Improving"
-  - "6. Arctiq"
-  - "7. Easecloud"
-  - "8. MKdev"
-  - "9. Stackgenie"
-  - "10. Xenonstack"
-  - "Final Thoughts"
+  - title: "Top 10 Platform Engineering Companies in 2025"
+  - title: "What is Platform Engineering?"
+  - title: "Why It Matters in 2025"
+  - title: "What Makes a Great Platform Engineering Partner?"
+    children: 
+      - "1. Improwised Technologies"
+      - "2. InfraCloud Technologies"
+      - "3. Netris"
+      - "4. Solita"
+      - "5. Improving"
+      - "6. Arctiq"
+      - "7. Easecloud"
+      - "8. MKdev"
+      - "9. Stackgenie"
+      - "10. Xenonstack"
+  - title: "Final Thoughts"
 ---
 
 ## Top 10 Platform Engineering Companies in 2025
 
 Platform engineering is no longer optional. In 2025, it's essential for fast-growing businesses. As teams scale, managing infrastructure manually becomes a bottleneck. Platform engineering removes that friction. They need internal platforms that empower developers, automate operations, and deliver faster value.  
 
-We’ve rounded up 10 companies that are doing just that. Whether you're a CTO, DevOps leader, or startup founder, this list will help you find the right partner to build your future.
+We've rounded up 10 companies that are doing just that. Whether you're a CTO, DevOps leader, or startup founder, this list will help you find the right partner to build your future.
 
 ![Top 10 Platform Engineering Companies in 2025]($lib/images/blogs/top-10-platform-engineering-blog-image-body.png)
 

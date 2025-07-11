@@ -9,13 +9,14 @@ publishDate: 2025-02-25
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Comparing-Open-Application-head.webp'
 linkTags: 
-  - "Open Application Model (OAM)"
-  - "Platform Neutrality"
-  - "Blue/Green Deployment"
-  - "Continuous Deployment (CD)"
-  - "Recreate Deployment"
-  - "Shadow Deployment"
-  - "Conclusion"
+  - title: "Open Application Model (OAM)"
+  - title: "Platform Neutrality"
+    children:
+      - "Blue/Green Deployment"
+      - "Continuous Deployment (CD)"
+      - "Recreate Deployment"
+      - "Shadow Deployment"
+  - title: "Conclusion"
 blockCategory: "continuous-deployment"
 ---
 
@@ -29,7 +30,7 @@ This blog will delve into the technical aspects of OAM and compare it with other
 
 OAM is a specification designed to create cloud-native, [platform-independent applications](/blog/cloud-computing-business-model-innovation/). It uses a declarative approach to define application components, which simplifies the process of specifying how an application should be deployed and managed. OAM separates the application logic from the underlying infrastructure, allowing developers to focus on creating and [deploying applications](/blog/ci-cd-in-air-gapped-environments/) without worrying about the specifics of the supporting platform.
 
-### Key Components
+#### Key Components
 
 * Components: These correspond to workloads or resources within the application.
 
@@ -43,11 +44,11 @@ OAM is a specification designed to create cloud-native, [platform-independent ap
 
 One of the significant advantages of OAM is its platform neutrality. Applications defined using OAM can be deployed across various cloud-native platforms without requiring modifications. This is particularly useful in multi-cloud environments, where the ability to deploy applications consistently across different platforms can reduce deployment and management complexities.
 
-## Blue/Green Deployment
+### Blue/Green Deployment
 
 The Blue/Green deployment strategy involves running two versions of the application simultaneously: the current version (blue) and the new version (green). This approach allows for testing the new version in a live environment while keeping the old version available for immediate rollback if necessary.
 
-### Key Aspects
+#### Key Aspects
 
 * Traffic Management: Load balancers are used to redirect traffic between the blue and green environments.
 
@@ -55,49 +56,49 @@ The Blue/Green deployment strategy involves running two versions of the applicat
 
 * Rollback Capability: The ability to quickly switch back to the previous version if issues arise with the new version.
 
-### Comparison with OAM
+#### Comparison with OAM
 
 Unlike OAM, which focuses on defining and deploying application components in a declarative manner, Blue/Green deployment is more about managing the transition between different versions of an application. While OAM does not inherently support versioning and rollback mechanisms, it can be integrated with service meshes like Open Service Mesh (OSM) to achieve similar traffic management and rollback capabilities.
 
-## Continuous Deployment (CD)
+### Continuous Deployment (CD)
 
 [Continuous Deployment](/services/platform-engineering/continuous-deployment/) is a strategy where new versions of the application are released to production automatically after passing through automated testing and validation. This approach eliminates the need for manual testing or approval processes, allowing for rapid deployment of new features.
 
-### Key Aspects
+#### Key Aspects
 
 * Automated Testing: New code changes are deployed to production only after passing automated tests.
 
 * No Manual Gates: Unlike Continuous Delivery, CD does not include manual approval steps before deployment to production.
 
-### Comparison with OAM
+#### Comparison with OAM
 
 OAM and [Continuous Deployment](/services/platform-engineering/continuous-deployment/) share the goal of streamlining the deployment process, but they approach it differently. OAM focuses on the declarative definition of application components and their deployment workflows, whereas [Continuous Deployment](/services/platform-engineering/continuous-deployment/) is about automating the release process. OAM can be used in conjunction with CD pipelines to ensure that the application components are defined and deployed consistently across different environments.
 
-## Recreate Deployment
+### Recreate Deployment
 
 In the Recreate deployment strategy, the old version of the application is completely shut down before the new version is deployed. This results in downtime for the application until the new version is fully deployed and operational.
 
-### Key Aspects
+#### Key Aspects
 
 * Downtime: The application is unavailable during the transition from the old to the new version.
 
 * Cost-Effectiveness: This strategy is cheaper as it does not require load balancers or complex traffic management.
 
-### Comparison with OAM
+#### Comparison with OAM
 
 OAM does not inherently support recreate deployment strategies, as it is designed to manage and deploy application components without downtime. However, if an application defined using OAM needs to undergo a complete overhaul, the recreate strategy could be manually implemented, though it would not align with OAM's principles of platform neutrality and minimal downtime.
 
-## Shadow Deployment
+### Shadow Deployment
 
 Shadow deployment involves running both the old and new versions of the application simultaneously, but the new version receives traffic indirectly through the old version. This approach helps in testing the new version in a live environment without directly impacting users.
 
-### Key Aspects
+#### Key Aspects
 
 * Indirect Traffic: The new version receives traffic from the old version, reducing the risk of direct user impact.
 
 * Response Time: The response time may be prolonged due to the indirect traffic routing.
 
-### Comparison with OAM
+#### Comparison with OAM
 
 Similar to Blue/Green deployment, Shadow deployment is more about managing the transition and testing of new application versions. OAM, with its focus on declarative application definitions, does not natively support shadow deployment. However, integrating OAM with service meshes could facilitate similar traffic management and testing scenarios.
 

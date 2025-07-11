@@ -9,11 +9,18 @@ publishDate: 2025-04-21
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Zero-Downtime-Architecture-Head.webp'
 linkTags:
-  - "The Problem: Downtime is Costly"
-  - "The Role of Platform Engineering"
-  - "Architectural Pillars of Zero Downtime"
-  - "Real-World Example: SaaS Platform Uptime Boost"
-  - "Future-Proofing with Platform Engineering"
+  - title: "The Problem: Downtime is Costly"
+  - title: "The Role of Platform Engineering"
+  - title: "Architectural Pillars of Zero Downtime"
+    children: 
+      - "1. Immutable Infrastructure and Declarative IaC"
+      - "2. Blue-Green and Canary Deployments"
+      - "3. Service Mesh and Smart Routing"
+      - "4. Auto-Healing and Observability"
+      - "5. Chaos Engineering and Resilience Testing"
+      - "6. Distributed Systems and Multi-Zone Deployments"
+  - title: "Real-World Example: SaaS Platform Uptime Boost"
+  - title: "Future-Proofing with Platform Engineering"
 ---
 
 In today's always-on digital world, downtime is more than a nuisance; it's a revenue-killer and a brand liability. Whether you're running a fintech platform, a SaaS business, or a global e-commerce store, high availability is a must. That's where Zero Downtime Architecture (ZDA) comes in, and more importantly, where Platform Engineering becomes your long-term strategy to implement and sustain it.

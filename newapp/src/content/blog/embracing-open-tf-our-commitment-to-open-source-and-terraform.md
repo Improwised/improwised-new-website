@@ -9,9 +9,9 @@ publishDate: 2023-08-18
 author: "Priyank Dhami"
 image: "$lib/images/blogs/Embracinf-open-tf-head.png"
 linkTags:
-  - "Why Terraform Matters to Us"
-  - "License Change: Impact and Alignment"
-  - "Our Pledge"
+  - title: "Why Terraform Matters to Us"
+  - title: "License Change: Impact and Alignment"
+  - title: "Our Pledge"
 blockCategory: "code-and-infra-management"
 ---
 

@@ -9,15 +9,16 @@ publishDate: 2025-04-18
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/distributed-tracing-at-scale-head.webp'
 linkTags:
-  - "What Distributed Tracing Is in a Microservice Environment"
-  - "Challenges in Distributed Tracing at Scale"
-  - "Data Volume and Overhead"
-  - "Complexity of Trace Collection"
-  - "Correlating Distributed Traces"
-  - "Impact of Tracing on Service Performance"
-  - "Security and Privacy Concerns"
-  - "Data Retention and Query Performance"
-  - "Conclusion"
+  - title: "What Distributed Tracing Is in a Microservice Environment"
+  - title: "Challenges in Distributed Tracing at Scale"
+    children: 
+      - "Data Volume and Overhead"
+      - "Complexity of Trace Collection"
+      - "Correlating Distributed Traces"
+      - "Impact of Tracing on Service Performance"
+      - "Security and Privacy Concerns"
+      - "Data Retention and Query Performance"
+  - title: "Conclusion"
 ---
 
 Distributed Tracing at Scale: Keeping It Useful in Microservice Chaos

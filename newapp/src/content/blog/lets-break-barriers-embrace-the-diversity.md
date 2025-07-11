@@ -9,11 +9,11 @@ publishDate: 2023-08-07
 author: "Dipika"
 image: "$lib/images/blogs/lets-break-barriers-head.webp"
 linkTags:
-  - Gender Diversity and Workplace Success
-  - Age Diversity and Knowledge Sharing
-  - Regional Inclusion for Competitive Advantage
-  - Importance of Collective Intelligence
-  - Creating an Inclusive Work Environment
+  - title: Gender Diversity and Workplace Success
+  - title: Age Diversity and Knowledge Sharing
+  - title: Regional Inclusion for Competitive Advantage
+  - title: Importance of Collective Intelligence
+  - title: Creating an Inclusive Work Environment
 ---
 
 

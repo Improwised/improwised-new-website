@@ -9,12 +9,16 @@ publishDate: 2024-12-13
 author: 'Shailesh Davara'
 image: '$lib/images/blogs/Cloud-compiting-head.png'
 linkTags:
-  - "The Cloud Revolution: A New Business Paradigm"
-  - "Developing Global Enterprises and Startups"
-  - "Driving Innovation and Business Model Transformation"
-  - "Hybrid and Multicloud Strategies"
-  - "Cloud Service Providers: A Comparative Analysis"
-  - "Conclusion"
+  - title: "The Cloud Revolution: A New Business Paradigm"
+  - title: "Developing Global Enterprises and Startups"
+  - title: "Driving Innovation and Business Model Transformation"
+  - title: "Hybrid and Multicloud Strategies"
+  - title: "Cloud Service Providers: A Comparative Analysis"
+    children:
+      - "Amazon Web Services (AWS)"
+      - "Google Cloud Platform (GCP)"
+      - "Microsoft Azure"
+  - title: "Conclusion"
 ---
 
 Cloud Computing: A Revolutionary Business Model Innovation

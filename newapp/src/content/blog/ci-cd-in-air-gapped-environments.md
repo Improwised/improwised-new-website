@@ -9,16 +9,28 @@ publishDate: '2025-04-03'
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/ci-cd-in-air-gapped-environments-head.webp'
 linkTags:
-  - "Challenges in Implementing CI/CD in Air-Gapped Environments"
-  - "1. Managing Source Code and Version Control"
-  - "2. Handling Dependencies Without Internet Access"
-  - "3. Artifact Storage and Build Management"
-  - "4. Containerization and Image Management"
-  - "5. Automated Testing and Security Validation"
-  - "6. Deployment and Configuration Management"
-  - "Strategies for Implementing CI/CD in Air-Gapped Environments"
-  - "Consequences of Poor Implementation"
-  - "Conclusion"
+  - title: "Challenges in Implementing CI/CD in Air-Gapped Environments"
+    children:
+      - "1. Managing Source Code and Version Control"
+      - "2. Handling Dependencies Without Internet Access"
+      - "3. Artifact Storage and Build Management"
+      - "4. Containerization and Image Management"
+      - "5. Automated Testing and Security Validation"
+      - "6. Deployment and Configuration Management"
+  - title: "Strategies for Implementing CI/CD in Air-Gapped Environments"
+    children:
+      - "1. Establishing an Offline Build Pipeline"
+      - "2. Maintaining a Local Package and Artifact Repository"
+      - "3. Secure Offline Synchronization of Updates"
+      - "4. Implementing Automated Testing and Security Verification"
+      - "5. Enforcing Access Control and Compliance"
+  - title: "Consequences of Poor Implementation"
+    children:
+      - "Operational Overhead"
+      - "Delayed Releases"
+      - "Higher Maintenance Costs"
+      - "Limited Scalability"
+  - title: "Conclusion"
 blockCategory: "continuous-integration"
 ---
 

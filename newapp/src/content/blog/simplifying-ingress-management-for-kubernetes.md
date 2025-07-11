@@ -9,13 +9,14 @@ publishDate: 2024-03-31
 author: "Rakshit Menpara"
 image: "$lib/images/blogs/Simplifying-Ingress-Management.webp"
 linkTags:
-  - Prerequisites
-  - Installing Traefik via Helm
-  - Configuring DNS for Traefik
-  - Deploying a Sample Application
-  - Using IngressRoute CRD
-  - Middleware Configuration
-  - High Availability Considerations
+  - title: Prerequisites
+    children:
+      - Installing Traefik via Helm
+      - Configuring DNS for Traefik
+      - Deploying a Sample Application
+      - Using IngressRoute CRD
+      - Middleware Configuration
+      - High Availability Considerations
 blockCategory: "uptime-assurance"
 ---
 
@@ -33,7 +34,7 @@ Managing ingress traffic in a Kubernetes cluster is a critical aspect of ensurin
 
 - Have a domain name that resolves to the public IP of your Kubernetes cluster.
 
-## Installing Traefik via Helm
+### Installing Traefik via Helm
 
 To install Traefik using Helm, configure the `traefik-values.yaml` file:
 
@@ -57,25 +58,25 @@ To install Traefik using Helm, configure the `traefik-values.yaml` file:
   
 ```
 
-## Configuring DNS for Traefik
+### Configuring DNS for Traefik
 
 After installing Traefik, set up a DNS name for the public IP of the Traefik controller:
 
 kubectl get svc traefik -n kube-system -o jsonpath=`{.status.loadBalancer.ingress.hostname}`
 
 
-## Deploying a Sample Application
+### Deploying a Sample Application
 
 To test Traefik, deploy a sample application like `azure-vote-app`.
 
-## Using IngressRoute CRD
+### Using IngressRoute CRD
 
 Traefik supports the IngressRoute CRD for advanced routing configurations.
 
-## Middleware Configuration
+### Middleware Configuration
 
 Configure security headers using Traefik middleware.
 
-## High Availability Considerations
+### High Availability Considerations
 
 Strategies to ensure high availability when using multiple Traefik instances with Let's Encrypt.

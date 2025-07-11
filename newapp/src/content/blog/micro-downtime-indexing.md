@@ -9,15 +9,21 @@ publishDate: 2025-05-14
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/micro-downtime-indexing-head.svg'
 linkTags:
-  - "What Is Micro-Downtime?"
-  - "Sources of Sub-Second Failures"
-  - "Why Traditional Monitoring Fails"
-  - "Indexing Micro-Downtime: Instrumentation Strategy"
-  - "Indexing Patterns"
-  - "Integrating with CI/CD Pipelines"
-  - "Observing User-Perceived Failures"
-  - "Consequences of Ignoring Micro-Downtime"
-  - "Conclusion"
+  - title: "What Is Micro-Downtime?"
+  - title: "Sources of Sub-Second Failures"
+  - title: "Why Traditional Monitoring Fails"
+  - title: "Indexing Micro-Downtime: Instrumentation Strategy"
+    children: 
+      - "1. High-Resolution Metrics"
+      - "2. Event Logging with Millisecond Timestamps"
+      - "3. Per-Request Tracing"
+      - "4. Fine-Grained Alerting"
+      - "5. Kernel-Level Probing"
+  - title: "Indexing Patterns"
+  - title: "Integrating with CI/CD Pipelines"
+  - title: "Observing User-Perceived Failures"
+  - title: "Consequences of Ignoring Micro-Downtime"
+  - title: "Conclusion"
 ---
 
 Web services are expected to operate with high availability and minimal latency. While traditional monitoring systems effectively track outages and performance degradation, they often overlook micro-downtime—failures occurring at sub-second intervals that disrupt request handling or background processing without triggering full-blown alerts. These transient failures can degrade user experience, break downstream systems, or compromise the integrity of internal operations.

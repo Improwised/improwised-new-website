@@ -9,12 +9,12 @@ publishDate: 2025-01-29
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Performance-Optimization-in-OpenTofuhead.png'
 linkTags:
-  - State Management and Resource Tracking
-  - Caching Attribute Values
-  - Modular Configuration and Workspaces
-  - Performance Evaluation and Benchmarking
-  - Community-Driven Optimizations
-  - Conclusion
+  - title: State Management and Resource Tracking
+  - title: Caching Attribute Values
+  - title: Modular Configuration and Workspaces
+  - title: Performance Evaluation and Benchmarking
+  - title: Community-Driven Optimizations
+  - title: Conclusion
 blockCategory: "code-and-infra-management"
 ---
 

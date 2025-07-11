@@ -9,12 +9,17 @@ publishDate: 2025-02-06
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/End-to-End-Encryption-head.png'
 linkTags:
-  - The Need for State File Encryption
-  - End-to-End State Encryption in OpenTofu 1.7.0
-  - Configuration Flexibility
-  - Fallback Configurations and Key Rotation
-  - Security Implications
-  - Conclusion
+  - title: The Need for State File Encryption
+  - title: End-to-End State Encryption in OpenTofu 1.7.0
+    children:
+      - "Encryption Configuration"
+      - "Key Management"
+      - "Encryption and Decryption Process"
+      - "Remote State Files and Plan Files"
+  - title: Configuration Flexibility
+  - title: Fallback Configurations and Key Rotation
+  - title: Security Implications
+  - title: Conclusion
 blockCategory: "security-and-access-control"
 ---
 
@@ -43,7 +48,7 @@ To enable state file encryption in OpenTofu, users must add an encryption block 
 
 Here is an example of how the encryption block might be configured:
 
-```js 
+```javascript 
 
   terraform {
     encryption {

@@ -9,15 +9,15 @@ publishDate: 2025-01-02
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/Top-Cloud-Trends-head.png'
 linkTags:
-  - "1. Multicloud Architectures’ Ascension"
-  - "2. Serverless Computing Adoption"
-  - "3. Green Cloud Practices"
-  - "4. Development of AI and Machine Learning Infrastructure"
-  - "5. Edge Computing Integration"
-  - "6. Cloud-Native Security"
-  - "7. Cloud Infrastructure as Code (IaC) Maturity"
-  - "8. Polymorphic Containers (and Multi-Cloud Strategies)"
-  - "Conclusion"
+  - title: "1. Multicloud Architectures’ Ascension"
+  - title: "2. Serverless Computing Adoption"
+  - title: "3. Green Cloud Practices"
+  - title: "4. Development of AI and Machine Learning Infrastructure"
+  - title: "5. Edge Computing Integration"
+  - title: "6. Cloud-Native Security"
+  - title: "7. Cloud Infrastructure as Code (IaC) Maturity"
+  - title: "8. Polymorphic Containers (and Multi-Cloud Strategies)"
+  - title: "Conclusion"
 ---
 
 Top Cloud Trends to Watch in 2025: Implications for Platform Engineers

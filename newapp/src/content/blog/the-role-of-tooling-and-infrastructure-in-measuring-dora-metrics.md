@@ -9,12 +9,12 @@ publishDate: 2025-01-22
 author: "Priyank Dhami"
 image: "$lib/images/blogs/The-Role-of-Tooling-head.webp"
 linkTags:
-  - "Understanding DORA Metrics"
-  - "Tooling for DORA Metrics"
-  - "Infrastructure Considerations"
-  - "Challenges in Measuring DORA Metrics"
-  - "Consequences of Insufficient Tooling and Infrastructure"
-  - "Conclusion"
+  - title: "Understanding DORA Metrics"
+  - title: "Tooling for DORA Metrics"
+  - title: "Infrastructure Considerations"
+  - title: "Challenges in Measuring DORA Metrics"
+  - title: "Consequences of Insufficient Tooling and Infrastructure"
+  - title: "Conclusion"
 blockCategory: "monitoring-and-observability"
 ---
 

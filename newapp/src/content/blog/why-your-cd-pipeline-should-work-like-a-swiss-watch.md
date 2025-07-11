@@ -9,10 +9,10 @@ publishDate: 2025-02-13
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/whycd.png'
 linkTags:
-  - Understanding the Components of a CD Pipeline
-  - Designing the Pipeline
-  - Ensuring Reliability and Precision
-  - Conclusion
+  - title: Understanding the Components of a CD Pipeline
+  - title: Designing the Pipeline
+  - title: Ensuring Reliability and Precision
+  - title: Conclusion
 blockCategory: "continuous-deployment"
 ---
 

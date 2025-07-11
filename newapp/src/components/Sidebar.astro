@@ -9,6 +9,7 @@ const { insideMdx } = Astro.props;
 interface Tag {
   title: string;
   id: string;
+  children?: Tag[];
 }
 
 let tags: Tag[] = [];

@@ -9,12 +9,12 @@ publishDate: 2025-02-18
 author: "Rakshit Menpara"
 image: "$lib/images/blogs/Implementing-OAuth2-head.webp"
 linkTags:
-  - Keycloak Overview
-  - Setting Up Keycloak
-  - Configuring Keycloak Gatekeeper
-  - Integrating with Kubernetes
-  - Accessing and Decoding JSON Web Tokens (JWTs)
-  - Conclusion
+  - title: Keycloak Overview
+  - title: Setting Up Keycloak
+  - title: Configuring Keycloak Gatekeeper
+  - title: Integrating with Kubernetes
+  - title: Accessing and Decoding JSON Web Tokens (JWTs)
+  - title: Conclusion
 blockCategory: "security-and-access-control"
 ---
 

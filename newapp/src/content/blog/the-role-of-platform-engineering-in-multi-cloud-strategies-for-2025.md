@@ -9,13 +9,23 @@ publishDate: 2024-12-27
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/the-role-of-platform-engineering.webp'
 linkTags:
-  - Understanding Multi-Cloud Strategies
-  - Important Components of Integration with Multi-Clouds
-  - The Role of Platform Engineering
-  - Technical Considerations for Multi-Cloud Platforms
-  - Tools and Technologies for Multi-Cloud Platform Engineering
-  - Adoption Rates
-  - Conclusion
+  - title: Understanding Multi-Cloud Strategies
+  - title: Important Components of Integration with Multi-Clouds
+  - title: The Role of Platform Engineering
+    children: 
+      - "Infrastructure Abstraction"
+      - "Automation of Operational Tasks"
+      - "Integration with Multi-Cloud Environments"
+  - title: Technical Considerations for Multi-Cloud Platforms
+    children:
+      - "Architectural Complexity and Management:"
+      - "Modern Workloads"
+  - title: Tools and Technologies for Multi-Cloud Platform Engineering
+    children:
+      - "Cloud Management Tools"
+      - "Container Orchestration and Serverless Computing"
+  - title: Adoption Rates
+  - title: Conclusion
 blockCategory: "code-and-infra-management"
 ---
     

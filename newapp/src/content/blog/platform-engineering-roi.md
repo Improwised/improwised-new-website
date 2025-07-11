@@ -9,13 +9,13 @@ publishDate: 2025-04-21
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/platform-engineering-roi-head.webp'
 linkTags:
- - "Reduced Cognitive Load = Fewer Mistakes"
- - "Improved Developer Experience = Higher Retention"
- - "Faster Time to Market = Business Agility"
- - "nfrastructure Cost Optimization = Real Savings"
- - "Standardization = Reduced Risk"
- - "Clear Metrics = Measurable ROI"
- - "Bottom Line: Platform Engineering Is a Business Strategy"
+ - title: "Reduced Cognitive Load = Fewer Mistakes"
+ - title: "Improved Developer Experience = Higher Retention"
+ - title: "Faster Time to Market = Business Agility"
+ - title: "nfrastructure Cost Optimization = Real Savings"
+ - title: "Standardization = Reduced Risk"
+ - title: "Clear Metrics = Measurable ROI"
+ - title: "Bottom Line: Platform Engineering Is a Business Strategy"
 ---
 
 Platform Engineering is often pitched as a way to boost developer productivity, but its impact goes far beyond faster deployments and happy engineers. At its core, Platform Engineering is about building reliable, scalable, and secure systems that allow product teams to deliver features consistently and confidently.

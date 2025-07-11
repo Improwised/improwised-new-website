@@ -56,10 +56,22 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
       data: { linkTags },
     },
   ] = await getCollection("blogs", (blog) => blog.id == url.at(-2));
-  tags = (linkTags as string[]).map((tag) => ({
-    title: tag,
-    id: slugger.slug(tag),
-  }));
+  tags = (linkTags as { title: string; children?: string[] | undefined }[]).map(
+    (tag) => {
+      let subtags: Tag[] = [];
+      if (tag.children) {
+        subtags = (tag.children as string[]).map((childtag) => ({
+          title: childtag,
+          id: slugger.slug(childtag),
+        }));        
+      }
+      return {
+        title: tag.title,
+        id: slugger.slug(tag.title),
+        children: subtags
+      };
+    }
+  );
 } else if (Astro.url.pathname.split("/").includes("privacy-policy")) {
   tags = privacy_policy_tags.map((tag) => ({
     title: tag,

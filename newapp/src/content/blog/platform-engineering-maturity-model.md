@@ -9,16 +9,16 @@ publishDate: 2025-03-04
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/PlatformHead.webp'
 linkTags: 
-  - "Level 1: Ad-Hoc and Manual Execution"
-  - "Level 2: Standardized Foundations"
-  - "Level 3: Automated Delivery Pipelines"
-  - "Level 4: Self-Service Platforms"
-  - "Level 5: Continuous Evolution"
-  - "Assessing Organizational Maturity"
-  - "Consequences of Maturity Stagnation"
-  - "Interconnected Aspects of Maturity"
-  - "Implementing the Model"
-  - "Conclusion"
+  - title: "Level 1: Ad-Hoc and Manual Execution"
+  - title: "Level 2: Standardized Foundations"
+  - title: "Level 3: Automated Delivery Pipelines"
+  - title: "Level 4: Self-Service Platforms"
+  - title: "Level 5: Continuous Evolution"
+  - title: "Assessing Organizational Maturity"
+  - title: "Consequences of Maturity Stagnation"
+  - title: "Interconnected Aspects of Maturity"
+  - title: "Implementing the Model"
+  - title: "Conclusion"
 blockCategory: "upgrades-and-day-2-operations"
 ---
 

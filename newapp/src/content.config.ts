@@ -155,7 +155,10 @@ const blogs = defineCollection({
 		tags: z.array(z.string()),
 		author: z.string(),
 		publishDate: z.coerce.date(),
-		linkTags: z.array(z.string()).optional(),
+		linkTags: z.array(z.object({
+			title: z.string(),
+			children: z.array(z.string()).optional()
+		})).optional(),
 		blockCategory: z.string().optional(),
 	}),
 });

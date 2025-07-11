@@ -9,11 +9,11 @@ publishDate: 2025-03-12
 author: "Shailesh Davara"
 image: "$lib/images/blogs/Scaling-Tech-Infrastructure-with-Platform-Engineering-head.webp"
 linkTags:
-  - Components of Platform Engineering
-  - Implementing Platform Engineering for Scalability
-  - Emerging Trends in Platform Engineering
-  - Applying Platform Engineering to Networking
-  - Conclusion and Consequences
+  - title: Components of Platform Engineering
+  - title: Implementing Platform Engineering for Scalability
+  - title: Emerging Trends in Platform Engineering
+  - title: Applying Platform Engineering to Networking
+  - title: Conclusion and Consequences
 blockCategory: "code-and-infra-management"
 ---
 

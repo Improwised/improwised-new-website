@@ -9,10 +9,25 @@ publishDate: 2025-04-07
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Self-Healing-CI-pipelines-head.webp'
 linkTags:
-  - "Automated Failure Diagnosis"
-  - "Automated Remediation Strategies"
-  - "Implementation of Self-Healing in CI Pipelines"
-  - "Conclusion"
+  - title: "Automated Failure Diagnosis"
+    children:
+      - "Log Analysis"
+      - "Anomaly Detection"
+      - "Root Cause Analysis"
+  - title: "Automated Remediation Strategies"
+    children:
+      - "Retry Mechanisms"
+      - "Code Reversion"
+      - "Container and Environment Recovery"
+      - "Dependency Conflict Resolution"
+      - "Flaky Test Detection and Management"
+  - title: "Implementation of Self-Healing in CI Pipelines"
+    children: 
+      - "Machine Learning-Driven Failure Classification"
+      - "Predictive Analysis for Proactive Recovery"
+      - "Auto-Scaling Infrastructure"
+      - "Integrating Observability"
+  - title: "Conclusion"
 ---
 
 

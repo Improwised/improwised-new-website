@@ -9,12 +9,16 @@ publishDate: 2025-02-21
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/The-Evolution-of-Kubernetes-head.webp'
 linkTags: 
-  - "1. Kubernetes as the Backbone: A Historical Perspective"
-  - "2. Kubernetes as a Foundation: The Role of Infrastructure Abstraction"
-  - "3. Why Kubernetes Is Not the Destination"
-  - "4. Moving Beyond Kubernetes: The Platform Engineering Perspective"
-  - "5. The Future: Kubernetes as a Utility, Not a Destination"
-  - "Conclusion: Kubernetes as the Starting Point for Platform Innovation"
+  - title: "1. Kubernetes as the Backbone: A Historical Perspective"
+  - title: "2. Kubernetes as a Foundation: The Role of Infrastructure Abstraction"
+  - title: "3. Why Kubernetes Is Not the Destination"
+    children:
+      - "a) Complexity Overload"
+      - "b) Lack of Developer Experience Features"
+      - "c) Operational Overhead"
+  - title: "4. Moving Beyond Kubernetes: The Platform Engineering Perspective"
+  - title: "5. The Future: Kubernetes as a Utility, Not a Destination"
+  - title: "Conclusion: Kubernetes as the Starting Point for Platform Innovation"
 blockCategory: "continuous-deployment"
 ---
 

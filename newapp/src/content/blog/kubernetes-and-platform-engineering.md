@@ -9,12 +9,12 @@ publishDate: 2025-03-21
 author: "Rakshit Menpara"
 image: "$lib/images/blogs/Kubernetes-and-Platform-Engineering-head.webp"
 linkTags:
-  - Kubernetes Ecosystem for Platform Engineering
-  - Role of Kubernetes in Cloud-Native Platform Development
-  - Platform Engineering Principles with Kubernetes
-  - DevSecOps and Platform Engineering
-  - Challenges in Implementing Platform Engineering
-  - Conclusion
+  - title: Kubernetes Ecosystem for Platform Engineering
+  - title: Role of Kubernetes in Cloud-Native Platform Development
+  - title: Platform Engineering Principles with Kubernetes
+  - title: DevSecOps and Platform Engineering
+  - title: Challenges in Implementing Platform Engineering
+  - title: Conclusion
 blockCategory: "continuous-deployment"
 ---
 

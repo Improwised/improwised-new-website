@@ -1,17 +1,25 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { innerWidth, innerHeight } from "svelte/reactivity/window";
+  import { innerWidth } from "svelte/reactivity/window";
   import { ChevronRight, ChevronDown } from "lucide-svelte";
   import Button from "../ui/button/button.svelte";
 
   interface Sections {
     title: string;
     id: string;
+    children: {
+      title: string;
+      id: string;
+    }[];
   }
   export let sections: Sections[];
   export let insideMdx: string;
 
-  export let activeSection: Sections = { id: "", title: "" };
+  export let activeSection: Sections = {
+    id: "",
+    title: "",
+    children: [],
+  };
   let showPageBar = false;
   let isMenuOpen = false;
 
@@ -24,6 +32,11 @@
       title: string;
       id: string;
       element: HTMLElement | null;
+      children: {
+        title: string,
+        id: string,
+        element: HTMLElement | null;
+      }[]
     }[],
     heroSection: HTMLElement | null
   ) {
@@ -34,7 +47,19 @@
         activeSection.id = sec.id;
         activeSection.title = sec.title;
       }
+
+      if (sec.children) {
+        sec.children.forEach((child) => {
+          const boudingRect = child.element?.getBoundingClientRect();
+
+          if ((boudingRect?.top as number) <= 130 && (boudingRect?.bottom as number) > 100) {
+            activeSection.id = child.id;
+            activeSection.title = child.title;
+          }
+        })
+      }
     });
+
     const heroRect = heroSection?.getBoundingClientRect();
     if (window.scrollY > (heroRect?.height as number)) {
       showPageBar = true;
@@ -44,11 +69,23 @@
   }
 
   onMount(() => {
-    const sectionElements = sections.map((s) => ({
-      title: s.title,
-      id: s.id,
-      element: document.getElementById(s.id),
-    }));
+    const sectionElements = sections.map((section) => {
+      let childtag: { title: string, id: string, element: HTMLElement | null }[] = [];
+      if (section.children) {
+        childtag = (section.children).map((tag) => ({
+          title: tag.title,
+          id: tag.id,
+          element: document.getElementById(tag.id),
+        }))
+      } 
+      return {
+        title: section.title,
+        id: section.id,
+        element: document.getElementById(section.id),
+        children: childtag
+      };
+    });
+    
     const heroSection = document.getElementById("section1");
     const activeTitle = () => showActiveTitle(sectionElements, heroSection);
     window.addEventListener("scroll", activeTitle);
@@ -106,10 +143,22 @@
       {#each sections as section}
         <a
           href={`#${encodeURIComponent(section.id)}`}
-          class={`block font-semibold font-manrope text-[14px] hover:text-blue-hover ${activeSection.id == section.id ? "text-blue-hover border-l-2 border-white" : "text-first-color"} ${isNaN(parseInt((section.id).split('-').at(0) as string)) ? '' : 'ml-2'} md:text-[16px] md:leading-[24px] tracking-[0.02em`}
+          class={`block font-semibold font-manrope text-[14px] hover:text-blue-hover ${activeSection.id == section.id ? "text-blue-hover border-l-2 border-white" : "text-first-color"} md:text-[16px] md:leading-[24px] tracking-[0.02em`}
         >
           {section.title}
         </a>
+        {#if section.children}
+          {#each section.children as childtag}
+            <div class="flex flex-col gap-4 ml-3.5">
+              <a
+                href={`#${encodeURIComponent(childtag.id)}`}
+                class={`block font-semibold font-manrope text-[14px] hover:text-blue-hover ${activeSection.id == childtag.id ? "text-blue-hover border-l-2 border-white" : "text-first-color"} md:text-[16px] md:leading-[24px] tracking-[0.02em`}
+              >
+                {childtag.title}
+              </a>
+            </div>
+          {/each}
+        {/if}
       {/each}
     </div>
   </nav>

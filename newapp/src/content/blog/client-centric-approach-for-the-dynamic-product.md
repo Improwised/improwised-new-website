@@ -9,12 +9,12 @@ publishDate: 2023-10-11
 author: 'Improwised Editorial Team'
 image: '$lib/images/blogs/Client-Centric-Approach-head.webp'
 linkTags:
-  - "Client Centric Culture"
-  - "How Culture in Improwised Yields Best"
-  - "Maintaining Customer Focus"
-  - "User Feedback and Stories"
-  - "Team Collaboration"
-  - "Conclusion"
+  - title: "Client Centric Culture"
+  - title: "How Culture in Improwised Yields Best"
+  - title: "Maintaining Customer Focus"
+  - title: "User Feedback and Stories"
+  - title: "Team Collaboration"
+  - title: "Conclusion"
 ---
 
 

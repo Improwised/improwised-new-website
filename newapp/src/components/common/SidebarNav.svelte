@@ -133,7 +133,7 @@
   </div>
 
   <!-- Sidebar Navigation -->
-  <nav
+  <nav aria-label="Sidebar"
     class={`lg:block blog-scrollbar-hide sticky top-28 max-h-[calc(100vh-35rem)] lg:max-h-[calc(100vh-7rem)] overflow-y-scroll ${isMenuOpen ? "block" : "hidden"} overflow-y-auto h-fit`}
   >
     <div>

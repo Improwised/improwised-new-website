@@ -18,7 +18,7 @@ export default defineConfig({
   },
 
   // Subdirectory path
-  base: '/improwised-new-website/newapp',
+  // base: '/improwised-new-website/newapp',
 
   // Default output directory
   outDir: 'dist',
@@ -27,8 +27,8 @@ export default defineConfig({
   },
   integrations: [svelte(), mdx(), sitemap()],
   
-  server: {
-    host: true,
-    port: 4321
-  }
+  // server: {
+  //   host: true,
+  //   port: 4321
+  // }
 });

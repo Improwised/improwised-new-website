@@ -123,13 +123,15 @@ const authors = await getCollection("authors");
                   )
                   .map((author) => (
                     <div class="flex items-center gap-2">
-                      <Image
-                        alt="feature"
-                        class="rounded-full"
-                        width={56}
-                        height={56}
-                        src={author.data.image}
-                      />
+                      <div>
+                        <Image
+                          alt="author-image"
+                          class="rounded-full border aspect-square object-cover object-top"
+                          width={54}
+                          height={54}
+                          src={author.data.image}
+                        />
+                      </div>
                       <p class="font-semibold text-fifth-color small-text md:text-[18px] tracking-tight">
                         By {author.data.title}
                         <br />

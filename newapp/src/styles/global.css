@@ -97,7 +97,7 @@
     @apply no-underline;
   }
   & table {
-    @apply block overflow-x-scroll
+    @apply block overflow-x-scroll my-0.5
   }
   & table tbody tr td {
     @apply border border-gray-300 p-5

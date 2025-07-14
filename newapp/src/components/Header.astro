@@ -13,6 +13,12 @@ import Sidebar from "./Sidebar.astro";
 const currentUrl = Astro.url.pathname.split("/")
 import { Menu, X } from "lucide-svelte";
 
+let blogDetail = {};
+const url: string[] = Astro.url.pathname.split("/");
+if (url.includes("blog") && url.at(-2) !== "blog") {
+  blogDetail = await getCollection("blogs", (blog) => blog.id == url.at(-2));
+}
+
 ---
 
 <header
@@ -43,7 +49,7 @@ import { Menu, X } from "lucide-svelte";
     </div>
 
     <!-- scrollspay -->
-    {
+    { Object.keys(blogDetail).length > 0 &&
       ((currentUrl.includes("blog") && currentUrl.indexOf("blog") < currentUrl.length-1) || (currentUrl.includes("privacy-policy")) || (currentUrl.includes("terms-of-use"))) && <Sidebar insideMdx="outside" />
     }
 

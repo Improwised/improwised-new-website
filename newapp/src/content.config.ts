@@ -213,6 +213,15 @@ const aboutImprowised = defineCollection({
 	}),
 });
 
+const pageNotFound = defineCollection({
+	loader: glob({ base: './src/content/pages/page-not-found', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
+	}),
+});
+
 const casestudies = defineCollection({
 
 	loader: glob({ base: './src/content/casestudies', pattern: '**/*.{md,mdx}' }),
@@ -488,4 +497,4 @@ const authors = defineCollection({
 	}),
 });
 
-export const collections = { authors, reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, approaches5, approaches6, corefeaturesProductModernization, corefeaturesTechnologyConsulting, corefeaturesBusinessIntelligenceAndAutomation, corefeaturesCustomSoftwareDevelopmentServices, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse };
+export const collections = { authors, reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, approaches5, approaches6, corefeaturesProductModernization, corefeaturesTechnologyConsulting, corefeaturesBusinessIntelligenceAndAutomation, corefeaturesCustomSoftwareDevelopmentServices, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse, pageNotFound };

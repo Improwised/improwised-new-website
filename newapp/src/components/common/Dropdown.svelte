@@ -14,7 +14,7 @@
 
 <DropdownMenu.Root preventScroll={false}>
   <DropdownMenu.Trigger class={`group flex items-center space-x-1 hover:cursor-pointer ${currentUrl.includes("services") ? "text-blue-hover" : "text-first-color"}`}>
-    <span class="small-text group-hover:text-blue-hover">Service</span>
+    <span class="small-text group-hover:text-blue-hover">Services</span>
     <ChevronRight class="w-4 h-4 group-hover:text-blue-hover" />
   </DropdownMenu.Trigger>
   <DropdownMenu.Content align="start" class="rounded-[6px] dropdown-bg border-0 p-[15px]">

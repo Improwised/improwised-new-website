@@ -137,9 +137,6 @@ teams:
     - name: 'Shivani'
       image: '$lib/images/teams/Shivani.jpg'
 
-    - name: 'Juber'
-      image: '$lib/images/teams/Juber.jpg'
-
     - name: 'Viral'
       image: '$lib/images/teams/Viral.jpg'
 

@@ -40,6 +40,7 @@ const founders = [
 const teamsData = await getCollection("teams", ({ data }) => {
 	return data;
 });
+
 const eventsCollection = await getCollection('events');
 
 const eventData = eventsCollection.flatMap(events => events.data.events).slice(0,6);
@@ -474,11 +475,11 @@ const [{ data : {description, seoTitle, seoDescription}}] = await getCollection(
 				</div>
 				<div class="relative z-10 md:mt-10">
 					<div
-						class="flex flex-wrap justify-evenly gap-5 gap-y-10"
+						class="flex flex-wrap justify-center gap-8 gap-y-10"
 					>
 						{
 							teamsData.map(({ data: { teams } }) =>
-								teams.map((team) => (
+								teams.map((team, index) => (
 									<>
 										<Card.Root class="grid bg-card-bg border-2 border-card-border overflow-hidden shadow-nav">
 

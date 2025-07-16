@@ -36,6 +36,8 @@ Improwised.com ("we," "us," or "our") provides service solutions to businesses. 
 
 - **Service Terms:** Specific terms for each service will be outlined in separate agreements or contracts provided at the time of engagement.
 
+- **Refund Policy:** When a refund is requested and subsequently approved under the terms of the service contract, it will be processed to the original payment method or a designated account within 30 business days.
+
 ***
 
 ## Intellectual Property

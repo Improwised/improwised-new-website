@@ -70,7 +70,7 @@
     @apply font-manrope text-[20px] leading-[28px] font-extrabold mt-4 mb-1 scroll-mt-[8rem] lg:scroll-mt-28;
   }
   & h5 {
-    @apply font-manrope text-xl font-bold;
+    @apply font-manrope text-xl font-bold mt-2 mb-0.5;
   }
   & img {
     @apply my-5;

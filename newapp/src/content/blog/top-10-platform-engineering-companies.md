@@ -73,9 +73,9 @@ Look for companies that offer:
 
 Let’s meet the teams raising the bar in 2025.
 
-### 1. Improwised Technologies
+### 1. <a href="https://www.improwised.com/" target="_blank">Improwised Technologies</a>
 
-**Based in:** India  | **Founded:** 2011 
+**Based in:** India  | **Founded:** 2011 | <a href="https://www.linkedin.com/company/improwised-technologies/" target="_blank">LinkedIn</a> 
 
 Improwised helps engineering teams move fast and stay in control - with cloud-native, cloud-agnostic, and automation-driven solutions.
 
@@ -100,7 +100,7 @@ Improwised helps engineering teams move fast and stay in control - with cloud-na
 
 They’ve quietly powered dozens of products behind the scenes, especially in regulated industries like healthcare and Adtech.
 
-### 2. InfraCloud Technologies
+### 2. <a href="https://www.linkedin.com/company/infracloudio/" target="_blank" rel="nofollow noreferrer">InfraCloud Technologies</a>
 
 **Based in:** Pune, India  | **Founded:** 2016  
 
@@ -117,7 +117,7 @@ InfraCloud is a Kubernetes powerhouse with roots in the open-source ecosystem.
 Their GitOps-first approach (Argo CD, Flux) makes them a go-to for cloud-native transformations.
 
 
-### 3. Netris
+### 3. <a href="https://www.linkedin.com/company/netrisio/" target="_blank" rel="nofollow noreferrer">Netris</a>
 
 **Based in:** San Jose, USA  | **Founded:** 2019  
 
@@ -134,7 +134,7 @@ If your bottleneck is networking, Netris is your fix. They turn networks into cl
 Great choice for telcos, AI infra, and hyperscalers building at the edge.
 
 
-### 4. Solita
+### 4. <a href="https://www.linkedin.com/company/solita/" target="_blank" rel="nofollow noreferrer">Solita</a>
 
 **Based in:** Finland  | **Founded:** 1996  
 
@@ -151,7 +151,7 @@ Solita brings Nordic clarity to platform engineering. Think less chaos, more tho
 Their platforms reduce cognitive load, improve collaboration, and promote secure, sustainable growth.
 
 
-### 5. Improving
+### 5. <a href="https://www.linkedin.com/company/improving-enterprises/" target="_blank" rel="nofollow noreferrer">Improving</a>
 
 **Based in:** USA  | **Founded:** 2007  
 
@@ -167,7 +167,7 @@ Improving blends DevOps delivery with coaching and transformation.
 
 Perfect if you need both platforms and a culture shift.
 
-### 6. Arctiq
+### 6. <a href="https://www.linkedin.com/company/goarctiq/" target="_blank" rel="nofollow noreferrer">Arctiq</a>
 
 **Based in:** Canada  | **Founded:** 2016  
 
@@ -183,7 +183,7 @@ Arctiq combines GitOps with serious security chops.
 
 They make compliance and velocity go hand in hand.
 
-### 7. Easecloud
+### 7. <a href="https://www.linkedin.com/company/easecloudio/" target="_blank" rel="nofollow noreferrer">Easecloud</a>
 
 **Based in:** Singapore | **Founded:** 2020  
 
@@ -200,7 +200,7 @@ Built for startups. Powered by CNCF standards. Loved by fast-moving teams.
 Ideal if you’re scaling and want infrastructure without the overhead.
 
 
-### 8. MKdev
+### 8. <a href="https://www.linkedin.com/company/mkdev/" target="_blank" rel="nofollow noreferrer">MKdev</a>
 
 **Based in:** Remote-first  | **Founded:** 2018  
 
@@ -216,7 +216,7 @@ MKdev is all about enablement. They teach your team how to build platforms the r
 
 For companies who want to “build and learn” at the same time.
 
-### 9. Stackgenie
+### 9. <a href="https://www.linkedin.com/company/stackgenie/" target="_blank" rel="nofollow noreferrer">Stackgenie</a>
 
 **Based in:** UK  | **Founded:** 2019  
 
@@ -232,7 +232,7 @@ Stackgenie focuses on full-spectrum DevOps with always-on support.
 
 They specialize in solving scaling problems for mid-sized SaaS companies.
 
-### 10. Xenonstack
+### 10. <a href="https://www.linkedin.com/company/xenonstack/" target="_blank" rel="nofollow noreferrer">Xenonstack</a>
 
 **Based in:** India  | **Founded:** 2012  
 

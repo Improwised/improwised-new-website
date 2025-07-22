@@ -97,10 +97,14 @@
     @apply no-underline;
   }
   & table {
-    @apply block overflow-x-scroll my-0.5
+    @apply block my-2 max-w-max;
+    max-width: 100%;
+  }
+  & table th {
+    @apply border border-gray-300 text-left px-3 py-2 break-words
   }
   & table tbody tr td {
-    @apply border border-gray-300 p-5
+    @apply border border-gray-200 px-3 py-2 break-words
   }
   & .author-details {
   & p     { @apply pb-0 p-0; }

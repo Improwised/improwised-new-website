@@ -96,7 +96,7 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
         <section class="pt-20 pb-10 section-bg">
             <div class="blog-detail relative container grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6">
                 { url.includes("blog") && url.at(-2) !== "blog" && <Sidebar insideMdx="inside" class="h-full" />}
-                <div>
+                <div class="overflow-x-hidden">
                     <Content />
                     <!-- author details -->
                     <div class="author-details mt-12 border p-6 rounded-xl flex flex-col gap-4">

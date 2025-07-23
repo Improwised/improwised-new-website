@@ -9,17 +9,15 @@ publishDate: 2025-07-22
 author: "Hussain Gandhi"
 image: "$lib/images/blogs/jenkins-to-gitops-github-fluxcd-devops-transformation.png"
 linkTags:
-  - title: ""
-    children :
-      - "The New Rules of DevOps"
-      - "Why We Went Cloud-Native"
-      - "Where We Started: The Jenkins Grind"
-      - "The Lightbulb Moment: Moving to GitOps"
-      - "Jenkins vs. GitOps: The Real Talk"
-      - "So… Which Tool Wins?"
-      - "What We Gained"
-      - "The Takeaway"
-      - "Resources"
+    - title: "The New Rules of DevOps"
+    - title: "Why We Went Cloud-Native"
+    - title: "Where We Started: The Jenkins Grind"
+    - title: "The Lightbulb Moment: Moving to GitOps"
+    - title: "Jenkins vs. GitOps: The Real Talk"
+    - title: "So… Which Tool Wins?"
+    - title: "What We Gained"
+    - title: "The Takeaway"
+    - title: "Resources"
       
 blockCategory: "monitoring-and-observability"
 ---

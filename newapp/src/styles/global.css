@@ -97,19 +97,23 @@
     @apply no-underline;
   }
   & table {
-    @apply block my-2 max-w-max;
-    max-width: 100%;
-  }
+    @apply text-center block overflow-x-scroll my-2;
+  } 
   & table th {
-    @apply border border-gray-300 text-left px-3 py-2 break-words
+    @apply border p-5 border-gray-300;
   }
-  & table tbody tr td {
-    @apply border border-gray-200 px-3 py-2 break-words
+  & table td {
+    @apply border border-gray-300 p-5;
   }
   & .author-details {
   & p     { @apply pb-0 p-0; }
   & img   { @apply my-0; }
   & h3    { @apply my-0; }
+  }
+  @media (min-width:768px) {
+    pre.github-dark {
+      @apply text-pretty;
+    }
   }
 }
 

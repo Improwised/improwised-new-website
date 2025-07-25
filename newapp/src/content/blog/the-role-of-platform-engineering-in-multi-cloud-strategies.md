@@ -1,8 +1,8 @@
 ---
-title: "The Role of Platform Engineering in Multi-Cloud Strategies for 2025"
-slug: "multi-cloud-strategies-for-2025"
+title: "The Role of Platform Engineering in Multi-Cloud Strategies"
+slug: "multi-cloud-strategies"
 description: "As enterprises increasingly adopt multi-cloud strategies to optimize their IT infrastructure, the role of platform engineering becomes crucial. This approach involves using multiple cloud service providers to fulfill various IT needs, and platform engineering is essential for managing and integrating these diverse cloud environments."
-seoTitle: "Multi-Cloud Strategies for 2025 | Platform Engineering Insights | Improwised Tech"
+seoTitle: "Multi-Cloud Strategies | Platform Engineering Insights | Improwised Tech"
 seoDescription: "As enterprises increasingly adopt multi-cloud strategies to optimize their IT infrastructure, the role of platform engineering becomes crucial."
 tags: [Optimization, Cost Optimization]
 publishDate: 2024-12-27

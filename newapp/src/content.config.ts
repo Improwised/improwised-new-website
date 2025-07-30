@@ -344,6 +344,17 @@ const corefeaturesCustomSoftwareDevelopmentServices = defineCollection({
 	}),
 });
 
+const corefeaturesAutonomousAgent = defineCollection({
+	loader: glob({ base: './src/content/corefeatures-autonomous-agent', pattern: '**/*.{md,mdx}' }),
+	// Type-check frontmatter using a schema
+	schema: ({ image }) => z.object({
+		title: z.string(),
+		slug: z.string(),
+		lightImage: image(),
+		description: z.string()
+	}),
+});
+
 const approaches = defineCollection({
 	loader: glob({ base: './src/content/approaches', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
@@ -428,6 +439,20 @@ const approaches6 = defineCollection({
 	}),
 });
 
+const approaches7 = defineCollection({
+	loader: glob({ base: './src/content/approaches7', pattern: '**/*.{md,mdx}' }),
+	// Type-check frontmatter using a schema
+	schema: ({ image }) => z.object({
+		approaches: z.array(
+		  z.object({
+			title: z.string(),
+			description: z.string(),
+			image: image()
+		  })
+		),
+	}),
+});
+
 const benefits = defineCollection({
 	loader: glob({ base: './src/content/benefits', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
@@ -497,4 +522,4 @@ const authors = defineCollection({
 	}),
 });
 
-export const collections = { authors, reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, approaches5, approaches6, corefeaturesProductModernization, corefeaturesTechnologyConsulting, corefeaturesBusinessIntelligenceAndAutomation, corefeaturesCustomSoftwareDevelopmentServices, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse, pageNotFound };
+export const collections = { authors, reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, approaches5, approaches6, approaches7, corefeaturesProductModernization, corefeaturesTechnologyConsulting, corefeaturesAutonomousAgent, corefeaturesBusinessIntelligenceAndAutomation, corefeaturesCustomSoftwareDevelopmentServices, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse, pageNotFound };

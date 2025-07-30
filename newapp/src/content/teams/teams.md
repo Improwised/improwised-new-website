@@ -148,4 +148,7 @@ teams:
     
     - name: 'Smit'
       image: '$lib/images/teams/Smit.jpg'
+    
+    - name: 'Priyanka'
+      image: '$lib/images/teams/Priyanka.jpg'
 ---

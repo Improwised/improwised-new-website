@@ -84,11 +84,21 @@ const authors = await getCollection("authors");
           >
             <Image
               alt="feature"
-              class="transition-all duration-200 group-hover:scale-105"
+              class="transition-all duration-200 group-hover:scale-105 dark:hidden"
               decoding="async"
               loading="lazy"
               src={latestBlog.data.image}
             />
+            {
+              latestBlog.data?.darkImage && 
+              <Image
+                alt="feature"
+                class="transition-all duration-200 group-hover:scale-105 hidden dark:block"
+                decoding="async"
+                loading="lazy"
+                src={latestBlog.data.darkImage}
+              />
+            }
           </div>
 
           <!-- Right: Blog Content -->
@@ -168,16 +178,26 @@ const authors = await getCollection("authors");
           {
             blogs.map((blog) => (
               <Card.Root class="group shadow-nav flex flex-col justify-between bg-card-bg border-1 border-card-border transition-transform duration-500 overflow-hidden">
-                <Card.Header class="p-0 overflow-hidden text-center rounded-t-[12px] bg-[#f0f0f0] dark:bg-[#3a3b3f69]">
+                <Card.Header class="h-[300px] p-0 overflow-hidden text-center rounded-t-[12px] bg-[#f0f0f0] dark:bg-[#3a3b3f69]">
                   <Image
                     alt="feature"
-                    class="w-full object-contain sm:h-[250px] md:h-[300px] transition-all duration-200 group-hover:scale-105"
+                    class={`w-full object-contain sm:h-[250px] md:h-[300px] transition-all duration-200 group-hover:scale-105 ${blog.data.darkImage && 'dark:hidden'}`}
                     decoding="async"
                     loading="lazy"
                     src={blog.data.image}
                   />
+                  {
+                    blog.data?.darkImage && 
+                    <Image
+                      alt="feature"
+                      class="w-full object-contain sm:h-[250px] md:h-[300px] transition-all duration-200 group-hover:scale-105 hidden dark:block"
+                      decoding="async"
+                      loading="lazy"
+                      src={blog.data.darkImage}
+                    />
+                  }
                 </Card.Header>
-                <Card.Content class="">
+                <Card.Content>
                   <p class="mb-2 font-manrope text-[#A3A3A3] md:text-[16px] text-[14px] leading-[24px] tracking-[16%]">
                     {formatDate(blog.data.publishDate)}
                   </p>

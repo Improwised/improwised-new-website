@@ -149,6 +149,7 @@ const blogs = defineCollection({
 		title: z.string(),
 		slug: z.string(),
 		image: image(),
+		darkImage: image().optional(),
 		description: z.string(),
 		seoTitle: z.string(),
 		seoDescription: z.string(),

@@ -1,5 +1,5 @@
 ---
-title: 'Autonomous Agent Service'
+title: 'Autonomous Agent'
 slug: 'autonomous-agent'
 seoTitle: "Build Secure, Scalable Autonomous Agent Solutions | Improwised"
 seoDescription: "Design secure, adaptive AI agents that automate decisions, assist users, and integrate into enterprise systems - powered by Improwised’s Autonomous agent expertise"

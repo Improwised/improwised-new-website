@@ -1,7 +1,7 @@
 ---
-title: 'Custom Software Development Services'
+title: 'Custom Software Development'
 slug: 'custom-software-development'
-seoTitle: "Custom Software Development Services | Improwised"
+seoTitle: "Custom Software Development | Improwised"
 seoDescription: "From concept to deployment, we build custom software that fuels business growth. Partner with Improwised for modern, scalable, and agile solutions"
 lightImage: '$lib/images/services/technology_consulting.svg'
 heroImage: '$lib/images/services/custom-software-development-service-hero.svg'

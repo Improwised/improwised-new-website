@@ -5,7 +5,7 @@ import Logo from "$lib/images/logo.svg";
 import { Badge } from "$lib/components/ui/badge";
 import { Linkedin, Facebook, Instagram } from "lucide-svelte/icons";
 import { getCollection, getEntry } from "astro:content";
-const services = (Object.values(await getCollection('services')).sort((a, b) => a.data.order - b.data.order)).filter(service => service.id !== "technology-consulting" && service.id !== "product-modernization" &&  service.id !== "cloud-infrastructure-services")
+const services = (Object.values(await getCollection('services')).sort((a, b) => a.data.order - b.data.order)).filter(service => service.id !== "technology-consulting" && service.id !== "product-modernization" &&  service.id !== "cloud-infrastructure-services" && service.id !== "autonomous-agent")
 const currentYear = new Date().getFullYear();
 ---
 

@@ -7,7 +7,7 @@ import Dropdown from "$lib/components/common/Dropdown.svelte";
 import ToggleTheme from "$lib/components/common/ToggleTheme.svelte"
 import { getCollection } from "astro:content";
 
-const services = (Object.values(await getCollection('services')).sort((a, b) => a.data.order - b.data.order)).filter(service => service.id !== "technology-consulting" && service.id !== "product-modernization" &&  service.id !== "cloud-infrastructure-services")
+const services = (Object.values(await getCollection('services')).sort((a, b) => a.data.order - b.data.order)).filter(service => service.id !== "technology-consulting" && service.id !== "product-modernization" &&  service.id !== "cloud-infrastructure-services" && service.id !== "autonomous-agent")
 
 import Sidebar from "./Sidebar.astro";
 const currentUrl = Astro.url.pathname.split("/")

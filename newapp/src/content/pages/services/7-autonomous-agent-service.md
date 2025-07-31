@@ -30,7 +30,7 @@ blockImage: "$lib/images/services/autonomous-agent-block.svg"
 cardSectionPrimaryTitle: "How We Apply AI"
 cardSectionTitle: "in Real Development Workflows"
 isSectionTitlePrimary: true
-serviceCardCollection: "corefeaturesTechnologyConsulting"
+serviceCardCollection: "corefeaturesAutonomousAgent"
 serviceApproachPrimaryTitle: "Technology Consulting"
 serviceApproachTitle: "Key Business Benefits of"
 serviceApproach: "approaches7"

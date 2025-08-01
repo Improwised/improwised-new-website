@@ -3,152 +3,148 @@ teams:
     - name: 'Rakshit Menpara'
       designation: 'Chief Technology Officer'
       linkedin: 'https://www.linkedin.com/in/rakshitmenpara/'
-      image: '$lib/images/teams/Rakshit.jpg'
+      image: '$lib/images/teams/Rakshit.png'
 
     - name: 'Shailesh Davara'
       designation: 'Chief Executive Officer'
       linkedin: 'https://www.linkedin.com/in/sdavara/'
-      image: '$lib/images/teams/Shailesh.jpg'
+      image: '$lib/images/teams/Shailesh.png'
 
     - name: 'Priyank Dhami'
       designation: 'Head of Business Development'
       linkedin: 'https://www.linkedin.com/in/priyank-dhami/'
-      image: '$lib/images/teams/Priyank.jpg'
+      image: '$lib/images/teams/Priyank.png'
 
     - name: 'Dipika Tanna'
       designation: 'Head of People Operations'
       linkedin: 'https://www.linkedin.com/in/dipika-tanna-8653b966/'
-      image: '$lib/images/teams/Dipika.jpg'
+      image: '$lib/images/teams/Dipika.png'
 
     - name: 'Tapan'
-      image: '$lib/images/teams/Tapan.jpg'
+      image: '$lib/images/teams/Tapan.png'
 
     - name: 'Munir'
-      image: '$lib/images/teams/Munir.jpg'
+      image: '$lib/images/teams/Munir.png'
 
     - name: 'Monika'
-      image: '$lib/images/teams/Monika.jpg'
+      image: '$lib/images/teams/Monika.png'
 
     - name: 'Lalit'
-      image: '$lib/images/teams/Lalit.jpg'
+      image: '$lib/images/teams/Lalit.png'
 
     - name: 'Satish'
-      image: '$lib/images/teams/Satish.jpg'
+      image: '$lib/images/teams/Satish.png'
 
     - name: 'Nirav'
-      image: '$lib/images/teams/NiravR.jpg'
+      image: '$lib/images/teams/NiravR.png'
 
     - name: 'Chintan'
-      image: '$lib/images/teams/ChintanV.jpg'
+      image: '$lib/images/teams/ChintanV.png'
 
 
     - name: 'Hussain'
-      image: '$lib/images/teams/Hussain.jpg'
+      image: '$lib/images/teams/Hussain.png'
 
     - name: 'Aniket'
-      image: '$lib/images/teams/Aniket.jpg'
+      image: '$lib/images/teams/Aniket.png'
 
     - name: 'Shivani'
-      image: '$lib/images/teams/ShivaniR.jpg'
+      image: '$lib/images/teams/ShivaniR.png'
 
     - name: 'Jinal'
-      image: '$lib/images/teams/Jinal.jpg'
+      image: '$lib/images/teams/Jinal.png'
 
     - name: 'Khushal'
-      image: '$lib/images/teams/Khushal.jpg'
+      image: '$lib/images/teams/Khushal.png'
 
     - name: 'Jay'
-      image: '$lib/images/teams/Jay.jpg'
+      image: '$lib/images/teams/Jay.png'
 
     - name: 'Chintan'
-      image: '$lib/images/teams/Chintan.jpg'
+      image: '$lib/images/teams/ChintanS.png'
 
     - name: 'Shaktirajsinh'
-      image: '$lib/images/teams/Shaktirajsinh.jpg'
+      image: '$lib/images/teams/Shaktirajsinh.png'
 
 
     - name: 'Devarshi'
-      image: '$lib/images/teams/Devarshi.jpg'
+      image: '$lib/images/teams/Devarshi.png'
 
     - name: 'Disha'
-      image: '$lib/images/teams/DishaK.jpg'
+      image: '$lib/images/teams/DishaK.png'
 
     - name: 'Nirav'
-      image: '$lib/images/teams/NiravT.jpg'
+      image: '$lib/images/teams/NiravT.png'
 
     - name: 'Ridham'
-      image: '$lib/images/teams/Ridham.jpg'
-
-    - name: 'Batul'
-      image: '$lib/images/teams/Batul.jpg'
+      image: '$lib/images/teams/Ridham.png'
 
     - name: 'Khushi'
-      image: '$lib/images/teams/Khushi.jpg'
+      image: '$lib/images/teams/Khushi.png'
 
     - name: 'Priyanshee'
-      image: '$lib/images/teams/Priyanshi.jpg'
+      image: '$lib/images/teams/Priyanshi.png'
 
     - name: 'Husen'
-      image: '$lib/images/teams/Husen.jpg'
+      image: '$lib/images/teams/Husen.png'
 
     - name: 'Ashvin'
-      image: '$lib/images/teams/Aswin.jpg'
+      image: '$lib/images/teams/Ashvin.png'
 
     - name: 'Chandan'
-      image: '$lib/images/teams/Chandan.jpg'
+      image: '$lib/images/teams/Chandan.png'
 
     - name: 'Brij'
-      image: '$lib/images/teams/Brij.jpg'
+      image: '$lib/images/teams/Brij.png'
 
     - name: 'Divya'
-      image: '$lib/images/teams/Divya.jpg'
+      image: '$lib/images/teams/Divya.png'
 
     - name: 'Nandini'
-      image: '$lib/images/teams/Nandini.jpg'
+      image: '$lib/images/teams/Nandini.png'
 
-    - name: 'Manga'
-      image: '$lib/images/teams/Manga.jpg'
+    - name: 'Mangesh'
+      image: '$lib/images/teams/Mangesh.png'
 
     - name: 'Disha'
-      image: '$lib/images/teams/Disha.jpg'
+      image: '$lib/images/teams/Disha.png'
 
     - name: 'Drashti'
-      image: '$lib/images/teams/Drashti.jpg'
+      image: '$lib/images/teams/Drashti.png'
 
     - name: 'Hitesh'
-      image: '$lib/images/teams/Hitesh.jpg'
+      image: '$lib/images/teams/Hitesh.png'
 
     - name: 'Ehsaas'
-      image: '$lib/images/teams/Ehsaas.jpg'
+      image: '$lib/images/teams/Ehsaas.png'
 
     - name: 'Meet'
-      image: '$lib/images/teams/Meet.jpg'
+      image: '$lib/images/teams/Meet.png'
 
     - name: 'Krupanshi'
-      image: '$lib/images/teams/Krupanshi.jpg'
-
+      image: '$lib/images/teams/Krupanshi.png'
 
     - name: 'Pratiksha'
-      image: '$lib/images/teams/Pratiksha.jpg'
+      image: '$lib/images/teams/Pratiksha.png'
 
     - name: 'Jatin'
-      image: '$lib/images/teams/Jatin.jpg'
+      image: '$lib/images/teams/Jatin.png'
 
     - name: 'Shivani'
-      image: '$lib/images/teams/Shivani.jpg'
+      image: '$lib/images/teams/ShivaniC.png'
 
     - name: 'Viral'
-      image: '$lib/images/teams/Viral.jpg'
+      image: '$lib/images/teams/Viral.png'
 
     - name: 'Jaypal'
-      image: '$lib/images/teams/Jaypal.jpg'
+      image: '$lib/images/teams/Jaypal.png'
 
     - name: 'Shyam'
-      image: '$lib/images/teams/Shyam.jpg'
+      image: '$lib/images/teams/Shyam.png'
     
     - name: 'Smit'
-      image: '$lib/images/teams/Smit.jpg'
+      image: '$lib/images/teams/Smit.png'
     
     - name: 'Priyanka'
-      image: '$lib/images/teams/Priyanka.jpg'
+      image: '$lib/images/teams/Priyanka.png'
 ---

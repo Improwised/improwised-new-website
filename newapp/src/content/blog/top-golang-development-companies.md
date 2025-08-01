@@ -8,6 +8,7 @@ tags: [golang development, golang companies 2025, top go developers, modern soft
 publishDate: 2025-07-20
 author: "Priyank Dhami"
 image: "$lib/images/blogs/top-10-golang-development-companies-head.png"
+darkImage: "$lib/images/blogs/top-10-golang-development-companies-head.svg"
 linkTags:
   - title: "Introduction: The Go Advantage: Why Golang is the Future of Robust Software"
     children :

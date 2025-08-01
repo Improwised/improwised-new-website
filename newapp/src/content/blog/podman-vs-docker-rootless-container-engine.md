@@ -8,6 +8,7 @@ tags: [podman , rootless containers , container security , daemonless containers
 publishDate: 2025-07-14
 author: 'Chintan Viradiya'
 image: '$lib/images/blogs/podman-vs-docker-rootless-container-engine-head.svg'
+darkImage: '$lib/images/blogs/podman-vs-docker-rootless-container-dark.svg'
 linkTags:
   - title: "What is Podman?"
   - title: "Why Podman?"

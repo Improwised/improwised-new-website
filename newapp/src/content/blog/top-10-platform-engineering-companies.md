@@ -8,6 +8,7 @@ tags: [Platform Engineering]
 publishDate: 2025-07-03
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/top-10-platform-engineering-blog-image-head.png'
+darkImage: '$lib/images/blogs/top-10-platform-engineering-blog-image-head-dark.png'
 linkTags:
   - title: "Top 10 Platform Engineering Companies"
   - title: "What is Platform Engineering?"

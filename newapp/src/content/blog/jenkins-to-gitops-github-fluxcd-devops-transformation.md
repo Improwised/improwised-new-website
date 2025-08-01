@@ -8,6 +8,7 @@ tags: [GitOps, Jenkins, GitHub Actions, FluxCD, DevOps Transformation, CI/CD, Cl
 publishDate: 2025-07-22
 author: "Hussain Gandhi"
 image: "$lib/images/blogs/jenkins-to-gitops-github-fluxcd-devops-transformation.png"
+darkImage: "$lib/images/blogs/jenkins-to-gitops-dark.png"
 linkTags:
     - title: "The New Rules of DevOps"
     - title: "Why We Went Cloud-Native"

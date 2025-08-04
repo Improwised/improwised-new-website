@@ -36,6 +36,8 @@ This article talks about the differences and similarities between platform engin
 
 Let's first briefly explain what DevOps, Platform Engineering, and SRE are and how they fit into modern software development workflows before we get into the main distinctions and strategic importance of each method.
 
+![What are the differences between platform engineering and DevOps and which one is best for your team?]($lib/images/blogs/platform-engineering-vs-devops.png)
+
 ## **What is DevOps?**
 
 DevOps is more than just a job; it's a way of thinking about engineering and a cultural movement that breaks down the barriers between software development and IT operations. It encourages people to work together more closely, get feedback more quickly, and share the responsibility for making and running high-quality software.

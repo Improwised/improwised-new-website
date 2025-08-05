@@ -3,7 +3,8 @@ title: 'Business Intelligence and Automation'
 slug: 'business-intelligence-and-automation'
 seoTitle: "Business Intelligence and automation | Improwised Tech"
 seoDescription: "We help you to unlock the power of your business. From automated dashboards to real-time alerts, our BI and automation tools simplify decisions and reduce manual work - so that you can act faster and smarter."
-lightImage: '$lib/images/services/technology_consulting.svg'
+homePageServiceDescription: 'We empower your business with BI and automation tools that simplify decisions, reduce manual work, and enable faster, smarter action.'
+lightImage: '$lib/images/services/business-intelligence-and-automation-service.svg'
 heroImage: '$lib/images/services/business-intelligence-and-automation.svg'
 mobileHeroImage: '$lib/images/services/business-intelligence-automation-mobile-hero.svg'
 description: 'We help you to unlock the power of your business. From automated dashboards to real-time alerts, our BI and automation tools simplify decisions and reduce manual work - so that you can act faster and smarter.'

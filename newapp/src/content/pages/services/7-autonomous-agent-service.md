@@ -3,7 +3,8 @@ title: 'Autonomous Agent'
 slug: 'autonomous-agent'
 seoTitle: "Build Secure, Scalable Autonomous Agent Solutions | Improwised"
 seoDescription: "Design secure, adaptive AI agents that automate decisions, assist users, and integrate into enterprise systems - powered by Improwised’s Autonomous agent expertise"
-lightImage: '$lib/images/services/technology_consulting.svg'
+homePageServiceDescription: 'From sales to dev productivity, our AI agents help teams move faster with less effort. Your next team member is here.'
+lightImage: '$lib/images/services/autonomous-agent-service.svg'
 heroImage: '$lib/images/services/autonomous-agent-service-hero.svg'
 mobileHeroImage: '$lib/images/services/autonomous-agent-service-hero-mobile.svg'
 description: "From sales enablement to developer productivity, our agent-based solutions help teams move faster with less effort. AI isn’t the future it’s just your next team member."

@@ -3,6 +3,7 @@ title: 'Cloud Infrastructure Services'
 slug: 'cloud-infrastructure-services'
 seoTitle: "Cloud Infrastructure Services | Scalable, Secure, Cost-Efficient | Improwised Tech"
 seoDescription: "Expert Cloud Consultancy | Migration, Disaster Recovery, & Performance Optimization | Scalable & Secure Cloud Infrastructure Expert Solutions"
+homePageServiceDescription: ''
 lightImage: '$lib/images/services/cloud_infra_services.svg'
 heroImage: '$lib/images/services/solutions-2.svg'
 mobileHeroImage: '$lib/images/services/mobileSolutions.svg'

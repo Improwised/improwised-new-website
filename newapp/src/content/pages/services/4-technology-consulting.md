@@ -3,6 +3,7 @@ title: 'Technology Consulting'
 slug: 'technology-consulting'
 seoTitle: "Cloud Strategy & Tech Consulting | Drive Digital Innovation | Improwised Tech"
 seoDescription: "Drive scalable growth with expert technology consulting—cloud adoption, IT modernization, and system architecture strategies tailored to streamline your business operations."
+homePageServiceDescription: ''
 lightImage: '$lib/images/services/technology_consulting.svg'
 heroImage: '$lib/images/services/solutions-2.svg'
 mobileHeroImage: '$lib/images/services/mobileSolutions.svg'

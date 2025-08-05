@@ -3,7 +3,8 @@ title: 'Custom Software Development'
 slug: 'custom-software-development'
 seoTitle: "Custom Software Development | Improwised"
 seoDescription: "From concept to deployment, we build custom software that fuels business growth. Partner with Improwised for modern, scalable, and agile solutions"
-lightImage: '$lib/images/services/technology_consulting.svg'
+homePageServiceDescription: 'Building an MVP or scaling your core product? We turn your requirements into clean, scalable, and high-performance applications.'
+lightImage: '$lib/images/services/custom-software-development-services.svg'
 heroImage: '$lib/images/services/custom-software-development-service-hero.svg'
 mobileHeroImage: '$lib/images/services/custom-software-mobile-hero.svg'
 description: 'Whether you are building an MVP or rethinking your core product. Our team turns your requirements into clean, functional, and future-proof applications - all with scalability and performance in mind'

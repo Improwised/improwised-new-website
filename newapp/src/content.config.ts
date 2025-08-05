@@ -48,6 +48,7 @@ const services = defineCollection({
 		slug: z.string(),
 		seoTitle: z.string(),
 		seoDescription: z.string(),
+		homePageServiceDescription: z.string(),
 		lightImage: image().optional(),
 		heroImage: image().optional(),
 		mobileHeroImage: image().optional(),

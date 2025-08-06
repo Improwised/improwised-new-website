@@ -64,10 +64,10 @@ Kubernetes solved these, but **Jenkins wasn’t built for this new world.** That
 
 #### **The headaches were real:**
 
-* **😩 Human errors:** One misclick could derail everything.  
-* **🔄 Rollback nightmares:** Like rewinding VHS tapes blindfolded.  
-* **🌪️ Pipeline sprawl:** 3 environments \= 3 slightly different Jenkins scripts.  
-* **🕵️ Traceability?** Good luck auditing what changed.
+* **Human errors:** One misclick could derail everything.  
+* **Rollback nightmares:** Like rewinding VHS tapes blindfolded.  
+* **Pipeline sprawl:** 3 environments \= 3 slightly different Jenkins scripts.  
+* **Traceability?** Good luck auditing what changed.
 
 ## **The Lightbulb Moment: Moving to GitOps**
 
@@ -83,14 +83,14 @@ No buttons. No crossed fingers. Just smooth, Git-driven flow.
 
 ### **Why GitOps Felt Like an Upgrade**
  
-| ✅ What Changed | ✨ Why We Cheered |
+| What Changed |  Why We Cheered |
 | ----- | ----- |
-| 🔁 **Rollbacks** | `git revert` \= instant undo. Flux handles the rest. |
-| 🤖 **Triggers** | Code push \= auto-deploy. Bye, "Build Now" button\! |
-| 🔍 **Single Source of Truth** | Git repo \= the deployment playbook. No more guessing. |
-| 🚢 **Environments** | One pipeline to rule them all (Kustomize/Helm FTW\!). |
-| 🔐 **Security** | Cluster pulls from Git → fewer attack doors. |
-| 📊 **Visibility** | Git history \+ Flux logs \= total peace of mind. |
+| **Rollbacks** | `git revert` \= instant undo. Flux handles the rest. |
+| **Triggers** | Code push \= auto-deploy. Bye, "Build Now" button\! |
+| **Single Source of Truth** | Git repo \= the deployment playbook. No more guessing. |
+| **Environments** | One pipeline to rule them all (Kustomize/Helm FTW\!). |
+| **Security** | Cluster pulls from Git → fewer attack doors. |
+| **Visibility** | Git history \+ Flux logs \= total peace of mind. |
 
 ## **Jenkins vs. GitOps: The Real Talk**
 

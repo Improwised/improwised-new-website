@@ -57,8 +57,22 @@ const services = defineCollection({
 		text: z.string(),
 		primaryText: z.string(),
 		blocks: z.array(z.object({
+			achievementText: z.string().optional(),
+			achievementPrimaryText: z.string().optional(),
 			achievements: z.array(z.string()).optional(),
+			reliabilityText: z.string().optional(),
+			reliabilityPrimaryText: z.string().optional(),
+			reliabilityFirstPara: z.string().optional(),
+			reliabilityLastPara: z.string().optional(),
+			reliabilities: z.array(z.string()).optional(),
+			CTAHeading: z.string().optional(),
+			CTADescription: z.string().optional(),
+			faqs: z.array(z.object({
+				question: z.string(),
+				answer: z.string(),
+			})).optional(),
 			title: z.string(),
+			mainTitle: z.string().optional(),
 			slug: z.string().optional(),
 			description: z.string(),
 			seoTitle: z.string().optional(),
@@ -66,13 +80,17 @@ const services = defineCollection({
 			featureTitle: z.string().optional(),
 			featureSubTitle: z.string().optional(),
 			featureImage: image().optional(),
+			featureFirstPara: z.string().optional(),
+			featureLastPara: z.string().optional(),
+			industryText: z.string().optional(),
+			industryPrimaryText: z.string().optional(),
 			industries: z.array(z.object({
 				title: z.string(),
 				description: z.string()
 			})).optional(),
 			features: z.array(z.object({
 				title: z.string(),
-				description: z.string()
+				description: z.string().optional()
 			})).optional(),
 		})).optional(),
 		blockImage: image(),

@@ -8,18 +8,17 @@ import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import { Badge } from "$lib/components/ui/badge";
 import { Puzzle } from "lucide-svelte";
 
-const { blockSlug } = Astro.props;
-
-const [service] = await getCollection("services", ({data}) => (
-    data.slug == "platform-engineering"
+const { blockSlug, serviceId } = Astro.props;
+const services = await getCollection("services", ({data}) => (
+    (data.slug == "platform-engineering" || data.slug == "autonomous-agent")
 ))
-
+const [service] = services.filter(serv => serv.id == serviceId)
 const block = service.data.blocks?.filter(block => block.slug === blockSlug);
 ---
 
 <div class="container">
     {block && 
-    <div class="flex mx-auto max-w-2xl flex-col items-center justify-center">
+    <div class="flex mx-auto max-w-6xl flex-col items-center justify-center">
         <Badge variant="outline" class="py-1">
             <Puzzle class="mr-1" size={18} />
             <span class="text-xs font-bold md:text-sm tracking-wider font-manrope">Features</span>
@@ -28,10 +27,15 @@ const block = service.data.blocks?.filter(block => block.slug === blockSlug);
     </div>
     <div class="flex flex-col md:flex-row gap-10 md:gap-16">
         <div class="md:min-w-[50%] max-h-max flex justify-center items-center">
-            <Image alt="building block" src={block[0].featureImage} height={600} data-aos="fade-right"/>
+            { block[0].featureImage && <Image alt="building block" src={ block[0]?.featureImage } height={600} data-aos="fade-right"/>}
+            
         </div>
         <div class="text-center w-full my-auto">
-            <Accordion client:load blocks={block[0].features} baseUrl={BASE_URL} />
+            { service.id == "autonomous-agent" && <p class="text-left text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color mb-3">{block[0].featureFirstPara}</p>}
+
+            <Accordion client:load blocks={block[0].features} baseUrl={BASE_URL} isAutonomus={serviceId === "autonomous-agent"}/>
+
+            { service.id == "autonomous-agent" && <p class="mt-5 text-left text-[18px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope text-fifth-color">{block[0].featureLastPara}</p>}
         </div>
     </div>}
 </div>

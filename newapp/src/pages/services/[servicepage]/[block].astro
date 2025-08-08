@@ -280,11 +280,11 @@ let gradientY = -200;
         </Badge>
         <SectionTitle primaryColorText={filteredBlock && filteredBlock[0].achievementPrimaryText} text={filteredBlock && filteredBlock[0].achievementText} class="text-center" />
       </div>
-      <div class="container flex flex-col max-w-5xl">
+      <div class="container flex flex-col max-w-2xl">
         {
           filteredBlock && filteredBlock[0].achievements?.map((achiement) => (
             <div class="flex border-b-1 border-dashed">
-              <p class="py-3 small-text md:text-para font-inter text-fourth-color text-center mx-auto">{achiement}</p>
+              <p class="py-3 text-left small-text md:text-para font-inter text-fourth-color">{achiement}</p>
             </div>
           ))
         }
@@ -301,10 +301,10 @@ let gradientY = -200;
       </div>
       <div class="container flex flex-col gap-8 md:pt-10 max-w-5xl">
         {filteredBlock && <p class="small-text md:text-para font-inter text-center text-fourth-color">{filteredBlock[0].reliabilityFirstPara}</p> }
-        <ul class="flex flex-col">
+        <ul class="flex flex-col max-w-xl mx-auto">
           {
             filteredBlock && filteredBlock[0].reliabilities?.map((achiement) => (
-                <li class="w-full py-3 small-text md:text-para border-b-1 border-dashed font-inter text-fourth-color text-center mx-auto">{achiement}</li>
+                <li class="w-full py-3 small-text md:text-para border-b-1 border-dashed font-inter text-fourth-color text-left">{achiement}</li>
             ))
           }
         </ul>

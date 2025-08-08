@@ -6,16 +6,13 @@
   export let baseUrl : string = "";
   export let servicePage : string = "";
   export let isAutonomus : boolean;
-
-  console.log("from accordion ----------", isAutonomus)
 </script>
-<!-- small-text md:text-para font-inter text-fourth-color -->
 <div>
   {#if blocks.length > 0}
     {#each blocks as block}
       <div class={`pt-4 pb-4 md:pb-5 border-b-1 text-left hover:text-blue-hover ${ isAutonomus ?  'small-text md:text-para font-inter text-fourth-color' : 'text-first-color font-bold text-[16px] leading-[22px] md:text-[22px] md:leading-[28px] tracking-[0.02em] font-manrope'}`}>
-        {#if servicePage === 'platform-engineering'}          
-          <a class="text-first-color hover:text-blue-hover" {...(servicePage === 'platform-engineering' && {
+        {#if servicePage === 'platform-engineering' || servicePage === 'autonomous-agent' }          
+          <a class="text-first-color hover:text-blue-hover" {...((servicePage === 'platform-engineering' || servicePage === 'autonomous-agent') && {
             href: `${baseUrl}/services/${servicePage}/${block.slug}/`
           })}>
             {block.title}

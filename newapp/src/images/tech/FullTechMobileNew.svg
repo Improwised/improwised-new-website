@@ -11,8 +11,15 @@
 <path id="animated-path5" d="M193 99.6045H209.143C217.072 99.6045 223.5 106.032 223.5 113.961V117.104V122.248C223.5 130.177 229.928 136.604 237.857 136.604H300" stroke="url(#strokeGradientGreen)" stroke-width="0.66656"/>
 <circle r="2" fill="#22C55E"><animateMotion repeatCount="indefinite" dur="3s"> <mpath href="#animated-path5" /></animateMotion></circle>
 
+
+
 <path id="animated-path6" d="M76.5 164.104C82 174.604 120.671 167.104 120.671 148.326C120.671 115.155 141.272 127.248 162 124.934" stroke="url(#strokeGradientRed)" stroke-width="0.66656"/>
 <circle r="2" fill="#F87171"><animateMotion repeatCount="indefinite" dur="3s"> <mpath href="#animated-path6" /></animateMotion></circle>
+
+
+
+
+
 
 
 <path id="animated-path7" d="M111 11.6211C119.288 11.6211 135.5 18.6055 126 41.1055C114.825 67.5715 151.177 77.8381 162 72.0715" stroke="url(#strokeGradientRed)" stroke-width="0.66656"/>
@@ -20,6 +27,20 @@
 
 <path id="animated-path8" d="M84 103.604C94.9306 103.604 105.329 99.843 114.922 97.5508C124.514 95.2587 141.726 97.5922 156 99.6667" stroke="url(#strokeGradientRed)" stroke-width="0.66656"/>
 <circle r="2" fill="#F87171"><animateMotion repeatCount="indefinite" dur="3s"> <mpath href="#animated-path8" /></animateMotion></circle>
+
+   <path
+    id="animated-path9-above"
+    d="M76 39.1299C87.402 39.1299 105.9091 53.1143 115.106 64.9753C126.303 76.8363 149.1 77.7267 164 72.7425"
+    stroke="url(#strokeGradientRed)"
+    stroke-width="0.66656"
+    fill="none"
+  />
+  <circle r="2" fill="#F87171">
+    <animateMotion repeatCount="indefinite" dur="3s">
+      <mpath href="#animated-path9-above" />
+    </animateMotion>
+  </circle>
+
 
 <path id="animated-path9" d="M76 69.1299C87.4102 69.1299 95.9091 63.1143 111.106 74.9753C126.303 86.8363 149.1 87.7267 164 82.7425" stroke="url(#strokeGradientRed)" stroke-width="0.66656"/>
 <circle r="2" fill="#F87171"><animateMotion repeatCount="indefinite" dur="3s"> <mpath href="#animated-path9" /></animateMotion></circle>

@@ -10,24 +10,38 @@ author: 'Improwised Editorial Team'
 image: "$lib/images/blogs/platform-engineering-vs-devops-light.png"
 darkImage: "$lib/images/blogs/platform-engineering-vs-devops-dark.png"
 linkTags:
-  - title: "What is DevOps?"
+  - title: "What is DevOps?" 
+    children: 
+      - "The DevOps Toolchain" 
+      - "DORA Metrics: How to Tell if DevOps is Working"
   - title: "What does it mean to be a platform engineer?"
   - title: "What IDPs (Internal Developer Platforms) Do"
   - title: "The Idea of “Golden Paths”"
   - title: "SRE in the Mix: Where Reliability Takes the Lead"
-  - title: "What Sets SRE Apart?"
-  - title: "How SRE Fits in with DevOps and Platform Engineering"
+    children: 
+      - "What Sets SRE Apart?"
+      - "How SRE Fits in with DevOps and Platform Engineering"
   - title: "A Comparison of DevOps and Platform Engineering"
   - title: "Choosing the Right Thing"
   - title: "Overlap and synergies: DevOps as a Service"
-  - title: "The Next Step in DevOps: Platform Engineering"
-  - title: "DevOps-as-a-Service: A Useful Middle Ground"
-  - title: "When to Use Which"
-  - title: "If You’re a Scale-Up (from Series B+ to Growth Stage)"
-  - title: "If You’re an Enterprise or Work on a Huge Scale"
+    children:
+      - "The Next Step in DevOps: Platform Engineering"
+      - "DevOps-as-a-Service: A Useful Middle Ground"
+      - "When to Use Which"
+      - "If You’re a Scale-Up (from Series B+ to Growth Stage)"
+      - "If You’re an Enterprise or Work on a Huge Scale"
   - title: "Quick Breakdown of Use Cases"
-  - title: "Conclusion: Setting Up Your Engineering Team for Success"
+  - title: "Conclusion: Providing Your Engineering Team with a Launchpad for Success"
   - title: "Don’t Know Where Your Team Stands?"
+faqs:
+  - question: "Is platform engineering a good alternative to DevOps?"
+    answer: "No, as many people have said, platform engineering doesn't get rid of the need for DevOps culture and techniques; it only makes them bigger by using self-service platforms."
+  - question: "What are the differences between DevOps, SRE, and platform engineering?"
+    answer: "DevOps is about culture, SRE is about reliability (error budgets and uptime), and platform engineering is about making platforms better for developers. These roles are similar, yet they focus on distinct levels."
+  - question: "Who makes more money, a DevOps engineer or a platform engineer?"
+    answer: "Industry data shows that platform engineers make about 20–30% more on average, especially at the senior level in large companies. However, this can vary by area and experience."
+  - question: "What skills do you need to be a platform engineer or a DevOps engineer?"
+    answer: "To work in DevOps, you need to know about CI/CD, IaC, monitoring, and how to work with others. In addition to those, platform engineering also requires platform design, API development, user experience, self-service interfaces, and a product mindset."
 ---
 
 In the world of software development today, engineering teams are under more and more pressure to deliver faster, more reliably, and on a larger scale. DevOps, Platform Engineering, and Site Reliability Engineering (SRE) are some of the most important fields that have come up to address these needs. They may look the same at first, but each one has a different job to do to help with fast software delivery and operational excellence.
@@ -38,13 +52,13 @@ Let's first briefly explain what DevOps, Platform Engineering, and SRE are and h
 
 ![What are the differences between platform engineering and DevOps and which one is best for your team?]($lib/images/blogs/platform-engineering-vs-devops.png)
 
-## **What is DevOps?**
+## What is DevOps?
 
 DevOps is more than just a job; it's a way of thinking about engineering and a cultural movement that breaks down the barriers between software development and IT operations. It encourages people to work together more closely, get feedback more quickly, and share the responsibility for making and running high-quality software.
 
 The main idea behind DevOps is to build a culture of flexibility, responsibility, and constant growth. Instead of developers just developing code and sending it to operations, DevOps encourages teams from different departments to work together to build, test, deploy, and monitor software.
 
-### **The DevOps Toolchain**
+### The DevOps Toolchain
 
 DevOps needs a strong toolchain that automates and speeds up the software delivery lifecycle to enable this culture:
 
@@ -52,7 +66,7 @@ DevOps needs a strong toolchain that automates and speeds up the software delive
 * Infrastructure as Code (IaC): lets teams set up and govern infrastructure using machine-readable specification files (like Terraform and Ansible). This makes it possible to keep things the same, do them over and over, and keep track of different versions.  
 * Monitoring and Observability: Tools like Prometheus, Grafana, and Datadog let teams see how well their applications are working, how often they go down, and how healthy their systems are, so they can find and fix problems quickly.
 
-### **DORA Metrics: How to Tell if DevOps is Working**
+### DORA Metrics: How to Tell if DevOps is Working
 
 Many teams use [DORA (DevOps Research and Assessment) metrics](https://www.improwised.com/blog/tooling-and-infrastructure-in-measuring-dora-metrics/), which are an industry standard created by Google Cloud through research, to see how well DevOps approaches are working. These four important metrics are:
 
@@ -69,7 +83,7 @@ Platform Engineering MIME is a new field that focuses on creating and managing i
 
 At its core, [platform engineering](https://www.improwised.com/services/platform-engineering/) is about making reusable building blocks and standard paths that make things easier for developers, boost their productivity, and enforce best practices without being too severe.
 
-### **What IDPs (Internal Developer Platforms) Do**
+## **What IDPs (Internal Developer Platforms) Do**
 
 The Internal Developer Platform (IDP) is a core output of platform engineering. It is a carefully chosen set of tools, procedures, and services that make infrastructure less complicated so developers can focus on deploying features.
 
@@ -83,7 +97,7 @@ You can think of an IDP as a self-service gateway or control plane that lets dev
 
 This method helps make sure that everyone follows the rules, that things are always the same, and that things can grow. This is especially crucial for big companies with a lot of engineers or startups that are growing quickly.
 
-### **The Idea of "Golden Paths"**
+## **The Idea of "Golden Paths"**
 
 The "Golden Path" is another important idea in platform engineering. It is a technique to build and deploy applications in an organization that has been approved, well-documented, and supported. These are opinionated workflows that strike a balance between freedom and rules, so teams don't have to start from scratch or make choices that put them at risk of technical debt or security breaches.
 

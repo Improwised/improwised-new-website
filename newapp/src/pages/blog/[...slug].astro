@@ -12,6 +12,7 @@ import avtarImage from "$lib/images/blogs/impro.png";
 import { formatDate } from "$lib/utils"
 import Sidebar from "$lib/components/Sidebar.astro";
 import { Linkedin } from "lucide-svelte/icons";
+import FAQs from "$lib/components/FAQs.astro" 
 
 export async function getStaticPaths() {
     const blogs = await getCollection("blogs");
@@ -42,14 +43,14 @@ const recommendedBlogs = sortedBlogs.slice(0, 3);
 
 // Meta title and description
 const blogs = await getCollection('blogs');
-const [{data:{seoTitle, seoDescription}}] = blogs.filter((blog) => blog.data.slug === Astro.url.pathname.split('/').at(-2))
+const [{data}] = blogs.filter((blog) => blog.data.slug === Astro.url.pathname.split('/').at(-2))
 
 const url: string[] = Astro.url.pathname.split('/')
 
 const [{data: author}] = await getCollection('authors', (author) => author.data.title === blog.data.author);
 ---
 
-<Layout title={seoTitle} description={seoDescription}>
+<Layout title={data.seoTitle} description={data.seoDescription}>
     <main class="main-content">
         <section id="section1"
             class="section1 text-left py-40 px-6 bg-blog-details relative pt-[30%] md:pb-40 lg:pt-[12%]"
@@ -133,7 +134,7 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
             </div>
         </section>
 
-        <section class="py-10 md:py-20 section">
+        <section class="py-10 md:py-20">
             <div class="container">
                 <Badge class="mb-10" variant="outline"
                     ><CircleUserRound
@@ -199,6 +200,10 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
                 </div>
             </div>
         </section>
+
+        <!-- faqs -->
+        { data.faqs && <FAQs faqs={data.faqs}/>}
+
 
         <CTASection />
     </main>

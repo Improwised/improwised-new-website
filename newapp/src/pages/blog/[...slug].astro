@@ -99,6 +99,8 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
                 { url.includes("blog") && url.at(-2) !== "blog" && <Sidebar insideMdx="inside" class="h-full" />}
                 <div class="overflow-x-hidden">
                     <Content />
+                    <!-- faqs -->
+                    { data.faqs && <FAQs faqs={data.faqs} isBlogFaqs={true}/>}
                     <!-- author details -->
                     <div class="author-details mt-12 border p-6 rounded-xl flex flex-col gap-4">
                         <div class="flex gap-8">
@@ -200,11 +202,6 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
                 </div>
             </div>
         </section>
-
-        <!-- faqs -->
-        { data.faqs && <FAQs faqs={data.faqs}/>}
-
-
         <CTASection />
     </main>
 </Layout>

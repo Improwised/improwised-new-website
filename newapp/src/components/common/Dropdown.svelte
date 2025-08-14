@@ -21,7 +21,7 @@
     <DropdownMenu.Group>
       {#if services.length > 0}
         {#each services as service}
-          {#if service.data.blocks.length > 0 && (service.data.slug == "platform-engineering" || service.data.slug == "autonomous-agent") }
+          {#if service.data.blocks.length > 0 && (service.data.slug == "platform-engineering" || service.data.slug == "autonomous-agent" || service.data.slug == "business-intelligence-and-automation" || service.data.slug == "custom-software-development") }
             <div class="flex justify-between group">
               <DropdownMenu.Item class="p-[10px] small-text text-first-color group-hover:text-blue-hover">
                 <a href={`${baseUrl}/services/${service?.data.slug}/`}  aria-label="Explore ${service?.data?.title}">

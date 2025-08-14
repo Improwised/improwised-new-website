@@ -46,10 +46,5 @@
     "/services/cloud-optimized-modernization": "/services/platform-engineering/",
     "/services/performance-driven-ux-ui-enhancements": "/services/technology-consulting/"    
   },
-  "regex": [
-    // {
-    //   "pattern": "(?i)(/.*)-2025$", 
-    //   "replace": "$1" 
-    // }
-  ]
+  "regex": []
 }

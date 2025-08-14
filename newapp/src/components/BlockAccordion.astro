@@ -10,7 +10,7 @@ import { Puzzle } from "lucide-svelte";
 
 const { blockSlug, serviceId } = Astro.props;
 const services = await getCollection("services", ({data}) => (
-    (data.slug == "platform-engineering" || data.slug == "autonomous-agent")
+    (data.slug == "platform-engineering" || data.slug == "autonomous-agent" || data.slug == "business-intelligence-and-automation" || data.slug == "custom-software-development" )
 ))
 const [service] = services.filter(serv => serv.id == serviceId)
 const block = service.data.blocks?.filter(block => block.slug === blockSlug);
@@ -31,11 +31,11 @@ const block = service.data.blocks?.filter(block => block.slug === blockSlug);
             
         </div>
         <div class="text-center w-full my-auto">
-            { service.id == "autonomous-agent" && <p class="text-left small-text md:text-para font-inter text-fifth-color mb-3">{block[0].featureFirstPara}</p>}
+            { (service.id == "autonomous-agent" || service.id == "business-intelligence-and-automation" || service.id == "custom-software-development") && <p class="text-left small-text md:text-para font-inter text-fifth-color mb-3">{block[0].featureFirstPara}</p>}
 
-            <Accordion client:load blocks={block[0].features} baseUrl={BASE_URL} isAutonomus={serviceId === "autonomous-agent"}/>
+            <Accordion client:load blocks={block[0].features} baseUrl={BASE_URL} isAutonomus={serviceId === "autonomous-agent" || "business-intelligence-and-automation" || "custom-software-development" }/>
 
-            { service.id == "autonomous-agent" && <p class="mt-6 small-text md:text-para text-left font-inter text-fifth-color">{block[0].featureLastPara}</p>}
+            { (service.id == "autonomous-agent" || service.id == "business-intelligence-and-automation" || service.id == "custom-software-development")  && <p class="mt-6 small-text md:text-para text-left font-inter text-fifth-color">{block[0].featureLastPara}</p>}
         </div>
     </div>}
 </div>

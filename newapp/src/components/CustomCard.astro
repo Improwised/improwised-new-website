@@ -18,7 +18,6 @@ const collections = (await getCollection(
 )) as CollectionEntry<ValidCollections>[];
 
 const collectionDetails = collections.filter((collection) => collection.data.order > 4 && collection.data.order < 8);
-// console.log("collectionDetails--------", collections);
 
 let gradientX = 45.5;
 let gradientY = -200;

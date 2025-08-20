@@ -14,6 +14,15 @@ const { title, description } = Astro.props;
 		
 		<!-- LD JSON Data -->
 		<script is:inline type="application/ld+json" set:html={JSON.stringify(LD_JSON_DATA)}></script>
+		<script is:inline>
+			const theme = localStorage.getItem("theme")
+			?? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+			if (theme === "dark") {
+			document.documentElement.classList.add("dark");
+			} else {
+			document.documentElement.classList.remove("dark");
+			}
+		</script>
 	</head>
 	<body>
 		<Header />
@@ -27,12 +36,3 @@ const { title, description } = Astro.props;
 	</body>
 </html>
 
-<script is:inline>
-	const theme = localStorage.getItem("theme")
-	const htmlElement = document.getElementsByTagName('html') ;
-	if(theme == "dark") {
-        htmlElement && htmlElement[0].classList.add('dark', 'bg-black')
-    } else {
-        htmlElement && htmlElement[0].classList.remove('dark', 'bg-black')
-    }	
-</script>

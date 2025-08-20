@@ -30,7 +30,7 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
     class="relative container z-50 flex flex-col items-center justify-between lg:flex-row px-4 py-3"
   >
     <div id="impro-logo" class="z-50 flex w-full items-center justify-between lg:w-auto">
-      <a href={BASE_URL} class="flex items-center transition" aria-label="Improwised Technologies homepage - cloud infrastructure and platform engineering services">
+      <a href={BASE_URL + "/"} class="flex items-center transition" aria-label="Improwised Technologies homepage - cloud infrastructure and platform engineering services">
         <Image
           src={Logo}
           class="w-[150px] lg:w-[200px]"
@@ -60,7 +60,7 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
       <li class="content-center px-1">
         <a
           aria-label="Improwised Technologies homepage - cloud infrastructure and platform engineering services"
-          href={`${BASE_URL}`}
+          href={`${BASE_URL}/`}
           class={`hover:text-blue-hover py-2 transition lg:px-3 small-text ${currentUrl.at(1) == "" ? "text-blue-hover" : "text-first-color" }`}
           >Home</a
         >
@@ -124,7 +124,7 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
       class="bg-effect -z-40 pt-3 flex impronav-shadow lg:hidden impronav-toggle absolute top-0 px-4 pb-4 -translate-y-[392px] transition-all duration-500 flex-col w-full bg-white"
     >
       <div class="z-50 flex w-full items-center justify-between lg:w-auto">
-        <a href={BASE_URL} class="flex items-center transition">
+        <a href={BASE_URL + "/"} class="flex items-center transition">
           <Image
             src={Logo}
             class="w-[150px] lg:w-[200px]"
@@ -143,7 +143,7 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
       <ul class="flex flex-col lg:gap-3">
         <li class={`hover:text-blue-hover py-2 transition lg:px-3 ${currentUrl.at(1) == "" ? "text-blue-hover" : "text-first-color" }`}>
           <a
-            href={`${BASE_URL}`}
+            href={`${BASE_URL}/`}
             aria-label="Improwised Technologies homepage - cloud infrastructure and platform engineering services"
               >Home</a
           >

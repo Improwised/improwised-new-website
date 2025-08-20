@@ -1,6 +1,5 @@
 ---
-import { BASE_URL } from "$lib/consts";
 const { title, slug } = Astro.props;
 ---
 
-<a href={`${BASE_URL}/${slug}/`} class="underline">{title}</a>
+<a href={`/${slug}/`} class="underline">{title}</a>

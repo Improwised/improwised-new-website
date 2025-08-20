@@ -39,8 +39,6 @@ $ cp .env.example .env
 * Since the project is served under a subdirectory, uncomment and set the following in your astro.config.mjs
 
 ```
-base: '/improwised-new-website/newapp',
-
 server: {
     host: true,
     port: 4321

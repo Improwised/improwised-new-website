@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 
 import Accordion from "$lib/components/common/Accordion.svelte";
 import { Image } from "astro:assets";
-import { BASE_URL } from "$lib/consts";
 import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import { Badge } from "$lib/components/ui/badge";
 import { Puzzle } from "lucide-svelte";
@@ -33,7 +32,7 @@ const block = service.data.blocks?.filter(block => block.slug === blockSlug);
         <div class="text-center w-full my-auto">
             { (service.id == "autonomous-agent" || service.id == "business-intelligence-and-automation" || service.id == "custom-software-development") && <p class="text-left small-text md:text-para font-inter text-fifth-color mb-3">{block[0].featureFirstPara}</p>}
 
-            <Accordion client:load blocks={block[0].features} baseUrl={BASE_URL} isAutonomus={serviceId === "autonomous-agent" || "business-intelligence-and-automation" || "custom-software-development" }/>
+            <Accordion client:load blocks={block[0].features} isAutonomus={serviceId === "autonomous-agent" || "business-intelligence-and-automation" || "custom-software-development" }/>
 
             { (service.id == "autonomous-agent" || service.id == "business-intelligence-and-automation" || service.id == "custom-software-development")  && <p class="mt-6 small-text md:text-para text-left font-inter text-fifth-color">{block[0].featureLastPara}</p>}
         </div>

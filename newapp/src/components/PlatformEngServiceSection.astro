@@ -3,7 +3,6 @@ import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import { Image } from "astro:assets";
 import { Badge } from "$lib/components/ui/badge";
 import { Button } from "$lib/components/ui/button";
-import { BASE_URL } from "$lib/consts";
 import servicesBg from "$lib/images/services/home-service-bg.svg";
 import { CircleUserRound, CloudUpload } from "lucide-svelte";
 import hrLine from "$lib/images/hrline.svg";
@@ -29,7 +28,7 @@ import hrLine from "$lib/images/hrline.svg";
           >
           Accelerate innovation with Platform Engineering as a Service-automating workflows, standardizing infrastructure, and enabling seamless cloud-native scalability.
           </p>
-          <Button href=`${BASE_URL}/services/platform-engineering/` aria-label="Learn more about our services on the service page"  class="button-bg mt-4 md:my-12 md:text-[16px] font-manrope">Learn More</Button
+          <Button href=`/services/platform-engineering/` aria-label="Learn more about our services on the service page"  class="button-bg mt-4 md:my-12 md:text-[16px] font-manrope">Learn More</Button
           >
 
           <div class="hidden md:block">

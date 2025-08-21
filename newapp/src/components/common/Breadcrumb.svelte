@@ -11,7 +11,7 @@
   <Breadcrumb.Root>
     <Breadcrumb.List class="justify-center">
       <Breadcrumb.Item>
-        <Breadcrumb.Link href={`${baseUrl}`} class="hover:text-blue-hover">Home</Breadcrumb.Link>
+        <Breadcrumb.Link href={`${baseUrl}/`} class="hover:text-blue-hover">Home</Breadcrumb.Link>
       </Breadcrumb.Item>
       <Breadcrumb.Separator/>
       <Breadcrumb.Item>

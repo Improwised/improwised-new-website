@@ -1,10 +1,15 @@
-/blogs/Hidden-Costs-of-Not-Having-Development-Platform /blog/hidden-costs-of-not-having-development-platform/ 301
-/blogs/Kubernetes-and-Platform-Engineering /blog/kubernetes-and-platform-engineering/ 301
-/blogs/platform-engineering-maturity-model /blog/platform-engineering-maturity-model/ 301
-/blog/Zero-Downtime-Architecture /blog/zero-downtime-architecture/ 301
-/blog/revamping-the-improwised-technologies-website-blog/ /blog/ 301
-/blogs/Scaling-Tech-Infrastructure-with-Platform-Engineering /blog/scaling-tech-infrastructure-with-platform-engineering/ 301
 /blogs/* /blog/:splat 301
+/blog/:title /blog/:title/ 301
+/blog/revamping-the-improwised-technologies-website-blog/ /blog/ 301
+
+
+/blog/Hidden-Costs-of-Not-Having-Development-Platform/ /blog/hidden-costs-of-not-having-development-platform/ 301
+/blog/Kubernetes-and-Platform-Engineering/ /blog/kubernetes-and-platform-engineering/ 301
+/blog/Zero-Downtime-Architecture/ /blog/zero-downtime-architecture/ 301
+/blog/Scaling-Tech-Infrastructure-with-Platform-Engineering/ /blog/scaling-tech-infrastructure-with-platform-engineering/ 301
+/blog/top-cloud-trends-to-watch-in-2025/ /blog/top-cloud-trends-to-watch/ 301
+/blog/top-golang-development-companies-2025/ /blog/top-golang-development-companies/ 301
+/blog/multi-cloud-strategies-for-2025/ /blog/multi-cloud-strategies/ 301
 
 /careers/devops-engineer/ /careers/jobs/devops-engineer/ 301
 /careers/assistant-product-specialist/ /careers/ 301
@@ -46,4 +51,3 @@
 /services/client-centric-approach /services/technology-consulting/ 301
 /services/cloud-optimized-modernization /services/platform-engineering/ 301
 /services/performance-driven-ux-ui-enhancements /services/technology-consulting/ 301
-

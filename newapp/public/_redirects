@@ -1,4 +1,4 @@
-/blogs/* /blog/:splat 301
 /blogs/Hidden-Costs-of-Not-Having-Development-Platform /blog/hidden-costs-of-not-having-development-platform/ 301
 /blogs/Kubernetes-and-Platform-Engineering /blog/kubernetes-and-platform-engineering/ 301
 /blogs/platform-engineering-maturity-model /blog/platform-engineering-maturity-model/ 301
+/blogs/* /blog/:splat 301

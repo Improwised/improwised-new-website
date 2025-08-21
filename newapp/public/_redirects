@@ -1,5 +1,49 @@
 /blogs/Hidden-Costs-of-Not-Having-Development-Platform /blog/hidden-costs-of-not-having-development-platform/ 301
 /blogs/Kubernetes-and-Platform-Engineering /blog/kubernetes-and-platform-engineering/ 301
 /blogs/platform-engineering-maturity-model /blog/platform-engineering-maturity-model/ 301
-/careers/devops-engineer/ /careers/jobs/devops-engineer/ 301
+/blog/Zero-Downtime-Architecture /blog/zero-downtime-architecture/ 301
+/blog/revamping-the-improwised-technologies-website-blog/ /blog/ 301
+/blogs/Scaling-Tech-Infrastructure-with-Platform-Engineering /blog/scaling-tech-infrastructure-with-platform-engineering/ 301
 /blogs/* /blog/:splat 301
+
+/careers/devops-engineer/ /careers/jobs/devops-engineer/ 301
+/careers/assistant-product-specialist/ /careers/ 301
+/careers/front-end-developer/ /careers/jobs/senior-software-engineer-full-stack/ 301
+/jobs/senior-software-engineer-full-stack/ /careers/jobs/senior-software-engineer-full-stack/ 301
+/careers/head-of-people-operations/ /careers/ 301
+/careers/jobs/ /careers/ 301
+/careers/jobs/assistant-product-specialist  /careers/ 301
+/careers/jobs/assistant-product-specialist/ /careers/ 301
+/careers/jobs/product-specialist  /careers/ 301
+/careers/jobs/product-specialist/ /careers/ 301
+/careers/jobs/scrum-master /careers/ 301
+/careers/jobs/scrum-master/ /careers/ 301
+/careers/jobs/senior-software-engineer-frontend  /careers/jobs/senior-software-engineer-full-stack/ 301
+/careers/jobs/senior-software-engineer-frontend/ /careers/jobs/senior-software-engineer-full-stack/ 301
+/careers/product-owner/ /careers/ 301
+/careers/product-specialist/ /careers/ 301
+/careers/scrum-master/ /careers/ 301
+/careers/senior-software-engineer-frontend/ /careers/ 301
+/careers/senior-software-engineer-full-stack/ /careers/ 301
+/careers/senior-software-engineer/ /careers/ 301
+/careers/software-engineer/ /careers/ 301
+
+/services/angularjs-development/ /services/technology-consulting/ 301
+/services/laravel-development/ /services/technology-consulting/ 301
+/services/nodejs-development/ /services/technology-consulting/ 301
+/services/software-product-modernization/ /services/product-modernization/ 301
+/services/web-software-development/ /services/technology-consulting/ 301
+/cloud-infrastructure-services  /services/cloud-infrastructure-services/ 301
+/cloud-infrastructure-services/ /services/cloud-infrastructure-services/ 301
+/software-product-modernization  /services/product-modernization/ 301
+/software-product-modernization/ /services/product-modernization/ 301
+/technology-consulting /services/technology-consulting/ 301
+/technology-consulting/ /services/technology-consulting/ 301
+/web-software-development  /services/technology-consulting/ 301
+/web-software-development/ /services/technology-consulting/ 301
+/services/Automated Delivery Observability /services/platform-engineering/ 301
+/services/Automated-Cloud-Operations-Scaling /services/platform-engineering/ 301
+/services/client-centric-approach /services/technology-consulting/ 301
+/services/cloud-optimized-modernization /services/platform-engineering/ 301
+/services/performance-driven-ux-ui-enhancements /services/technology-consulting/ 301
+

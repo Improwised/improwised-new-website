@@ -5,7 +5,6 @@ import type { CollectionEntry } from "astro:content";
 import * as Card from "$lib/components/ui/card";
 import { Image } from "astro:assets";
 import { Button } from "$lib/components/ui/button";
-import { BASE_URL } from "$lib/consts";
 
 type ValidCollections = "services" | "corefeatures";
 
@@ -51,7 +50,7 @@ const currentUrl = Astro.url.pathname;
                 {
                   currentUrl.split("/").includes('services') ? 
                   <p>{details.data.title}</p> :
-                  <a href={BASE_URL + "/services/" + details.data.slug + "/"} aria-label="Learn more about our services on the service page">
+                  <a href={"/services/" + details.data.slug + "/"} aria-label="Learn more about our services on the service page">
                     {details.data.title}
                   </a>  
                 }
@@ -63,7 +62,7 @@ const currentUrl = Astro.url.pathname;
             {details.collection === "services" && (
               <Card.Footer class="block">
                 <Button
-                  href={BASE_URL + "/services/" + details.data.slug + "/"}
+                  href={"/services/" + details.data.slug + "/"}
                   class="button-bg md:mt-6 md:mb-2 md:text-[16px] font-manrope"
                   aria-label="Learn more about our services on the service page"
                 >

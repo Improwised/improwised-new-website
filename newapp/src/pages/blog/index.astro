@@ -1,6 +1,5 @@
 ---
 import Layout from "$lib/layouts/Layout.astro";
-import { BASE_URL } from "$lib/consts";
 import CTASection from "$lib/components/CTASection.astro";
 import backImage from "$lib/images/blogs/back.svg";
 import bg2Image from "$lib/images/blogs/bg2.svg";
@@ -60,7 +59,7 @@ const authors = await getCollection("authors");
 
         <div class="relative overflow-x-clip">
           <div class="flex justify-center">
-            <BlogsCarousel client:load blogs={blogs} baseUrl={BASE_URL} />
+            <BlogsCarousel client:load blogs={blogs} />
           </div>
         </div>
       </div>
@@ -112,7 +111,7 @@ const authors = await getCollection("authors");
             <h2
               class="mb-4 font-manrope font-bold text-[24px] leading-[28px] md:text-[28px] text-fifth-color md:leading-[32px]"
             >
-              <a href={BASE_URL + "/blog/" + latestBlog.data.slug + "/"}>
+              <a href={ "/blog/" + latestBlog.data.slug + "/"}>
                 {latestBlog.data.title}
               </a>
             </h2>
@@ -153,7 +152,7 @@ const authors = await getCollection("authors");
                   ))
               }
               <Button
-                href={BASE_URL + "/blog/" + latestBlog.data.slug + "/"}
+                href={"/blog/" + latestBlog.data.slug + "/"}
                 class="button-bg"
               >
                 Read More
@@ -202,7 +201,7 @@ const authors = await getCollection("authors");
                     {formatDate(blog.data.publishDate)}
                   </p>
                   <Card.Title class="text-[18px] md:text-[20px] text-fifth-color font-manrope font-bold leading-[24px] tracking-tight">
-                    <a href={BASE_URL + "/blog/" + blog.data.slug + "/"}>
+                    <a href={"/blog/" + blog.data.slug + "/"}>
                       {blog.data.title}
                     </a>
                   </Card.Title>

@@ -3,7 +3,6 @@
 
 export const SITE_TITLE = 'Improwised Technologies Pvt. Ltd.';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
-export const BASE_URL = '';
 export const SITE_KEY = import.meta.env.SITE_KEY;
 export const CONTACT_US_URL = import.meta.env.CONTACT_US_URL;
 export const LD_JSON_DATA = {

@@ -117,7 +117,7 @@ Improwised Technologies can help at any point in the process, whether you are st
 
 ## How to Do It
 
-How you develop an internal platform is almost as valuable as the technologies you use to build it. In the Improvised perspective:
+How you develop an internal platform is almost as valuable as the technologies you use to build it. In the improwised perspective:
 
 **1. Start with little (depth over breadth)**
 
@@ -158,7 +158,7 @@ One of the major European fashion retailers established their own platform calle
 
 Spotify's Backstage platform is now the best open-source example of an internal developer site. Backstage gives engineers one consistent place to manage services, deployments, and documentation, all of which are interconnected through their IDP.
 
-These success stories demonstrate that platform engineering can provide significant benefits. If you don't have a lot of capital (and no, you don't need to spend any of Netflix's money), then improvised can help you customize and ultimately leverage these same principles to fit your size and tech stack.
+These success stories demonstrate that platform engineering can provide significant benefits. If you don't have a lot of capital (and no, you don't need to spend any of Netflix's money), then improwised can help you customize and ultimately leverage these same principles to fit your size and tech stack.
 
 ## What was the Future of Engineering Platforms
 
@@ -185,7 +185,7 @@ If you are a technology leader, and you have to deal with:
 
 Then you should invest in a plan for platform engineering.
 
-improvised helps high-growth startups, scale-ups, and mid-sized businesses architect and construct Internal Developer Platforms (IDPs) that perform in their environments.
+improwised helps high-growth startups, scale-ups, and mid-sized businesses architect and construct Internal Developer Platforms (IDPs) that perform in their environments.
 
 * You get the benefit of automating Terraform, Kubernetes, and CI/CD pipelines, either to put into production or to keep clean to reduce risk.  
 * You can build security, best practices, and observability into every deployment path.  

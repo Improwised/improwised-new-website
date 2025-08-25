@@ -22,7 +22,17 @@ linkTags:
   - title: "What was the Future of Engineering Platforms"
   - title: "Why now? Why platform engineering? And why Improwised?"
   - title: "Do you want to elevate your engineering practices into the 21st century?"
-
+faqs:
+  - question: "What does a platform engineer do?"
+    answer: "Platform engineering is the field that deals with building and keeping internal developer platforms (IDPs) up to date. IDPs are a set of tools, services, and processes that development teams can use to share, protect, and keep an eye on their work on their own."
+  - question: "How is platform engineering distinct from DevOps?"
+    answer: "DevOps is a style of living that combines development and operations. Platform engineering, on the other hand, is all about giving DevOps the IDP, which is the technology that makes it possible on a large scale."
+  - question: "What are the advantages in the third quarter?"
+    answer: "It speeds up deployment, cuts down on manual work, enforces security and compliance, makes things more consistent, and makes engineers happier and more productive."
+  - question: "Who should be in charge of putting together a team to work on platform engineering?"
+    answer: "Big firms get the most out of it, but medium-sized businesses can start by having their current DevOps engineers or small teams standardize their internal tools and infrastructure."
+  - question: "What tools do people use most of the time?"
+    answer: "Companies use a lot of different systems, such as Kubernetes, Terraform, CI/CD technologies, observability stacks like Prometheus and Grafana, and secret-management frameworks."
 ---
 
 ## The Growth of Platform Engineering

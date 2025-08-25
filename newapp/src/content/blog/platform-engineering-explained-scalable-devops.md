@@ -7,8 +7,8 @@ seoDescription: 'Understand what platform engineering is, how it differs from De
 tags: [Platform Engineering, Scalable DevOps, Internal Developer Platform, Engineering Enablement, Infrastructure Automation, DevOps Strategy, Platform-as-a-Product]
 publishDate: 2025-08-25
 author: 'Improwised Editorial Team'
-image: '$lib/images/blogs/top-10-ci-cd-providers-light.svg'
-darkImage: '$lib/images/blogs/top-10-ci-cd-providers-dark.svg'
+image: '$lib/images/blogs/platform-engineering-explained-scalable-devops-head-light.svg'
+darkImage: '$lib/images/blogs/platform-engineering-explained-scalable-devops-head-dark.svg'
 linkTags:
   - title: "The Growth of Platform Engineering" 
   - title: "What does the discipline of platform engineering do?"

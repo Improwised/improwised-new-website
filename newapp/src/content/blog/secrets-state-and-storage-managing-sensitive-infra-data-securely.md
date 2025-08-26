@@ -8,7 +8,7 @@ tags: [DevOps Data Protection , Infrastructure as Code Security , Secrets Encryp
 publishDate: 2025-08-08
 author: "Rakshit Menpara" 
 image: '$lib/images/blogs/secret-state-storage-head-light.svg'
-darkImage: '$lib/images/blogs/secret-state-storage-dark-head.svg'
+darkImage: '$lib/images/blogs/secret-state-storage-head-dark.svg'
 linkTags:
   - title: "Secrets, State, and Storage: Managing Sensitive Infra Data Securely" 
   - title: "Managing Secrets: Control and Isolation" 

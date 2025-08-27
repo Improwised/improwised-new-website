@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes: A Base, Not a Goal"
-slug: "kubernetes-base-not-goal"
+slug: "kubernetes-why-its-foundation-not-destination"
 description: "Discover why Kubernetes is the foundation, not the destination, for cloud-native platform engineering. Learn how to build developer-centric platforms beyond Kubernetes infrastructure complexity."
 seoTitle: "Kubernetes Foundation Guide: Why It's a Base Not Goal | Improwised"
 seoDescription: "Kubernetes is your foundation, not destination. Learn platform engineering strategies to build beyond K8s complexity for developer-friendly cloud-native solutions. | Improwised"

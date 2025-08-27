@@ -148,7 +148,7 @@ teams:
     - name: 'Priyanka'
       image: '$lib/images/teams/Priyanka.png'
 
-    - name: 'Harjeetsinh'
+    - name: 'Harshjeetsinh'
       image: '$lib/images/teams/Harshjeetsinh.png'
 
     - name: 'Nilesh'

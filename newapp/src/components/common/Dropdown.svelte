@@ -3,7 +3,6 @@
   import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
 
   export let services: string | any[] = [];
-  export let baseUrl: string = "";
   export let currentUrl: string[] = [];
   let width: number = 0;
   let align: "center" | "start" | "end" | undefined;
@@ -24,7 +23,7 @@
           {#if service.data.blocks.length > 0 && (service.data.slug == "platform-engineering" || service.data.slug == "autonomous-agent" || service.data.slug == "business-intelligence-and-automation" || service.data.slug == "custom-software-development") }
             <div class="flex justify-between group">
               <DropdownMenu.Item class="p-[10px] small-text text-first-color group-hover:text-blue-hover">
-                <a href={`${baseUrl}/services/${service?.data.slug}/`}  aria-label="Explore ${service?.data?.title}">
+                <a href={`/services/${service?.data.slug}/`}  aria-label="Explore ${service?.data?.title}">
                   {service?.data?.title || 'Service Details'}
                 </a>
               </DropdownMenu.Item>
@@ -36,7 +35,7 @@
                     <DropdownMenu.Group>
                       {#each service.data.blocks as block}
                         <DropdownMenu.Item class="p-[10px] small-text text-first-color hover:text-blue-hover">
-                          <a href={`${baseUrl}/services/${service?.data.slug}/${block.slug}/`}  aria-label="Explore ${block.title}">
+                          <a href={`/services/${service?.data.slug}/${block.slug}/`}  aria-label="Explore ${block.title}">
                             {block.title || 'Service Details'}
                           </a>
                         </DropdownMenu.Item>
@@ -47,7 +46,7 @@
             </div>
           {:else}
             <DropdownMenu.Item class="p-[10px] small-text text-first-color hover:text-blue-hover">
-              <a href={`${baseUrl}/services/${service?.data.slug}/`}  aria-label="Explore ${service?.data?.title}">
+              <a href={`/services/${service?.data.slug}/`}  aria-label="Explore ${service?.data?.title}">
                 {service?.data?.title || 'Service Details'}
               </a>
             </DropdownMenu.Item>

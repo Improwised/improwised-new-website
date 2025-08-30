@@ -2,7 +2,6 @@
   import * as Card from "$lib/components/ui/card/index.js";
   import * as Carousel from "$lib/components/ui/carousel/index.js";
   import line from "$lib/images/line.svg";
-  export let baseUrl: string = "";
   export let casestudies: any[] = [];
 </script>
 
@@ -28,7 +27,7 @@
               >
               <a
                 target="_blank"
-                href={`${baseUrl}/case-studies/${casestudy.data.attachments}`}
+                href={`/case-studies/${casestudy.data.attachments}`}
                 aria-label="Learn more about ${casestudy.data.title}"
                 ><h2
                   class="mb-2 font-bold font-manrope text-[28px] leading-[34px] tracking-[0.02em] text-first-color"

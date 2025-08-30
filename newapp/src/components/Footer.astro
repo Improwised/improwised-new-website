@@ -1,5 +1,4 @@
 ---
-import { BASE_URL } from "../consts";
 import { Image } from "astro:assets";
 import Logo from "$lib/images/logo.png";
 import { Badge } from "$lib/components/ui/badge";
@@ -42,7 +41,7 @@ const currentYear = new Date().getFullYear();
           services.map((service) => (
             <>
           <li class="hover:text-[#fff]">
-            <a href={`${BASE_URL}/services/${service?.data.slug}/`}  aria-label={`Explore ${service?.data?.title}`}> {service?.data?.title || 'Service Details'}</a>
+            <a href={`/services/${service?.data.slug}/`}  aria-label={`Explore ${service?.data?.title}`}> {service?.data?.title || 'Service Details'}</a>
           </li>
 
           </>
@@ -67,7 +66,7 @@ const currentYear = new Date().getFullYear();
           <li class="hover:text-[#fff]">
             <a href="#">Single high-resource site</a>
           </li>
-          <li class="hover:text-[#fff]"><a href={`${BASE_URL}/case-studies`} aria-label="Case Studies">Case Studies</a></li>
+          <li class="hover:text-[#fff]"><a href={`/case-studies`} aria-label="Case Studies">Case Studies</a></li>
         </ul>
       </div> -->
 
@@ -76,8 +75,8 @@ const currentYear = new Date().getFullYear();
         <ul
           class="space-y-3 md:space-y-4 text-sm leading-[16px] md:text-base md:leading-[28px] font-inter font-normal text-[#A3A3A3]"
         >
-          <li class="hover:text-[#fff]"><a href={`${BASE_URL}/blog/`} aria-label="Learn more about Blog">Blog</a></li>
-          <li class="hover:text-[#fff]"><a href={`${BASE_URL}/case-studies/`} aria-label="Learn more about Case Studies">Case Studies</a></li>
+          <li class="hover:text-[#fff]"><a href={`/blog/`} aria-label="Learn more about Blog">Blog</a></li>
+          <li class="hover:text-[#fff]"><a href={`/case-studies/`} aria-label="Learn more about Case Studies">Case Studies</a></li>
           <!-- <li class="hover:text-[#fff]"><a href="#" aria-label="Documentation">Documentation</a></li>
           <li class="hover:text-[#fff]"><a href="#" aria-label="Changelog">Changelog</a></li>
           <li class="hover:text-[#fff]"><a href="#" aria-label="Newsletter">Newsletter</a></li>
@@ -93,18 +92,18 @@ const currentYear = new Date().getFullYear();
           class="space-y-3 md:space-y-4 text-sm leading-[16px] md:text-base md:leading-[28px] font-inter font-normal text-[#A3A3A3]"
         >
           <li class="hover:text-[#fff]">
-            <a href={`${BASE_URL}/about-improwised/`} aria-label="Learn more about our company on the About Us page">About us</a>
+            <a href={`/about-improwised/`} aria-label="Learn more about our company on the About Us page">About us</a>
           </li>
 
-          <li class="hover:text-[#fff]"><a href={`${BASE_URL}/about-improwised/`} aria-label="Learn more about our company on the About Us page">Why choose Improwised</a></li>
+          <li class="hover:text-[#fff]"><a href={`/about-improwised/`} aria-label="Learn more about our company on the About Us page">Why choose Improwised</a></li>
           <li class="hover:text-[#fff] flex items-center gap-2">
-            <a href={`${BASE_URL}/careers/`} aria-label="Careers">Careers <Badge class="bg-[#00afdb] dark:border-[#494848] text-gray-900 dark:text-gray-900  mb-0 font-inter">Hiring</Badge></a>
+            <a href={`/careers/`} aria-label="Careers">Careers <Badge class="bg-[#00afdb] dark:border-[#494848] text-gray-900 dark:text-gray-900  mb-0 font-inter">Hiring</Badge></a>
           </li>
-          <!-- <li class="hover:text-[#fff]" aria-label="Partners"><a href={`${BASE_URL}/contact`}>Partners</a></li> -->
+          <!-- <li class="hover:text-[#fff]" aria-label="Partners"><a href={`/contact`}>Partners</a></li> -->
           <!-- <li class="hover:text-[#fff]" aria-label="Research program"><a href="#">Research program</a></li> -->
-          <li class="hover:text-[#fff]" aria-label="Privacy Policy"><a href=`${BASE_URL}/privacy-policy/`>Privacy Policy</a></li>
-          <li class="hover:text-[#fff]" aria-label="Terms of Use"><a href=`${BASE_URL}/terms-of-use/`>Terms of Use</a></li>
-          <li class="hover:text-[#fff]" aria-label="Contact Us" ><a href={`${BASE_URL}/contact/`}>Contact Us</a></li>
+          <li class="hover:text-[#fff]" aria-label="Privacy Policy"><a href=`/privacy-policy/`>Privacy Policy</a></li>
+          <li class="hover:text-[#fff]" aria-label="Terms of Use"><a href=`/terms-of-use/`>Terms of Use</a></li>
+          <li class="hover:text-[#fff]" aria-label="Contact Us" ><a href={`/contact/`}>Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -117,7 +116,7 @@ const currentYear = new Date().getFullYear();
     <p>
       &copy; {currentYear} Improwised Technologies Pvt. Ltd. All rights reserved.
       Improwised&reg; are registered trademarks.
-      <a href=`${BASE_URL}/privacy-policy/` aria-label="privacy-policy" class="underline font-medium">Legal Information</a>.
+      <a href=`/privacy-policy/` aria-label="privacy-policy" class="underline font-medium">Legal Information</a>.
     </p>
   </div>
 

@@ -3,7 +3,6 @@
   import * as Carousel from "$lib/components/ui/carousel/index.js";
   import { innerWidth  } from "svelte/reactivity/window";
   export let casestudies: any[] = [];
-  export let baseUrl: string = "";
 </script>
 
 <Carousel.Root
@@ -37,7 +36,7 @@
                 >
                 <a
                 target="_blank"
-                href={`${baseUrl}/case-studies/${casestudy.data.attachments}`}
+                href={`/case-studies/${casestudy.data.attachments}`}
                 aria-label="Learn more about ${casestudy.data.title}"
                 >  {casestudy.data.title}</a>
                 </Card.Title>

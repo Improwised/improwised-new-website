@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import { Button } from "$lib/components/ui/button";
-import { BASE_URL } from "$lib/consts";
 import thumbnail1 from "$lib/images/people/1.png";
 import thumbnail2 from "$lib/images/people/2.png";
 import thumbnail3 from "$lib/images/people/3.png";
@@ -92,12 +91,12 @@ const thumbnail = [thumbnail1, thumbnail2, thumbnail3];
     <!-- CTA Buttons -->
     <div class="mt-6 md:mt-10 flex justify-center space-x-4">
       <Button
-        href=`${BASE_URL}/contact/`
+        href=`/contact/`
         class="button-bg md:text-[16px] font-manrope"
         aria-label="Contact us">Get in Touch</Button
       >
       <Button
-        href=`${BASE_URL}/services/platform-engineering/`
+        href=`/services/platform-engineering/`
         class="md:text-[16px] font-manrope"
         aria-label="Learn more about our services on the service page"
         variant="outline"

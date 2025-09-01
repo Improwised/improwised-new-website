@@ -8,8 +8,8 @@ seoDescription: "Discover hidden costs of microservices infrastructure and how f
 tags: [fragmented infrastructure microservices, microservices management costs, hidden costs microservices, microservices infrastructure complexity, DevOps microservices challenges, infrastructure optimization, microservices cost optimization, microservices best practices]
 publishDate: 2025-08-29
 author: "Rakshit Menpara" 
-image: "$lib/images/blogs/platform-engineering-vs-devops-light.png"
-darkImage: "$lib/images/blogs/platform-engineering-vs-devops-dark.png"
+image: "$lib/images/blogs/hidden-costs-fragmented-infrastructure-microservices-head-light.svg"
+darkImage: "$lib/images/blogs/hidden-costs-fragmented-infrastructure-microservices-head-dark.png"
 linkTags: 
   - title: "The Complexity of Microservices Infrastructure" 
   - title: "Hidden Costs of Managing Fragmented Infrastructure"

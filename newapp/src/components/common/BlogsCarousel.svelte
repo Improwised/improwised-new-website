@@ -39,9 +39,7 @@ plugins={[
               class="text-left mt-2 font-manrope text-[14px] text-fifth-color md:text-[16px] md:leading-[22px] tracking-tight"
             >
             <a href={"/blog/" + featuredBlog.data.slug + "/"}>
-              {featuredBlog.data.title.length > 50
-                ? featuredBlog.data.title.slice(0, 50) + "..."
-                : featuredBlog.data.title}
+              {featuredBlog.data.title}
              </a>
             </span>
           </p>

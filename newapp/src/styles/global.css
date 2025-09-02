@@ -113,7 +113,22 @@
   @media (min-width:768px) {
     pre.github-dark {
       @apply text-pretty;
+      text-wrap: pretty;
+      padding: 15px;
+      border-radius: 15px;
+      margin: 15px 0;
     }
+  }
+  p {
+    padding: 0 0 0 0 !important;
+  }
+  * {
+    margin: 0 0 1rem 0 !important;
+    line-height: 1.75 !important;
+  }
+  li {
+    margin: 0 0 0 0 !important;
+    line-height: 1.5 !important;
   }
 }
 

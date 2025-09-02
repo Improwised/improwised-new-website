@@ -59,79 +59,6 @@
   @apply text-[16px] leading-[20px] md:text-[16px] md:leading-[24px] tracking-[0.02em] font-normal;
 }
 
-@utility blog-detail {
-  h2 {
-    @apply font-manrope text-[32px] leading-[40px] md:text-[36px] md:leading-[44px] font-[1000] mt-4 mb-2.5 scroll-mt-[8rem] lg:scroll-mt-28;
-  }
-  & h3 {
-    @apply font-manrope text-[26px] leading-[32px] font-extrabold mt-4 mb-1 scroll-mt-[8rem] lg:scroll-mt-28;
-  }
-  & h4 {
-    @apply font-manrope text-[20px] leading-[28px] font-extrabold mt-4 mb-1 scroll-mt-[8rem] lg:scroll-mt-28;
-  }
-  & h5 {
-    @apply font-manrope text-xl font-bold mt-2 mb-0.5;
-  }
-  & img {
-    @apply my-5;
-  }
-  & p {
-    @apply text-[18px] leading-[28px] font-normal py-1;
-  }
-  & ol {
-    @apply list-decimal flex flex-col gap-1.5 mb-0 pl-[17px];
-  }
-  & ul {
-    @apply list-disc flex flex-col gap-1.5 mb-0 pl-[17px];
-  } 
-  & ul p, ol p {
-    @apply py-0;
-  }
-  & strong {
-    @apply font-semibold;
-  }
-  & a {
-    @apply underline
-  }
-  & .sidebar a {
-    @apply no-underline;
-  }
-  & table {
-    @apply text-center block overflow-x-scroll my-2;
-  } 
-  & table th {
-    @apply border p-5 border-gray-300;
-  }
-  & table td {
-    @apply border border-gray-300 p-5;
-  }
-  & .author-details {
-  & p     { @apply pb-0 p-0; }
-  & img   { @apply my-0; }
-  & h3    { @apply my-0; }
-  }
-  @media (min-width:768px) {
-    .blog-content pre.github-dark {
-      @apply text-pretty;
-      text-wrap: pretty;
-      padding: 15px;
-      border-radius: 15px;
-      margin: 15px 0;
-    }
-  }
-  .blog-content p {
-    padding: 0 0 0 0 !important;
-  }
-  .blog-content * {
-    margin: 0 0 1rem 0 !important;
-    line-height: 1.75 !important;
-  }
-  .blog-content li {
-    margin: 0 0 0 0 !important;
-    line-height: 1.5 !important;
-  }
-}
-
 @utility service-details {
   & h1 {
     @apply my-5 text-4xl lg:text-4xl;
@@ -765,15 +692,6 @@
   .eventsection2:hover .eventCard2,.eventsection2:hover .eventCard1  {
     animation-play-state: paused;
   }
-}
-
-
-.blog-details ul {
-  list-style: disc;
-  margin: 0;
-  padding: 0;
-  padding-left: 30px;
-  margin-bottom: 10px;
 }
 
 /* Hide scrollbar */

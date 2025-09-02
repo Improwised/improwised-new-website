@@ -4,6 +4,7 @@ import Layout from "$lib/layouts/Layout.astro";
 import { BASE_URL } from "$lib/consts";
 import { Badge } from "$lib/components/ui/badge";
 import CTASection from "$lib/components/CTASection.astro";
+import BlogContent from "$lib/components/BlogContent.astro";
 import { CircleUserRound } from "lucide-svelte";
 import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import * as Card from "$lib/components/ui/card";
@@ -98,7 +99,9 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
             <div class="blog-detail relative container grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6">
                 { url.includes("blog") && url.at(-2) !== "blog" && <Sidebar insideMdx="inside" class="h-full" />}
                 <div class="overflow-x-hidden">
-                    <div class="blog-content"><Content /></div>
+                    <div class="no-inherit">
+                        <BlogContent blog={blog}/>
+                    </div>                    
                     <!-- faqs -->
                     { data.faqs && <FAQs faqs={data.faqs} isBlogFaqs={true}/>}
                     <!-- author details -->
@@ -210,5 +213,9 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
         background-size: cover, contain;
         background-position: center, center;
         background-repeat: no-repeat, no-repeat;
+    }
+    div.no-inherit, 
+    div.no-inherit * {
+        all: revert;
     }
 </style>

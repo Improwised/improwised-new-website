@@ -111,7 +111,7 @@
   & h3    { @apply my-0; }
   }
   @media (min-width:768px) {
-    pre.github-dark {
+    .blog-content pre.github-dark {
       @apply text-pretty;
       text-wrap: pretty;
       padding: 15px;
@@ -119,14 +119,14 @@
       margin: 15px 0;
     }
   }
-  p {
+  .blog-content p {
     padding: 0 0 0 0 !important;
   }
-  * {
+  .blog-content * {
     margin: 0 0 1rem 0 !important;
     line-height: 1.75 !important;
   }
-  li {
+  .blog-content li {
     margin: 0 0 0 0 !important;
     line-height: 1.5 !important;
   }

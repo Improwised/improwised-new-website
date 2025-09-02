@@ -98,7 +98,7 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
             <div class="blog-detail relative container grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6">
                 { url.includes("blog") && url.at(-2) !== "blog" && <Sidebar insideMdx="inside" class="h-full" />}
                 <div class="overflow-x-hidden">
-                    <Content />
+                    <div class="blog-content"><Content /></div>
                     <!-- faqs -->
                     { data.faqs && <FAQs faqs={data.faqs} isBlogFaqs={true}/>}
                     <!-- author details -->

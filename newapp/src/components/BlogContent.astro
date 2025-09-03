@@ -1,7 +1,7 @@
 ---
 
 import { render } from "astro:content";
-import "github-markdown-css/github-markdown.css";
+import "github-markdown-css/github-markdown-light.css";
 
 const { blog } = Astro.props;
 
@@ -41,6 +41,10 @@ const { Content } = await render(blog);
 .markdown-body :global(h5),
 .markdown-body :global(h6) {
   scroll-margin-top: calc(var(--spacing) * 28);
+}
+
+.markdown-body :global(table) :global(tr) {
+  background-color: transparent;
 }
 </style>
 

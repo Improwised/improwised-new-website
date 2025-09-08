@@ -7,8 +7,8 @@ seoDescription: "Master dependency upgrade forecasting to prevent security risks
 tags: [dependency management, upgrade forecasting, technical debt, vulnerability management, software dependencies, security risks, system maintenance, DevOps, software lifecycle, dependency tracking]
 publishDate: 2025-09-08
 author: "Improwised Editorial Team" 
-image: "$lib/images/blogs/hidden-costs-fragmented-infrastructure-microservices-head-light.svg"
-darkImage: "$lib/images/blogs/hidden-costs-fragmented-infrastructure-microservices-head-dark.png"
+image: "$lib/images/blogs/upgrade-forecasting-predicting-dependency-liability-head-light.svg"
+darkImage: "$lib/images/blogs/upgrade-forecasting-predicting-dependency-liability-head-dark.svg"
 linkTags: 
   - title: "Understanding the dependency lifecycle" 
   - title: "Determining Signs of a Dependency at Risk"

@@ -1,6 +1,5 @@
 ---
 import Layout from "$lib/layouts/Layout.astro";
-import { BASE_URL } from "$lib/consts";
 import SectionTitle from "$lib/components/common/SectionTitle.svelte";
 import { Badge } from "$lib/components/ui/badge";
 import CTASection from "$lib/components/CTASection.astro";
@@ -65,7 +64,7 @@ let gradientY = -200;
               Be part of a dynamic team shaping the future of IT solutions.
             </p>
           </div>
-          <Button aria-label="Contact Us"  href={`${BASE_URL}/contact/`} class="button-bg"> Join Our Team </Button>
+          <Button aria-label="Contact Us"  href={`/contact/`} class="button-bg"> Join Our Team </Button>
         </div>
 
         <!-- <div class="my-auto">
@@ -182,7 +181,7 @@ let gradientY = -200;
                   <p class="md:w-4/5 small-text md:text-para font-inter text-fourth-color">
                     {data.overview}
                   </p>
-                  <Button href=`${BASE_URL}/careers/jobs/${data.slug}/` class="button-bg"> Apply Now </Button>
+                  <Button href=`/careers/jobs/${data.slug}/` class="button-bg"> Apply Now </Button>
                 </div>
               </div>
             ))

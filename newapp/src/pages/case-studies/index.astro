@@ -1,6 +1,5 @@
 ---
 import Layout from "$lib/layouts/Layout.astro";
-import { BASE_URL } from "$lib/consts";
 import CTASection from "$lib/components/CTASection.astro";
 
 import SectionTitle from "$lib/components/common/SectionTitle.svelte";
@@ -52,7 +51,6 @@ const [{ data : {seoTitle, seoDescription}}] = await getCollection('casestudy');
               <div class="relative overflow-x-clip">
                 <div class="flex justify-center">
                   <CaseStudyCarouselImage
-                    baseUrl={BASE_URL}
                     client:load
                     casestudies={filteredStudies}
                   />

@@ -7,8 +7,8 @@ seoDescription: "Discover the top 10 companies leading in Infrastructure as Code
 tags: [Infrastructure as Code, IaC, Platform Engineering, Platform Automation, DevOps, CI/CD, GitOps, Developer Productivity, Site Reliability Engineering, SRE, Improwised]
 publishDate: 2025-08-06
 author: "Shyam Kapdi" 
-image: "$lib/images/blogs/top-10-leading-the-way-in-infrastructure-light-head.svg"
-darkImage: "$lib/images/blogs/top-10-leading-the-way-in-infrastructure-dark-head.svg"
+image: "$lib/images/blogs/top-10-companies-leading-the-way-in-infrastructure-as-code-and-platform-automation-head-light.svg"
+darkImage: "$lib/images/blogs/top-10-companies-leading-the-way-in-infrastructure-as-code-and-platform-automation-head-dark.svg"
 linkTags:
   - title: "What about Infrastructure as Code"
   - title: "1. Improwised Technologies"

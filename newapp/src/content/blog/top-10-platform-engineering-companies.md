@@ -7,8 +7,8 @@ seoDescription: 'Looking to scale smart? Discover the top 10 platform engineerin
 tags: [Platform Engineering]
 publishDate: 2025-07-03
 author: 'Priyank Dhami'
-image: '$lib/images/blogs/top-10-platform-engineering-blog-image-head.png'
-darkImage: '$lib/images/blogs/top-10-platform-engineering-blog-image-head-dark.png'
+image: '$lib/images/blogs/top-10-platform-engineering-companies-head-light.png'
+darkImage: '$lib/images/blogs/top-10-platform-engineering-companies-head-dark.svg'
 linkTags:
   - title: "Top 10 Platform Engineering Companies"
   - title: "What is Platform Engineering?"

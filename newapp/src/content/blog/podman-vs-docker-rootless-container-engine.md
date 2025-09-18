@@ -7,8 +7,8 @@ seoDescription: 'Discover how Improwised uses Podman for secure, daemonless cont
 tags: [podman , rootless containers , container security , daemonless containers , podman vs docker]
 publishDate: 2025-07-14
 author: 'Chintan Viradiya'
-image: '$lib/images/blogs/podman-vs-docker-rootless-container-engine-head.svg'
-darkImage: '$lib/images/blogs/podman-vs-docker-rootless-container-dark.svg'
+image: '$lib/images/blogs/podman-vs-docker-rootless-container-engine-head-light.svg'
+darkImage: '$lib/images/blogs/podman-vs-docker-rootless-container-engine-head-dark.svg'
 linkTags:
   - title: "What is Podman?"
   - title: "Why Podman?"

@@ -7,8 +7,8 @@ seoDescription: 'Looking for expert CI/CD partners? Improwised presents the top 
 tags: [CI/CD Consulting Companies, CI/CD Service Providers 2025, Top DevOps Companies, Continuous Integration Experts, Continuous Deployment Services, DevOps as a Service Providers, Pipeline Automation Consulting, CI/CD Best Practices, Software Delivery Optimization]
 publishDate: 2025-07-30
 author: 'Priyank Dhami'
-image: '$lib/images/blogs/top-10-ci-cd-providers-light.svg'
-darkImage: '$lib/images/blogs/top-10-ci-cd-providers-dark.svg'
+image: '$lib/images/blogs/top-ci-cd-consulting-service-providers-head-light.svg'
+darkImage: '$lib/images/blogs/top-ci-cd-consulting-service-providers-head-dark.svg'
 linkTags:
   - title: "Why CI/CD Consulting Is a Business Imperative in 2025"
   - title: "1. Improwised Technologies"

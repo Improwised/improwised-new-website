@@ -7,8 +7,8 @@ seoDescription: "Looking for reliable Golang developers? Improwised highlights 2
 tags: [golang development, golang companies 2025, top go developers, modern software development, high-performance microservices, golang outsourcing, custom golang solutions, go language experts]
 publishDate: 2025-07-20
 author: "Priyank Dhami"
-image: "$lib/images/blogs/top-10-golang-development-companies-head.png"
-darkImage: "$lib/images/blogs/top-10-golang-development-companies-head.svg"
+image: "$lib/images/blogs/top-golang-development-companies-head-light.svg"
+darkImage: "$lib/images/blogs/top-golang-development-companies-head-dark.svg"
 linkTags:
   - title: "Introduction: The Go Advantage: Why Golang is the Future of Robust Software"
     children :

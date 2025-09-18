@@ -7,8 +7,8 @@ seoDescription: 'See how Improwised migrated from Jenkins to GitOps using GitHub
 tags: [GitOps, Jenkins, GitHub Actions, FluxCD, DevOps Transformation, CI/CD, Cloud-Native, Improwised Technologies, Infrastructure as Code Automation]
 publishDate: 2025-07-22
 author: "Hussain Gandhi"
-image: "$lib/images/blogs/jenkins-to-gitops-github-fluxcd-devops-transformation.png"
-darkImage: "$lib/images/blogs/jenkins-to-gitops-dark.png"
+image: "$lib/images/blogs/jenkins-to-gitops-github-fluxcd-devops-transformation-head-light.svg"
+darkImage: "$lib/images/blogs/jenkins-to-gitops-github-fluxcd-devops-transformation-head-dark.svg"
 linkTags:
     - title: "The New Rules of DevOps"
     - title: "Why We Went Cloud-Native"

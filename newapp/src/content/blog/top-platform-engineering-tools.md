@@ -8,8 +8,8 @@ seoDescription: "Explore the top 5 platform engineering tools for 2025 that help
 tags: [Platform Engineering, Developer Experience (DevX), Internal Developer Platform, Cloud Native Tools, Infrastructure Automation, CI/CD Tooling, Platform-as-a-Product, 2025 Engineering Stack]
 publishDate: 2025-08-11
 author: "Improwised Editorial Team"
-image: "$lib/images/blogs/platform-engineering-tools-head-light.svg"
-darkImage: "$lib/images/blogs/platform-engineering-tools-head-dark.svg"
+image: "$lib/images/blogs/top-platform-engineering-tools-head-light.svg"
+darkImage: "$lib/images/blogs/top-platform-engineering-tools-head-dark.svg"
 linkTags:
   - title: "Why It's Important to Pick the Right Tools" 
   - title: "The Best 5 Platform Engineering Tools for 2025"

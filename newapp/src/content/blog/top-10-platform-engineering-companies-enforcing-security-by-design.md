@@ -7,8 +7,8 @@ seoDescription: "Discover the top platform engineering companies enforcing Secur
 tags: [platform engineering , security by design , DevSecOps, internal developer platforms (IDPs), secure software development, engineering best practices, Improwised Technologies]
 publishDate: 2025-09-03
 author: "Shyam Kapdi" 
-image: '$lib/images/blogs/top-platform-engineering-companies-security-by-design.png'
-darkImage: '$lib/images/blogs/_top-platform-engineering-companies-security-by-design.png'
+image: '$lib/images/blogs/top-platform-engineering-companies-security-by-design-head-light.svg'
+darkImage: '$lib/images/blogs/top-platform-engineering-companies-security-by-design-head-dark.svg'
 linkTags:
   - title: "How Platform Engineering Enforces Security by Design"
   - title: "1 Improwised technologies"

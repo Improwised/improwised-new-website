@@ -50,25 +50,33 @@ function closeNavBar(event) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener('resize', function() {
-    if(window.innerWidth > 1024 && desktopHeader.classList.contains('hidden')) {
-      desktopHeader.classList.remove('hidden')
-    } else if (window.innerWidth < 1024 && !desktopHeader.classList.contains('hidden') && closeMenuButton.classList.contains('block')) {
-      desktopHeader.classList.add('hidden')
-    }
-  })  
-  window.addEventListener("scroll", function () {
+  function updateHeaderState() {
     if (window.scrollY > 50) {
-      if(!desktopHeader.classList.contains('hidden')) {
+      if (!desktopHeader.classList.contains('hidden')) {
         mainHeader.classList.add('scrolled')
         mainHeader.classList.add('impronav-shadow')
+        mainHeader.classList.add('impronav-sticky-header')
       }
     } else {
-      if(!closeMenuButton.classList.contains('block')) {
-        mainHeader.classList.remove("scrolled"); 
+      if (!closeMenuButton.classList.contains('block')) {
+        mainHeader.classList.remove('scrolled')
         mainHeader.classList.remove('impronav-shadow')
         mainHeader.classList.remove('impronav-sticky-header')
       }
     }
-  });
+  }
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 1024 && desktopHeader.classList.contains('hidden')) {
+      desktopHeader.classList.remove('hidden')
+    } else if (window.innerWidth < 1024 && !desktopHeader.classList.contains('hidden') && closeMenuButton.classList.contains('block')) {
+      desktopHeader.classList.add('hidden')
+    }
+  })
+
+  window.addEventListener('scroll', updateHeaderState)
+  window.addEventListener('load', updateHeaderState)
+
+  // Set initial state on load/refresh
+  updateHeaderState()
 });

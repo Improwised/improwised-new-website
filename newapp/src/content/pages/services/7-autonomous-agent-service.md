@@ -437,7 +437,7 @@ cardSectionPrimaryTitle: "How We Apply AI"
 cardSectionTitle: "in Real Development Workflows"
 isSectionTitlePrimary: true
 serviceCardCollection: "corefeaturesAutonomousAgent"
-serviceApproachPrimaryTitle: "Technology Consulting"
+serviceApproachPrimaryTitle: "Autonomous Agent"
 serviceApproachTitle: "Key Business Benefits of"
 serviceApproach: "approaches7"
 faqs:

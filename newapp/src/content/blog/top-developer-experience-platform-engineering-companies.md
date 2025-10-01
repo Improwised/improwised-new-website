@@ -24,8 +24,6 @@ linkTags:
   - title: "Comparison Table: Redefining Dev Experience Through Platform Engineering"
 ---
 
-# Top 10 Companies Redefining Dev Experience Through Platform Engineering
-
 Redefining Dev Experience Through Platform Engineering means transforming the developer's working environment by building an internal platform that automates and simplifies complex tasks. This helps developers focus on writing code and delivering features quickly and reliably.
 
 Improving the way software developers work by providing them with a specially built, automated internal platform that simplifies and speeds up their development tasks. Platform engineering is a discipline focused on creating and maintaining shared tools, workflows, and environments that developers use to build, test, and deploy applications more efficiently and with less manual effort.

@@ -7,7 +7,8 @@ seoDescription: 'Learn how to track sub-second service failures that evade tradi
 tags: [Observability, Monitoring, Latency]
 publishDate: 2025-05-14
 author: 'Rakshit Menpara'
-image: '$lib/images/blogs/micro-downtime-indexing-head.svg'
+image: '$lib/images/blogs/micro-downtime-indexing-head-light.svg'
+darkImage: '$lib/images/blogs/micro-downtime-indexing-head-light.svg'
 linkTags:
   - title: "What Is Micro-Downtime?"
   - title: "Sources of Sub-Second Failures"

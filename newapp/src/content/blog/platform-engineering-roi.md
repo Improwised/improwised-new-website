@@ -8,7 +8,7 @@ tags: [Platform Engineering, Developer Productivity, DevOps ROI]
 publishDate: 2025-04-21
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/platform-engineering-roi-head-light.svg'
-darkImage: '$lib/images/blogs/platform-engineering-roi-head-light.svg'
+darkImage: '$lib/images/blogs/platform-engineering-roi-head-dark.svg'
 linkTags:
  - title: "Reduced Cognitive Load = Fewer Mistakes"
  - title: "Improved Developer Experience = Higher Retention"

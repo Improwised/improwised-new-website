@@ -8,7 +8,7 @@ tags: [Observability, Monitoring, Latency]
 publishDate: 2025-05-14
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/micro-downtime-indexing-head-light.svg'
-darkImage: '$lib/images/blogs/micro-downtime-indexing-head-light.svg'
+darkImage: '$lib/images/blogs/micro-downtime-indexing-head-dark.svg'
 linkTags:
   - title: "What Is Micro-Downtime?"
   - title: "Sources of Sub-Second Failures"

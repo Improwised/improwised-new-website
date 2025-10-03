@@ -7,7 +7,8 @@ seoDescription: "Ensure high availability with zero downtime architecture to pro
 tags: [Zero Downtime, Platform Engineering]
 publishDate: 2025-04-21
 author: 'Rakshit Menpara'
-image: '$lib/images/blogs/Zero-Downtime-Architecture-Head.webp'
+image: '$lib/images/blogs/zero-downtime-architecture-head-light.svg'
+darkImage: '$lib/images/blogs/zero-downtime-architecture-head-dark.svg'
 linkTags:
   - title: "The Problem: Downtime is Costly"
   - title: "The Role of Platform Engineering"

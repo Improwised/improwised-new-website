@@ -185,7 +185,7 @@ blocks:
       slug: "devops-ci-cd"
       description: "Deploy confidently with automated CI/CD pipelines. Eliminate manual errors, accelerate releases, and maintain security with DevOps best practices and monitoring."
       seoTitle: "DevOps CI/CD Automation by Improwised – Secure, Fast Releases"
-      seoDescription: "mprowised sets up DevOps-driven CI/CD pipelines to automate and secure your software releases—-faster builds, reliable deployments."
+      seoDescription: "Improwised sets up DevOps-driven CI/CD pipelines to automate and secure your software releases—-faster builds, reliable deployments."
       featureTitle: "DevOps and CI/CD?" 
       featureSubTitle: "What is the importance of"
       featureImage: "$lib/images/services/block-images/code-infra-management.png"

@@ -64,7 +64,7 @@ Performance issues in OpenTofu can arise from various sources, such as disk I/O,
 
 ### Benchmarking Against Terraform
 
-OpenTofu has been compared to [Terraform in terms of performance](/blog/embracing-open-tf-our-commitment-to-open-source-and-terraform/) and scalability. Benchmark tests indicate that OpenTofu shows promise in matching Terraform's performance, especially in terms of scalability and efficiency. These benchmarks can serve as a baseline for evaluating and optimizing OpenTofu's performance in your specific use case.
+OpenTofu has been compared to [Terraform in terms of performance](/blog/opentofu-vs-terraform-guide/) and scalability. Benchmark tests indicate that OpenTofu shows promise in matching Terraform's performance, especially in terms of scalability and efficiency. These benchmarks can serve as a baseline for evaluating and optimizing OpenTofu's performance in your specific use case.
 
 ### Identifying Bottlenecks
 

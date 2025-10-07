@@ -56,7 +56,7 @@ Here’s how [Platform Engineering helps build](/blog/platform-engineering-matur
 
 ### 1. Immutable Infrastructure and Declarative IaC
 
-By using tools like [Terraform](/blog/embracing-open-tf-our-commitment-to-open-source-and-terraform/), Pulumi, or Crossplane, infrastructure is defined as code and provisioned in a predictable, repeatable way. Combined with GitOps tools like Flux or ArgoCD, changes are made declaratively and rollbacks are quick and safe.
+By using tools like [Terraform](/blog/opentofu-vs-terraform-guide/), Pulumi, or Crossplane, infrastructure is defined as code and provisioned in a predictable, repeatable way. Combined with GitOps tools like Flux or ArgoCD, changes are made declaratively and rollbacks are quick and safe.
 
 ### 2. Blue-Green and Canary Deployments
 

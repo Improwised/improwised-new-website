@@ -49,6 +49,8 @@ const [{data}] = blogs.filter((blog) => blog.data.slug === Astro.url.pathname.sp
 const url: string[] = Astro.url.pathname.split('/')
 
 const [{data: author}] = await getCollection('authors', (author) => author.data.title === blog.data.author);
+
+const authors = await getCollection("authors");
 ---
 
 <Layout title={data.seoTitle} description={data.seoDescription} faqs={data?.faqs}>
@@ -182,13 +184,19 @@ const [{data: author}] = await getCollection('authors', (author) => author.data.
                                 </Card.Content>
                                 <Card.Footer>
                                     <div class="flex gap-x-2 items-center">
-                                        <Image
-                                            alt="author-profile"
-                                            class="rounded-full"
-                                            width={56}
-                                            height={56}
-                                            src={avtarImage}
-                                        />
+                                        {
+                                            authors.filter((author) => author.data.title === blog.data.author).map((author) => (
+                                                <div>
+                                                    <Image
+                                                     alt="author-profile"
+                                                    class="rounded-full border aspect-square object-cover object-top"
+                                                    width={56}
+                                                    height={56}
+                                                    src={author.data.image} 
+                                                />
+                                                </div>
+                                            ))
+                                        }
                                         <p class="font-semibold text-fifth-color text-[18px] tracking-tight">
                                             By {blog.data.author}
                                             <br />

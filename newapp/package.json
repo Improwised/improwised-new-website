@@ -13,7 +13,7 @@
     "@astrojs/sitemap": "^3.3.0",
     "@astrojs/svelte": "^7.0.5",
     "aos": "^3.0.0-beta.6",
-    "astro": "^5.4.0",
+    "astro": "^5.14.4",
     "embla-carousel-autoplay": "^8.5.2",
     "github-slugger": "^2.0.0",
     "lucide-svelte": "^0.474.0",

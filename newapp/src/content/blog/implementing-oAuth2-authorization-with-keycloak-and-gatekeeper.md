@@ -5,7 +5,7 @@ description: "Learn how to implement OAuth2 authorization with Keycloak and Gate
 seoTitle: "OAuth2 with Keycloak & Gatekeeper for Kubernetes: Detailed Guide"
 seoDescription: "Learn how to set up OAuth2 authorization with Keycloak and Gatekeeper for Kubernetes deployments. Improwised explains a secure, scalable access control setup."
 tags: [oauth2 authorization, Keycloak Kubernetes, gatekeeper kubernetes, oauth2 keycloak setup, kubernetes authentication, kubernetes authorization, keycloak integration, secure kubernetes deployments, oauth2 kubernetes tutorial, improwised]
-publishDate: 2025-10-29
+publishDate: 2025-10-28
 author: "Rakshit Menpara"
 image: "$lib/images/blogs/implementing-oauth2-authorization-with-keycloak-gatekeeper-light.png" 
 darkImage: '$lib/images/blogs/implementing-oauth2-authorization-with-keycloak-gatekeeper-dark.png'

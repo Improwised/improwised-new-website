@@ -19,7 +19,7 @@ linkTags:
   - title: "7. Glide"
   - title: "8. Softr"
   - title: "9. Replit"
-  - title: “10. Apsy”
+  - title: "10. Apsy"
 ---
 
 An AI-powered platform is an integrated software environment that provides the tools, infrastructure, and services needed to develop, train, deploy, and manage artificial intelligence applications and machine learning models at scale. These platforms centralize and automate various aspects of AI workflows, making it easier for businesses to leverage AI for tasks like predictive analytics, automation, natural language processing, and computer vision.

@@ -1,21 +1,4 @@
 ---
-# title: "Implementing OAuth2 Authorization with Keycloak and Gatekeeper"
-# slug: "implementing-oauth2-authorization-with-keycloak-gatekeeper"
-# description: "This blog will delve into the technical details of implementing OAuth2 authorization using Keycloak as the identity and access management (IAM) solution, and Keycloak Gatekeeper as the authentication proxy. This setup is particularly useful for securing web applications deployed in a Kubernetes environment."
-# seoTitle: "OAuth2 Authorization with Keycloak & Gatekeeper | Secure Access Guide | Improwised Tech"
-# seoDescription: "Learn how to implement OAuth2 authorization using Keycloak and Gatekeeper for secure IAM. Step-by-step guide to robust authentication and access control."
-# tags: [Gatekeeper, Authorization, Keycloak]
-# publishDate: 2025-02-18
-# author: "Rakshit Menpara"
-# image: "$lib/images/blogs/Implementing-OAuth2-head.webp"
-# linkTags:
-#   - title: Keycloak Overview
-#   - title: Setting Up Keycloak
-#   - title: Configuring Keycloak Gatekeeper
-#   - title: Integrating with Kubernetes
-#   - title: Accessing and Decoding JSON Web Tokens (JWTs)
-#   - title: Conclusion
-# blockCategory: "security-and-access-control"
 title: "Complete Guide to Implementing OAuth2 Authorization with Keycloak and Gatekeeper for Kubernetes Deployments"
 slug: "implementing-oauth2-authorization-with-keycloak-gatekeeper"
 description: "Learn how to implement OAuth2 authorization with Keycloak and Gatekeeper in Kubernetes. Secure your microservices and control access efficiently at scale."

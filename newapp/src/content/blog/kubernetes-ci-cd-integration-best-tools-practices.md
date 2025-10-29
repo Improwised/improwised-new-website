@@ -32,7 +32,7 @@ faqs:
 
 Continuous Integration and Continuous Deployment (CI/CD) is a software development methodology that accelerates delivery cycles and enhances the quality of deployments in today's rapidly evolving software development environment. Continuous Integration and Continuous Deployment pipelines facilitate the automation of code integration, testing, and deployment processes. This enhances the efficiency and dependability of the process.
 
-![Automate Kubernetes CI/CD Pipelines: Best Tools and Practices]($lib/images/blogs/kubernetes-ci-cd-integration-best-tools-practices-body.svg)
+![Automate Kubernetes CI/CD Pipelines: Best Tools and Practices]($lib/images/blogs/kubernetes-ci-cd-integration-best-tools-practices-body.png)
 
 The [platform engineering team](https://www.improwised.com/services/platform-engineering/) improves these factors by implementing standardized practices for continuous integration and continuous delivery across all Kubernetes installations. This allows developers to function autonomously while maintaining smooth process execution, ensuring that team deployments are carried out with assurance and effectiveness.
 

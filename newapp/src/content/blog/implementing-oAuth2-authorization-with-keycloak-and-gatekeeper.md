@@ -5,7 +5,7 @@ description: "Learn how to implement OAuth2 authorization with Keycloak and Gate
 seoTitle: "OAuth2 with Keycloak & Gatekeeper for Kubernetes: Detailed Guide"
 seoDescription: "Learn how to set up OAuth2 authorization with Keycloak and Gatekeeper for Kubernetes deployments. Improwised explains a secure, scalable access control setup."
 tags: [oauth2 authorization, Keycloak Kubernetes, gatekeeper kubernetes, oauth2 keycloak setup, kubernetes authentication, kubernetes authorization, keycloak integration, secure kubernetes deployments, oauth2 kubernetes tutorial, improwised]
-publishDate: 2025-10-28
+publishDate: 2025-02-18
 author: "Rakshit Menpara"
 image: "$lib/images/blogs/implementing-oauth2-authorization-with-keycloak-gatekeeper-light.png" 
 darkImage: '$lib/images/blogs/implementing-oauth2-authorization-with-keycloak-gatekeeper-dark.png'
@@ -1367,3 +1367,6 @@ The configuration examples and best practices outlined in this guide should give
 The combination of Keycloak's comprehensive identity management capabilities with Gatekeeper's lightweight proxy approach creates a powerful authentication stack that can grow with your organization's needs. Whether you're securing a single application or an entire microservices ecosystem, this solution provides the flexibility and security required for modern software development.
 
 At Improwised Technologies, we've successfully implemented these authentication patterns across numerous client projects, from startups to enterprise applications handling millions of users. Our team specializes in cloud-native security architectures and can help organizations navigate the complexities of modern authentication systems. If you're looking to implement robust OAuth2 authentication in your applications or need assistance with Kubernetes security architecture, our [platform engineering experts](https://www.improwised.com/services/platform-engineering/) can guide you through the process and ensure your implementation follows industry best practices.
+<br />
+<br />
+<div style="text-align: left"><strong>Last updated at:</strong> October 29, 2025</div>

@@ -19,12 +19,12 @@ linkTags:
   - title: "Challenges and Solutions in Kubernetes Observability"
   - title: "AI/ML-Powered Monitoring and Future Trends"
   - title: "Cost Monitoring and Optimization in Kubernetes"
-  - title: “Kubecost Installation Quick Guide”
-  - title: “Tool Comparison Table”
-  - title: “Security Monitoring and Compliance Observability”
-  - title: “CI/CD Integration Examples”
-  - title: “Best Practices for Kubernetes Monitoring and Observability”
-  - title: “Conclusion”
+  - title: "Kubecost Installation Quick Guide"
+  - title: "Tool Comparison Table"
+  - title: "Security Monitoring and Compliance Observability"
+  - title: "CI/CD Integration Examples"
+  - title: "Best Practices for Kubernetes Monitoring and Observability"
+  - title: "Conclusion"
 faqs:
   - question: "What is the difference between Kubernetes monitoring and Observability?"
     answer: "Kubernetes Monitoring is gathering logs and metrics to see how well the system is performing and if it is healthy. Observability includes monitoring, but it also employs metrics, logs, and traces to acquire a better picture of how the system is working within, which helps find and fix problems."

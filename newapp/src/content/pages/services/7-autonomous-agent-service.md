@@ -8,6 +8,7 @@ lightImage: '$lib/images/services/autonomous-agent-service.svg'
 heroImage: '$lib/images/services/autonomous-agent-service-hero.svg'
 mobileHeroImage: '$lib/images/services/autonomous-agent-service-hero-mobile.svg'
 description: "From sales enablement to developer productivity, our agent-based solutions help teams move faster with less effort. AI isn’t the future it’s just your next team member."
+subDescription: ""
 order: 7
 blocks: 
     - title: "In-House AI Server Lab"

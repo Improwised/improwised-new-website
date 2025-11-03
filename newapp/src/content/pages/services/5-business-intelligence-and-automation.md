@@ -8,6 +8,7 @@ lightImage: '$lib/images/services/business-intelligence-and-automation-service.s
 heroImage: '$lib/images/services/business-intelligence-and-automation.svg'
 mobileHeroImage: '$lib/images/services/business-intelligence-automation-mobile-hero.svg'
 description: 'Unlock business power with automated dashboards and real-time alerts. Simplify decisions, reduce manual work, and act faster with BI tools.'
+subDescription: ""
 order: 5
 blocks: 
     - title: "Data Centralization"

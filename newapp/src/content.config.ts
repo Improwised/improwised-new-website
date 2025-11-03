@@ -53,6 +53,7 @@ const services = defineCollection({
 		heroImage: image().optional(),
 		mobileHeroImage: image().optional(),
 		description: z.string(),
+		subDescription: z.string(),
 		order: z.number(),
 		text: z.string(),
 		primaryText: z.string(),

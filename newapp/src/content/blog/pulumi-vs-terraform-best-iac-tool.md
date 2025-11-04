@@ -48,15 +48,15 @@ Also Read: [OpenTofu vs Terraform: The Complete Guide for Infrastructure Teams](
 
 ## Understanding IaC Programming Paradigms
 
-## What is Terraform?
+### What is Terraform?
 
 Terraform is an open-source Infrastructure as Code (IaC) tool created by HashiCorp that lets users define, provision, and manage cloud and on-premises infrastructure using human-readable configuration files called HashiCorp Configuration Language (HCL).
 
-How Terraform Works
+### How Terraform Works
 
 Terraform uses a declarative approach. You describe your desired infrastructure state in code, and Terraform calculates and applies the changes needed to achieve that state. This process supports a consistent workflow for provisioning, updating, and versioning infrastructure components like virtual machines, networks, databases, and more.
 
-Key Components of Terraform
+#### Key Components of Terraform
 
 * Configuration Files: Written in HCL, these files declare resources, input/output variables, and modules for infrastructure management.​  
 * Providers: Plugins that allow Terraform to manage resources across different cloud platforms (AWS, Azure, GCP), on-premises solutions, and SaaS tools by interacting with their APIs.​  
@@ -68,10 +68,10 @@ Key Components of Terraform
 
 Pulumi is a modern Infrastructure as Code (IaC) platform that enables developers and DevOps teams to define, deploy, and manage cloud infrastructure using familiar programming languages such as JavaScript, TypeScript, Python, Go, .NET, and Java.​
 
-How Pulumi works 
+### How Pulumi works 
 Unlike traditional IaC tools that rely on domain-specific languages (DSLs) like HCL or YAML, Pulumi leverages the power of full-fledged programming languages to allow complex logic, abstractions, and code reuse, which makes managing infrastructure more flexible and intuitive.**​**
 
-Key Components of Pulumi
+#### Key Components of Pulumi
 
 * Language SDKs: Facilitate managing cloud resources using languages developers already know and use daily, supporting over 150 providers, including AWS, Azure, and Google Cloud.​  
 * CLI (Command-Line Interface): The main tool for deploying, updating, or destroying infrastructure from local machines, and integrating with CI/CD pipelines.​  
@@ -124,7 +124,7 @@ Also Read: [Modular Infrastructure Design: Promoting Reuse and Maintainability i
 
 ## Real-world Use Cases and Decision Factors 
 
-Choose Pulumi if:
+### Choose Pulumi if:
 
 * Your teams are developer-centric, proficient in programming languages like Python or Go.  
 * You need to embed infrastructure logic tightly with application code or complex workflows.  
@@ -132,7 +132,7 @@ Choose Pulumi if:
 * You want rapid innovation and flexibility with dynamic provider support.  
 * At Improwised Technologies, Pulumi is preferred for projects involving sophisticated Kubernetes clusters and cloud-native automation with custom logic.
 
-Choose Terraform if:
+### Choose Terraform if:
 
 * Stability, a large community, extensive provider support, and enterprise governance are priorities.  
 * You operate in various multi-cloud or hybrid environments requiring battle-tested IaC.  

@@ -183,7 +183,15 @@ const blogs = defineCollection({
 		faqs: z.array(z.object({
 			question: z.string(),
 			answer: z.string(),
-		})).optional()
+		})).optional(),
+		articleSchema: z.object({
+			alternativeHeadline: z.string(),
+			image: image(),
+			modifiedDate: z.coerce.date(),
+			articleSection: z.string(),
+			timeRequired: z.string(),
+			wordCount: z.string()
+		}).optional()
 	}),
 });
 

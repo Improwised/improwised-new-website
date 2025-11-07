@@ -51,9 +51,23 @@ const url: string[] = Astro.url.pathname.split('/')
 const [{data: author}] = await getCollection('authors', (author) => author.data.title === blog.data.author);
 
 const authors = await getCollection("authors");
+
+let articleSchema = {}
+
+if (data.articleSchema) {
+    articleSchema = {
+        ...data.articleSchema,
+        url: data.slug,
+        headline: data.title,
+        description: data.description,
+        author: data.author,
+        publishedDate: data.publishDate,
+        keywords: data.tags,
+    }
+}
 ---
 
-<Layout title={data.seoTitle} description={data.seoDescription} faqs={data?.faqs}>
+<Layout title={data.seoTitle} description={data.seoDescription} faqs={data?.faqs} articleSchema={articleSchema}>
     <main class="main-content">
         <section id="section1"
             class="section1 text-left py-40 px-6 bg-blog-details relative pt-[30%] md:pb-40 lg:pt-[12%]"

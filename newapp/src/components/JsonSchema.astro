@@ -1,7 +1,7 @@
 ---
 const { faqs, articleSchema } = Astro.props;
 
-const faqSchema = faqs
+const schema = faqs
   ? [
       {
         "@context": "https://schema.org",
@@ -52,12 +52,12 @@ const faqSchema = faqs
         timeRequired: articleSchema.timeRequired,
         wordCount: articleSchema.wordCount,
       },
-    ]
+    ].filter(Boolean)
   : null;
 ---
 
 <script
   is:inline
   type="application/ld+json"
-  set:html={JSON.stringify(faqSchema)}
+  set:html={JSON.stringify(schema)}
 />

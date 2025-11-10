@@ -2,7 +2,7 @@
 import "$lib/styles/global.css";
 
 import BaseHead from "$lib/components/BaseHead.astro";
-import JsonFaqs from "$lib/components/JsonFaqs.astro";
+import JsonSchema from "$lib/components/JsonSchema.astro";
 import Header from "$lib/components/Header.astro";
 import Footer from "$lib/components/Footer.astro";
 import { LD_JSON_DATA } from "../consts";
@@ -13,7 +13,7 @@ const { title, description, faqs, articleSchema } = Astro.props;
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		{ faqs && <JsonFaqs faqs={faqs} articleSchema={articleSchema} />}
+		{ faqs && <JsonSchema faqs={faqs} articleSchema={articleSchema} />}
 		<!-- LD JSON Data -->
 		<script is:inline type="application/ld+json" set:html={JSON.stringify(LD_JSON_DATA)}></script>
 		<script is:inline>

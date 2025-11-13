@@ -8,6 +8,7 @@ lightImage: '$lib/images/services/custom-software-development-services.svg'
 heroImage: '$lib/images/services/custom-software-development-service-hero.svg'
 mobileHeroImage: '$lib/images/services/custom-software-mobile-hero.svg'
 description: 'Build MVPs or transform core products. We create clean, scalable, future-proof applications designed for performance and long-term growth.'
+subDescription: ""
 order: 6
 blocks: 
     - title: "Product-Centric Architecture"

@@ -8,6 +8,7 @@ lightImage: '$lib/images/services/product_modernization.svg'
 heroImage: '$lib/images/services/solutions-2.svg'
 mobileHeroImage: '$lib/images/services/mobileSolutions.svg'
 description: 'Cloud migration, application modernization, and technology upgrades. We transform legacy systems into scalable, secure, and modern solutions.'
+subDescription: ""
 order: 3
 blocks: 
     - title: "Legacy to Cloud-Native Transformation"

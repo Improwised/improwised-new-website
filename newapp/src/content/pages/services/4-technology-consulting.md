@@ -8,6 +8,7 @@ lightImage: '$lib/images/services/technology_consulting.svg'
 heroImage: '$lib/images/services/solutions-2.svg'
 mobileHeroImage: '$lib/images/services/mobileSolutions.svg'
 description: "We're your technology partner. We optimize costs, enhance performance, and guide you through complex changes with clear roadmaps and lasting solutions."
+subDescription: ""
 order: 4
 blocks: 
     - title: "Strategic Guidance"

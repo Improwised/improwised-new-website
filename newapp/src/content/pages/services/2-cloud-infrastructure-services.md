@@ -7,6 +7,7 @@ homePageServiceDescription: ''
 lightImage: '$lib/images/services/cloud_infra_services.svg'
 heroImage: '$lib/images/services/solutions-2.svg'
 mobileHeroImage: '$lib/images/services/mobileSolutions.svg'
+subDescription: ""
 description: 'Ready to see what your cloud can really do? We build smart, secure cloud setups that let you grow and innovate.'
 order: 2
 blocks: 

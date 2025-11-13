@@ -1,3 +1,7 @@
+http://improwised.com/*  https://www.improwised.com/:splat/  301
+https://improwised.com/*  https://www.improwised.com/:splat/  301
+http://www.improwised.com/*  https://www.improwised.com/:splat/  301
+
 /blogs/* /blog/:splat 301
 /blog/:title /blog/:title/ 301
 /blog/revamping-the-improwised-technologies-website-blog/ /blog/ 301

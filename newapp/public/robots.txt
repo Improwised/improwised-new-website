@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /*?ref=
-Disallow: /*?rel=
+Disallow: /*?ref=*
+Disallow: /*?rel=*
 Sitemap: https://www.improwised.com/sitemap.xml

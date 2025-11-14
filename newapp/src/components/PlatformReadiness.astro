@@ -1,0 +1,43 @@
+---
+import { Button } from "$lib/components/ui/button";
+---
+
+<section
+  class="section1 text-center pt-[120px] pb-[120px] px-6 bg-ctaimage h-screen relative"
+>
+  <!-- Main Heading -->
+  <h2
+    class="main-heading-small md:main-heading mb-6 mx-auto text-center w-4/5 text-[#292929]"
+  >
+    Platform Engineering Readiness Assessment
+  </h2>
+
+  <!-- Subtext -->
+  <p class="mt-4 small-text md:text-para max-w-3xl mx-auto text-[#292929]">
+    Your platform strategy influences everything from delivery speed to
+    engineering morale. This assessment reveals how ready your organization is
+    to adopt Platform Engineering and what improvements will yield the highest
+    ROI. Get clarity on where to invest, where to simplify, and how to build a
+    scalable foundation for long-term growth.
+  </p>
+
+  <!-- CTA Buttons -->
+  <div class="mt-6 flex justify-center space-x-4">
+    <Button
+      href="/platform-readiness/"
+      class="button-bg md:text-[16px] font-manrope"
+    >
+      Start Assessment
+    </Button>
+  </div>
+</section>
+<style>
+  .bg-ctaimage {
+    background-image: url("../images/homepage/light-herodot.svg"),
+      url("../images/cta.svg");
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    height: 100%;
+  }
+</style>

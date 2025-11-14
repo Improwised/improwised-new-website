@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "$lib/layouts/Layout.astro";
+import CTASection from "$lib/components/CTASection.astro";
+const [
+    {
+        data: { seoTitle, seoDescription },
+    },
+] = await getCollection("PlatformReadiness");
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+    <main class="main-content mt-30">
+        <section class="iframe-wrapper">
+            <iframe
+                id="myIframe"
+                src="/platform-readiness.html"
+                width="100%"
+                height="544"
+                title="Platform Readiness"
+            >
+            </iframe>
+        </section>
+        <CTASection />
+    </main>
+</Layout>
+<style>
+    .iframe-wrapper {
+    }
+    #myIframe {
+        border: none;
+    }
+</style>
+
+<script>
+    const iframe = document.getElementById("myIframe");
+
+    window.addEventListener("message", (event) => {
+        if (!event.data) return;
+
+        // Height
+        if (event.data.frameHeight) {
+            iframe.style.height = event.data.frameHeight + 100 + "px";
+        }
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>

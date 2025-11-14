@@ -1,0 +1,71 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "$lib/layouts/Layout.astro";
+import CTASection from "$lib/components/CTASection.astro";
+const [
+    {
+        data: { seoTitle, seoDescription },
+    },
+] = await getCollection("PlatformReadiness");
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+    <main
+        class="main-content"
+        style="background-color: #e0e7ff; padding-top: 98px;"
+    >
+        <section class="iframe-wrapper">
+            <iframe
+                id="myIframe"
+                src="/platform-readiness.html"
+                width="100%"
+                height="544"
+                title="Platform Readiness"
+            >
+            </iframe>
+        </section>
+        <div class="text-center py-5">
+            <a
+                href="/services/platform-engineering/"
+                class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition"
+            >
+                <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Continue with Service
+            </a>
+        </div>
+        <CTASection />
+    </main>
+</Layout>
+<style>
+    .iframe-wrapper {
+    }
+    #myIframe {
+        border: none;
+    }
+</style>
+
+<script>
+    const iframe = document.getElementById("myIframe");
+
+    window.addEventListener("message", (event) => {
+        if (!event.data) return;
+
+        // Height
+        if (event.data.frameHeight) {
+            iframe.style.height = event.data.frameHeight + 100 + "px";
+        }
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>

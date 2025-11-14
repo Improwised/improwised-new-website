@@ -5,17 +5,19 @@ import { Badge } from "$lib/components/ui/badge";
 import { Button } from "$lib/components/ui/button";
 import { Image } from "astro:assets";
 import PESection from "$lib/components/PESection.astro";
+import PlatformReadiness from "$lib/components/PlatformReadiness.astro";
 import { CircleUserRound } from "lucide-svelte";
 import ServiceCard from "$lib/components/ServiceCard.astro";
 import ServiceApproach from "$lib/components/ServiceApproach.astro";
 import CaseStudiesSection from "$lib/components/CaseStudiesSection.astro";
 import CTASection from "$lib/components/CTASection.astro";
-import IndustryExpertise from "$lib/components/IndustryExpertise.astro"
+import IndustryExpertise from "$lib/components/IndustryExpertise.astro";
 import FullCycleApproach from "$lib/components/FullCycleApproach.astro";
-import FAQs from "$lib/components/FAQs.astro" 
+import FAQs from "$lib/components/FAQs.astro";
 
 const {
   title,
+  slug,
   description,
   block,
   cardSectionPrimaryTitle,
@@ -32,9 +34,8 @@ const {
   roadmapImage,
   roadmapText,
   roadmapPrimaryText,
-  faqs
+  faqs,
 } = Astro.props;
-
 ---
 
 <section>
@@ -72,6 +73,10 @@ const {
   <section class="section2 overflow-x-hidden py-10 md:py-40 section-bg">
     <PESection block={block} />
   </section>
+
+  {slug === "platform-engineering" ? (
+    <PlatformReadiness />
+  ) : null}
 
   <section class="section3 relative section-bg">
     <div class="container py-10 md:py-40">
@@ -113,13 +118,26 @@ const {
       <ServiceApproach collectionName={serviceApproach} />
     </div>
   </section>
-  
-  { industryExpertise && <IndustryExpertise industryExpertise={industryExpertise} />}
-  
-  { fullCycleApproach && <FullCycleApproach fullCycleApproach={fullCycleApproach} roadmapImage={roadmapImage} roadmapText={roadmapText} roadmapPrimaryText={roadmapPrimaryText} /> } 
-  
-  { faqs && <FAQs faqs={faqs}/> }
-  
+
+  {
+    industryExpertise && (
+      <IndustryExpertise industryExpertise={industryExpertise} />
+    )
+  }
+
+  {
+    fullCycleApproach && (
+      <FullCycleApproach
+        fullCycleApproach={fullCycleApproach}
+        roadmapImage={roadmapImage}
+        roadmapText={roadmapText}
+        roadmapPrimaryText={roadmapPrimaryText}
+      />
+    )
+  }
+
+  {faqs && <FAQs faqs={faqs} />}
+
   <CaseStudiesSection />
   <CTASection />
 </section>

@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "$lib/layouts/Layout.astro";
-import ServiceDetails from "$lib/components/ServiceDetails.astro"
+import ServiceDetails from "$lib/components/ServiceDetails.astro";
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
@@ -17,6 +17,26 @@ const { data } = Astro.props;
 
 <Layout title={data.seoTitle} description={data.seoDescription}>
   <main class="main-content z-10">
-    <ServiceDetails title={data.title} description={data.description} block={data.slug} cardSectionPrimaryTitle={data.cardSectionPrimaryTitle} cardSectionTitle={data.cardSectionTitle} isSectionTitlePrimary={data.isSectionTitlePrimary} serviceCardCollection={data.serviceCardCollection} serviceApproachPrimaryTitle={data.serviceApproachPrimaryTitle} serviceApproachTitle={data.serviceApproachTitle} serviceApproach={data.serviceApproach} heroImage={data.heroImage} mobileHeroImage={data.mobileHeroImage} industryExpertise={data?.industryExpertise} fullCycleApproach={data?.fullCycleApproach} roadmapImage={data?.roadmapImage} roadmapText={data?.roadmapText} roadmapPrimaryText={data?.roadmapPrimaryText} faqs={data?.faqs}/>
+    <ServiceDetails
+      title={data.title}
+      slug={data.slug}
+      description={data.description}
+      block={data.slug}
+      cardSectionPrimaryTitle={data.cardSectionPrimaryTitle}
+      cardSectionTitle={data.cardSectionTitle}
+      isSectionTitlePrimary={data.isSectionTitlePrimary}
+      serviceCardCollection={data.serviceCardCollection}
+      serviceApproachPrimaryTitle={data.serviceApproachPrimaryTitle}
+      serviceApproachTitle={data.serviceApproachTitle}
+      serviceApproach={data.serviceApproach}
+      heroImage={data.heroImage}
+      mobileHeroImage={data.mobileHeroImage}
+      industryExpertise={data?.industryExpertise}
+      fullCycleApproach={data?.fullCycleApproach}
+      roadmapImage={data?.roadmapImage}
+      roadmapText={data?.roadmapText}
+      roadmapPrimaryText={data?.roadmapPrimaryText}
+      faqs={data?.faqs}
+    />
   </main>
 </Layout>

@@ -226,6 +226,17 @@ const termsOfUse = defineCollection({
 	}),
 });
 
+const PlatformReadiness = defineCollection({
+	loader: glob({ base: './src/content/pages/platform-readiness', pattern: '**/*.{md,mdx}' }),
+	schema: () => z.object({
+		slug: z.string(),
+		title: z.string(),
+		description: z.string(),
+		seoTitle: z.string(),
+		seoDescription: z.string(),
+	}),
+});
+
 const homepage = defineCollection({
 	loader: glob({ base: './src/content/pages/homepage', pattern: '**/*.{md,mdx}' }),
 	schema: () => z.object({
@@ -553,4 +564,4 @@ const authors = defineCollection({
 	}),
 });
 
-export const collections = { authors, reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, approaches5, approaches6, approaches7, corefeaturesProductModernization, corefeaturesTechnologyConsulting, corefeaturesAutonomousAgent, corefeaturesBusinessIntelligenceAndAutomation, corefeaturesCustomSoftwareDevelopmentServices, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse, pageNotFound };
+export const collections = { authors, reviews, lifeimages, careers, benefits, approaches, corefeatures, clients, testimonials, casestudies, industries, services, teams, blogs, blog, events,corefeaturesCloudInfrastructureManagement,approaches2, approaches3, approaches4, approaches5, approaches6, approaches7, corefeaturesProductModernization, corefeaturesTechnologyConsulting, corefeaturesAutonomousAgent, corefeaturesBusinessIntelligenceAndAutomation, corefeaturesCustomSoftwareDevelopmentServices, aboutusPoints, contactfaqs, privacyPolicy, homepage, aboutImprowised, casestudy, career, contactUs, termsOfUse, PlatformReadiness, pageNotFound };

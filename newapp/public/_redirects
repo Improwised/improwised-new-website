@@ -56,3 +56,12 @@ http://www.improwised.com/*  https://www.improwised.com/:splat/  301
 /services/client-centric-approach /services/technology-consulting/ 301
 /services/cloud-optimized-modernization /services/platform-engineering/ 301
 /services/performance-driven-ux-ui-enhancements /services/technology-consulting/ 301
+
+/GitOps Transformation Case Study.pdf /gitops-transformation-case-study.pdf  301
+/Optimizing Lead Generation Platform Case Study.pdf /optimizing-lead-generation-platform-case-study.pdf 301
+/Multi Cloud Hosted Data Lake Platform Case Study.pdf /multi-cloud-hosted-data-lake-platform-case-study.pdf 301
+/StreamlinedReview.pdf /streamlined-review.pdf 301
+/Cloud native manged solution provider.pdf /cloud-native-managed-solution-provider.pdf 301
+/WikiBox.pdf /wikibox.pdf 301
+/Lead Solution Provider.pdf /lead-solution-provider.pdf 301
+/Business Listing Management.pdf /business-listing-management.pdf 301

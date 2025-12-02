@@ -19,6 +19,8 @@ linkTags:
 
 OpenTofu is an open-source tool that enables users to create and manage different resources like configuration files, templates, etc. Sometimes, OpenTofu's resources can be indirectly created by other applications that integrate with OpenTofu. So, if this is the case for you, it is important to understand how to manage and import those resources.
 
+![Manage/import the OpenTofu resource indirectly created by OpenTofu]($lib/images/blogs/indirect-resource-management-in-opentofu.png)
+
 ## Understanding Indirect Resource Creation
 OpenTofu allows you to create resources indirectly through several means, such as:
 

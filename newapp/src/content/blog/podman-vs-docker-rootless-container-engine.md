@@ -1,5 +1,5 @@
 ---
-title: " Podman: A Rootless and Secure Alternative to Docker for Modern Containerization"
+title: "Podman: A Rootless and Secure Alternative to Docker for Modern Containerization"
 slug: 'podman-vs-docker-rootless-container-engine'
 description: 'Looking for a secure and daemonless Docker alternative? Discover why developers are switching to Podman'
 seoTitle: 'Why Improwised Recommends Podman over Docker?'
@@ -29,6 +29,8 @@ linkTags:
 
 **Podman** is a tool to build, run, and manage containers. Containers let you package your app along with everything it needs (like libraries and dependencies) so it can run anywhere on your computer, on a server, or in the cloud.
 
+![Podman: A Rootless and Secure Alternative to Docker for Modern Containerization]($lib/images/blogs/podman-vs-docker-rootless-container-engine-secure-daemon-free.png)
+
 ## Why Podman?
 
 - **No central daemon:** Docker runs a background service (called a daemon). Podman doesn’t need to run a daemon.
@@ -55,8 +57,6 @@ Virtual Machines emulate entire operating systems, while containers share the ho
 
 **Containers** are faster and use fewer resources than VMs, making them perfect for development and microservices.
 
-![Virtual machines vs containers]($lib/images/blogs/podman-vs-docker-rootless-container-engine-body-1.png)
-
 ## Podman Architecture
 
 - **No daemon:** Each command runs independently.
@@ -64,8 +64,6 @@ Virtual Machines emulate entire operating systems, while containers share the ho
 - **Rootless support:** Runs as a normal user without admin rights.
 
 - **Uses runC:** The same container runtime used by Docker.
-
-![Podman Architecture]($lib/images/blogs/podman-vs-docker-rootless-container-engine-body-2.png)
 
 ## Installing Podman
 

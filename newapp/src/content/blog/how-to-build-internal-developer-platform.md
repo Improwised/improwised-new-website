@@ -36,7 +36,7 @@ faqs:
 Platform teams established the [Internal Developer Platform](https://www.improwised.com/blog/internal-developer-platform-guide/) (IDP), an integrated product that offers self-service capabilities, making [complex infrastructure management](https://www.improwised.com/services/platform-engineering/code-and-infra-management/) easier while improving developer workflows. In modern cloud environments, it serves as an operational backbone that abstracts routine operational concerns, lowering friction while empowering developers to build, test, and deploy independently.
 
 
-![How to Build a High-Impact Internal Developer Platform: Step-by-Step Blueprint, Tools, and Best Practices]($lib/images/blogs/how-to-build-internal-developer-platform-body.png)
+![How to Build a High-Impact Internal Developer Platform: Step-by-Step Blueprint, Tools, and Best Practices]($lib/images/blogs/internal-developer-platform-idp-automation-for-developer-productivity.png)
 
 
 In the development of "golden paths" that achieve a balance between consistency and flexibility, IDPs enable developer productivity and business agility for software teams dealing with the unprecedented complexity posed by cloud-native, microservices, and AI-driven architectures.

@@ -33,8 +33,6 @@ faqs:
     answer: "Use Kubernetes autoscaling when workloads need varied amounts of resources. For apps that don't need to keep track of state and get a lot of traffic, use Horizontal Pod Autoscaler (HPA). For apps that need varied resources, use Vertical Pod Autoscaler (VPA). For nodes that change, use cluster autoscaling."
 ---
 
-# Kubernetes Resource Management for Cost Optimization & Scale
-
 ## Executive Summary
 
 Platform engineering teams are facing a challenge like never before: Recent research shows that 70% of businesses squander more than $17 billion a year on Kubernetes resources that they don't utilize. As workloads in containers grow at an exponential rate, old ways of managing resources are not meeting the needs of businesses.

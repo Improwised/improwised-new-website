@@ -22,6 +22,8 @@ linkTags:
 
 Infrastructure at scale can be challenging due to complexities across environments, components, and teams. Git is frequently chosen as the control system for infrastructure as code (IaC) because of its version control history, auditability features, and overall compatibility with the automation workflows common in product development. However, as infrastructure-related projects become larger in scope, the management of Git repositories can also become a not inconsequential engineering concern. Monorepos can create contention, polyrepos can create broken visibility, and branching strategies can create inconsistent deployments. In this article, we describe how to organize, structure, and govern Git repositories for infrastructure projects at scale, with attention to the in-practice objectives of deployment safety, audit accuracy, and operational predictability.
 
+![Managing Git Repositories for Large-Scale Infrastructure Projects]($lib/images/blogs/gitops-governance-dashboard-for-large-scale-infrastructure.png)
+
 ## Repository Models: Monorepo vs Polyrepo
 
 The choice made between using one monolithic repository (monorepo) or several isolated repositories (polyrepo) can establish the base-level structure of the version control approach to infrastructure.

@@ -23,7 +23,7 @@ linkTags:
   - title: "10 Improving (USA)"
 ---
 
-# How Platform Engineering Enforces Security by Design
+## How Platform Engineering Enforces Security by Design
 
 Platform engineering teams build internal developer platforms (IDPs) that have baseline security controls, such as automated certificate handling, secure connection defaults, continuous vulnerability scans, and multifactor authentication built directly into developer workflows. Automation eliminates manual security tasks, enabling security checks, patching, scanning, access management, and compliance controls to operate seamlessly and systematically.
 

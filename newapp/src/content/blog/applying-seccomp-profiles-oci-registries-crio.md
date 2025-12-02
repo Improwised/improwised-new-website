@@ -46,6 +46,8 @@ spec:
 
 The nginx-1.25.3.json profile has to be in the root directory for the kubelet, plus the seccomp directory. If the profile location is not reachable, the runtime will fail to create the container.
 
+![Applying Seccomp Profiles from OCI Registries in CRI-O]($lib/images/blogs/crio-seccomp-automation-container-security-oci-registry-workflow.png)
+
 ## CRI-O's solution
 
 CRI-O has added new annotations that allow users to specify seccomp profiles for containers or pods via OCI artifacts. These new annotations are:

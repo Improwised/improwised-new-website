@@ -36,7 +36,7 @@ In today’s era, using more than one cloud service is no longer a way to stand 
 
 But it can be hard to deal with all of this complexity, including tools, vendors, governance approaches, and cost visibility. The secret is to use platform engineering, FinOps, and governance-first frameworks to grow the right way while keeping costs and risks low.
 
-![Blog Image]($lib/images/blogs/blogImageInner.png)
+![Multi-Cloud Strategies: A Guide to Staying Strong, Saving Money, and Being Flexible with Platforms]($lib/images/blogs/multi-cloud-integration-strategy.png)
 
 ## Learning about Multi-Cloud Strategies
 

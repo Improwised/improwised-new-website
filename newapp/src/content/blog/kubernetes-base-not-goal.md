@@ -28,9 +28,6 @@ faqs:
     answer: "These are things like computation abstraction, service meshes, platform APIs, and internal developer platforms that help you use K8s more easily."
 ---
 
-
-# Kubernetes: A Base, Not a Goal
-
 Kubernetes is no longer a fringe technology; it's becoming the core portion of the infrastructure for modern apps. People all over the world use Kubernetes to operate cloud-native systems, but it's important to remember that it was never designed to be the final goal. Now, engineering teams who plan ahead see Kubernetes as a building block, not the ultimate goal. It's a method to make platforms that are scalable, safe, and easy for developers to use, which leads to new ideas.  
 But the main goal is to make a platform product that encourages ongoing innovation and works without any difficulties.
 

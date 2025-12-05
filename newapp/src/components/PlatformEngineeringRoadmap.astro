@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import { Badge } from "$lib/components/ui/badge";
+import SectionTitle from "$lib/components/common/SectionTitle.svelte";
+import { CircleUserRound } from "lucide-svelte";
+import * as Card from "$lib/components/ui/card";
+import NewTimeLine from "$lib/components/common/NewTimeline.svelte"
+
+const [
+  {
+    data: { roadmap },
+  },
+] = await getCollection("roadmap");
+
+
+---
+
+<section class="section3 relative section-bg">
+  <div class="container py-10 md:py-40">
+    <div class="flex mx-auto max-w-2xl flex-col items-center justify-center">
+      <Badge variant="outline" class="py-1">
+        <CircleUserRound class="mr-1" size={18} />
+        <span class="text-xs font-bold md:text-sm tracking-wider font-manrope"
+          >Services</span
+        >
+      </Badge>
+      <SectionTitle
+        primaryColorText="Platform Engineering"
+        text="Roadmap"
+        class="text-center md:w-4/5"
+        isPrimaryTextInitial={true}
+      />
+    </div>
+    
+    <NewTimeLine client:load phases={roadmap}/>
+  </div>
+</section>

@@ -75,92 +75,95 @@ const authors = await getCollection("authors");
           >
         </Badge>
 
-        <div
-          class="group grid grid-cols-1 md:grid-cols-2 items-center bg-card-bg border-1 border-card-border shadow-nav rounded-xl overflow-hidden"
-        >
-          <!-- Left: Blog Image -->
+        <a href={BASE_URL + "/blog/" + latestBlog.data.slug + "/"}>
           <div
-            class="relative overflow-hidden w-full h-full flex items-center justify-center bg-[#f0f0f0] dark:bg-[#3a3b3f69]"
+            class="group grid grid-cols-1 md:grid-cols-2 items-center bg-card-bg border-1 border-card-border shadow-nav rounded-xl overflow-hidden"
           >
-            <Image
-              alt="feature"
-              class="transition-all duration-200 group-hover:scale-105 dark:hidden"
-              decoding="async"
-              loading="lazy"
-              src={latestBlog.data.image}
-            />
-            {
-              latestBlog.data?.darkImage && 
+            <!-- Left: Blog Image -->
+            <div
+              class="relative overflow-hidden w-full h-full flex items-center justify-center bg-[#f0f0f0] dark:bg-[#3a3b3f69]"
+            >
               <Image
                 alt="feature"
-                class="transition-all duration-200 group-hover:scale-105 hidden dark:block"
+                class="transition-all duration-200 group-hover:scale-105 dark:hidden"
                 decoding="async"
                 loading="lazy"
-                src={latestBlog.data.darkImage}
+                src={latestBlog.data.image}
               />
-            }
-          </div>
-
-          <!-- Right: Blog Content -->
-          <div class="p-4 flex flex-col justify-center">
-            <p
-              class="mb-2 font-manrope font-bold text-[#737373] text-[14px] leading-[24px] tracking-[16%]"
-            >
-              {formatDate(latestBlog.data.publishDate)}
-            </p>
-
-            <h2
-              class="mb-4 font-manrope font-bold text-[24px] leading-[28px] md:text-[28px] text-fifth-color md:leading-[32px]"
-            >
-              <a href={BASE_URL + "/blog/" + latestBlog.data.slug + "/"}>
-                {latestBlog.data.title}
-              </a>
-            </h2>
-
-            <p class="text-para mb-6 text-fourth-color">
-              {latestBlog.data.description}
-            </p>
-
-            <!-- Author Info -->
-            <div
-              class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
-            >
-              <!-- Author Info -->
               {
-                authors
-                  .filter(
-                    (author) => author.data.title == latestBlog.data.author
-                  )
-                  .map((author) => (
-                    <div class="flex items-center gap-2">
-                      <div>
-                        <Image
-                          alt="author-image"
-                          class="rounded-full border aspect-square object-cover object-top"
-                          width={54}
-                          height={54}
-                          src={author.data.image}
-                        />
-                      </div>
-                      <p class="font-semibold text-fifth-color small-text md:text-[18px] tracking-tight">
-                        By {author.data.title}
-                        <br />
-                        <span class="font-normal text-fourth-color text-[14px] md:text-[16px] md:leading-[18px] tracking-tight">
-                          Improwised Technologies Pvt. Ltd.
-                        </span>
-                      </p>
-                    </div>
-                  ))
+                latestBlog.data?.darkImage && (
+                  <Image
+                    alt="feature"
+                    class="transition-all duration-200 group-hover:scale-105 hidden dark:block"
+                    decoding="async"
+                    loading="lazy"
+                    src={latestBlog.data.darkImage}
+                  />
+                )
               }
-              <Button
-                href={BASE_URL + "/blog/" + latestBlog.data.slug + "/"}
-                class="button-bg"
+            </div>
+
+            <!-- Right: Blog Content -->
+            <div class="p-4 flex flex-col justify-center">
+              <p
+                class="mb-2 font-manrope font-bold text-[#737373] text-[14px] leading-[24px] tracking-[16%]"
               >
-                Read More
-              </Button>
+                {formatDate(latestBlog.data.publishDate)}
+              </p>
+
+              <h2
+                class="mb-4 font-manrope font-bold text-[24px] leading-[28px] md:text-[28px] text-fifth-color md:leading-[32px]"
+              >
+                <p>
+                  {latestBlog.data.title}
+                </p>
+              </h2>
+
+              <p class="text-para mb-6 text-fourth-color">
+                {latestBlog.data.description}
+              </p>
+
+              <!-- Author Info -->
+              <div
+                class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+              >
+                <!-- Author Info -->
+                {
+                  authors
+                    .filter(
+                      (author) => author.data.title == latestBlog.data.author
+                    )
+                    .map((author) => (
+                      <div class="flex items-center gap-2">
+                        <div>
+                          <Image
+                            alt="author-image"
+                            class="rounded-full border aspect-square object-cover object-top"
+                            width={54}
+                            height={54}
+                            src={author.data.image}
+                          />
+                        </div>
+                        <p class="font-semibold text-fifth-color small-text md:text-[18px] tracking-tight">
+                          By {author.data.title}
+                          <br />
+                          <span class="font-normal text-fourth-color text-[14px] md:text-[16px] md:leading-[18px] tracking-tight">
+                            Improwised Technologies Pvt. Ltd.
+                          </span>
+                        </p>
+                      </div>
+                    ))
+                }
+                <Button
+                  href={BASE_URL + "/blog/" + latestBlog.data.slug + "/"}
+                  class="button-bg"
+                >
+                  Read More
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -181,13 +184,12 @@ const authors = await getCollection("authors");
                 <Card.Header class="h-[300px] p-0 overflow-hidden text-center rounded-t-[12px] bg-[#f0f0f0] dark:bg-[#3a3b3f69]">
                   <Image
                     alt="feature"
-                    class={`w-full object-contain sm:h-[250px] md:h-[300px] transition-all duration-200 group-hover:scale-105 ${blog.data.darkImage && 'dark:hidden'}`}
+                    class={`w-full object-contain sm:h-[250px] md:h-[300px] transition-all duration-200 group-hover:scale-105 ${blog.data.darkImage && "dark:hidden"}`}
                     decoding="async"
                     loading="lazy"
                     src={blog.data.image}
                   />
-                  {
-                    blog.data?.darkImage && 
+                  {blog.data?.darkImage && (
                     <Image
                       alt="feature"
                       class="w-full object-contain sm:h-[250px] md:h-[300px] transition-all duration-200 group-hover:scale-105 hidden dark:block"
@@ -195,7 +197,7 @@ const authors = await getCollection("authors");
                       loading="lazy"
                       src={blog.data.darkImage}
                     />
-                  }
+                  )}
                 </Card.Header>
                 <Card.Content>
                   <p class="mb-2 font-manrope text-[#A3A3A3] md:text-[16px] text-[14px] leading-[24px] tracking-[16%]">

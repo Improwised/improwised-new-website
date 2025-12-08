@@ -103,9 +103,6 @@ teams:
     - name: 'Nandini'
       image: '$lib/images/teams/Nandini.png'
 
-    - name: 'Mangesh'
-      image: '$lib/images/teams/Mangesh.png'
-
     - name: 'Disha'
       image: '$lib/images/teams/Disha.png'
 

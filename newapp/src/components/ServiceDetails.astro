@@ -14,6 +14,7 @@ import CTASection from "$lib/components/CTASection.astro";
 import IndustryExpertise from "$lib/components/IndustryExpertise.astro";
 import FullCycleApproach from "$lib/components/FullCycleApproach.astro";
 import FAQs from "$lib/components/FAQs.astro";
+import PlatformEngineeringRoadmap from "$lib/components/PlatformEngineeringRoadmap.astro";
 
 const {
   title,
@@ -135,6 +136,8 @@ const {
       />
     )
   }
+
+  <PlatformEngineeringRoadmap/>
 
   {faqs && <FAQs faqs={faqs} />}
 

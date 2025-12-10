@@ -130,9 +130,6 @@ teams:
     - name: 'Shivani'
       image: '$lib/images/teams/ShivaniC.png'
 
-    - name: 'Viral'
-      image: '$lib/images/teams/Viral.png'
-
     - name: 'Jaypal'
       image: '$lib/images/teams/Jaypal.png'
 

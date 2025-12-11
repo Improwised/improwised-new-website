@@ -51,9 +51,6 @@ teams:
     - name: 'Shivani'
       image: '$lib/images/teams/ShivaniR.png'
 
-    - name: 'Jinal'
-      image: '$lib/images/teams/Jinal.png'
-
     - name: 'Khushal'
       image: '$lib/images/teams/Khushal.png'
 

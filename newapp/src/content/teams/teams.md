@@ -41,12 +41,8 @@ teams:
     - name: 'Chintan'
       image: '$lib/images/teams/ChintanV.png'
 
-
     - name: 'Hussain'
       image: '$lib/images/teams/Hussain.png'
-
-    - name: 'Aniket'
-      image: '$lib/images/teams/Aniket.png'
 
     - name: 'Shivani'
       image: '$lib/images/teams/ShivaniR.png'

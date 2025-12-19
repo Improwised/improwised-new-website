@@ -18,6 +18,7 @@ linkTags:
   - title: "Tools and Services for AWS Cost Optimization"
   - title: "Use Cases and Examples: How Improwised Technologies Drive AWS Cost Reduction"
   - title: "Why Choose Improwised Technologies as Your AWS Cost-Saving Partner? Act Now to Transform Your Cloud Spend!"
+  - title: "FAQs"
 faqs:
   - question: "Are there any costs associated with AWS security groups?"
     answer: "No, there are no charges for security groups in AWS. They function as virtual firewalls for your EC2 instances and additional resources, and there are no charges from AWS for the creation or management of security groups."

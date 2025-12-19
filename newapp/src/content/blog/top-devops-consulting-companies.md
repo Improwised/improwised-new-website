@@ -20,6 +20,7 @@ linkTags:
   - title: "Top Trends in DevOps Consulting"
   - title: "Improwised Technologies: Your Trusted DevOps Partner"
   - title: "Make the Right DevOps Decision Today"
+  - title: "FAQs"
 faqs:
   - question: "What does DevOps do for a business?"
     answer: "DevOps is important because it speeds up the delivery of software, makes it easier for developers and operations to work together, makes releases of higher quality, and makes systems more scalable and secure. By automating workflows and making cloud infrastructures more efficient, companies that use DevOps consulting services, such as those from Improwised Tech, can get their products to market faster and be more flexible in their operation."

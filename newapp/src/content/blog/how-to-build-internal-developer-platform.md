@@ -21,6 +21,7 @@ linkTags:
   - title: "How to Choose the Right Tools for Your IDP"
   - title: "Measuring Impact: Key Metrics & KPIs"
   - title: "Conclusion"
+  - title: "FAQs"
 faqs:
   - question: "What is the first step to building an IDP?"
     answer: "The first step is to study developer workflows and identify friction points. Tooling choices should come only after understanding what developers struggle with most."

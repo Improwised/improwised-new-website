@@ -22,6 +22,7 @@ linkTags:
   - title: "Troubleshooting Common Issues"
   - title: "Performance Optimization Tips"
   - title: "Conclusion"
+  - title: "FAQs"
 blockCategory: "security-and-access-control"
 faqs:
   - question: "Is it possible to use Keycloak Gatekeeper with programs made in any programming language?"

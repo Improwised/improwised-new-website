@@ -23,6 +23,7 @@ linkTags:
   - title: "Platform Engineering Use Cases"
   - title: "Best Practices for CI/CD and Kubernetes"
   - title: "Conclusion"
+  - title: "FAQs"
 faqs:
   - question: "What are the essential tools utilized in Kubernetes CI/CD pipelines?"
     answer: "Notable tools encompass ArgoCD and FluxCD for GitOps, Jenkins X and Tekton for continuous integration automation, Helm and Kustomize for infrastructure as code, and Spinnaker for sophisticated deployment strategies, including blue-green and canary releases."

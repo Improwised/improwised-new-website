@@ -19,6 +19,7 @@ linkTags:
   - title: "Common Pitfalls and Strategies to Avoid Them"
   - title: "A platform is a product. DevOps vs. Product Platform"
   - title: "What can Improwised do to help you run your platform as an Enterprise"
+  - title: "FAQs"
 faqs:
   - question: "Does platform engineering equate to DevOps with a mindset of a product?"
     answer: "No. Platform engineering is the process of creating the workflows and systems that enable DevOps, and the business mindset ensures that the platform is constantly evolving in response to the needs of developers and the results that can be measured."

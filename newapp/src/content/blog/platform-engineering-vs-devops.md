@@ -33,6 +33,7 @@ linkTags:
   - title: "Quick Breakdown of Use Cases"
   - title: "Conclusion: Providing Your Engineering Team with a Launchpad for Success"
   - title: "Don’t Know Where Your Team Stands?"
+  - title: "FAQs"
 faqs:
   - question: "Is platform engineering a good alternative to DevOps?"
     answer: "No, as many people have said, platform engineering doesn't get rid of the need for DevOps culture and techniques; it only makes them bigger by using self-service platforms."

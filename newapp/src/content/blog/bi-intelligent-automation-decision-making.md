@@ -19,6 +19,7 @@ linkTags:
   - title: "How to Start Using BI and Automation"
   - title: "What the Future Holds: BI, Automation, and AI That Make Things"
   - title: "Let Data and Automation Take the Lead"
+  - title: "FAQs"
 faqs:
   - question: "What is Business Intelligence (BI), and how does it assist people in making choices?"
     answer: "Business Intelligence (BI) is a set of tools and methods that turn raw data into useful information. BI helps leaders make decisions more quickly and accurately by showing them how things are going, discovering trends, and making guesses about what will happen."

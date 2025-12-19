@@ -14,6 +14,7 @@ linkTags:
   - title: "The Platform Engineering View: More than just Kubernetes"
   - title: "Kubernetes as a Tool, Not a Place to Go in the Future"
   - title: "Conclusion: Kubernetes as the Beginning of New Ideas for Platforms"
+  - title: "FAQs"
 blockCategory: "continuous-deployment"
 faqs:
   - question: "Who made Kubernetes?"

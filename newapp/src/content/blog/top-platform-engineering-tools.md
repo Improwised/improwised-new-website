@@ -18,6 +18,7 @@ linkTags:
   - title: "Picking the Right Tools for Your Group"
   - title: "Getting Started with the Implementation"
   - title: "Build with Purpose, Grow with Confidence"
+  - title: "FAQs"
 faqs:
   - question: "What are the tools for platform engineering?"
     answer: "They are software solutions that make Internal Developer Platforms (IDPs) work. They cover provisioning (IaC), cataloging, orchestration, portal interfaces, observability, secrets, and governance."

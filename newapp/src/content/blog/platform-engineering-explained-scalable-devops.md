@@ -22,6 +22,7 @@ linkTags:
   - title: "What was the Future of Engineering Platforms"
   - title: "Why now? Why platform engineering? And why Improwised?"
   - title: "Do you want to elevate your engineering practices into the 21st century?"
+  - title: "FAQs"
 faqs:
   - question: "What does a platform engineer do?"
     answer: "Platform engineering is the field that deals with building and keeping internal developer platforms (IDPs) up to date. IDPs are a set of tools, services, and processes that development teams can use to share, protect, and keep an eye on their work on their own."

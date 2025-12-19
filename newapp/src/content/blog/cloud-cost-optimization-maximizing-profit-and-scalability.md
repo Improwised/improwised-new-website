@@ -20,6 +20,7 @@ linkTags:
   - title: "Example Chart: How Much Money You Can Save Over Time Image Link"
   - title: "Conclusion"
   - title: "Checklist for Action"
+  - title: "FAQs"
 faqs:
   - question: "What is FinOps, and why is it important?"
     answer: "FinOps is a way of working together to control cloud costs that brings together people from finance, engineering, and operations. It lets you make decisions about cost optimization in real time."

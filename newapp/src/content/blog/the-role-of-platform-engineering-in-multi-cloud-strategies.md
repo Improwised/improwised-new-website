@@ -6,8 +6,10 @@ seoTitle: "Multi-Cloud Strategy Guide: Resilience & Cost Savings | Improwised"
 seoDescription: "Master multi-cloud strategies with platform engineering. Avoid vendor lock-in, reduce costs, improve resilience. Tools, automation & integration guide. | Improwised"
 tags: [multi-cloud strategy, platform engineering, vendor lock-in, cloud resilience, terraform, kubernetes, cloud automation, disaster recovery, cloud integration, hybrid cloud]
 publishDate: 2024-12-27
+modifiedDate: 2024-12-27
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/the-role-of-platform-engineering.webp'
+bodyImage: '$lib/images/blogs/multi-cloud-integration-strategy.png'
 linkTags: 
   - title: "Learning about Multi-Cloud Strategies" 
   - title: "Important Parts of Connecting to Multiple Clouds"

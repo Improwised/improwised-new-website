@@ -6,9 +6,11 @@ seoTitle: "Top Platform Engineering Companies Building Composable Architectures 
 seoDescription: "Explore how top platform engineering companies are driving composable architectures for scalability and innovation. Read Improwised’s expert take on modern engineering leaders"
 tags: [platform engineering , composable architecture , DevOps , software scalability , engineering best practices , improwised insights]
 publishDate: 2025-08-20
+modifiedDate: 2025-08-20
 author: "Priyank Dhami"
 image: "$lib/images/blogs/top-platform-engineering-companies-building-composable-architectures-head-light.svg"
 darkImage: "$lib/images/blogs/top-platform-engineering-companies-building-composable-architectures-head-dark.svg"
+bodyImage: "$lib/images/blogs/top-platform-engineering-companies-building-composable-architectures-body.svg"
 linkTags:
   - title: "Why Composable Architecture Platform Engineering is the Future"
   - title: "1. Improwised Technologies (Featured)"

@@ -1,14 +1,16 @@
 ---
-title: " Versioning Infrastructure Components for Safer Rollbacks and Deployments"
+title: "Versioning Infrastructure Components for Safer Rollbacks and Deployments"
 slug: "versioning-infrastructure-components-rollbacks-deployments"
 description: "Explore how versioning infrastructure components improves reliability, enabling safer rollbacks and smoother deployments in complex environments."
 seoTitle: "Versioning Infrastructure Components for Safer Rollbacks | Improwised"
 seoDescription: "Learn how versioning infrastructure components helps enable safer rollbacks and deployments. Improwised explains best practices for resilient systems."
 tags: [infrastructure versioning, safe rollbacks, deployments, infrastructure automation, platform engineering, Improwised]
 publishDate: 2025-09-17
+modifiedDate: 2025-09-17
 author: "Improwised Editorial Team" 
 image: "$lib/images/blogs/versioning-infrastructure-components-rollbacks-deployments-head-light.svg"
 darkImage: "$lib/images/blogs/versioning-infrastructure-components-rollbacks-deployments-head-dark.svg"
+bodyImage: "$lib/images/blogs/versioning-infrastructure-components-rollbacks-deployments-body.svg"
 linkTags: 
   - title: "Version Control for Infrastructure: Not Just for Source Code" 
   - title: "Declarative Infrastructure and Version Pinning"
@@ -22,7 +24,7 @@ linkTags:
 
 In systems where uptime and tolerance for failure are the defining qualities of "working," versioning infrastructure components is not merely a design consideration; it is a requirement of design. Whether any change is made to compute instances, networking infrastructure, container orchestration logic, or declarative code that defines infrastructure, the ability to version, inspect, and rollback is a key aspect of operational control. If versioning processes are not followed, rollback processes may become unreliable, and a deployment may warrant some risk with no option to rollback. This post explains how infrastructure versioning can enable rollback and decoding in a controlled manner, the mechanisms for implementing it, and the operation workflows necessary to ensure safe deployments across environments.
 
-![Blog Image]($lib/images/blogs/versioning-infrastructure-components-rollbacks-deployments-body.svg)
+![Versioning Infrastructure Components for Safer Rollbacks and Deployments]($lib/images/blogs/versioning-infrastructure-components-rollbacks-deployments-body.svg)
 
 ## Version Control for Infrastructure: Not Just for Source Code
 

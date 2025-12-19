@@ -6,8 +6,10 @@ seoTitle: 'CI/CD in Air-Gapped Environments | Secure Pipelines Without Internet 
 seoDescription: 'Learn how to implement secure CI/CD pipelines in isolated networks without internet connectivity.'
 tags: [CI/CD, Air-Gapped, DevOps, Security]
 publishDate: '2025-04-03'
+modifiedDate: '2025-04-03'
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/ci-cd-in-air-gapped-environments-head.webp'
+bodyImage: '$lib/images/blogs/ci-cd-in-air-gapped-environments-body.webp'
 linkTags:
   - title: "Challenges in Implementing CI/CD in Air-Gapped Environments"
     children:

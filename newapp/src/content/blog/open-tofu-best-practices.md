@@ -6,8 +6,10 @@ seoTitle: 'Performance Optimization in OpenTofu: Best Practices'
 seoDescription: 'Discover best practices to optimize OpenTofu, the open-source IaC tool, for scalable and efficient infrastructure management across cloud and on-premises environments.'
 tags: [OpenTF]
 publishDate: 2025-01-29
+modifiedDate: 2025-01-29
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Performance-Optimization-in-OpenTofuhead.png'
+bodyImage: '$lib/images/blogs/Performance-Optimization-in-OpenTofu-body.webp'
 linkTags:
   - title: State Management and Resource Tracking
   - title: Caching Attribute Values
@@ -20,7 +22,7 @@ blockCategory: "code-and-infra-management"
 
 This blog will delve into the technical aspects and best practices for optimizing OpenTofu's performance.
 
-![hero Image]($lib/images/blogs/Performance-Optimization-in-OpenTofu-body.webp)
+![Performance Optimization in OpenTofu: Best Practices]($lib/images/blogs/Performance-Optimization-in-OpenTofu-body.webp)
 
 ## State Management and Resource Tracking
 

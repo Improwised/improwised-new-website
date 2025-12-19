@@ -6,8 +6,10 @@ seoTitle: "Scaling Tech Infrastructure with Platform Engineering | Startup to En
 seoDescription: "Scale from startup to enterprise with platform engineering. Discover proven strategies to build resilient, efficient infrastructure that drives business growth."
 tags: [Platform Engineering,Tech Infrastructure]
 publishDate: 2025-03-12
+modifiedDate: 2025-03-12
 author: "Shailesh Davara"
 image: "$lib/images/blogs/Scaling-Tech-Infrastructure-with-Platform-Engineering-head.webp"
+bodyImage: "$lib/images/blogs/Scaling-Tech-Infrastructure-with-Platform-Engineering-body.webp"
 linkTags:
   - title: Components of Platform Engineering
   - title: Implementing Platform Engineering for Scalability
@@ -19,7 +21,7 @@ blockCategory: "code-and-infra-management"
 
 From Startup to Enterprise: Scaling Your Tech Infrastructure with Platform Engineering
 
-![hero Image]($lib/images/blogs/Scaling-Tech-Infrastructure-with-Platform-Engineering-body.webp)
+![From Startup to Enterprise: Scaling Your Tech Infrastructure with Platform Engineering]($lib/images/blogs/Scaling-Tech-Infrastructure-with-Platform-Engineering-body.webp)
 
 ### Components of Platform Engineering
 

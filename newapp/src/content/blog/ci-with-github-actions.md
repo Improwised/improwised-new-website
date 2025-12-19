@@ -6,9 +6,11 @@ seoTitle: "CI with GitHub Actions: End-to-End Pipeline Setup Guide"
 seoDescription: "Continuous Integration Using GitHub Actions: Build, Test, and Automate Your CI/CD Pipeline with Step-by-Step Examples"
 tags: [Continuous Integration with GitHub Actions, GitHub Actions CI pipeline, CI with GitHub Actions, GitHub CI workflow, Automated testing with GitHub Actions, DevOps CI with GitHub, GitHub Actions best practices, CI pipeline stages, GitHub Actions YAML workflow, CI best practices GitHub, set up CI with GitHub Actions, GitHub Actions YAML example]
 publishDate: 2025-12-10
+modifiedDate: 2025-12-10
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/ci-with-github-actions-head-light.png'
 darkImage: '$lib/images/blogs/ci-with-github-actions-head-dark.png'
+bodyImage: '$lib/images/blogs/ci-with-github-actions-body.png'
 linkTags: 
   - title: "What is Continuous Integration (CI)?" 
   - title: "Why Choose GitHub Actions for CI?"

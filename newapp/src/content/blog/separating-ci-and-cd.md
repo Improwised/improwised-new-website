@@ -6,10 +6,12 @@ seoTitle: "Separating CI and CD: The Key to Faster, Safer Delivery"
 seoDescription: "Description: Separating CI and CD improves speed, reduces deployment risk, enhances governance, and creates predictable delivery pipelines for enterprise engineering teams."
 tags: [CI vs CD, Continuous Integration and Continuous Deployment, CI/CD best practices, Why separate CI and CD, CI/CD pipeline architecture, Continuous Deployment vs Continuous Delivery, benefits of separating CI and CD, how CI and CD work together in DevOps, Kubernetes deployment automation]
 publishDate: 2025-12-05
+modifiedDate: 2025-12-05
 author: "Shyam Kapdi" 
 contributor: "Nandini Parekh"
 image: '$lib/images/blogs/separating-ci-and-cd-head-light.png'
 darkImage: '$lib/images/blogs/separating-ci-and-cd-head-dark.png'
+bodyImage: '$lib/images/blogs/separating-ci-and-cd-body.png'
 linkTags: 
   - title: "What is CI (Continuous Integration)?"
   - title: "What is CD (Continuous Delivery/Deployment)?"

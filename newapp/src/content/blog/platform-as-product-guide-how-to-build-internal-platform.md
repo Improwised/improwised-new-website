@@ -6,9 +6,11 @@ seoTitle: "Ultimate Platform as Product Guide for Amazing Growth"
 seoDescription: "Discover the ultimate guide to Platform as Product strategy. Find innovative growth strategies that transform your business approach and drive lasting success."
 tags: [platform as a product framework, DevOps platform model, how to build an internal developer platform, platform, engineering best practices, platform product owner role, minimum viable platform, Golden Paths Platform Engineering, platform team structure, platform engineering guide, platform engineering for enterprises, cognitive load reduction developers]
 publishDate: 2025-11-28
+modifiedDate: 2025-11-28
 author: "Shyam Kapdi"  
 image: '$lib/images/blogs/platform-as-product-guide-how-to-build-internal-platform-head-light.png'
 darkImage: '$lib/images/blogs/platform-as-product-guide-how-to-build-internal-platform-head-dark.png'
+bodyImage: '$lib/images/blogs/platform-as-product-guide-how-to-build-internal-platform-body.png'
 linkTags: 
   - title: "What is 'Platform as a Product'?"
   - title: "The reason why Platform as a Product matters for your business"

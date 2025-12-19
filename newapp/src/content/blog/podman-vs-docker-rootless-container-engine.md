@@ -6,9 +6,11 @@ seoTitle: 'Why Improwised Recommends Podman over Docker?'
 seoDescription: 'Discover how Improwised uses Podman for secure, daemonless containerization - offering a rootless alternative to Docker for modern cloud-native teams'
 tags: [podman , rootless containers , container security , daemonless containers , podman vs docker]
 publishDate: 2025-07-14
+modifiedDate: 2025-07-14
 author: 'Chintan Viradiya'
 image: '$lib/images/blogs/podman-vs-docker-rootless-container-engine-head-light.svg'
 darkImage: '$lib/images/blogs/podman-vs-docker-rootless-container-engine-head-dark.svg'
+bodyImage: '$lib/images/blogs/podman-vs-docker-rootless-container-engine-secure-daemon-free.png'
 linkTags:
   - title: "What is Podman?"
   - title: "Why Podman?"

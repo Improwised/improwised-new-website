@@ -6,9 +6,11 @@ seoTitle: "Auto-Healing with Observability Data | Improwised"
 seoDescription: " Improwised explains how auto-healing powered by observability data closes the loop between detection and recovery for resilient, self-healing systems."
 tags: [ auto healing, observability data, detection and recovery, self-healing systems, observability automation, platform engineering observability, incident response automation, Improwised]
 publishDate: 2025-10-06
+modifiedDate: 2025-10-06
 author: "Priyank Dhami" 
 image: '$lib/images/blogs/auto-healing-observability-detection-recovery-light.png'
 darkImage: '$lib/images/blogs/auto-healing-observability-detection-recovery-dark.png' 
+bodyImage: '$lib/images/blogs/auto-healing-observability-detection-recovery-body.png' 
 linkTags: 
   - title: "Understanding Observability and Its Role" 
   - title: "The Components of Auto-Healing Systems"

@@ -6,6 +6,7 @@ seoTitle: "Top Platform Engineering Companies | Improwised Security by Design"
 seoDescription: "Discover the top platform engineering companies enforcing Security by Design. Learn how Improwised highlights leaders shaping secure, scalable platforms."
 tags: [platform engineering , security by design , DevSecOps, internal developer platforms (IDPs), secure software development, engineering best practices, Improwised Technologies]
 publishDate: 2025-09-03
+modifiedDate: 2025-09-03
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/top-platform-engineering-companies-security-by-design-head-light.svg'
 darkImage: '$lib/images/blogs/top-platform-engineering-companies-security-by-design-head-dark.svg'

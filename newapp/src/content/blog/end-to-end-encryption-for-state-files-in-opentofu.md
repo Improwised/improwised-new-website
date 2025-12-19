@@ -6,8 +6,10 @@ seoTitle: 'End-to-End Encryption for State Files in OpenTofu'
 seoDescription: 'OpenTofu 1.7.0 adds end-to-end encryption for Terraform state files, securing sensitive data and preventing unauthorized access. Learn how this boosts your infrastructure security.'
 tags: [OpenTF]
 publishDate: 2025-02-06
+modifiedDate: 2025-02-06
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/End-to-End-Encryption-head.png'
+bodyImage: '$lib/images/blogs/End-to-End-Encryption-body.png'
 linkTags:
   - title: The Need for State File Encryption
   - title: End-to-End State Encryption in OpenTofu 1.7.0
@@ -26,7 +28,7 @@ blockCategory: "security-and-access-control"
 Terraform state files contain crucial information about the infrastructure managed by Terraform, including sensitive data such as database credentials, API keys, and other secrets.
 
 
-![Hero Image]($lib/images/blogs/End-to-End-Encryption-body.png)
+![End-to-End Encryption for State Files in OpenTofu]($lib/images/blogs/End-to-End-Encryption-body.png)
 
 ## The Need for State File Encryption
 

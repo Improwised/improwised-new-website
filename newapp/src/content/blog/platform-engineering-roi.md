@@ -6,9 +6,11 @@ seoTitle: 'The Real ROI of Platform Engineering'
 seoDescription: 'Discover how platform engineering boosts developer productivity, reduces costs, speeds time-to-market, and delivers measurable ROI for your business growth.'
 tags: [Platform Engineering, Developer Productivity, DevOps ROI]
 publishDate: 2025-04-21
+modifiedDate: 2025-04-21
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/platform-engineering-roi-head-light.svg'
 darkImage: '$lib/images/blogs/platform-engineering-roi-head-dark.svg'
+bodyImage: '$lib/images/blogs/platform-engineering-roi-body.webp'
 linkTags:
  - title: "Reduced Cognitive Load = Fewer Mistakes"
  - title: "Improved Developer Experience = Higher Retention"

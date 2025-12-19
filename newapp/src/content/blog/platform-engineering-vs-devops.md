@@ -6,9 +6,11 @@ seoTitle: "Platform Engineering vs DevOps: Key Differences & Team Fit | Improwis
 seoDescription: "Compare Platform Engineering vs DevOps in 2025. Learn which suits your team’s delivery goals, workflows, and scaling needs-expert insights by Improwised."
 tags: [Platform Engineering, DevOps, Cloud Native, Team Productivity, Developer Experience, CI/CD, SRE, DevOps vs Platform Engineering, Engineering Enablement]
 publishDate: 2025-08-04
+modifiedDate: 2025-08-04
 author: 'Improwised Editorial Team'
 image: "$lib/images/blogs/platform-engineering-vs-devops-light.png"
 darkImage: "$lib/images/blogs/platform-engineering-vs-devops-dark.png"
+bodyImage: "$lib/images/blogs/platform-engineering-vs-devops.png"
 linkTags:
   - title: "What is DevOps?" 
     children: 

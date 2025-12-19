@@ -6,9 +6,11 @@ seoTitle: "How Slower Software Releases Increase Costs | Improwised"
 seoDescription: "Discover why slower releases may be costing your team more than expected. Improwised explains strategies to release faster without risk."
 tags: [slower releases, release velocity, software delivery, deployment frequency, engineering cost, Improwised]
 publishDate: 2025-09-29
+modifiedDate: 2025-09-29
 author: "Improwised Editorial Team" 
 image: "$lib/images/blogs/slower-releases-costing-software-teams-head-light.svg"
 darkImage: "$lib/images/blogs/slower-releases-costing-software-teams-head-dark.svg"
+bodyImage: "$lib/images/blogs/slower-releases-costing-software-teams-body.svg"
 linkTags: 
   - title: "Greater Engineering Overhead" 
   - title: "Increased Security Exposure"

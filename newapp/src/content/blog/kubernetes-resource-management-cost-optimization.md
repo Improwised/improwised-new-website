@@ -6,6 +6,7 @@ seoTitle: "Kubernetes Resource Management & Cost Guide | Improwised"
 seoDescription: "Discover how Improwised uses platform engineering for Kubernetes resource management, driving cost optimization and enterprise scalability."
 tags: [ kubernetes resource management, kubernetes cost optimization, kubernetes scaling, platform engineering kubernetes, enterprise kubernetes, Improwised]
 publishDate: 2025-10-24
+modifiedDate: 2025-10-24
 author: "Improwised Editorial Team" 
 image: "$lib/images/blogs/kubernetes-resource-management-cost-optimization-head-light.svg" 
 darkImage: '$lib/images/blogs/kubernetes-resource-management-cost-optimization-head-dark.svg'

@@ -6,9 +6,11 @@ seoTitle: "The Silent Scalability Killer: Technical Debt Explained | Improwised"
 seoDescription: "See how technical debt impacts post-deployment scalability. Improwised explains strategies to manage debt and protect long-term engineering growth."
 tags: [technical debt, scalability challenges, post-deployment, operations, platform engineering, Improwised]
 publishDate: 2025-09-19
+modifiedDate: 2025-09-19
 author: "Priyank Dhami" 
 image: "$lib/images/blogs/technical-debt-post-deployment-operations-head-light.svg"
 darkImage: "$lib/images/blogs/technical-debt-post-deployment-operations-head-dark.svg"
+bodyImage: "$lib/images/blogs/technical-debt-post-deployment-operations-body.svg"
 linkTags: 
   - title: "What Is Technical Debt in Post-Deployment Operations?" 
   - title: "How Technical Debt Impacts Scalable Systems"
@@ -22,7 +24,7 @@ After deployment, we must contend with an insidious foe to scalability: technica
 
 In this post, we are going to explore how technical debt affects the way your system runs after it has been deployed. We will outline how technical debt manifests after software is deployed, what it can do to your ability to scale, and why the ongoing pursuit of managing technical debt is paramount to upholding the health and performance of your system.
 
-![Hero Image]($lib/images/blogs/technical-debt-post-deployment-operations-body.svg)
+![The Silent Scalability Killer: Technical Debt in Post-Deployment Operations]($lib/images/blogs/technical-debt-post-deployment-operations-body.svg)
 
 ## What Is Technical Debt in Post-Deployment Operations?
 

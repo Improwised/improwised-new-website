@@ -6,9 +6,11 @@ seoTitle: "Internal Developer Platforms Reduce Deployment Times | Improwised"
 seoDescription: "Discover how internal developer platforms cut deployment times by 2-3x. Improwised showcases how IDPs accelerate faster, safer releases."
 tags: [Internal developer platforms, faster deployments, IDPs, developer productivity, deployment automation, Improwised]
 publishDate: 2025-09-22
+modifiedDate: 2025-09-22
 author: "Priyank Dhami" 
 image: "$lib/images/blogs/internal-developer-platforms-reduce-deployment-times-head-light.svg"
 darkImage: "$lib/images/blogs/internal-developer-platforms-reduce-deployment-times-head-dark.svg"
+bodyImage: "$lib/images/blogs/internal-developer-platforms-reduce-deployment-times-body.svg"
 linkTags:
   - title: "Infrastructure Abstraction and Standardization" 
   - title: "Automated Workflow Execution"

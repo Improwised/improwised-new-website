@@ -6,9 +6,11 @@ seoTitle: "Least Privilege in Microservices Security Explained | Improwised"
 seoDescription: "Learn why least privilege matters for microservices security. Improwised shares how extending this principle strengthens cloud-native defenses."
 tags: [least privilege, microservices security, cloud-native security, zero trust, platform engineering, Improwised]
 publishDate: 2025-09-26
+modifiedDate: 2025-09-26
 author: "Improwised Editorial Team" 
 image: "$lib/images/blogs/least-privilege-microservices-security-head-light.svg"
 darkImage: "$lib/images/blogs/least-privilege-microservices-security-head-dark.svg"
+bodyImage: "$lib/images/blogs/least-privilege-microservices-security-body.svg"
 linkTags:   
     - title: "Microservices and the Increased Attack Surface" 
     - title: "Enforcing Least Privilege in Microservices"

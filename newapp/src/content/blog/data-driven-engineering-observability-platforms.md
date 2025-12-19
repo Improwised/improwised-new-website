@@ -6,6 +6,7 @@ seoTitle: "Data-Driven Engineering & Observability | Improwised"
 seoDescription: "Learn how top companies bake observability into platforms with data-driven engineering. Improwised explains why observability drives performance and scale"
 tags: [data-driven engineering, observability, observability in platforms, platform engineering, site reliability engineering, infrastructure monitoring, DevOps observability, Improwised]
 publishDate: 2025-09-24
+modifiedDate: 2025-09-24
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/data-driven-engineering-observability-platforms-head-light.svg'
 darkImage: '$lib/images/blogs/data-driven-engineering-observability-platforms-head-dark.svg'

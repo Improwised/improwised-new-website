@@ -7,9 +7,11 @@ seoDescription: "Explore modular Infrastructure as Code (IaC) best practices to 
 tags: [Modular Infrastructure Design, Infrastructure as Code Best Practices, Reusable IaC Modules, Maintainable IaC, Terraform Modules, Scalable Cloud Architecture, IaC Patterns, DevOps Automation, Improwised DevOps Services
 ]
 publishDate: 2025-08-01
+modifiedDate: 2025-08-01
 author: "Priyank Dhami" 
 image: '$lib/images/blogs/modular-infrastructure-design-head-light.svg'
 darkImage: '$lib/images/blogs/modular-infrastructure-design-head-dark.svg'
+bodyImage: '$lib/images/blogs/modular-infrastructure-body.svg'
 linkTags:
   - title: "Functional Decomposition of Infrastructure Components"
     children: 

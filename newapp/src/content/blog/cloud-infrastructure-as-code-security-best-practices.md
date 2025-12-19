@@ -7,9 +7,11 @@ seoTitle: "IaC Security Best Practices for DevSecOps in 2025 | Improwised"
 seoDescription: "Explore cloud Infrastructure as Code security best practices for 2025. Learn how DevSecOps teams secure IaC pipelines with scanning, drift detection, and RBAC—by Improwised."
 tags: [Infrastructure as Code, IaC Security, DevSecOps, Cloud Security, CI/CD Security, Secrets Management, Configuration Drift Detection, RBAC, Security as Code]
 publishDate: 2025-08-18
+modifiedDate: 2025-08-18
 author: "Improwised Editorial Team" 
 image: "$lib/images/blogs/cloud-infrastructure-as-code-security-best-practices-head-light.svg"
 darkImage: "$lib/images/blogs/cloud-infrastructure-as-code-security-best-practices-head-dark.svg"
+bodyImage: "$lib/images/blogs/cloud-infrastructure-as-code-security-best-practices-body.svg"
 linkTags:
   - title: "Why IaC is a Game-Changer and Why Security Needs to Be at the Top" 
   - title: "What Sets IaC Security Apart?"

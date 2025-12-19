@@ -6,6 +6,7 @@ seoTitle: "Top 10 Companies in Platform Engineering | Improwised"
 seoDescription: "Discover how top companies are redefining developer experience with platform engineering. Improwised highlights leaders driving innovation at scale."
 tags: [platform engineering, developer experience, top platform engineering companies, DevEx, developer productivity, engineering workflows, platform engineering leaders, Improwised]
 publishDate: 2025-10-01
+modifiedDate: 2025-10-01
 author: "Shyam Kapdi" 
 image: "$lib/images/blogs/top-developer-experience-platform-engineering-companies-head-light.svg" 
 darkImage: "$lib/images/blogs/top-developer-experience-platform-engineering-companies-head-dark.svg" 

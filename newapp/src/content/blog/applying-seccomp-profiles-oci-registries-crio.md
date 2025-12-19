@@ -6,9 +6,11 @@ seoTitle: "Applying Seccomp Profiles in CRI-O via OCI Registries | Improwised"
 seoDescription: "Discover how to apply Seccomp profiles from OCI registries in CRI-O. Improwised explains best practices to strengthen container runtime security."
 tags: [CRI-O, Seccomp profiles, OCI registries, container security, Kubernetes, runtime security, platform engineering, Improwised]
 publishDate: 2025-09-15
+modifiedDate: 2025-09-15
 author: "Improwised Editorial Team" 
 image: '$lib/images/blogs/applying-seccomp-profiles-oci-registries-crio-head-light.svg'
 darkImage: '$lib/images/blogs/applying-seccomp-profiles-oci-registries-crio-head-dark.svg'
+bodyImage: "$lib/images/blogs/crio-seccomp-automation-container-security-oci-registry-workflow.png"
 linkTags: 
   - title: "Distributing Seccomp Profiles in Kubernetes" 
   - title: "CRI-O's solution"
@@ -19,7 +21,6 @@ linkTags:
   - title: "Limitations and Future Work"
   - title: "Technical Details of CRI-O's Implementation"
   - title: "Conclusion"
-
 ---
 Seccomp is a feature in the Linux kernel that allows the sandboxing of process privileges by limiting userspace system calls into the kernel. Kubernetes can apply seccomp profiles to pods and containers; however, distributing the seccomp profiles to the nodes creates a huge problem. In this blog post, we will discuss how CRI-O (a Kubernetes container runtime) solves this problem by applying seccomp profiles from OCI registries.
 

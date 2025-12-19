@@ -6,9 +6,11 @@ seoTitle: "Port vs Backstage: Which is Best Developer Experience Platform? | Imp
 seoDescription: "Improwised compares Port vs Backstage, the top developer experience platforms for internal portals. Learn which tool fits your team’s developer workflow best."
 tags: [Port vs Backstage, developer experience platform, internal developer portal, backstage developer portal, port developer platform, developer experience tools, internal platform engineering, improwised]
 publishDate: 2025-11-12
+modifiedDate: 2025-11-12
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/port-vs-backstage-developer-experience-platform-head-light.png'
 darkImage: '$lib/images/blogs/port-vs-backstage-developer-experience-platform-head-dark.png'
+bodyImage: '$lib/images/blogs/port-vs-backstage-developer-experience-platform-body.png'
 linkTags: 
   - title: "Introduction" 
   - title: "What is a Developer Experience Platform?"

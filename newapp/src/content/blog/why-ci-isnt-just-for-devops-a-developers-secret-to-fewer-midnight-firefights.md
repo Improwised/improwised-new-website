@@ -6,8 +6,10 @@ seoTitle: "CI Benefits Beyond DevOps | Developer Tips to Reduce Firefight | Impr
 seoDescription: "Continuous Integration isn’t just for DevOps—it boosts collaboration, code quality & delivery across teams. Explore the broader impact of CI in modern software."
 tags: [DevOps, Continuous Integration]
 publishDate: 2025-02-14
+modifiedDate: 2025-02-14
 author: "Rakshit Menpara"
 image: "$lib/images/blogs/CI-Isnt-Just-for-DevOps-head.webp"
+bodyImage: "$lib/images/blogs/ciisnt.png"
 linkTags:
   - title: "The Core Principle: Immediate Feedback Loops"
   - title: "Shift-Left Testing: Embedding Quality Early"
@@ -24,7 +26,7 @@ blockCategory: "continuous-integration"
 
 Why CI Isn't Just for DevOps—A Developer's Secret to Fewer Midnight Firefights
 
-![hero Image]($lib/images/blogs/ciisnt.png)
+![Why CI Isn't Just for DevOps—A Developer's Secret to Fewer Midnight Firefights]($lib/images/blogs/ciisnt.png)
 
 Understanding CI from a developer's perspective highlights its role in reducing incidents, minimizing technical debt, and improving code stability—all without the need for late-night incident responses.
 

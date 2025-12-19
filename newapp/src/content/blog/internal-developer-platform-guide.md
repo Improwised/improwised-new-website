@@ -6,9 +6,11 @@ seoTitle: "Internal Developer Platform Guide: Best Practices, Benefits, Use Case
 seoDescription: "Improwised explains what an Internal Developer Platform is, its key components, open-source tools, & best practices to enhance developer experience and productivity."
 tags: [internal developer platform, what is an internal developer platform, internal developer platform tools, cloud native internal developer platform, internal developer platform examples, best developer experience platforms for internal portals, open source internal developer platform, idp, improwised]
 publishDate: 2025-11-10
+modifiedDate: 2025-11-10
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/internal-developer-platform-guide-head-light.png'
 darkImage: '$lib/images/blogs/internal-developer-platform-guide-head-dark.png'
+bodyImage: '$lib/images/blogs/internal-developer-platform-guide-body.png'
 linkTags: 
   - title: "What is an Internal Developer Platform?" 
   - title: "Key Components of an Internal Developer Platform"

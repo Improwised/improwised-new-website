@@ -6,9 +6,11 @@ seoTitle: "BI & Automation for Smarter Decisions | Improwised"
 seoDescription: "See how Improwised blends Business Intelligence and Intelligent Automation to drive faster, data-backed decisions. Real-world use cases and future trends inside."
 tags: [business intelligence, intelligent automation, decision automation, process optimization, data strategy, BI tools, automation trends, generative AI]
 publishDate: 2025-08-15
+modifiedDate: 2025-08-15
 author: "Improwised Editorial Team" 
 image: "$lib/images/blogs/bi-intelligent-automation-decision-making-head-light.svg"
 darkImage: "$lib/images/blogs/bi-intelligent-automation-decision-making-head-dark.svg"
+bodyImage: "$lib/images/blogs/bi-intelligent-automation-decision-making-body.svg"
 linkTags:
   - title: "The Change to Making Decisions Faster and Smarter" 
   - title: "What is Intelligent Automation, and how is it changing?"

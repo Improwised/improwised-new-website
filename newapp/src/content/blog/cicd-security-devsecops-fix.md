@@ -6,9 +6,11 @@ seoTitle: "CI/CD Security Problems? How Advanced DevSecOps Fixes Them Fast"
 seoDescription: "Struggling with CI/CD security issues? Learn how advanced DevSecOps practices help fix pipeline risks fast with automation, shift-left testing, and zero-trust controls."
 tags: [CI/CD security, DevSecOps, secure CI/CD pipelines, CI/CD vulnerabilities, DevSecOps best practices, pipeline security automation, shift-left security, supply chain security, DevOps security]
 publishDate: 2025-11-17
+modifiedDate: 2025-11-17
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/cicd-security-devsecops-fix-head-light.png'
 darkImage: '$lib/images/blogs/cicd-security-devsecops-fix-head-dark.png'
+bodyImage: '$lib/images/blogs/cicd-security-devsecops-fix-body.png'
 linkTags: 
   - title: "What is DevSecOps? Modern Definitions And Impact"
   - title: "Building a Secure CI/CD Pipeline: Step-by-Step Framework"

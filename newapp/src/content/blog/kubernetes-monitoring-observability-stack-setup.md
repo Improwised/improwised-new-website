@@ -6,9 +6,11 @@ seoTitle: "Discover Kubernetes Monitoring & Observability Tools | Improwised"
 seoDescription: "Improwised shares the best Kubernetes monitoring and observability tools. Learn how to build a stack that improves visibility, control, and cost monitoring."
 tags: [kubernetes monitoring, kubernetes observability, observability stack setup, kubernetes monitoring tools, kubernetes cost monitoring, observability best practices, platform engineering observability, Improwised]
 publishDate: 2025-10-31
+modifiedDate: 2025-10-31
 author: "Improwised Editorial Team" 
 image: '$lib/images/blogs/kubernetes-monitoring-observability-stack-setup-light.png'
 darkImage: '$lib/images/blogs/kubernetes-monitoring-observability-stack-setup-dark.png'
+bodyImage: '$lib/images/blogs/kubernetes-cost-insights-improwised-technologies.png'
 linkTags: 
   - title: "Introduction" 
   - title: "Understanding Monitoring vs. Observability in Kubernetes"

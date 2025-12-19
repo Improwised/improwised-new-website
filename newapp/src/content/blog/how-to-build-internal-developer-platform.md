@@ -6,9 +6,11 @@ seoTitle: "Build a High-Impact Internal Developer Platform | Step by Step Guide"
 seoDescription: "Improwised’s step-by-step guide shows how to build a high-impact Internal Developer Platform using the right tools, architecture, and best practices for developer productivity."
 tags: [internal developer platform, how to build internal developer platform, developer experience platform, internal platform engineering, internal developer portal tools, IDP best practices, cloud native internal developer platform, platform engineering blueprint, improwised]
 publishDate: 2025-11-14
+modifiedDate: 2025-11-14
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/how-to-build-internal-developer-platform-head-light.png'
 darkImage: '$lib/images/blogs/how-to-build-internal-developer-platform-head-dark.png'
+bodyImage: '$lib/images/blogs/internal-developer-platform-idp-automation-for-developer-productivity.png'
 linkTags: 
   - title: "Understanding Developer Pain Points and Business Case"
   - title: "Foundational Concepts & Prerequisites"

@@ -6,9 +6,11 @@ seoTitle: "How Platform Engineering Improves Developer Experience | Improwised"
 seoDescription: "Learn how Platform Engineering transforms developer experience with self-service, automation, and efficient workflows. A complete guide by Improwised."
 tags: [platform engineering, developer experience, improve developer productivity, developer self-service, platform engineering benefits, internal developer platforms, devex, engineering efficiency, cognitive load reduction, developer workflows]
 publishDate: 2025-11-19
+modifiedDate: 2025-11-19
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/platform-engineering-transforms-developer-experience-head-light.png'
 darkImage: '$lib/images/blogs/platform-engineering-transforms-developer-experience-head-dark.png'
+bodyImage: '$lib/images/blogs/platform-engineering-transforms-developer-experience-body.png'
 linkTags: 
   - title: "Understanding Developer Experience (DX) and Its Business Impact"
   - title: "The Core Role of Platform Engineering in Enhancing DX"

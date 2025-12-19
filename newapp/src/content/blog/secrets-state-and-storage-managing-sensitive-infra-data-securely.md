@@ -6,9 +6,11 @@ seoTitle: "How to Manage Sensitive Infrastructure Data Securely | Improwised"
 seoDescription: " Discover how Improwised secures secrets, state files, and storage in Infrastructure as Code to ensure safe, compliant cloud operations."
 tags: [DevOps Data Protection , Infrastructure as Code Security , Secrets Encryption in Cloud , Cloud Security Compliance , IaC Storage Best Practices , Secrets Management in IaC , Infrastructure State Security , Improwised Devops Services]
 publishDate: 2025-08-08
+modifiedDate: 2025-08-08
 author: "Rakshit Menpara" 
 image: '$lib/images/blogs/secret-state-storage-head-light.svg'
 darkImage: '$lib/images/blogs/secret-state-storage-head-dark.svg'
+bodyImage: '$lib/images/blogs/secret-state-storage-body.svg'
 linkTags:
   - title: "Secrets, State, and Storage: Managing Sensitive Infra Data Securely" 
   - title: "Managing Secrets: Control and Isolation" 

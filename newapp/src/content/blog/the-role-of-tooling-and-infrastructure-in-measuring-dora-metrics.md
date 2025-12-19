@@ -6,8 +6,10 @@ seoTitle: "Tooling & Infrastructure for Accurate DORA Metrics Measurement | Impr
 seoDescription: "The DevOps Research and Assessment (DORA) metrics provide a framework for evaluating the performance of software delivery and operational capabilities."
 tags: [DORA Metrics]
 publishDate: 2025-01-22
+modifiedDate: 2025-01-22
 author: "Priyank Dhami"
 image: "$lib/images/blogs/The-Role-of-Tooling-head.webp"
+bodyImage: "$lib/images/blogs/The-Role-of-Tooling-body.webp"
 linkTags:
   - title: "Understanding DORA Metrics"
   - title: "Tooling for DORA Metrics"
@@ -20,7 +22,7 @@ blockCategory: "monitoring-and-observability"
 
 This discussion delves into the specific tools and infrastructure components that facilitate the collection, analysis, and reporting of DORA metrics, as well as the challenges associated with their implementation.
 
-![Blog Image]($lib/images/blogs/The-Role-of-Tooling-body.webp)
+![The Role of Tooling and Infrastructure in Measuring DORA Metrics]($lib/images/blogs/The-Role-of-Tooling-body.webp)
 
 ## Understanding DORA Metrics
 

@@ -6,9 +6,11 @@ seoTitle: "Monitoring Serverless Architectures & Observability | Improwised"
 seoDescription: "Improwised explores monitoring and observability in serverless architectures: uncovering hidden issues and improving reliability at every scale."
 tags: [serverless monitoring, serverless observability, monitoring and observability, serverless architectures, platform engineering observability, performance monitoring, cloud observability, Improwised]
 publishDate: 2025-10-13
+modifiedDate: 2025-10-13
 author: "Priyank Dhami" 
 image: '$lib/images/blogs/monitoring-observability-serverless-architectures-head-light.svg'
 darkImage: '$lib/images/blogs/monitoring-observability-serverless-architectures-head-dark.svg'
+bodyImage: '$lib/images/blogs/monitoring-observability-serverless-architectures-body.svg'
 linkTags: 
   - title: "The Hidden Complexity Behind Serverless" 
   - title: "Key Metrics That Matter"

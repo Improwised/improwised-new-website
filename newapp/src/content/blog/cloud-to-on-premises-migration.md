@@ -6,7 +6,8 @@ seoTitle: "Cloud to On-Premises Migration: Costs, Performance & Strategic Benefi
 seoDescription: "Learn why companies are shifting from public cloud to on-premises, driven by rising costs, latency needs, and strict compliance requirements."
 tags: [cloud repatriation, cloud to on-prem migration, reverse cloud migration, cloud vs on-premises, cloud cost optimization, hybrid cloud strategy, enterprise cloud migration, on-prem infrastructure, cloud performance issues]
 publishDate: 2025-12-17
-author: "Improwised Editorial Team" 
+author: "Shyam Kapdi" 
+contributor: "Nandini Parekh"
 image: '$lib/images/blogs/cloud-to-on-premises-migration-head-light.png'
 darkImage: '$lib/images/blogs/cloud-to-on-premises-migration-head-dark.png'
 linkTags: 

@@ -6,8 +6,10 @@ seoTitle: 'Self-Healing CI Pipelines | Automated Build Failure Remediation | Imp
 seoDescription: 'Learn how to build CI pipelines that self-heal by automatically detecting, diagnosing, and fixing build failures using ML and automation.'
 tags: [CI/CD, Automation, Machine Learning, DevOps]
 publishDate: 2025-04-07
+modifiedDate: 2025-04-07
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/Self-Healing-CI-pipelines-head.webp'
+bodyImage: '$lib/images/blogs/Self-Healing-CI-pipelines-body.webp'
 linkTags:
   - title: "Automated Failure Diagnosis"
     children:
@@ -33,7 +35,7 @@ linkTags:
 
 [Continuous Integration (CI) pipelines](/services/platform-engineering/continuous-integration/) automate software build and test processes, ensuring that code changes are validated before deployment. However, build failures can disrupt development workflows, increasing delays and requiring manual intervention. Self-healing CI pipelines detect, diagnose, and remediate failures without human oversight, maintaining efficiency and reducing downtime.
 
-![Blog Image]($lib/images/blogs/Self-Healing-CI-pipelines-body.webp)
+![Self-Healing CI Pipelines: How to Auto-Diagnose & Fix Build Failures Without Human Intervention]($lib/images/blogs/Self-Healing-CI-pipelines-body.webp)
 
 ## Automated Failure Diagnosis
 

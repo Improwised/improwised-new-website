@@ -6,9 +6,11 @@ seoTitle: 'Micro-Downtime Indexing | Detect Sub-Second Failures Instantly | Impr
 seoDescription: 'Learn how to track sub-second service failures that evade traditional observability tools and silently degrade system performance.'
 tags: [Observability, Monitoring, Latency]
 publishDate: 2025-05-14
+modifiedDate: 2025-05-14
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/micro-downtime-indexing-head-light.svg'
 darkImage: '$lib/images/blogs/micro-downtime-indexing-head-dark.svg'
+bodyImage: '$lib/images/blogs/micro-downtime-indexing-body.webp'
 linkTags:
   - title: "What Is Micro-Downtime?"
   - title: "Sources of Sub-Second Failures"

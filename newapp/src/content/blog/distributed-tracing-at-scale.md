@@ -6,8 +6,10 @@ seoTitle: 'Distributed Tracing at Scale | Improve Microservice Observability | I
 seoDescription: 'Learn how to implement distributed tracing at scale without losing visibility or performance. Discover best practices to ensure trace quality in large systems.'
 tags: [Microservices, Observability, Tracing]
 publishDate: 2025-04-18
+modifiedDate: 2025-04-18
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/distributed-tracing-at-scale-head.webp'
+bodyImage: '$lib/images/blogs/distributed-tracing-at-scale-body.webp'
 linkTags:
   - title: "What Distributed Tracing Is in a Microservice Environment"
   - title: "Challenges in Distributed Tracing at Scale"

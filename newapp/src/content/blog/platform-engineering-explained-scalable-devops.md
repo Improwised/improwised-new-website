@@ -6,9 +6,11 @@ seoTitle: 'Platform Engineering Explained for Scalable DevOps | Improwised'
 seoDescription: 'Understand what platform engineering is, how it differs from DevOps, and why it’s key to scaling software delivery in 2025. A modern guide by Improwised'
 tags: [Platform Engineering, Scalable DevOps, Internal Developer Platform, Engineering Enablement, Infrastructure Automation, DevOps Strategy, Platform-as-a-Product]
 publishDate: 2025-08-25
+modifiedDate: 2025-08-25
 author: 'Improwised Editorial Team'
 image: '$lib/images/blogs/platform-engineering-explained-scalable-devops-head-light.svg'
 darkImage: '$lib/images/blogs/platform-engineering-explained-scalable-devops-head-dark.svg'
+bodyImage: '$lib/images/blogs/platform-engineering-explained-scalable-devops-body.svg'
 linkTags:
   - title: "The Growth of Platform Engineering" 
   - title: "What does the discipline of platform engineering do?"

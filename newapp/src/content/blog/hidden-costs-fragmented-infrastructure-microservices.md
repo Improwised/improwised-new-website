@@ -7,6 +7,7 @@ seoTitle: "Hidden Costs of Fragmented Microservices Infrastructure | Improwised"
 seoDescription: "Discover hidden costs of microservices infrastructure and how fragmented systems impact DevOps. Improwised offers strategies to optimize management."
 tags: [fragmented infrastructure microservices, microservices management costs, hidden costs microservices, microservices infrastructure complexity, DevOps microservices challenges, infrastructure optimization, microservices cost optimization, microservices best practices]
 publishDate: 2025-08-29
+modifiedDate: 2025-08-29
 author: "Rakshit Menpara" 
 image: "$lib/images/blogs/hidden-costs-fragmented-infrastructure-microservices-head-light.svg"
 darkImage: "$lib/images/blogs/hidden-costs-fragmented-infrastructure-microservices-head-dark.png"

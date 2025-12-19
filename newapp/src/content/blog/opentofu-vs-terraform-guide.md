@@ -6,9 +6,11 @@ seoTitle: "OpenTofu vs Terraform: Complete Guide for Infra Teams | Improwised"
 seoDescription: "Compare OpenTofu vs Terraform for infrastructure teams. Learn features, differences, pros, and why Infra leaders are choosing OpenTofu"
 tags: [OpenTofu, Terraform, Infrastructure as Code, IaC tools comparison, Platform Engineering, DevOps, Improwised]
 publishDate: 2023-08-18
+modifiedDate: 2023-08-18
 author: "Priyank Dhami"
 image: "$lib/images/blogs/opentofu-vs-terraform-guide-head-light.svg"
 darkImage: '$lib/images/blogs/opentofu-vs-terraform-guide-head-dark.svg'
+bodyImage: '$lib/images/blogs/opentofu-vs-terraform-guide-body-1.svg'
 linkTags:
   - title: "Quick Decision Framework" 
   - title: "Understanding Infrastructure as Code in Modern Development"

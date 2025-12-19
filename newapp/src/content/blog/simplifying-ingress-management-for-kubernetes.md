@@ -6,9 +6,11 @@ seoTitle: "Traefik with Automatic TLS for Kubernetes Ingress: Detailed Guide"
 seoDescription: "Learn how Traefik with automatic TLS simplifies Kubernetes ingress management. Improwised explains secure routing, certificates, and automation setup."
 tags: [traefik kubernetes, automatic tls, kubernetes ingress management, traefik ingress controller, tls automation kubernetes, kubernetes networking, kubernetes ingress tutorial, kubernetes security, improwised] 
 publishDate: 2024-03-31
+modifiedDate: 2024-03-31
 author: "Rakshit Menpara"
 image: '$lib/images/blogs/a-complete-guide-to-traefik-with-automatic-tls-simplifying-kubernetes-ingress-management-light.png'
 darkImage: '$lib/images/blogs/a-complete-guide-to-traefik-with-automatic-tls-simplifying-kubernetes-ingress-management-dark.png'
+bodyImage: '$lib/images/blogs/a-complete-guide-to-traefik-with-automatic-tls-simplifying-kubernetes-ingress-management.png'
 linkTags: 
   - title: "Why is Traefik the best option for Kubernetes Ingress?" 
   - title: "How to set up Kubernetes Ingress"

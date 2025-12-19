@@ -6,9 +6,11 @@ seoTitle: "Fargate vs Kubernetes: Which Wins for Containers? | Improwised"
 seoDescription: "Improwised breaks down Fargate vs Kubernetes: covering performance, scalability, and cost. This helps you to choose the best container orchestration platform."
 tags: [Fargate vs Kubernetes, container orchestration, AWS Fargate, Kubernetes comparison, container management, Kubernetes vs Fargate performance, cloud orchestration platforms, Improwised]
 publishDate: 2025-10-10
+modifiedDate: 2025-10-10
 author: "Priyank Dhami" 
 image: "$lib/images/blogs/fargate-vs-kubernetes-container-orchestration-head-light.svg"
 darkImage: "$lib/images/blogs/fargate-vs-kubernetes-container-orchestration-head-dark.svg"
+bodyImage: "$lib/images/blogs/fargate-vs-kubernetes-container-orchestration-body.svg"
 linkTags: 
   - title: "1. Introduction" 
   - title: "2. Understanding Container Orchestration"

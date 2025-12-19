@@ -7,10 +7,12 @@ seoDescription: "FluxCD for GitOps Continuous Deployment - covering architecture
 tags: [FluxCD, GitOps Continuous Deployment, Kubernetes CD, GitOps CD, FluxCD Architecture, Pull-Based Deployment, Kubernetes GitOps, CI CD Separation, FluxCD vs ArgoCD, Multi-Cluster GitOps, Kubernetes Deployment Automation, GitOps Workflow, 
 Production Grade FluxCD, Progressive Delivery GitOps, Blue Green Deployment GitOps]
 publishDate: 2025-12-12
+modifiedDate: 2025-12-12
 author: "Shyam Kapdi" 
 contributor: "Chintan Viradiya"
 image: '$lib/images/blogs/continuous-deployment-with-fluxcd-head-light.png'
 darkImage: '$lib/images/blogs/continuous-deployment-with-fluxcd-head-dark.png'
+bodyImage: '$lib/images/blogs/continuous-deployment-with-fluxcd-body.png'
 linkTags: 
   - title: "What is FluxCD?"
   - title: "How FluxCD Works: The Deployment Lifecycle"

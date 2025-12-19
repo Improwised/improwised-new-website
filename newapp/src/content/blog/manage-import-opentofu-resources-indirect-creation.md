@@ -6,9 +6,11 @@ seoTitle: "OpenTofu Resource Import Guide: Indirect Creation Management | Improw
 seoDescription: "Learn to import & manage OpenTofu resources created indirectly. State management, resource tracking, and infrastructure reconciliation best practices. | Improwised"
 tags: [OpenTofu, terraform alternative, infrastructure as code, resource import, state management, IaC, cloud infrastructure, terraform migration, resource tracking, infrastructure automation]
 publishDate: 2025-09-01
+modifiedDate: 2025-09-01
 author: "Improwised Editorial Team" 
 image: "$lib/images/blogs/manage-import-opentofu-resources-indirect-creation-head-light.svg"
 darkImage: "$lib/images/blogs/manage-import-opentofu-resources-indirect-creation-head-dark.svg"
+bodyImage: "$lib/images/blogs/indirect-resource-management-in-opentofu.png"
 linkTags:
   - title: "Understanding Indirect Resource Creation" 
   - title: "Issues with indirect resource management"

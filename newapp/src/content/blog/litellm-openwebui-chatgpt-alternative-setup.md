@@ -6,9 +6,11 @@ seoTitle: "Create your own ChatGPT Alternative Easily | Step-by-Step Approach"
 seoDescription: "Learn how to deploy a secure, self-hosted ChatGPT alternative using LiteLLM Proxy and OpenWebUI. Enterprise-ready setup, tools, and best practices from Improwised."
 tags: [litellm, openwebui, chatgpt alternative, self hosted ai, enterprise ai platform, ai proxy server, open source llm setup, private llm deployment, secure ai infrastructure, ai for enterprises, on-premise llm]
 publishDate: 2025-11-26
+modifiedDate: 2025-11-26
 author: "Improwised Editorial Team" 
 image: '$lib/images/blogs/litellm-openwebui-chatgpt-alternative-setup-head-light.png'
 darkImage: '$lib/images/blogs/litellm-openwebui-chatgpt-alternative-setup-head-dark.png'
+bodyImage: '$lib/images/blogs/litellm-openwebui-chatgpt-alternative-setup-body.png'
 linkTags: 
   - title: "What exactly is LiteLLM?"
   - title: "What exactly is OpenWebUI?"

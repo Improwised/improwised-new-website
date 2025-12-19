@@ -6,9 +6,11 @@ seoTitle: "GitOps Implementation Guide for Automated Infrastructure Delivery | I
 seoDescription: "Master GitOps with Improwised’s step-by-step guide to automating infrastructure delivery via Git workflows. Boost DevOps efficiency, speed, and reliability with proven GitOps practices"
 tags: [GitOps, Infrastructure Automation, Git Workflows, DevOps Best Practices, Continuous Delivery, Infrastructure as Code, Improwised]
 publishDate: 2025-08-22
+modifiedDate: 2025-08-22
 author: "Priyank Dhami"
 image: "$lib/images/blogs/gitops-implementation-guide-automating-infrastructure-delivery-light-head.svg"
 darkImage: "$lib/images/blogs/gitops-implementation-guide-automating-infrastructure-delivery-dark-head.svg"
+bodyImage: "$lib/images/blogs/gitops-implementation-guide-automating-infrastructure-delivery-body.svg"
 linkTags:
   - title: "Repository Structure and Source of Truth Segmentation"
   - title: "Reconciliation Strategy: Pull-Based Synchronization"

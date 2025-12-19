@@ -6,8 +6,10 @@ seoTitle: 'Assess Your Organization with the Platform Engineering Maturity Model
 seoDescription: "Explore the Platform Engineering Maturity Model to assess your organization's capabilities, identify gaps, and improve software delivery and infrastructure management."
 tags: [Culture]
 publishDate: 2025-03-04
+modifiedDate: 2025-03-04
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/PlatformHead.webp'
+bodyImage: '$lib/images/blogs/PlatformBody.png'
 linkTags: 
   - title: "Level 1: Ad-Hoc and Manual Execution"
   - title: "Level 2: Standardized Foundations"
@@ -28,7 +30,7 @@ The CNCF Cloud Native Maturity Model provides a structured approach to assessing
 
 ## Level 1: Ad-Hoc and Manual Execution
 
-![hero Image]($lib/images/blogs/PlatformBody.png)
+![The Platform Engineering Maturity Model: Assessing Organizational Position]($lib/images/blogs/PlatformBody.png)
 
 At this stage, [platform engineering practices](/blog/platform-engineering-maturity-model/) are inconsistent or nonexistent. Development and operations teams operate in silos, with limited collaboration. Infrastructure provisioning, application deployments, and environment configurations are executed manually, often relying on individual expertise rather than documented processes.
 

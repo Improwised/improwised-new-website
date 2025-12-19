@@ -6,8 +6,10 @@ seoTitle: "Top Cloud Trends: Platform Engineer's Essential Guide | Improwised"
 seoDescription: "Master upcoming critical cloud trends: multicloud, serverless, AI/ML infrastructure, edge computing & security. Essential insights for platform engineers. | Improwised"
 tags: [cloud trends 2025, platform engineering, multicloud architecture, serverless computing, AI infrastructure, edge computing, cloud security, infrastructure as code, kubernetes, automation]
 publishDate: 2025-01-02
+modifiedDate: 2025-01-02
 author: 'Priyank Dhami'
 image: '$lib/images/blogs/Top-Cloud-Trends-head.png'
+bodyImage: '$lib/images/blogs/Top-Cloud-Trends-body.png'
 linkTags:
   - title: "1. Microservices and Cloud-Native" 
   - title: "2. AI-Powered Cloud Services"

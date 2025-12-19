@@ -6,9 +6,11 @@ seoTitle: "Git Repository Management for Large Infrastructure Projects | Improwi
 seoDescription: "Master Git repository strategies for enterprise infrastructure. Branching models, monorepo vs multi-repo, and collaboration best practices for scale. | Improwised"
 tags: [git repository management, large scale infrastructure, monorepo, multi-repo, git workflow, infrastructure as code, version control, enterprise git, git branching strategies, DevOps workflows]
 publishDate: 2025-09-10
+modifiedDate: 2025-09-10
 author: "Improwised Editorial Team" 
 image: '$lib/images/blogs/managing-git-repositories-large-scale-infrastructure-head-light.svg'
 darkImage: '$lib/images/blogs/managing-git-repositories-large-scale-infrastructure-head-dark.svg'
+bodyImage: '$lib/images/blogs/gitops-governance-dashboard-for-large-scale-infrastructure.png'
 linkTags: 
   - title: "Repository Models: Monorepo vs Polyrepo" 
   - title: "Directory and Module Structure"

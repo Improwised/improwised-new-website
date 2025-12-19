@@ -6,9 +6,11 @@ seoTitle: "Top 10 IaC & Platform Engineering Companies in 2025 | Improwised"
 seoDescription: "Discover the top 10 companies leading in Infrastructure as Code (IaC) and platform automation. See how Improwised compares and what’s driving next-gen DevOps success in 2025"
 tags: [Infrastructure as Code, IaC, Platform Engineering, Platform Automation, DevOps, CI/CD, GitOps, Developer Productivity, Site Reliability Engineering, SRE, Improwised]
 publishDate: 2025-08-06
+modifiedDate: 2025-08-06
 author: "Shyam Kapdi" 
 image: "$lib/images/blogs/top-10-companies-leading-the-way-in-infrastructure-as-code-and-platform-automation-head-light.svg"
 darkImage: "$lib/images/blogs/top-10-companies-leading-the-way-in-infrastructure-as-code-and-platform-automation-head-dark.svg"
+bodyImage: "$lib/images/blogs/top-10-leading-the-way-in-infrastructure-body.svg"
 linkTags:
   - title: "What about Infrastructure as Code"
   - title: "1. Improwised Technologies"

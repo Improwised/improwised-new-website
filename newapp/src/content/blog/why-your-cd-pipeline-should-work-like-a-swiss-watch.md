@@ -6,8 +6,10 @@ seoTitle: 'Build a Swiss Watch-Like CD Pipeline | Reliable & Precise Deployments
 seoDescription: 'A flawless CI/CD pipeline should run like a Swiss watch—precise, automated, and reliable. Learn how to build efficient pipelines that deliver with confidence.'
 tags: [OpenTF]
 publishDate: 2025-02-13
+modifiedDate: 2025-02-13
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/whycd.png'
+bodyImage: '$lib/images/blogs/cd.png'
 linkTags:
   - title: Understanding the Components of a CD Pipeline
   - title: Designing the Pipeline
@@ -18,7 +20,7 @@ blockCategory: "continuous-deployment"
 
 Continuous Delivery (CD) pipelines are the backbone of modern software development. They automate the process of building, testing, and deploying code changes, enabling teams to release software frequently and reliably. A well-crafted CD pipeline, much like a Swiss watch, operates with precision, efficiency, and dependability. This article explores the principles behind building such a pipeline and provides a practical guide to its construction.
 
-![Hero Image]($lib/images/blogs/cd.png)
+![Why Your CD Pipeline Should Work Like a Swiss Watch (And How to Build One)]($lib/images/blogs/cd.png)
 
 ## Understanding the Components of a CD Pipeline
 

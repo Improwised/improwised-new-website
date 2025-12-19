@@ -55,26 +55,25 @@ const [{ data: author }] = await getCollection(
 
 const authors = await getCollection("authors");
 
-let articleSchema = {};
-
-if (data.articleSchema) {
-  articleSchema = {
-    ...data.articleSchema,
-    url: data.slug,
-    headline: data.title,
-    description: data.description,
-    author: data.author,
-    contributor: data?.contributor,
-    publishedDate: data.publishDate,
-    keywords: data.tags,
-  };
-}
-
 let contributor = null;
 if (data.contributor) {
-    [contributor] = await getCollection("authors", (author) => author.data.title === blog.data.contributor)
-    
+  [contributor] = await getCollection(
+    "authors",
+    (author) => author.data.title === blog.data.contributor
+  );
 }
+
+let articleSchema = {
+  url: data.slug,
+  headline: data.title,
+  description: data.description,
+  author: data.author,
+  contributor: data?.contributor,
+  publishedDate: data.publishDate,
+  modifiedDate: data.modifiedDate,
+  keywords: data.tags,
+  image: data?.bodyImage
+};
 ---
 
 <Layout

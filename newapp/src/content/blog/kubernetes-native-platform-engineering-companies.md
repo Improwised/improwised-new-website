@@ -6,6 +6,7 @@ seoTitle: "Kubernetes-Native Platform Engineering Companies | Improwised"
 seoDescription: "Explore 10 Kubernetes-native platform engineering companies you should know. Improwised showcases innovators building secure, cloud-native developer platforms."
 tags: [Kubernetes-native , platform engineering , cloud-native platforms , internal developer platforms (IDPs) , Kubernetes companies , DevOps to platform engineering , Improwised , enterprise Kubernetes adoption , scalable Kubernetes platforms]
 publishDate: 2025-10-08
+modifiedDate: 2025-10-08
 author: "Shyam Kapdi" 
 image: "$lib/images/blogs/kubernetes-native-platform-engineering-companies-head-light.svg" 
 darkImage: '$lib/images/blogs/kubernetes-native-platform-engineering-companies-head-dark.svg'

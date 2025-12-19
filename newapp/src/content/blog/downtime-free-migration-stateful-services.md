@@ -6,6 +6,7 @@ seoTitle: "Downtime-Free Migration for Stateful Services | Improwised"
 seoDescription: "Learn how Improwised enables downtime-free migration for stateful services. Explore patterns that ensure seamless transitions and enterprise reliability."
 tags: [downtime free migration, stateful services migration, migration patterns, zero downtime deployment, platform engineering migration, stateful workload migration, enterprise system migration, Improwised]
 publishDate: 2025-10-03
+modifiedDate: 2025-10-03
 author: "Priyank Dhami" 
 image: "$lib/images/blogs/downtime-free-migration-stateful-services-head-light.svg"
 darkImage: "$lib/images/blogs/downtime-free-migration-stateful-services-head-dark.svg" 

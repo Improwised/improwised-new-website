@@ -6,9 +6,11 @@ seoTitle: "7 Signs Your Organization Needs Platform Engineering"
 seoDescription: "Improwised explains how to recognize readiness for Platform Engineering  -  key signs, organizational challenges, and when to start building internal platforms."
 tags: [platform engineering, developer experience, devops maturity, internal developer platforms, platform readiness, platform engineering adoption, cloud infrastructure automation, improwised, platform engineering readiness, devops to platform engineering]
 publishDate: 2025-11-05
+modifiedDate: 2025-11-05
 author: "Priyank Dhami" 
 image: '$lib/images/blogs/organization-readiness-for-platform-engineering-light.png'
 darkImage: '$lib/images/blogs/organization-readiness-for-platform-engineering-dark.png' 
+bodyImage: '$lib/images/blogs/platform-engineering-readiness.png' 
 linkTags: 
   - title: "1. Developers Spend More Time Managing Infrastructure Than Writing Code" 
   - title: "2. Release Cycles Are Slowing Down"

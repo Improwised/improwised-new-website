@@ -6,8 +6,10 @@ seoTitle: "Let's Break Barriers : Embrace The Diversity"
 seoDescription: "Diverse teams bring a wealth of perspectives to the table, leading to more robust problem-solving and out-of-the-box thinking."
 tags: [culture]
 publishDate: 2023-08-07
+modifiedDate: 2023-08-07
 author: "Dipika"
 image: "$lib/images/blogs/lets-break-barriers-head.webp"
+bodyImage: "$lib/images/blogs/lets-break-barrier-body.png"
 linkTags:
   - title: Gender Diversity and Workplace Success
   - title: Age Diversity and Knowledge Sharing
@@ -19,7 +21,7 @@ linkTags:
 
 Let's Break Barriers - Embrace The Diversity
 
-![hero Image]($lib/images/blogs/lets-break-barrier-body.png)
+![Let's Break Barriers - Embrace The Diversity]($lib/images/blogs/lets-break-barrier-body.png)
 
 Diversity is a crucial element of success in any business and workplace, and it should be valued by everyone. At Improwised Technologies, we are committed to fostering a diverse culture. Diversified teams bring abundant solutions, collective intelligence, and creativity, which drive the success of our workplace and business.
 

@@ -6,9 +6,11 @@ seoTitle: "Blue-Green vs Canary Deployment Guide | Improwised"
 seoDescription: "Compare Blue-Green and Canary deployments to cut release risk, reduce costs, and boost uptime. A clear, expert guide for engineering teams from Improwised."
 tags: [blue green deployment, canary deployment, blue green vs canary, deployment strategies, zero downtime deployments, devops deployment patterns, safe release strategies, kubernetes deployments, production release best practices]
 publishDate: 2025-11-24
+modifiedDate: 2025-11-24
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/blue-green-vs-canary-deployment-head-light.png'
 darkImage: '$lib/images/blogs/blue-green-vs-canary-deployment-head-dark.png'
+bodyImage: '$lib/images/blogs/blue-green-vs-canary-deployment-body.png'
 linkTags: 
   - title: "Deployment Strategies Explained: Blue-Green vs Canary"
   - title: "Key Differences and Direct Comparison"

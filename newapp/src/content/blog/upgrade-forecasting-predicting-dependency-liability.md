@@ -6,9 +6,11 @@ seoTitle: "Dependency Upgrade Forecasting: Predict Liability Risks | Improwised"
 seoDescription: "Master dependency upgrade forecasting to prevent security risks & system failures. Proactive strategies for managing technical debt and vulnerability timelines. | Improwised"
 tags: [dependency management, upgrade forecasting, technical debt, vulnerability management, software dependencies, security risks, system maintenance, DevOps, software lifecycle, dependency tracking]
 publishDate: 2025-09-08
+modifiedDate: 2025-09-08
 author: "Improwised Editorial Team" 
 image: "$lib/images/blogs/upgrade-forecasting-predicting-dependency-liability-head-light.svg"
 darkImage: "$lib/images/blogs/upgrade-forecasting-predicting-dependency-liability-head-dark.svg"
+bodyImage: "$lib/images/blogs/upgrade-forecasting-predicting-dependency-liability-body-1.svg"
 linkTags: 
   - title: "Understanding the dependency lifecycle" 
   - title: "Determining Signs of a Dependency at Risk"

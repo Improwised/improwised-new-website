@@ -6,9 +6,11 @@ seoTitle: "FinOps Best Practices for Cloud Cost Optimization: Rightsizing & Auto
 seoDescription: "Explore FinOps best practices for cloud cost optimization, including rightsizing, tagging, and automation to improve visibility, control, and efficiency."
 tags: [finops best practices, cloud cost optimization, finops cloud optimization, finops rightsizing, cloud resource rightsizing, finops tagging strategy, finops automation, cloud cost governance, finops framework, cloud financial management]
 publishDate: 2025-12-01
+modifiedDate: 2025-12-01
 author: "Shyam Kapdi" 
 image: '$lib/images/blogs/finops-for-cloud-cost-optimization-head-light.png'
 darkImage: '$lib/images/blogs/finops-for-cloud-cost-optimization-head-dark.png'
+bodyImage: '$lib/images/blogs/finops-for-cloud-cost-optimization-body.png'
 linkTags:
   - title: "What Is FinOps?"
   - title: "FinOps Framework: Principles and Lifecycle"

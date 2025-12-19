@@ -1,8 +1,15 @@
 ---
 const { faqs, articleSchema } = Astro.props;
-const schema = faqs
-  ? [
-      {
+
+const contributor = articleSchema?.contributor
+  ? { contributor: { "@type": "Person", name: articleSchema.contributor } }
+  : false;
+const image = articleSchema?.image
+  ? { image: [new URL(articleSchema.image.src, Astro.site).href] }
+  : false;
+
+const schema = [
+      faqs && {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         mainEntity: faqs.map((faq: { question: string; answer: string }) => ({
@@ -14,7 +21,7 @@ const schema = faqs
           },
         })),
       },
-      Object.keys(articleSchema).length > 0 && {
+      {
         "@context": "https://schema.org",
         "@type": "Article",
         mainEntityOfPage: {
@@ -22,13 +29,14 @@ const schema = faqs
           "@id": `https://www.improwised.com/blog/${articleSchema?.url}/`,
         },
         headline: articleSchema.headline,
-        alternativeHeadline: articleSchema.alternativeHeadline,
         description: articleSchema.description,
-        image: [new URL(articleSchema.image.src, Astro.site).href],
+        ...image,
+        // image: [new URL(articleSchema.image.src, Astro.site).href],
         author: {
           "@type": "Person",
           name: articleSchema.author,
         },
+        ...contributor,
         publisher: {
           "@type": "Organization",
           name: "Improwised Technologies",
@@ -39,20 +47,16 @@ const schema = faqs
         },
         datePublished: articleSchema.publishedDate,
         dateModified: articleSchema.modifiedDate,
-        articleSection: articleSchema.articleSection,
-        keywords:
-          articleSchema.keywords,
-        url: articleSchema.url,
+        keywords: articleSchema.keywords,
+        url: `https://www.improwised.com/blog/${articleSchema?.url}/`,
         isPartOf: {
           "@type": "Blog",
           name: "Improwised Blog",
           url: "https://www.improwised.com/blog/",
         },
-        timeRequired: articleSchema.timeRequired,
-        wordCount: articleSchema.wordCount,
       },
     ].filter(Boolean)
-  : null;
+  
 ---
 
 <script

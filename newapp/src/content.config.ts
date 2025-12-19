@@ -169,6 +169,7 @@ const blogs = defineCollection({
 		slug: z.string(),
 		image: image(),
 		darkImage: image().optional(),
+		bodyImage: image().optional(),
 		description: z.string(),
 		seoTitle: z.string(),
 		seoDescription: z.string(),
@@ -176,6 +177,7 @@ const blogs = defineCollection({
 		author: z.string(),
 		contributor: z.string().optional(),
 		publishDate: z.coerce.date(),
+		modifiedDate: z.coerce.date().optional(),
 		linkTags: z.array(z.object({
 			title: z.string(),
 			children: z.array(z.string()).optional()
@@ -185,14 +187,6 @@ const blogs = defineCollection({
 			question: z.string(),
 			answer: z.string(),
 		})).optional(),
-		articleSchema: z.object({
-			alternativeHeadline: z.string(),
-			image: image(),
-			modifiedDate: z.coerce.date(),
-			articleSection: z.string(),
-			timeRequired: z.string(),
-			wordCount: z.string()
-		}).optional()
 	}),
 });
 

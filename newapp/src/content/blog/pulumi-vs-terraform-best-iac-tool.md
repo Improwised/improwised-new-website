@@ -6,9 +6,11 @@ seoTitle: "Pulumi vs Terraform: Best IaC Tool for 2025 | Improwised"
 seoDescription: "Pulumi or Terraform? Improwised compares both IaC tools to help you choose the best for automation, scalability, and cloud infrastructure management."
 tags: [pulumi vs terraform, pulumi terraform comparison, iac tools, infrastructure as code, best iac tool, terraform alternative, pulumi guide, cloud automation, devops infrastructure, improwised]
 publishDate: 2025-11-03
+modifiedDate: 2025-11-03
 author: "Shyam Kapdi"
 image: "$lib/images/blogs/pulumi-vs-terraform-best-iac-tool-head-light.png"
 darkImage: "$lib/images/blogs/pulumi-vs-terraform-best-iac-tool-head-dark.png"  
+bodyImage: "$lib/images/blogs/pulumi-vs-terraform-best-iac-tool-body.png"  
 linkTags: 
   - title: "Understanding IaC Programming Paradigms" 
   - title: "What is Pulumi?"

@@ -6,6 +6,7 @@ seoTitle: "Kubernetes Foundation Guide: Why It's a Base Not Goal | Improwised"
 seoDescription: "Kubernetes is your foundation, not destination. Learn platform engineering strategies to build beyond K8s complexity for developer-friendly cloud-native solutions. | Improwised"
 tags: [ kubernetes, platform engineering, cloud native, container orchestration, developer experience, infrastructure abstraction, internal developer platforms, gitops, devops, cloud computing]
 publishDate: 2025-02-21
+modifiedDate: 2025-02-21
 author: 'Rakshit Menpara'
 image: '$lib/images/blogs/The-Evolution-of-Kubernetes-head.webp'
 linkTags: 

@@ -6,9 +6,11 @@ seoTitle: How to reduce Developer Cognitive Load with Platform Engineering? "
 seoDescription: "Learn how Platform Engineering reduces developer cognitive load using automation, standardization, and self-service tools. Actionable strategies from Improwised."
 tags: [developer cognitive load, platform engineering, developer experience, devex best practices, reduce cognitive load, platform engineering tools, internal developer platform, developer productivity, developer workflows, engineering efficiency, improwised]
 publishDate: 2025-11-21
+modifiedDate: 2025-11-21
 author: "Shyam Kapdi"  
 image: '$lib/images/blogs/reduce-developer-cognitive-load-platform-engineering-head-light.png'
 darkImage: '$lib/images/blogs/reduce-developer-cognitive-load-platform-engineering-head-dark.png'
+bodyImage: '$lib/images/blogs/reduce-developer-cognitive-load-platform-engineering-body.png'
 linkTags: 
   - title: "Understanding Developer Cognitive Load: Psychological Foundations"
   - title: "How Platform Engineering Alleviates Cognitive Load"

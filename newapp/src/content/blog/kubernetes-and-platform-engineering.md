@@ -6,8 +6,10 @@ seoTitle: "Kubernetes & Platform Engineering | Powering Cloud-Native Success | I
 seoDescription: "Learn how Kubernetes and platform engineering combine to streamline deployment, scale infrastructure, and power cloud-native apps with speed and reliability."
 tags: [Platform Engineering,Kubernetes]
 publishDate: 2025-03-21
+modifiedDate: 2025-03-21
 author: "Rakshit Menpara"
 image: "$lib/images/blogs/Kubernetes-and-Platform-Engineering-head.webp"
+bodyImage: "$lib/images/blogs/Kubernetes-and-Platform-Engineering-body.svg"
 linkTags:
   - title: Kubernetes Ecosystem for Platform Engineering
   - title: Role of Kubernetes in Cloud-Native Platform Development
@@ -20,7 +22,7 @@ blockCategory: "continuous-deployment"
 
 Kubernetes and Platform Engineering: A Match Made in Cloud Heaven
 
-![hero Image]($lib/images/blogs/Kubernetes-and-Platform-Engineering-body.svg)
+![Kubernetes and Platform Engineering: A Match Made in Cloud Heaven]($lib/images/blogs/Kubernetes-and-Platform-Engineering-body.svg)
 
 Think of Kubernetes as a powerful engine for running and managing applications packaged in containers – it provides the scalable and dependable foundation that platform engineering needs. This article will explore the technical details of how Kubernetes powers platform engineering, looking at the architecture and the tools that make it all work.
 

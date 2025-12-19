@@ -21,6 +21,7 @@ linkTags:
   - title: "The Business Case: Platform Engineering ROI"
   - title: "Case Study  -  From 3 Weeks to 3 Days"
   - title: "Ready for Platform Engineering?"
+  - title: "FAQs"
 faqs:
   - question: "What is Platform Engineering, and why is it important for organizations?"
     answer: "Platform Engineering is the discipline of designing and maintaining internal developer platforms (IDPs) that enable teams to build, test, and deploy software efficiently. It introduces automation, consistency, and scalability into development workflows. Its importance lies in how it bridges the gap between development and operations  -  reducing manual work, improving reliability, and empowering developers with self-service access to infrastructure. For modern businesses, it’s the backbone of agility and secure delivery."

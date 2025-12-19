@@ -3,8 +3,9 @@
     export let text: string;
     export let primaryColorText: string;
     export let isPrimaryTextInitial: boolean;
+    export let isBlogFaqs: boolean;
     let className: string | undefined | null = undefined;
-    export let dataAos: string = "fade-up";
+    export let dataAos: string = isBlogFaqs ? "" : "fade-up";
     export { className as class };
     const computedClass = cn
         ? cn(
@@ -14,7 +15,7 @@
         : `mb-6  max-md:text-center font-manrope text-[32px] md:text-[46px] leading-[36px] -tracking-2 md:leading-[52px] font-bold text-main-heading-color ${className}`.trim();
 </script>
 
-<h2 class={computedClass} data-aos={dataAos}>
+<h2 id="faqs" class={computedClass} data-aos={dataAos}>
     {#if isPrimaryTextInitial && primaryColorText}
         <span class="text-sub-heading-color">{primaryColorText}</span>
     {/if}

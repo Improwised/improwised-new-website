@@ -17,6 +17,7 @@ linkTags:
   - title: "Use Cases and Real-World Examples"
   - title: "Choosing the Right Internal Developer Platform Tools"
   - title: "Conclusion"
+  - title: "FAQs"
 faqs:
   - question: "What is the difference between DevOps and an internal developer platform(IDP)?"
     answer: "DevOps mixes team habits with hands-on work that brings coders and IT staff closer together through shared goals - so they solve problems faster by working side-by-side instead of in silos. A dev portal lets coders build apps quickly by using set-up tooling on their own, through a flow that fits how teams run tech work - no gatekeepers needed, just smooth steps baked into daily routines."

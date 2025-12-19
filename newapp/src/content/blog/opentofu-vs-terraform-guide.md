@@ -21,6 +21,7 @@ linkTags:
   - title: "The Future of Infrastructure as Code"
   - title: "Improwised's Infrastructure Services"
   - title: "Making Your Decision"
+  - title: "FAQs"
 blockCategory: "code-and-infra-management"
 faqs:
   - question: "What is the most important factor that sets OpenTofu apart from Terraform?"

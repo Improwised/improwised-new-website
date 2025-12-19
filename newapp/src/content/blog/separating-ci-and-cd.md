@@ -18,6 +18,7 @@ linkTags:
   - title: "Real-World Failure Modes"
   - title: "Why This Separation Matters"
   - title: "Conclusion"
+  - title: "FAQs"
 faqs:
   - question: " What is the difference between CI and CD?"
     answer: "CI validates code with automated builds and tests on every commit. CD automates packaging, environment promotion, and deploying validated artifacts to staging or production."

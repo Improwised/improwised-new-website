@@ -21,6 +21,7 @@ linkTags:
   - title: "Security, Compliance, and Governance"
   - title: "Integration with DevOps and CI/CD Pipelines"
   - title: "Conclusion"
+  - title: "FAQs"
 faqs:
   - question: "What programming languages does Pulumi support?"
     answer: "Pulumi supports general-purpose programming languages, including Python, TypeScript, JavaScript, Go, C#, Java, and YAML. This allows developers to define infrastructure using familiar syntax, logic, and libraries used in application development."

@@ -18,6 +18,7 @@ linkTags:
   - title: "Management of Governance and Risk"
   - title: "6-Step Framework for the Implementation Roadmap"
   - title: "Conclusion: From disorder to order"
+  - title: "FAQs"
 blockCategory: "code-and-infra-management"
 faqs:
   - question: "What does it mean to have a lot of clouds planned?"

@@ -18,6 +18,7 @@ linkTags:
   - title: "Automation and Tooling: Platform Engineering at Scale"
   - title: "Future-Proofing Your Resource Management Strategy"
   - title: "Conclusion: The Platform Engineering Advantage"
+  - title: "FAQs"
 faqs:
   - question: "What does 'in-place pod resizing' mean in Kubernetes?"
     answer: "You can adjust the CPU and memory resources for Kubernetes containers that are currently running without restarting the pod. This is called in-place pod resizing. You can optimize resources without harming the application using this feature, which was implemented in Kubernetes 1.33. It saves 20–30% on infrastructure costs while still making services available."

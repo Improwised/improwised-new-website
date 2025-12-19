@@ -20,6 +20,7 @@ linkTags:
   - title: "Post-Migration Optimization"
   - title: "Real-World Examples of the cloud to on-premises"
   - title: "Conclusion"
+  - title: "FAQs"
 faqs:
   - question: "What is the cloud-to-on-premises migration?"
     answer: "The cloud-to-on-premises migration is the process of moving workloads, data, or applications from a public cloud back to on-premises or private infrastructure. It’s a strategic adjustment, not a rejection of the cloud."

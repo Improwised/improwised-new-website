@@ -18,6 +18,7 @@ linkTags:
   - title: "Common Pitfalls"
   - title: "From CI to CD: The Natural Next Step"
   - title: "Conclusion"
+  - title: "FAQs"
 faqs:
   - question: "What is Continuous Integration (CI)?"
     answer: "Continuous Integration is a development practice where developers merge code changes frequently, triggering automated builds and tests to detect integration problems early."

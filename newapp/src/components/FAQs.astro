@@ -20,10 +20,11 @@ const { faqs, isBlogFaqs } = Astro.props;
           </Badge> 
         }
         <SectionTitle
-          class={`${ isBlogFaqs ? 'max-md:text-left' : 'lg:w-3/5'}`}
+          class={`scroll-mt-[8rem] lg:scroll-mt-28 snap-mandatory ${ isBlogFaqs ? 'max-md:text-left' : 'lg:w-3/5'}`}
           text="Asked Question"
           primaryColorText="Frequently"
           isPrimaryTextInitial={true}
+          isBlogFaqs={isBlogFaqs}
         />
         <p class="small-text font-roboto md:text-para text-third-color">
           Get quick answers to common queries. Explore our FAQs for helpful

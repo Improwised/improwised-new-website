@@ -18,6 +18,7 @@ linkTags:
   - title: "Best Ways to Keep Your Data Safe"
   - title: "Conclusion"
   - title: "Taking Your Kubernetes Infrastructure Further"
+  - title: "FAQs"
 faqs:
   - question: "What is Kubernetes Ingress, and why do I need it?"
     answer: "Kubernetes Ingress is an API item that controls how services in a cluster can be accessed from the outside. You need it to let your apps talk to the internet, handle SSL termination, and set up path-based or host-based routing. If you didn't have an ingress controller, you would have to construct separate load balancer services for each app, which is both costly and time-consuming."

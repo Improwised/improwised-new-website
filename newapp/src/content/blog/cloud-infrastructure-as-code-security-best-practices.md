@@ -22,6 +22,7 @@ linkTags:
   - title: "How to Secure a Terraform AWS Module (Step by Step)"
   - title: "Need help keeping your cloud infrastructure safe?"
   - title: "Last Thoughts" 
+  - title: "FAQs"
 faqs:
   - question: "What does 'Infrastructure as Code security' mean?"
     answer: "It means putting security rules like version control, secrets scanning, RBAC, hardening, and drift detection right into IaC pipelines."

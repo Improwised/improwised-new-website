@@ -21,6 +21,7 @@ linkTags:
   - title: "10. AI Agents and Cloud Infrastructure for Agents"
   - title: "11. The future of FinOps and Cloud Observability"
   - title: "The End"
+  - title: "FAQs"
 faqs:
   - question: "What are the most important cloud trends?"
     answer: "Some of the most important trends are using AI, adopting cloud-native technology, using hybrid or multi-cloud methods, growing edge computing, starting green cloud projects, and using zero-trust security."

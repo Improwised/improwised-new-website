@@ -58,8 +58,6 @@ const authors = await getCollection("authors");
 let articleSchema = {};
 
 if (data.articleSchema) {
-  console.log("data slug -----", data.slug);
-
   articleSchema = {
     ...data.articleSchema,
     url: data.slug,

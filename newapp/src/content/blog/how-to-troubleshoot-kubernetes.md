@@ -20,6 +20,7 @@ linkTags:
   - title: "Best Practices and Common Pitfalls"
   - title: "Autoscaling and Resource Management"
   - title: "Conclusion"
+  - title: "FAQs"
 faqs:
   - question: "How to fix the CrashLoopBackOff error in Kubernetes?"
     answer: "Check for faulty probes, missing configuration variables, or dependency reachability. Use logs and events to identify why containers exit before stability."

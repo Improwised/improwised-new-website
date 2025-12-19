@@ -19,6 +19,7 @@ linkTags:
   - title: "Multi-cloud and Hybrid Kubernetes Cost Management"
   - title: "Real-world Success Stories"
   - title: "Act Now and Slash Your Kubernetes Costs Now"
+  - title: "FAQs"
 faqs:
   - question: "What are the optimal strategies for incorporating Kubernetes cost optimization within CI/CD pipelines?"
     answer: "Incorporating cost assessments and resource validations within pipelines facilitates the early detection of inefficiencies, promoting cost-conscious deployments and governance as code."

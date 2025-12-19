@@ -174,6 +174,7 @@ const blogs = defineCollection({
 		seoDescription: z.string(),
 		tags: z.array(z.string()),
 		author: z.string(),
+		contributor: z.string().optional(),
 		publishDate: z.coerce.date(),
 		linkTags: z.array(z.object({
 			title: z.string(),
@@ -558,7 +559,7 @@ const authors = defineCollection({
 	loader: glob({ base: './src/content/authors', pattern: '**/*.{md,mdx}' }),
 	schema: ({ image }) => z.object({
 		title: z.string(),
-		description: z.string(),
+		description: z.string().optional(),
 		linkedin: z.string(),
 		image: image()
 	}),

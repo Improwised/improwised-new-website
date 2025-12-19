@@ -1,6 +1,8 @@
 ---
 const { faqs, articleSchema } = Astro.props;
 
+console.log("article schema from------", articleSchema);
+
 const schema = faqs
   ? [
       {
@@ -43,7 +45,7 @@ const schema = faqs
         articleSection: articleSchema.articleSection,
         keywords:
           articleSchema.keywords,
-        url: "https://www.improwised.com/",
+        url: articleSchema.url,
         isPartOf: {
           "@type": "Blog",
           name: "Improwised Blog",

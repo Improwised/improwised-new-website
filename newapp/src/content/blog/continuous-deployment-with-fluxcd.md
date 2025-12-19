@@ -8,6 +8,7 @@ tags: [FluxCD, GitOps Continuous Deployment, Kubernetes CD, GitOps CD, FluxCD Ar
 Production Grade FluxCD, Progressive Delivery GitOps, Blue Green Deployment GitOps]
 publishDate: 2025-12-12
 author: "Shyam Kapdi" 
+contributor: "Chintan Viradiya"
 image: '$lib/images/blogs/continuous-deployment-with-fluxcd-head-light.png'
 darkImage: '$lib/images/blogs/continuous-deployment-with-fluxcd-head-dark.png'
 linkTags: 

@@ -1,4 +1,6 @@
 // @ts-check
+import pagefind from "astro-pagefind";
+
 import { defineConfig } from 'astro/config';
 
 import svelte from '@astrojs/svelte';
@@ -25,7 +27,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  integrations: [svelte(), mdx(), sitemap()],
+  integrations: [svelte(), mdx(), sitemap(), pagefind()],
   
   // server: {
   //   host: true,

@@ -42,6 +42,9 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
       </a>
 
       <div class="flex gap-4 lg:hidden items-center">
+        <Dialog client:only>
+          <SearchBar id="search1" className="pagefind-ui search-pagefind" uiOptions={{ showImages: false }} />
+        </Dialog>
         <ToggleTheme client:only/>
         <button id="impronav-menu"  aria-label="Toggle Menu" class="hover:cursor-pointer h-6 w-6">
           <Menu class="h-6 w-6" id="menuIconMenu" />

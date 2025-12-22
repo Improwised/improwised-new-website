@@ -43,11 +43,11 @@
 
 {#if theme.darkTheme}
     <Button variant="" id="sun" aria-label="light-mode-btn" class="hover:cursor-pointer p-0 toggle-theme" on:click={turnLightMode}>
-        <Sun class="h-6 w-6" />
+        <Sun class="h-5 w-5" />
     </Button>
 {:else}
     <Button variant="" id="moon" aria-label="dark-mode-btn" class="hover:cursor-pointer p-0 toggle-theme" on:click={turnDarkMode}>
-        <Moon class="h-6 w-6" />
+        <Moon class="h-5 w-5" />
     </Button>
 {/if}
 

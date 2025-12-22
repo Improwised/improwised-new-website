@@ -6,7 +6,8 @@ import { Button } from "$lib/components/ui/button";
 import Dropdown from "$lib/components/common/Dropdown.svelte";
 import ToggleTheme from "$lib/components/common/ToggleTheme.svelte"
 import { getCollection } from "astro:content";
-
+import Dialog from "$lib/components/common/Dialog.svelte"
+import SearchBar from "astro-pagefind/components/Search";
 const services = (Object.values(await getCollection('services')).sort((a, b) => a.data.order - b.data.order)).filter(service => service.id !== "technology-consulting" && service.id !== "product-modernization" &&  service.id !== "cloud-infrastructure-services")
 
 import Sidebar from "./Sidebar.astro";
@@ -113,6 +114,9 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
     <div>
       <div class="hidden items-center gap-4 lg:flex">
         <ToggleTheme client:only />
+        <Dialog client:only>
+          <SearchBar id="search1" className="pagefind-ui search-pagefind" uiOptions={{ showImages: false }} />
+        </Dialog>
         <Button href={`${BASE_URL}/contact/`} class="button-bg" aria-label="Go to Contact Us page">
           Contact Us
         </Button>
@@ -217,4 +221,174 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
       0 4px 6px -1px rgb(0 0 0 / 0.1),
       0 2px 4px -2px rgb(0 0 0 / 0.1);
   }
+
+  :global(.search-pagefind .pagefind-ui__search-input) {
+    background-color: transparent;
+    border: 2px solid var(--card-border);
+    color: var(--text-first-color);
+    transition: all 0.3s ease-in-out;
+  }
+
+  :global(.search-pagefind .pagefind-ui__search-input::placeholder) {
+    color: var(--text-second-color);
+    opacity: 0.6;
+  }
+
+  :global(.search-pagefind .pagefind-ui__search-input:focus) {
+    border-color: var(--hover-blue);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(26, 184, 224, 0.15);
+    background-color: var(--card-bg);
+  }
+
+  :global(.search-pagefind .pagefind-ui__search-clear) {
+    background-color: transparent ;
+    color: var(--text-second-color) ;
+  }
+
+  :global(.search-pagefind .pagefind-ui__search-clear:hover) {
+    color: var(--hover-blue);
+  }
+
+  :global(.search-pagefind .pagefind-ui__result:hover) {
+    background-color: var(--navbar-bg);
+  }
+
+  :global(.search-pagefind .pagefind-ui__result-link) {
+    color: var(--text-first-color) !important;
+    text-decoration: none;
+  }
+
+  :global(.search-pagefind .pagefind-ui__result-link:hover) {
+    color: var(--hover-blue) !important;
+  }
+
+  :global(.search-pagefind .pagefind-ui__result-title) {
+    color: var(--text-first-color) !important;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+  
+  :global(.search-pagefind .pagefind-ui__result-excerpt) {
+    color: var(--text-second-color) !important;
+    line-height: 1.6;
+  }
+
+  :global(.search-pagefind .pagefind-ui__result-tag) {
+    background-color: var(--navbar-bg) !important;
+    color: var(--text-first-color) !important;
+    border: 1px solid var(--card-border);
+  }
+
+  :global(.search-pagefind .pagefind-ui__message) {
+    color: var(--text-second-color) !important;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  :global(.search-pagefind .pagefind-ui__results-area) {
+    margin-top: 20px;
+  }
+
+  :global(.search-pagefind .pagefind-ui__button) {
+    background-color: transparent !important;
+    color: var(--hover-blue) !important;
+    border: 2px solid var(--hover-blue) !important;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  :global(.search-pagefind .pagefind-ui__button:hover) {
+    background-color: var(--hover-blue) !important;
+    color: var(--primary-white) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(26, 184, 224, 0.3);
+  }
+
+  :global(.search-pagefind mark) {
+    background-color: rgba(26, 184, 224, 0.25) !important;
+    color: var(--hover-blue) !important;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 600;
+  }
+
+  :global(.search-pagefind .pagefind-ui__drawer) {
+    background-color: transparent !important;
+  }
+
+  :global(.search-dialog-content *::-webkit-scrollbar) {
+    width: 8px;
+  }
+
+  :global(.search-dialog-content *::-webkit-scrollbar-track) {
+    background: transparent;
+  }
+
+  :global(.search-dialog-content *::-webkit-scrollbar-thumb) {
+    background-color: var(--card-border);
+    border-radius: 4px;
+  }
+
+  :global(.search-dialog-content *::-webkit-scrollbar-thumb:hover) {
+    background-color: var(--hover-blue);
+  } 
 </style>
+
+<script>
+  import { PagefindUI } from "@pagefind/default-ui";
+
+  function tryInitSearch() {
+    const searchEl = document.querySelector('#search1.pagefind-init');
+    if (searchEl) {
+      const bundlePath = searchEl.getAttribute("data-bundle-path");
+      const opts = JSON.parse(searchEl.getAttribute("data-ui-options") ?? "{}");
+      new PagefindUI({
+        ...opts,
+        element: "#search1",
+        bundlePath,
+      });
+      searchEl.classList.remove("pagefind-init");
+      return true;
+    }
+    return false;
+  }
+
+  function initSearchInDialog() {
+    // Try immediate initialization
+    tryInitSearch();
+
+    // Watch for dialog opening and search element being added
+    const observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        for (const node of mutation.addedNodes) {
+          if (node instanceof HTMLElement) {
+            const searchEl = node.querySelector?.('#search1.pagefind-init') || 
+                            (node.id === 'search1' && node.classList.contains('pagefind-init') ? node : null);
+            
+            if (searchEl) {
+              setTimeout(() => tryInitSearch(), 100);
+              return;
+            }
+          }
+        }
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initSearchInDialog);
+  } else {
+    initSearchInDialog();
+  }
+</script>

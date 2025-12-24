@@ -138,9 +138,6 @@ teams:
     - name: 'Harshjeetsinh'
       image: '$lib/images/teams/Harshjeetsinh.png'
 
-    - name: 'Nilesh'
-      image: '$lib/images/teams/Nilesh.png'
-
     - name: 'Keshvi'
       image: '$lib/images/teams/Keshvi.jpg'
 

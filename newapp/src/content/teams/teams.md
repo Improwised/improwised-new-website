@@ -141,6 +141,18 @@ teams:
     - name: 'Keshvi'
       image: '$lib/images/teams/Keshvi.jpg'
 
-    - name: 'Divyesh'
-      image: '$lib/images/teams/DivyeshM.jpg'
+    - name: 'Varun'
+      image: '$lib/images/teams/Varun-Bhogayta.jpg'
+
+    - name: 'Darshan P'
+      image: '$lib/images/teams/Darshan-Parmar.jpg'
+
+    - name: 'Hemil'
+      image: '$lib/images/teams/Hemil-Korat.jpg'
+
+    - name: 'Vanshi'
+      image: '$lib/images/teams/Vanshi-Mehta.jpg'
+
+    - name: 'Prit'
+      image: '$lib/images/teams/Prit-Vasani.jpg'
 ---

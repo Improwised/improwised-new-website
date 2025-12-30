@@ -141,6 +141,9 @@ teams:
     - name: 'Keshvi'
       image: '$lib/images/teams/Keshvi.jpg'
 
+    - name: 'Divyesh'
+      image: '$lib/images/teams/DivyeshM.jpg'
+      
     - name: 'Varun'
       image: '$lib/images/teams/Varun-Bhogayta.jpg'
 

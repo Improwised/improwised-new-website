@@ -4,11 +4,11 @@
   import { MotionPathPlugin } from "gsap/MotionPathPlugin";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   import * as Card from "$lib/components/ui/card";
-  import phase1 from "$lib/images/timeline-phase/phase-1.svg"
-  import phase2 from "$lib/images/timeline-phase/phase-2.svg"
-  import phase3 from "$lib/images/timeline-phase/phase-3.svg"
-  import phase4 from "$lib/images/timeline-phase/phase-4.svg"
-  import phase5 from "$lib/images/timeline-phase/phase-5.svg"
+  import phase1 from "$lib/images/timeline-phase/phase-5.svg"
+  import phase2 from "$lib/images/timeline-phase/phase-1.svg"
+  import phase3 from "$lib/images/timeline-phase/phase-2.svg"
+  import phase4 from "$lib/images/timeline-phase/phase-3.svg"
+  import phase5 from "$lib/images/timeline-phase/phase-4.svg"
 
   export let phases;  
 

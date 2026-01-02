@@ -4,10 +4,13 @@
   import { MotionPathPlugin } from "gsap/MotionPathPlugin";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   import * as Card from "$lib/components/ui/card";
+  import phase1 from "$lib/images/timeline-phase/phase-1.svg"
+  import phase2 from "$lib/images/timeline-phase/phase-2.svg"
+  import phase3 from "$lib/images/timeline-phase/phase-3.svg"
+  import phase4 from "$lib/images/timeline-phase/phase-4.svg"
+  import phase5 from "$lib/images/timeline-phase/phase-5.svg"
 
-  export let phases;
-  console.log("phases-0----", phases);
-  
+  export let phases;  
 
   let svg;
   let path;
@@ -15,84 +18,67 @@
   let scrollTriggerId = null;
   let isInitialized = false;
 
-  const VIEWBOX_WIDTH = 900;
-  const START_Y = 450;
-  const CENTER_X = VIEWBOX_WIDTH / 2;
-
   $: IS_MOBILE = windowWidth < 768;
-  $: PHASE_SPACING = IS_MOBILE ? (windowWidth < 576 ? 900 : 700) : 700;
-  // $: CARD_WIDTH = IS_MOBILE ? 280 : 350;
-  // $: CARD_HEIGHT = IS_MOBILE ? 320 : 280;
-  $: CARD_WIDTH = IS_MOBILE ? (windowWidth < 576 ? 900 : 750) : 500;
-  $: CARD_HEIGHT = IS_MOBILE ? (windowWidth < 576 ? 600 : 430) : 400;
+  const VIEWBOX_WIDTH = 900;
+  $: START_Y = IS_MOBILE ? 350 : 350;
+  $: CENTER_X = IS_MOBILE ? windowWidth / 2 : VIEWBOX_WIDTH / 2;
 
-  $: LABEL_SIZE = windowWidth < 576 ? "28px" : windowWidth < 768 ? "16px" : "12px";
-  $: TITLE_SIZE = windowWidth < 576 ? "32px" : windowWidth < 768 ? "24px" : "22px";
-  $: TITLE_LINE_HEIGHT = windowWidth < 576 ? "34px" : windowWidth < 768 ? "26px" : "28px";
-  $: DESC_SIZE = windowWidth < 576 ? "28px" : windowWidth < 768 ? "18px" : "16px";
-  $: DESC_LINE_HEIGHT = windowWidth < 576 ? "32px" : windowWidth < 768 ? "24px" : "24px";
-  $: BULLET_SIZE = windowWidth < 576 ? "28px" : windowWidth < 768 ? "19px" : "16px";
-  $: BULLET_LINE_HEIGHT = windowWidth < 576 ? "30px" : windowWidth < 768 ? "24px" : "20px";
-  $: CARD_PADDING = windowWidth < 576 ? "26px" : windowWidth < 768 ? "16px" : "16px";
-  $: SECTION_GAP = windowWidth < 576 ? "32px" : windowWidth < 768 ? "20px" : "16px";
-  $: BULLET_GAP = windowWidth < 576 ? "16px" : windowWidth < 768 ? "12px" : "10px";
+  $: CARD_WIDTH = IS_MOBILE ? (windowWidth < 576 ? windowWidth - 32 : windowWidth - 48) : 400;
+  $: CARD_HEIGHT = IS_MOBILE ? (windowWidth < 576 ? 320 : 280) : 250;
+  $: PHASE_SPACING = IS_MOBILE ? CARD_HEIGHT : 400;
+  $: IMAGE_SIZE = 350;
+
 
   $: phases = [
     {
       id: 1,
       title: "Phase 1: Discovery and Platform Vision",
-      description:
-        "We align the platform with business priorities and delivery targets. The focus is to identify exactly what is slowing engineering velocity, how teams currently build and deploy, and what the platform must solve",
+      image: phase1.src,
       bullets: [
-        "Factual Mapping of existing tools, environments, and infrastructure usage.",
-        "Quantified developer pain points and inefficiencies.",
-        "Defined Platform scope: a statement of what the platform will solve.",
+        "Map existing tools, environments, and infrastructure usage",
+        "Quantified developer pain points and inefficiencies",
+        "Define Platform scope",
       ],
     },
     {
       id: 2,
       title: "Phase 2: Platform Architecture and Design",
-      description:
-        "We define how the platform will be structured and how different components will work together.",
+      image: phase2.src,
       bullets: [
-        "An architecture blueprint that minimizes variance and supports modular evolution.",
-        "Defined standards for how infrastructure, security, deployments, and access will be handled",
-        "An MVP of the platform that demonstrates essential capabilities in a realistic environment and validates the architectural approach.",
+        "Architecture blueprint emphasizing low variance and modularity",
+        "Standards for infrastructure, security, deployment, and access",
+        "MVP validating essential capabilities and architectural direction",
       ],
     },
     {
       id: 3,
       title: "Phase 3: Build and Implementation",
-      description:
-        "We implement the core platform using the selected tooling and established standards.",
+      image: phase3.src,
       bullets: [
-        "A running platform environment backed by container orchestration with the agreed scaling and resource model.",
-        "Fully version-controlled infrastructure provisioning using IaC for environment reproducibility.",
-        "CI/CD pipelines, enabling consistent and verified deployments.",
-        "Integrated operational tooling across auth, observability, and incident analysis.",
+        "Platform runtime with container orchestration and a defined scaling model",
+        "Version-controlled IaC for reproducible environments",
+        "CI/CD pipelines for consistent, verified deployments",
+        "Integrated tooling for auth, observability, and incident analysis",
       ],
     },
     {
       id: 4,
       title: "Phase 4: Developer Onboarding and Adoption",
-      description:
-        "We ensure developers can adopt the platform smoothly and incorporate it into their daily workflow",
+      image: phase4.src,
       bullets: [
-        " Self-service access governed by RBAC and least-privilege permissions",
-        "Zero-trust policy applied for service access, secrets handling, and internal communication.",
-        "Hands-on onboarding through sessions, walkthrough demos, and real support for developer queries.",
-        "Reduced onboarding time for new hires.",
+        "Self-service access governed by RBAC and least-privilege permissions",
+        "Zero-trust policies for service access, secrets, and communication",
+        "Hands-on onboarding via sessions, demos, and support",
+        "Reduced onboarding time for new hires",
       ],
     },
     {
       id: 5,
       title: "Phase 5: Upgrades and Day-2 Operations",
-      description:
-        "We continuously refine the platform and support its growth in alignment with business and engineering needs.",
+      image: phase5.src,
       bullets: [
-        "Iterative enhancement of templates, pipelines, and guardrails based on real developer needs.",
-        "Advanced cost management and governance policies.",
-        "Continuous platform maintenance, reliability improvements, upgrades, and advisory support.",
+        "Continuous refinement of templates, pipelines, and guardrails",
+        "Ongoing maintenance, reliability upgrades, and advisory support",
       ],
     },
   ].map((p, i) => ({
@@ -100,9 +86,10 @@
     y: START_Y + i * PHASE_SPACING,
     cx: IS_MOBILE ? CENTER_X : i % 2 === 0 ? 650 : 250,
     cy: START_Y + i * PHASE_SPACING,
+    imageCx: i % 2 === 0 ? 250 : 650,
   }));
 
-  $: TOTAL_HEIGHT = START_Y + phases.length * PHASE_SPACING;
+  $: TOTAL_HEIGHT = (START_Y + phases.length * PHASE_SPACING) - 160;
 
   $: dPath = (() => {
     let pathStr = `M ${CENTER_X},0`;
@@ -112,7 +99,7 @@
       const prevX = i === 0 ? CENTER_X : phases[i - 1].cx;
 
       if (IS_MOBILE) {
-        pathStr += ` L ${CENTER_X},${p.y}`;
+        pathStr += ` L ${CENTER_X},${p.y - 20}`;
       } else {
         const cp1y = prevY + (p.y - prevY) * 0.5;
         const cp2y = prevY + (p.y - prevY) * 0.5;
@@ -123,14 +110,6 @@
         pathStr += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${p.cx},${p.y}`;
       }
     });
-
-    const lastPhase = phases[phases.length - 1];
-    if (IS_MOBILE) {
-      pathStr += ` L ${CENTER_X},${TOTAL_HEIGHT}`;
-    } else {
-      pathStr += ` C ${lastPhase.cx},${lastPhase.y} ${CENTER_X},${lastPhase.y} ${CENTER_X},${TOTAL_HEIGHT - 100}`;
-    }
-
     return pathStr;
   })();
 
@@ -170,6 +149,12 @@
       scale: 0,
     });
 
+    if (!IS_MOBILE) {
+      gsap.set(".phase-image", {
+        opacity: 0,
+      });
+    }
+
     const length = path.getTotalLength();
     gsap.set(path, { strokeDasharray: length, strokeDashoffset: length });
 
@@ -180,7 +165,7 @@
         id: scrollTriggerId,
         trigger: "#timeline-container",
         start: "top center",
-        end: "bottom bottom",
+        end: "bottom center",
         scrub: 0.5,
         invalidateOnRefresh: true,
         onRefresh: () => {
@@ -210,7 +195,22 @@
       );
 
     phases.forEach((phase) => {
-      const progress = phase.y / TOTAL_HEIGHT;
+      const pathLength = path.getTotalLength();
+      let minDistance = Infinity;
+      let progress = 0;
+
+      for (let i = 0; i <= 500; i++) {
+        const testProgress = i / 500;
+        const point = path.getPointAtLength(testProgress * pathLength);
+        const distance = Math.sqrt(
+          Math.pow(point.x - phase.cx, 2) + Math.pow(point.y - phase.cy, 2)
+        );
+
+        if (distance < minDistance) {
+          minDistance = distance;
+          progress = testProgress;
+        }
+      }
 
       action.to(
         `.content-${phase.id}`,
@@ -221,7 +221,7 @@
           duration: 0.01,
           ease: "power2.out",
         },
-        progress - 0.025
+        progress - 0.030
       );
 
       action.to(
@@ -232,8 +232,20 @@
           duration: 0.05,
           ease: "elastic.out(1, 0.3)",
         },
-        progress
+        progress - 0.030
       );
+
+      if (!IS_MOBILE) {
+        action.to(
+          `.image-${phase.id}`,
+          {
+            opacity: 1,
+            duration: 0.2,
+            ease: "power2.out",
+          },
+          progress - 0.030
+        );
+      }
     });
 
     ScrollTrigger.refresh();
@@ -285,26 +297,26 @@
 
 <div
   id="timeline-container"
-  class="w-full min-h-[175vh] md:min-h-[280vh] relative overflow-hidden font-sans"
+  class="relative overflow-hidden font-sans"
 >
-  <div class="flex justify-center relative py-[6vh] md:py-[12vh]">
+  <div class="flex relative">
     <svg
       id="svg"
       bind:this={svg}
       xmlns="http://www.w3.org/2000/svg"
-      viewBox={`0 0 ${VIEWBOX_WIDTH} ${TOTAL_HEIGHT}`}
+      viewBox={`0 0 ${IS_MOBILE ? windowWidth : VIEWBOX_WIDTH} ${TOTAL_HEIGHT}`}
       preserveAspectRatio="xMidYMid meet"
-      class="w-full sm:max-w-[900px] h-auto overflow-visible relative z-10"
+      class="h-auto overflow-visible relative z-10 w-full"
     >
       <path
         class="theDottedLine"
         d={dPath}
         fill="none"
         stroke="#22c55e"
-        stroke-width="2px"
+        stroke-width="1px"
         stroke-linecap="round"
         stroke-dasharray="8 12"
-        opacity="0.3"
+        opacity="0.4"
       />
 
       <path
@@ -313,7 +325,7 @@
         d={dPath}
         fill="none"
         stroke="#22c55e"
-        stroke-width="2px"
+        stroke-width="1px"
         stroke-linecap="round"
       />
 
@@ -321,7 +333,7 @@
         class="ball ball01 fill-white stroke-green-600 stroke-2"
         cx={CENTER_X}
         cy="0"
-        r="8"
+        r="5"
       ></circle>
 
       {#each phases as phase}
@@ -336,16 +348,15 @@
 
       {#each phases as phase}
         <foreignObject
-          x={phase.cx - CARD_WIDTH / 2}
+         x={IS_MOBILE ? 0 : phase.cx - CARD_WIDTH / 2}
           y={phase.y - CARD_HEIGHT / 2}
-          width={CARD_WIDTH}
-          height={CARD_HEIGHT}
+          width={IS_MOBILE ? windowWidth : CARD_WIDTH}
           class="overflow-visible"
         >
           <Card.Root
-            class={`shadow-nav text-center overflow-hidden h-full box-border content-${phase.id}`}
+            class={`shadow-nav text-center overflow-hidden content-${phase.id}`}
             on:mousemove={(event) => updateGradient(event)}
-            style={`--gradient-x: ${gradientX}px; --gradient-y: ${gradientY}px; backdrop-filter: blur(6px)`}
+            style={`--gradient-x: ${gradientX}px; --gradient-y: ${gradientY}px; backdrop-filter: blur(6px); border-color: var(--card-border);`}
           >
             <!-- svelte-ignore a11y_no_static_element_interactions -->
             <div
@@ -353,36 +364,26 @@
               on:mousemove={(event) => updateGradient(event)}
               style={`--gradient-x: ${gradientX}px; --gradient-y: ${gradientY}px;`}
             >
-              <Card.Header style={`padding: ${CARD_PADDING}`}>
+              <Card.Header class="md:px-3 md:pt-3">
                 <div class="flex items-center gap-2">
                   <span
-                    class="text-green-500 font-mono px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20"
-                    style={`font-size: ${LABEL_SIZE}`}
+                    class="text-green-500 font-mono px-2 pt-1 text-xs rounded-full bg-green-500/10 border border-green-500/20"
                     >Phase {phase.id}</span
                   >
                 </div>
               </Card.Header>
-              <Card.Content style={`padding: ${CARD_PADDING}; display: flex; flex-direction: column; gap: ${SECTION_GAP}`}>
+              <Card.Content class="pt-3 md:p-3">
                 <Card.Title
-                  class="text-left text-fifth-color tracking-[0.02em] font-manrope"
-                  style={`font-size: ${TITLE_SIZE}; line-height: ${TITLE_LINE_HEIGHT}; margin: 0`}
+                  class="text-fifth-color md:text-sm text-left font-manrope"
                 >
                   {phase.title.split(": ")[1]}
                 </Card.Title>
-                <p
-                  class="text-left tracking-[0.02em] font-normal font-inter text-fourth-color"
-                  style={`font-size: ${DESC_SIZE}; line-height: ${DESC_LINE_HEIGHT}; margin: 0`}
-                >
-                  {phase.description}
-                </p>
-
-                <ul style={`display: flex; flex-direction: column; gap: ${BULLET_GAP}; margin: 0; padding: 0; list-style: none`}>
+                <ul class="flex flex-col gap-2 pt-2">
                   {#each phase.bullets as bullet}
                     <li
-                      class="text-neutral-500 text-left font-normal flex items-start"
-                      style={`font-size: ${BULLET_SIZE}; line-height: ${BULLET_LINE_HEIGHT}; gap: ${BULLET_GAP}`}
+                      class="text-left text-xs font-inter text-fourth-color flex items-start"
                     >
-                      <span class="text-green-500/50 flex-shrink-0" style="margin-top: 2px">•</span>
+                      <span class="text-green-500/50 flex-shrink-0 mr-2">•</span>
                       <span class="w-full break-words">{bullet}</span>
                     </li>
                   {/each}
@@ -390,45 +391,28 @@
               </Card.Content>
             </div>
           </Card.Root>
-          <!-- <div
-            class={`content-${phase.id} 
-              backdrop-blur-xl 
-              border border-white/10 
-              p-3 md:p-5 rounded-2xl shadow-xl 
-              transform transition-all duration-300
-              h-full flex flex-col justify-center
-            `}
-          >
-            <div class="flex items-center gap-2 mb-2">
-              <span
-                class="text-green-500 font-mono md:text-xs px-2 py-1 rounded-full bg-green-500/10 border border-green-500/20"
-                >Phase {phase.id}</span
-              >
-            </div>
-            <h3
-              class="font-bold md:text-base mb-2 leading-tight w-full break-words"
-            >
-              {phase.title.split(": ")[1]}
-            </h3>
-            <p
-              class="text-neutral-400 md:text-xs mb-2 md:mb-3 leading-relaxed w-full break-words"
-            >
-              {phase.description}
-            </p>
-
-            <ul class="space-y-1 md:space-y-1.5">
-              {#each phase.bullets as bullet}
-                <li
-                  class="text-neutral-500 md:text-[10px] flex items-start gap-1 md:gap-2"
-                >
-                  <span class="text-green-500/50 mt-0.5">•</span>
-                  <span class="w-full break-words">{bullet}</span>
-                </li>
-              {/each}
-            </ul>
-          </div> -->
         </foreignObject>
       {/each}
+
+      {#if !IS_MOBILE}
+        {#each phases as phase, index}
+          <foreignObject
+            x={index % 2 == 0 ? phase.imageCx - 50 - IMAGE_SIZE / 2 : phase.imageCx + 50 - IMAGE_SIZE / 2 }
+            y={phase.y - 30 - IMAGE_SIZE / 2}
+            width={IMAGE_SIZE}
+            height={IMAGE_SIZE}
+            class="overflow-visible"
+          >
+            <div class="w-full h-full flex items-center justify-center image-{phase.id} phase-image">
+              <img 
+                src={phase.image} 
+                alt={`Phase ${phase.id}`}
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </foreignObject>
+        {/each}
+      {/if}
     </svg>
   </div>
 </div>

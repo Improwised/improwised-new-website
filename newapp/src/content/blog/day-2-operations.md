@@ -8,6 +8,7 @@ tags: [Day-2 Operations, Day-2 vs Day-1 operations, DevSecOps in production, clo
 publishDate: 2026-01-02
 modifiedDate: 2026-01-02
 author: "Shyam Kapdi" 
+contributor: "Satish Annavar"
 image:  '$lib/images/blogs/day-2-operations-head-light.png'
 darkImage: '$lib/images/blogs/day-2-operations-head-dark.png'
 bodyImage: '$lib/images/blogs/day-2-operations-body.png'

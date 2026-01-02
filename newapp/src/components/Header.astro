@@ -12,7 +12,7 @@ const services = (Object.values(await getCollection('services')).sort((a, b) => 
 
 import Sidebar from "./Sidebar.astro";
 const currentUrl = Astro.url.pathname.split("/")
-import { Menu, X } from "lucide-svelte";
+import { Menu, X, Search } from "lucide-svelte";
 
 let blogDetail = {};
 const url: string[] = Astro.url.pathname.split("/");
@@ -42,9 +42,9 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
       </a>
 
       <div class="flex gap-4 lg:hidden items-center">
-        <Dialog client:only>
-          <SearchBar id="search1" className="pagefind-ui search-pagefind" uiOptions={{ showImages: false }} />
-        </Dialog>
+        <button id="mobile-search-trigger" aria-label="Open search" class="hover:cursor-pointer">
+          <Search class="h-5 w-5" />
+        </button>
         <ToggleTheme client:only/>
         <button id="impronav-menu"  aria-label="Toggle Menu" class="hover:cursor-pointer h-6 w-6">
           <Menu class="h-6 w-6" id="menuIconMenu" />
@@ -117,12 +117,12 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
     <div>
       <div class="hidden items-center gap-4 lg:flex">
         <ToggleTheme client:only />
-        <Dialog client:only>
-          <SearchBar id="search1" className="pagefind-ui search-pagefind" uiOptions={{ showImages: false }} />
-        </Dialog>
         <Button href={`${BASE_URL}/contact/`} class="button-bg" aria-label="Go to Contact Us page">
           Contact Us
         </Button>
+        <Dialog client:only="svelte">
+          <SearchBar id="search1" className="pagefind-ui search-pagefind" uiOptions={{ showImages: false }} />
+        </Dialog>
       </div>
     </div>
   </div>
@@ -346,6 +346,9 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
 <script>
   import { PagefindUI } from "@pagefind/default-ui";
 
+  let observer = null;
+  let searchEventHandler = null;
+
   function tryInitSearch() {
     const searchEl = document.querySelector('#search1.pagefind-init');
     if (searchEl) {
@@ -363,24 +366,15 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
   }
 
   function initSearchInDialog() {
-    // Try immediate initialization
-    tryInitSearch();
+    // Listen for custom event from Dialog component
+    searchEventHandler = () => {
+      setTimeout(() => tryInitSearch(), 100);
+    };
+    window.addEventListener('search-dialog-opened', searchEventHandler);
 
     // Watch for dialog opening and search element being added
-    const observer = new MutationObserver((mutations) => {
-      for (const mutation of mutations) {
-        for (const node of mutation.addedNodes) {
-          if (node instanceof HTMLElement) {
-            const searchEl = node.querySelector?.('#search1.pagefind-init') || 
-                            (node.id === 'search1' && node.classList.contains('pagefind-init') ? node : null);
-            
-            if (searchEl) {
-              setTimeout(() => tryInitSearch(), 100);
-              return;
-            }
-          }
-        }
-      }
+    observer = new MutationObserver(() => {
+      tryInitSearch();
     });
 
     observer.observe(document.body, {
@@ -389,9 +383,26 @@ if (url.includes("blog") && url.at(-2) !== "blog") {
     });
   }
 
+  function cleanup() {
+    if (observer) {
+      observer.disconnect();
+      observer = null;
+    }
+    if (searchEventHandler) {
+      window.removeEventListener('search-dialog-opened', searchEventHandler);
+      searchEventHandler = null;
+    }
+  }
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initSearchInDialog);
   } else {
     initSearchInDialog();
   }
+
+  // Cleanup on page unload (for view transitions or SPA navigation)
+  window.addEventListener('beforeunload', cleanup);
+  
+  // Cleanup for Astro view transitions if enabled
+  document.addEventListener('astro:before-preparation', cleanup);
 </script>
